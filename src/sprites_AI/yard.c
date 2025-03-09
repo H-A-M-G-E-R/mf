@@ -27,9 +27,9 @@ u8 YardCheckShouldStartle(void) {
     if (gCurrentPowerBomb.animationState != 0) {
         gCurrentSprite.pose = 0x18;
         if (gCurrentSprite.work0)
-            gCurrentSprite.pOam = sYardOam_355490;
+            gCurrentSprite.pOam = sYardOam_StartledVertical;
         else
-            gCurrentSprite.pOam = sYardOam_355370;
+            gCurrentSprite.pOam = sYardOam_StartledHorizontal;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
         gCurrentSprite.work3 = 180;
@@ -133,14 +133,14 @@ void YardUpdateHitbox(void) {
 void YardSetCrawlingOam(void) {
     if (gCurrentSprite.properties & SP_CAN_ABSORB_X) {
         if (gCurrentSprite.work0)
-            gCurrentSprite.pOam = sYardOam_355540;
+            gCurrentSprite.pOam = sYardOam_UninfectedVertical;
         else
-            gCurrentSprite.pOam = sYardOam_355530;
+            gCurrentSprite.pOam = sYardOam_UninfectedHorizontal;
     } else {
         if (gCurrentSprite.work0)
-            gCurrentSprite.pOam = sYardOam_3553e8;
+            gCurrentSprite.pOam = sYardOam_CrawlingVertical;
         else
-            gCurrentSprite.pOam = sYardOam_3552c8;
+            gCurrentSprite.pOam = sYardOam_CrawlingHorizontal;
     }
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
@@ -148,45 +148,45 @@ void YardSetCrawlingOam(void) {
 
 void YardSetTurningAroundOam(void) {
     if (gCurrentSprite.work0)
-        gCurrentSprite.pOam = sYardOam_3554c8;
+        gCurrentSprite.pOam = sYardOam_TurningAroundVertical1;
     else
-        gCurrentSprite.pOam = sYardOam_3553a8;
+        gCurrentSprite.pOam = sYardOam_TurningAroundHorizontal1;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
 
 void YardSetTurningAroundSecondPartOam(void) {
     if (gCurrentSprite.work0)
-        gCurrentSprite.pOam = sYardOam_3554e8;
+        gCurrentSprite.pOam = sYardOam_TurningAroundVertical2;
     else
-        gCurrentSprite.pOam = sYardOam_3553c8;
+        gCurrentSprite.pOam = sYardOam_TurningAroundHorizontal2;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
 
 void YardSetChargingOam(void) {
     if (gCurrentSprite.work0)
-        gCurrentSprite.pOam = sYardOam_355408;
+        gCurrentSprite.pOam = sYardOam_ChargingVertical;
     else
-        gCurrentSprite.pOam = sYardOam_3552e8;
+        gCurrentSprite.pOam = sYardOam_ChargingHorizontal;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
 
 void YardSetShootingOam(void) {
     if (gCurrentSprite.work0)
-        gCurrentSprite.pOam = sYardOam_355438;
+        gCurrentSprite.pOam = sYardOam_ShootingVertical;
     else
-        gCurrentSprite.pOam = sYardOam_355318;
+        gCurrentSprite.pOam = sYardOam_ShootingHorizontal;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
 
 void YardSetRecoilOam(void) {
     if (gCurrentSprite.work0)
-        gCurrentSprite.pOam = sYardOam_355470;
+        gCurrentSprite.pOam = sYardOam_RecoilVertical;
     else
-        gCurrentSprite.pOam = sYardOam_355350;
+        gCurrentSprite.pOam = sYardOam_RecoilHorizontal;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
@@ -367,7 +367,7 @@ void YardCheckRoll(void) {
         } else {
             SpriteUtilMakeSpriteFaceAwayFromSamusDirection();
             gCurrentSprite.pose = 0x38;
-            gCurrentSprite.work1 = 60; // But there's a speed cap of half a pixel per frame!
+            gCurrentSprite.work1 = PIXEL_TO_VELOCITY(1.875); // But there's a speed cap of half a pixel per frame when rolling down a slope!
             if (!(gCurrentSprite.status & SS_ROTATE_SCALE_INDIVIDUAL)) {
                 gCurrentSprite.status |= SS_ROTATE_SCALE_INDIVIDUAL;
                 gCurrentSprite.rotation = 0;
@@ -385,79 +385,104 @@ void YardRolling(void) {
     notSlowingDown = FALSE;
     SpriteUtilAlignYPosOnSlope();
     if (gPreviousVerticalCollisionCheck == COLLISION_AIR) {
+        // On a ledge
         if (gCurrentSprite.status & SS_FACING_RIGHT) {
-            SpriteUtilCheckVerticalCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition - 0x20);
+            // Check block below bottom-left
+            SpriteUtilCheckVerticalCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition - HALF_BLOCK_SIZE);
             if (gPreviousVerticalCollisionCheck == COLLISION_AIR) {
                 gCurrentSprite.pose = SPRITE_POSE_FALLING_INIT;
                 return;
             }
+            // ???
             if (gPreviousVerticalCollisionCheck == COLLISION_LEFT_STEEP_FLOOR_SLOPE || gPreviousVerticalCollisionCheck == COLLISION_LEFT_SLIGHT_FLOOR_SLOPE)
-                gCurrentSprite.yPosition = SpriteUtilCheckVerticalCollisionAtPosition(gCurrentSprite.yPosition + 0x40, gCurrentSprite.xPosition);
+                gCurrentSprite.yPosition = SpriteUtilCheckVerticalCollisionAtPosition(gCurrentSprite.yPosition + BLOCK_SIZE, gCurrentSprite.xPosition);
         } else {
-            SpriteUtilCheckVerticalCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition + 0x20);
+            // Check block below bottom-right
+            SpriteUtilCheckVerticalCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition + HALF_BLOCK_SIZE);
             if (gPreviousVerticalCollisionCheck == COLLISION_AIR) {
                 gCurrentSprite.pose = SPRITE_POSE_FALLING_INIT;
                 return;
             }
+            // ???
             if (gPreviousVerticalCollisionCheck == COLLISION_RIGHT_STEEP_FLOOR_SLOPE || gPreviousVerticalCollisionCheck == COLLISION_RIGHT_SLIGHT_FLOOR_SLOPE)
-                gCurrentSprite.yPosition = SpriteUtilCheckVerticalCollisionAtPosition(gCurrentSprite.yPosition + 0x40, gCurrentSprite.xPosition);
+                gCurrentSprite.yPosition = SpriteUtilCheckVerticalCollisionAtPosition(gCurrentSprite.yPosition + BLOCK_SIZE, gCurrentSprite.xPosition);
         }
     } else if (gPreviousVerticalCollisionCheck & COLLISION_FLAGS_UNKNOWN_F0) {
+        // On flat ground
         if (gCurrentSprite.status & SS_FACING_RIGHT) {
-            SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition + 0x20);
+            // Check block below bottom-right
+            SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition + HALF_BLOCK_SIZE);
             if (gPreviousCollisionCheck != COLLISION_AIR) {
-                SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - PIXEL_SIZE, gCurrentSprite.xPosition + 0x20);
+                // Still on ground or slope, check block above bottom-right
+                SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - PIXEL_SIZE, gCurrentSprite.xPosition + HALF_BLOCK_SIZE);
                 if (gPreviousCollisionCheck == COLLISION_SOLID) {
+                    // Hit a wall
                     gCurrentSprite.status &= ~SS_FACING_RIGHT;
                     return;
                 }
             } else {
+                // Encountered a ledge
                 gCurrentSprite.status &= ~SS_FACING_RIGHT;
                 return;
             }
         } else {
-            SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition - 0x20);
+            // Check block below bottom-left
+            SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition - HALF_BLOCK_SIZE);
             if (gPreviousCollisionCheck != COLLISION_AIR) {
+                // Still on ground or slope, check block above bottom-left
                 // BUG: should be gCurrentSprite.yPosition - PIXEL_SIZE
-                SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - 0x10, gCurrentSprite.xPosition - 0x20);
+                SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - QUARTER_BLOCK_SIZE, gCurrentSprite.xPosition - HALF_BLOCK_SIZE);
                 if (gPreviousCollisionCheck == COLLISION_SOLID) {
+                    // Hit a wall
                     gCurrentSprite.status |= SS_FACING_RIGHT;
                     return;
                 }
             } else {
+                // Encountered a ledge
                 gCurrentSprite.status |= SS_FACING_RIGHT;
                 return;
             }
         }
     } else {
+        // On slope
         if (gPreviousVerticalCollisionCheck == COLLISION_LEFT_STEEP_FLOOR_SLOPE || gPreviousVerticalCollisionCheck == COLLISION_LEFT_SLIGHT_FLOOR_SLOPE) {
             if (!(gCurrentSprite.status & SS_FACING_RIGHT)) {
-                if (gCurrentSprite.work1 == 1) {
+                // Rolling up a slope
+                if (gCurrentSprite.work1 == PIXEL_TO_VELOCITY(1./32)) {
+                    // Start to roll down a slope, don't decelerate
                     gCurrentSprite.status |= SS_FACING_RIGHT;
                     notSlowingDown = TRUE;
                 }
+                // Decelerate
             } else
+                // Don't decelerate when rolling down a slope
                 notSlowingDown = TRUE;
         } else if (gPreviousVerticalCollisionCheck == COLLISION_RIGHT_STEEP_FLOOR_SLOPE || gPreviousVerticalCollisionCheck == COLLISION_RIGHT_SLIGHT_FLOOR_SLOPE) {
             if (gCurrentSprite.status & SS_FACING_RIGHT) {
-                if (gCurrentSprite.work1 == 1) {
+                // Rolling up a slope
+                if (gCurrentSprite.work1 == PIXEL_TO_VELOCITY(1./32)) {
+                    // Start to roll down a slope, don't decelerate
                     gCurrentSprite.status &= ~SS_FACING_RIGHT;
                     notSlowingDown = TRUE;
                 }
+                // Decelerate
             } else
+                // Don't decelerate when rolling down a slope
                 notSlowingDown = TRUE;
         }
     }
     if (!notSlowingDown) {
+        // Slow down by 1/32 of a pixel per frame
         if (--gCurrentSprite.work1 == 0) {
             gCurrentSprite.pose = SPRITE_POSE_IDLE_INIT;
             return;
         }
     } else {
-        if (gCurrentSprite.work1 < (PIXEL_SIZE / 2) * 8)
-            gCurrentSprite.work1 = (PIXEL_SIZE / 2) * 8;
+        // Cap speed at 1/2 of a pixel per frame when rolling down a slope
+        if (gCurrentSprite.work1 < PIXEL_TO_VELOCITY(0.5))
+            gCurrentSprite.work1 = PIXEL_TO_VELOCITY(0.5);
     }
-    rotationDelta = DIV_SHIFT(gCurrentSprite.work1, 8);
+    rotationDelta = VELOCITY_TO_SUB_PIXEL(gCurrentSprite.work1);
     SpriteUtilMoveXPosForwardOnSlopeDirection(rotationDelta);
     if (gCurrentSprite.status & SS_FACING_RIGHT)
         gCurrentSprite.rotation += rotationDelta;
@@ -731,7 +756,7 @@ void YardProjectileInit(void) {
     gCurrentSprite.hitboxBottom = 8;
     gCurrentSprite.hitboxLeft = -8;
     gCurrentSprite.hitboxRight = 8;
-    gCurrentSprite.pOam = sYardOam_355508;
+    gCurrentSprite.pOam = sYardProjectileOam_Moving;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.pose = SPRITE_POSE_IDLE;
@@ -757,9 +782,9 @@ void YardProjectileMoving(void) {
 }
 
 void YardProjectileExplodingInit(void) {
-    gCurrentSprite.pose = 0x38;
+    gCurrentSprite.pose = SPRITE_POSE_EXPLODING;
     gCurrentSprite.samusCollision = SSC_NONE;
-    gCurrentSprite.pOam = sYardOam_355550;
+    gCurrentSprite.pOam = sYardProjectileOam_Exploding;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
@@ -837,7 +862,7 @@ void YardProjectile(void) {
         case SPRITE_POSE_IDLE:
             YardProjectileMoving();
             break;
-        case 0x38:
+        case SPRITE_POSE_EXPLODING:
             YardProjectileExploding();
             break;
         default:

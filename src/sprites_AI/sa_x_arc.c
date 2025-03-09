@@ -8,6 +8,7 @@
 #include "constants/audio.h"
 #include "constants/connection.h"
 #include "constants/clipdata.h"
+#include "constants/projectile.h"
 #include "constants/sprite.h"
 #include "constants/samus.h"
 #include "constants/sa_x.h"
@@ -523,7 +524,7 @@ void SaXArcWalking(void)
     if (gCurrentSprite.pose != 0x2)
         return;
 
-    if (gSamusData.newProjectile != 0x0)
+    if (gSamusData.newProjectile != PROJECTILE_CATEGORY_NONE)
     {
         if (gCurrentSprite.status & SS_FACING_RIGHT)
         {

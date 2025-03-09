@@ -5,6 +5,7 @@
 
 #include "data/samus_data.h"
 
+#include "constants/projectile.h"
 #include "constants/samus.h"
 
 #include "structs/samus.h"
@@ -348,22 +349,22 @@ void SamusCheckNewProjectile(void)
             {
                 if (gEquipment.beamStatus & BF_CHARGE_BEAM)
                 {
-                    if (gSamusData.chargeBeamCounter < 0x4F)
+                    if (gSamusData.chargeBeamCounter < CHARGE_BEAM_MAX_THRESHOLD)
                     {
                         gSamusData.chargeBeamCounter++;
                         break;
                     }
                     else
                     {
-                        gSamusData.chargeBeamCounter = 0x40;
+                        gSamusData.chargeBeamCounter = CHARGE_BEAM_THRESHOLD;
                         break;
                     }
                 }
             }
             else
             {
-                if (gSamusData.chargeBeamCounter >= 0x40)
-                    gSamusData.newProjectile = 0x5;
+                if (gSamusData.chargeBeamCounter >= CHARGE_BEAM_THRESHOLD)
+                    gSamusData.newProjectile = PROJECTILE_CATEGORY_CHARGED_BEAM;
             }
 
             gSamusData.chargeBeamCounter = 0;
@@ -378,9 +379,9 @@ void SamusCheckNewProjectile(void)
                 if (gSamusData.cooldownTimer == 0 && gEquipment.weaponsStatus & MBF_BOMBS)
                 {
                     if (gSamusData.weaponHighlighted & 0x10)
-                        gSamusData.newProjectile = 0x6;
+                        gSamusData.newProjectile = PROJECTILE_CATEGORY_POWER_BOMB;
                     else
-                        gSamusData.newProjectile = 0x4;
+                        gSamusData.newProjectile = PROJECTILE_CATEGORY_BOMB;
                 }
             }
 
@@ -1684,7 +1685,7 @@ void SamusSetKnockbackPose(void)
         gSamusData.xVelocity = KNOCKBACK_X_VELOCITY;
 
     // Cancel any new projectile
-    gSamusData.newProjectile = 0;
+    gSamusData.newProjectile = PROJECTILE_CATEGORY_NONE;
 }
 
 /*void unk_99a0(void)

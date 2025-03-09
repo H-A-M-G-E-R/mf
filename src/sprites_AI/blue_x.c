@@ -661,6 +661,6 @@ void BlueXAbsorbtion(void)
     }
     else
     {
-        gCurrentSprite.yPosition += ONE_SUB_PIXEL;
+        gCurrentSprite.yPosition += PIXEL_SIZE / 4;
     }
 }

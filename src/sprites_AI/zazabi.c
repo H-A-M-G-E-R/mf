@@ -885,7 +885,7 @@ void ZazabiFalling(void)
         {
             if (gSubSpriteData1.currentAnimationFrame < 5)
             {
-                SpriteUtilCheckCollisionAtPosition(gSubSpriteData1.yPosition + (BLOCK_SIZE * 5 + HALF_BLOCK_SIZE - ONE_SUB_PIXEL * 2), gSubSpriteData1.xPosition);
+                SpriteUtilCheckCollisionAtPosition(gSubSpriteData1.yPosition + (BLOCK_SIZE * 5 + HALF_BLOCK_SIZE - PIXEL_SIZE / 2), gSubSpriteData1.xPosition);
 
                 if (gPreviousCollisionCheck != COLLISION_AIR)
                 {
@@ -902,7 +902,7 @@ void ZazabiFalling(void)
         {
             if (gSubSpriteData1.currentAnimationFrame < 3)
             {
-                SpriteUtilCheckCollisionAtPosition(gSubSpriteData1.yPosition + (BLOCK_SIZE * 5 + HALF_BLOCK_SIZE - ONE_SUB_PIXEL * 2), gSubSpriteData1.xPosition);
+                SpriteUtilCheckCollisionAtPosition(gSubSpriteData1.yPosition + (BLOCK_SIZE * 5 + HALF_BLOCK_SIZE - PIXEL_SIZE / 2), gSubSpriteData1.xPosition);
 
                 if (gPreviousCollisionCheck != COLLISION_AIR)
                 {

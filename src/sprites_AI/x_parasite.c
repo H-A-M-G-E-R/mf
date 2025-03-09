@@ -162,8 +162,8 @@ void XParasiteBossFormationTransforming(void)
             break;
 
         case 5:
-            targetY -= (QUARTER_BLOCK_SIZE - ONE_SUB_PIXEL);
-            targetX -= (BLOCK_SIZE - QUARTER_BLOCK_SIZE / 2 - ONE_SUB_PIXEL);
+            targetY -= (QUARTER_BLOCK_SIZE - PIXEL_SIZE / 4);
+            targetX -= (BLOCK_SIZE - QUARTER_BLOCK_SIZE / 2 - PIXEL_SIZE / 4);
             break;
     }
 

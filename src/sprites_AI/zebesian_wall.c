@@ -70,6 +70,7 @@ void ZebesianWallDecideRandomAction(void) {
 }
 
 void ZebesianWallInit(void) {
+    // BUG: work1 uninitialized
     SpriteUtilTrySetAbsorbXFlag();
     gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
     gCurrentSprite.health = GET_PSPRITE_HEALTH(gCurrentSprite.spriteId);

@@ -365,7 +365,7 @@ void BeamCoreXEyeTransformation(void) {
 
 void BeamCoreXEyeHandleRotation(void) {
     // Why not use the SpriteUtilMakeSpriteRotateTowardsTarget function?
-    u8 intensity = Q_8_8(0.01f);
+    u8 intensity = Q_8_8(1./128);
 
     u8 primary = gCurrentSprite.primarySpriteRamSlot;
     u8 shellSlot = gCurrentSprite.roomSlot;
@@ -386,101 +386,101 @@ void BeamCoreXEyeHandleRotation(void) {
     {
         if (spriteX - BLOCK_SIZE < targetX && spriteX + BLOCK_SIZE > targetX)
         {
-            targetRotation = PI + PI / 2;
+            targetRotation = Q_8_8(6./8);
         }
         if (targetX > spriteX) // BUG: replace it with "else if (targetX > spriteX)" to fix the bug.
         {
             if (spriteY - targetY < BLOCK_SIZE)
                 targetRotation = 0;
             else
-                targetRotation = PI + 3 * PI / 4;
+                targetRotation = Q_8_8(7./8);
         }
         else if (spriteY - targetY < BLOCK_SIZE)
         {
-            targetRotation = PI;
+            targetRotation = Q_8_8(4./8);
         }
         else
         {
-            targetRotation = PI + HALF_BLOCK_SIZE;
+            targetRotation = Q_8_8(5./8);
         }
     }
     else
     {
         if (spriteX - BLOCK_SIZE < targetX && spriteX + BLOCK_SIZE > targetX)
         {
-            targetRotation = PI / 2;
+            targetRotation = Q_8_8(2./8);
         }
         else if (targetX > spriteX)
         {
             if (targetY - spriteY < BLOCK_SIZE)
                 targetRotation = 0;
             else
-                targetRotation = PI / 4;
+                targetRotation = Q_8_8(1./8);
         }
         else if (targetY - spriteY < BLOCK_SIZE)
         {
-            targetRotation = PI;
+            targetRotation = Q_8_8(4./8);
         }
         else
         {
-            targetRotation = 3 * PI / 4;
+            targetRotation = Q_8_8(3./8);
         }
     }
 
     if (targetRotation == 0)
     {
-        if ((u16)(oamRotation - 1) < BLOCK_SIZE * 2 - 1)
+        if ((u16)(oamRotation - 1) < Q_8_8(0.5) - 1)
             oamRotation -= intensity;
-        else if (oamRotation > BLOCK_SIZE * 2 - 1)
+        else if (oamRotation >= Q_8_8(0.5))
             oamRotation += intensity;
     }
-    else if (targetRotation == PI / 4)
+    else if (targetRotation == Q_8_8(1./8))
     {
-        if ((u16)(oamRotation - HALF_BLOCK_SIZE - 1) < BLOCK_SIZE * 2 - 1)
+        if ((u16)(oamRotation - Q_8_8(1./8) - 1) < Q_8_8(0.5) - 1)
             oamRotation -= intensity;
-        else if ((u16)(oamRotation - HALF_BLOCK_SIZE) > BLOCK_SIZE * 2 - 1)
+        else if ((u16)(oamRotation - Q_8_8(1./8)) >= Q_8_8(0.5))
             oamRotation += intensity;
     }
-    else if (targetRotation == PI / 2)
+    else if (targetRotation == Q_8_8(2./8))
     {
-        if ((u16)(oamRotation - BLOCK_SIZE - 1) < BLOCK_SIZE * 2 - 1)
+        if ((u16)(oamRotation - Q_8_8(2./8) - 1) < Q_8_8(0.5) - 1)
             oamRotation -= intensity;
-        else if ((u16)(oamRotation - BLOCK_SIZE) > BLOCK_SIZE * 2 - 1)
+        else if ((u16)(oamRotation - Q_8_8(2./8)) >= Q_8_8(0.5))
             oamRotation += intensity;
     }
-    else if (targetRotation == 3 * PI / 4)
+    else if (targetRotation == Q_8_8(3./8))
     {
-        if ((u16)(oamRotation - (BLOCK_SIZE + HALF_BLOCK_SIZE) - 1) < BLOCK_SIZE * 2 - 1)
+        if ((u16)(oamRotation - Q_8_8(3./8) - 1) < Q_8_8(0.5) - 1)
             oamRotation -= intensity;
-        else if ((u16)(oamRotation - (BLOCK_SIZE + HALF_BLOCK_SIZE)) > BLOCK_SIZE * 2 - 1)
+        else if ((u16)(oamRotation - Q_8_8(3./8)) >= Q_8_8(0.5))
             oamRotation += intensity;
     }
-    else if (targetRotation == PI)
+    else if (targetRotation == Q_8_8(4./8))
     {
-        if ((u16)(oamRotation - 1) < BLOCK_SIZE * 2 - 1)
+        if ((u16)(oamRotation - 1) < Q_8_8(0.5) - 1)
             oamRotation += intensity;
-        else if (oamRotation > BLOCK_SIZE * 2)
+        else if (oamRotation > Q_8_8(0.5))
             oamRotation -= intensity;
     }
-    else if (targetRotation == PI + PI / 4)
+    else if (targetRotation == Q_8_8(5./8))
     {
-        if ((u16)(oamRotation - HALF_BLOCK_SIZE - 1) < BLOCK_SIZE * 2 - 1)
+        if ((u16)(oamRotation - Q_8_8(1./8) - 1) < Q_8_8(0.5) - 1)
             oamRotation += intensity;
-        else if ((u16)(oamRotation - HALF_BLOCK_SIZE - 1) > BLOCK_SIZE * 2 - 1)
+        else if ((u16)(oamRotation - Q_8_8(1./8) - 1) >= Q_8_8(0.5))
             oamRotation -= intensity;
     }
-    else if (targetRotation == PI + PI / 2)
+    else if (targetRotation == Q_8_8(6./8))
     {
-        if ((u16)(oamRotation - BLOCK_SIZE - 1) < BLOCK_SIZE * 2 - 1)
+        if ((u16)(oamRotation - Q_8_8(2./8) - 1) < Q_8_8(0.5) - 1)
             oamRotation += intensity;
-        else if ((u16)(oamRotation - BLOCK_SIZE - 1) > BLOCK_SIZE * 2 - 1)
+        else if ((u16)(oamRotation - Q_8_8(2./8) - 1) >= Q_8_8(0.5))
             oamRotation -= intensity;
     }
-    else if (targetRotation == PI + 3 * PI / 4)
+    else if (targetRotation == Q_8_8(7./8))
     {
-        if ((u16)(oamRotation - (BLOCK_SIZE + HALF_BLOCK_SIZE) - 1) < BLOCK_SIZE * 2 - 1)
+        if ((u16)(oamRotation - Q_8_8(3./8) - 1) < Q_8_8(0.5) - 1)
             oamRotation += intensity;
-        else if ((u16)(oamRotation - (BLOCK_SIZE + HALF_BLOCK_SIZE) - 1) > BLOCK_SIZE * 2 - 1)
+        else if ((u16)(oamRotation - Q_8_8(3./8) - 1) >= Q_8_8(0.5))
             oamRotation -= intensity;
     }
 
@@ -594,23 +594,23 @@ void BeamCoreXEyeOpened(void) {
         y = gCurrentSprite.yPosition;
         x = gCurrentSprite.xPosition;
         rotation = gCurrentSprite.work1;
-        if (rotation < Q_8_8(1.f/4) || rotation >= Q_8_8(3.f/4))
+        if (rotation < Q_8_8(1./4) || rotation >= Q_8_8(3./4))
             xFlip = SS_X_FLIP;
         else
             xFlip = 0;
-        if (rotation > Q_8_8(1.f/16) && rotation <= Q_8_8(3.f/16))
+        if (rotation > Q_8_8(1./16) && rotation <= Q_8_8(3./16))
             direction = ACD_DIAGONAL_DOWN;
-        else if (rotation > Q_8_8(3.f/16) && rotation <= Q_8_8(5.f/16))
+        else if (rotation > Q_8_8(3./16) && rotation <= Q_8_8(5./16))
             direction = ACD_DOWN;
-        else if (rotation > Q_8_8(5.f/16) && rotation <= Q_8_8(7.f/16))
+        else if (rotation > Q_8_8(5./16) && rotation <= Q_8_8(7./16))
             direction = ACD_DIAGONAL_DOWN;
-        else if (rotation > Q_8_8(7.f/16) && rotation <= Q_8_8(9.f/16))
+        else if (rotation > Q_8_8(7./16) && rotation <= Q_8_8(9./16))
             direction = ACD_FORWARD;
-        else if (rotation > Q_8_8(9.f/16) && rotation <= Q_8_8(11.f/16))
+        else if (rotation > Q_8_8(9./16) && rotation <= Q_8_8(11./16))
             direction = ACD_DIAGONAL_UP;
-        else if (rotation > Q_8_8(11.f/16) && rotation <= Q_8_8(13.f/16))
+        else if (rotation > Q_8_8(11./16) && rotation <= Q_8_8(13./16))
             direction = ACD_UP;
-        else if (rotation > Q_8_8(13.f/16) && rotation <= Q_8_8(15.f/16))
+        else if (rotation > Q_8_8(13./16) && rotation <= Q_8_8(15./16))
             direction = ACD_DIAGONAL_UP;
         else
             direction = ACD_FORWARD;

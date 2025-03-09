@@ -226,8 +226,8 @@ void SavePlatformSinking(void)
         }
         else
         {
-            gCurrentSprite.yPosition += ONE_SUB_PIXEL;
-            gSamusData.yPosition += ONE_SUB_PIXEL;
+            gCurrentSprite.yPosition += PIXEL_SIZE / 4;
+            gSamusData.yPosition += PIXEL_SIZE / 4;
 
             if (MOD_AND(gFrameCounter8Bit, 16) == 0)
                 SoundPlay(0x10B);
@@ -340,17 +340,17 @@ void SavePlatformRising(void)
 
     if (gCurrentSprite.yPosition > gCurrentSprite.xParasiteTimer)
     {
-        gCurrentSprite.yPosition -= ONE_SUB_PIXEL;
+        gCurrentSprite.yPosition -= PIXEL_SIZE / 4;
 
         if (gCurrentSprite.status & SS_SAMUS_ON_TOP)
-            gSamusData.yPosition -= ONE_SUB_PIXEL;
+            gSamusData.yPosition -= PIXEL_SIZE / 4;
     }
     else
     {
-        gCurrentSprite.yPosition += ONE_SUB_PIXEL;
+        gCurrentSprite.yPosition += PIXEL_SIZE / 4;
 
         if (gCurrentSprite.status & SS_SAMUS_ON_TOP)
-            gSamusData.yPosition += ONE_SUB_PIXEL;
+            gSamusData.yPosition += PIXEL_SIZE / 4;
     }
 
     if (MOD_AND(gFrameCounter8Bit, 16) == 0)
@@ -370,10 +370,10 @@ void SavePlatformRisingAfterPrompt(void)
         return;
     }
 
-    gCurrentSprite.yPosition -= ONE_SUB_PIXEL;
+    gCurrentSprite.yPosition -= PIXEL_SIZE / 4;
 
     if (gCurrentSprite.status & SS_SAMUS_ON_TOP)
-        gSamusData.yPosition -= ONE_SUB_PIXEL;
+        gSamusData.yPosition -= PIXEL_SIZE / 4;
 
     if (MOD_AND(gFrameCounter8Bit, 16) == 0)
         SoundPlay(0x10B);

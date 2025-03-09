@@ -1973,8 +1973,7 @@ void SerrisBlockCrumbling(void)
  */
 void SerrisBlockFalling(void)
 {
-    gCurrentSprite.yPosition += QUARTER_BLOCK_SIZE;
-    gCurrentSprite.yPosition += ONE_SUB_PIXEL;
+    gCurrentSprite.yPosition += PIXEL_TO_SUB_PIXEL(4.25);
 
     // Wait for the sprite to exit the room and be off screen
     if (gCurrentSprite.yPosition >= BLOCK_SIZE * 20 && !(gCurrentSprite.status & SS_ON_SCREEN))

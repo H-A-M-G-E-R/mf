@@ -8,6 +8,7 @@
 #include "data/projectile_data.h"
 
 #include "constants/clipdata.h"
+#include "constants/projectile.h"
 #include "constants/samus.h"
 #include "constants/sprite.h"
 
@@ -1148,26 +1149,32 @@ void SpriteUtilAlignYPosOnSlope(void)
     yPosition = gCurrentSprite.yPosition;
     xPosition = gCurrentSprite.xPosition;
 
+    // Check the block one pixel above the sprite's feet (or the block directly above if the feet is near the top of the block)
     blockTop = SpriteUtilCheckVerticalCollisionAtPosition(yPosition - PIXEL_SIZE, xPosition);
 
     if ((gPreviousVerticalCollisionCheck & 0xF) > 1)
     {
+        // Align to top of block if sloped
         gCurrentSprite.yPosition = blockTop;
         return;
     }
 
+    // Check the block directly below the sprite's feet (pointless?)
     blockTop = SpriteUtilCheckVerticalCollisionAtPosition(yPosition, xPosition);
 
     if ((gPreviousVerticalCollisionCheck & 0xF) > 1)
     {
+        // Align to top of block if sloped
         gCurrentSprite.yPosition = blockTop;
         return;
     }
 
+    // Check the block one pixel below the sprite's feet (or the block directly below if the feet is near the bottom of the block)
     blockTop = SpriteUtilCheckVerticalCollisionAtPosition(yPosition + PIXEL_SIZE, xPosition);
 
     if (gPreviousVerticalCollisionCheck != COLLISION_AIR)
     {
+        // Align to top of block if not air
         gCurrentSprite.yPosition = blockTop;
     }
 }
@@ -1185,26 +1192,32 @@ void SpriteUtilAlignYPosOnSlopeAtHitboxBottom(void)
     yPosition = gCurrentSprite.yPosition + gCurrentSprite.hitboxBottom;
     xPosition = gCurrentSprite.xPosition;
 
+    // Check the block one pixel above the sprite's feet (or the block directly above if the feet is near the top of the block)
     blockTop = SpriteUtilCheckVerticalCollisionAtPosition(yPosition - PIXEL_SIZE, xPosition);
 
     if ((gPreviousVerticalCollisionCheck & 0xF) > 1)
     {
+        // Align to top of block if sloped
         gCurrentSprite.yPosition = blockTop - gCurrentSprite.hitboxBottom;
         return;
     }
 
+    // Check the block directly below the sprite's feet (pointless?)
     blockTop = SpriteUtilCheckVerticalCollisionAtPosition(yPosition, xPosition);
 
     if ((gPreviousVerticalCollisionCheck & 0xF) > 1)
     {
+        // Align to top of block if sloped
         gCurrentSprite.yPosition = blockTop - gCurrentSprite.hitboxBottom;
         return;
     }
 
+    // Check the block one pixel below the sprite's feet (or the block directly below if the feet is near the bottom of the block)
     blockTop = SpriteUtilCheckVerticalCollisionAtPosition(yPosition + PIXEL_SIZE, xPosition);
 
     if (gPreviousVerticalCollisionCheck != COLLISION_AIR)
     {
+        // Align to top of block if not air
         gCurrentSprite.yPosition = blockTop - gCurrentSprite.hitboxBottom;
     }
 }
@@ -2739,7 +2752,7 @@ u32 SpriteUtilCheckSamusPassThroughSprite(u8 spriteSlot)
         case SPOSE_STARTING_WALL_JUMP:
         case SPOSE_WALL_JUMPING:
         case SPOSE_SPACE_JUMPING:
-            if (gSamusData.chargeBeamCounter >= 0x40) // FIXME define
+            if (gSamusData.chargeBeamCounter >= CHARGE_BEAM_THRESHOLD)
             {
                 if (spriteSlot == 0x80)
                 {
@@ -2888,7 +2901,7 @@ u32 SpriteUtilCheckSamusSudoScrew(u8 spriteSlot)
         case SPOSE_STARTING_WALL_JUMP:
         case SPOSE_WALL_JUMPING:
         case SPOSE_SPACE_JUMPING:
-            if (gSamusData.chargeBeamCounter >= 0x40) // FIXME define
+            if (gSamusData.chargeBeamCounter >= CHARGE_BEAM_THRESHOLD)
             {
                 if (spriteSlot == 0x80)
                 {

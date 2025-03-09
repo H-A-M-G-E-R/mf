@@ -105,7 +105,7 @@ struct SamusEnvironmentalEffect {
     u8 effect;
     u8 animationDurationCounter;
     u8 currentAnimationFrame;
-    s8 externalTimer;
+    u8 externalTimer;
     u8 timer1;
     u8 timer2;
     u8 unk_6;

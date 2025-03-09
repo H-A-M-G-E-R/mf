@@ -90,7 +90,7 @@ void ChozoStatueTransforming(void) {
         SpriteLoadGfx(PSPRITE_CHARGE_BEAM_CORE_X, 0, gCurrentSprite.xParasiteTimer);
         if (gCurrentSprite.xParasiteTimer == 0) {
             gCurrentSprite.pose = SPRITE_POSE_SPAWNING_FROM_X_INIT;
-            gCurrentSprite.spriteId = 0x56;
+            gCurrentSprite.spriteId = PSPRITE_CHARGE_BEAM_CORE_X;
             gCurrentSprite.status |= SS_NOT_DRAWN;
         }
     } else if (gCurrentSprite.xParasiteTimer == sizeof(sChargeBeamCoreXGfx) / 512)

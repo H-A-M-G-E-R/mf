@@ -199,6 +199,8 @@ void SpriteUpdateAnimation(void)
     gCurrentSprite.animationDurationCounter++;
 
     // Check timer for current frame
+    // If timer is set to 255 or UCHAR_MAX, animationDurationCounter overflows to 0 after incrementing it,
+    // the condition below is always true, and the animation gets stuck at the last frame.
     if (gCurrentSprite.pOam[gCurrentSprite.currentAnimationFrame].timer >= gCurrentSprite.animationDurationCounter)
         return;
 

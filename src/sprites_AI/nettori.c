@@ -1315,9 +1315,9 @@ void SamusEaterSporeFloating(void)
     gCurrentSprite.yPosition += yMovement;
 
     if (gCurrentSprite.work2)
-        gCurrentSprite.yPosition += ONE_SUB_PIXEL * 2;
+        gCurrentSprite.yPosition += PIXEL_SIZE / 2;
     else
-        gCurrentSprite.yPosition += ONE_SUB_PIXEL * 1;
+        gCurrentSprite.yPosition += PIXEL_SIZE / 4;
 
     if (gCurrentSprite.status & SS_X_FLIP)
     {
@@ -1332,7 +1332,7 @@ void SamusEaterSporeFloating(void)
 
         gCurrentSprite.work3 = offset + 1;
         gCurrentSprite.xPosition += xMovement;
-        gCurrentSprite.xPosition += (PIXEL_SIZE - ONE_SUB_PIXEL);
+        gCurrentSprite.xPosition += PIXEL_TO_SUB_PIXEL(0.75);
 
         SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition + QUARTER_BLOCK_SIZE);
     
@@ -1356,7 +1356,7 @@ void SamusEaterSporeFloating(void)
 
         gCurrentSprite.work3 = offset + 1;
         gCurrentSprite.xPosition += xMovement;
-        gCurrentSprite.xPosition -= (PIXEL_SIZE - ONE_SUB_PIXEL);
+        gCurrentSprite.xPosition -= PIXEL_TO_SUB_PIXEL(0.75);
 
         SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition, gCurrentSprite.xPosition - QUARTER_BLOCK_SIZE);
     

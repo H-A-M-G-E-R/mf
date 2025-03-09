@@ -5,6 +5,7 @@
 #include "globals.h"
 
 #include "constants/particle.h"
+#include "constants/projectile.h"
 #include "constants/samus.h"
 
 #include "data/engine_pointers.h"
@@ -1054,7 +1055,7 @@ void ParticleChargingBeam(void) {
     gCurrentParticle.yPosition = gArmCannonY;
     gCurrentParticle.xPosition = gArmCannonX;
 
-    if (gSamusData.chargeBeamCounter <= 15) { // FIXME define
+    if (gSamusData.chargeBeamCounter < CHARGE_BEAM_START_THRESHOLD) {
         gCurrentParticle.status = 0;
         if (gCurrentParticle.stage <= 1)
             StopBeamChargingSound();
@@ -1080,7 +1081,7 @@ void ParticleChargingBeam(void) {
             PlayBeamChargingSound();
             break;
         case 1:
-            if (gSamusData.chargeBeamCounter >= 64) { // FIXME define
+            if (gSamusData.chargeBeamCounter >= CHARGE_BEAM_THRESHOLD) {
                 gCurrentParticle.stage++;
                 gCurrentParticle.currentAnimationFrame = 0;
                 gCurrentParticle.animationDurationCounter = 0;
@@ -1102,7 +1103,7 @@ void ParticleChargingBeamSparks(void) {
     gCurrentParticle.yPosition = gArmCannonY;
     gCurrentParticle.xPosition = gArmCannonX;
 
-    if (gSamusData.chargeBeamCounter <= 15) { // FIXME define
+    if (gSamusData.chargeBeamCounter < CHARGE_BEAM_START_THRESHOLD) {
         gCurrentParticle.status = 0;
         return;
     }
@@ -1125,7 +1126,7 @@ void ParticleChargingBeamSparks(void) {
             ParticleUpdateAnimation(sParticleOam_ChargingBeamSparksBegin);
             break;
         case 1:
-            if (gSamusData.chargeBeamCounter >= 64) { // FIXME define
+            if (gSamusData.chargeBeamCounter >= CHARGE_BEAM_THRESHOLD) {
                 gCurrentParticle.stage++;
                 gCurrentParticle.currentAnimationFrame = 0;
                 gCurrentParticle.animationDurationCounter = 0;
@@ -1154,7 +1155,7 @@ void ParticleChargingMissile(void) {
     gCurrentParticle.yPosition = gArmCannonY;
     gCurrentParticle.xPosition = gArmCannonX;
 
-    if ((u32)gSamusEnvironmentalEffects[1].externalTimer <= 15) { // FIXME define
+    if (gSamusEnvironmentalEffects[1].externalTimer < CHARGE_BEAM_START_THRESHOLD) {
         gCurrentParticle.status = 0;
         if (gCurrentParticle.stage <= 1)
             SoundStop(0xeb);
@@ -1180,7 +1181,7 @@ void ParticleChargingMissile(void) {
             SoundPlay(0xeb);
             break;
         case 1:
-            if (gSamusEnvironmentalEffects[1].externalTimer < 0) {
+            if (gSamusEnvironmentalEffects[1].externalTimer >= CHARGE_MISSILE_THRESHOLD) {
                 gCurrentParticle.stage++;
                 gCurrentParticle.currentAnimationFrame = 0;
                 gCurrentParticle.animationDurationCounter = 0;

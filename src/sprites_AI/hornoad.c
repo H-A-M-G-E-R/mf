@@ -354,10 +354,10 @@ void HornoadFallingInit(void)
 }
 
 /**
- * @brief 1ccec | 80 | To document
+ * @brief 1ccec | 80 | Initializes a hornoad after being touched by Samus
  * 
  */
-void unk_1ccec(void)
+void HornoadTouchedSamusInit(void)
 {
     gCurrentSprite.work2 = 8;
 
@@ -380,9 +380,9 @@ void unk_1ccec(void)
     gCurrentSprite.currentAnimationFrame = 0;
 
     if (gCurrentSprite.properties & SP_CAN_ABSORB_X)
-        gCurrentSprite.pOam = sHornoadOam_2eb594;
+        gCurrentSprite.pOam = sHornoadOam_TouchedSamusHidden;
     else
-        gCurrentSprite.pOam = sHornoadOam_2eb82c;
+        gCurrentSprite.pOam = sHornoadOam_TouchedSamus;
 }
 
 /**
@@ -477,18 +477,18 @@ void HornoadJumping(void)
         else if (gCurrentSprite.properties & SP_CAN_ABSORB_X)
         {
             if (movement > 0)
-                gCurrentSprite.xPosition += ONE_SUB_PIXEL * 1;
+                gCurrentSprite.xPosition += PIXEL_SIZE / 4;
             else if (MOD_AND(gSpriteRandomNumber, 2))
-                gCurrentSprite.xPosition += ONE_SUB_PIXEL * 2;
+                gCurrentSprite.xPosition += PIXEL_SIZE / 2;
             else    
-                gCurrentSprite.xPosition += ONE_SUB_PIXEL * 1;
+                gCurrentSprite.xPosition += PIXEL_SIZE / 4;
         }
         else
         {
             if (movement > 0)
-                gCurrentSprite.xPosition += ONE_SUB_PIXEL * 2;
+                gCurrentSprite.xPosition += PIXEL_SIZE / 2;
             else    
-                gCurrentSprite.xPosition += ONE_SUB_PIXEL * 3;
+                gCurrentSprite.xPosition += PIXEL_SIZE * 3 / 4;
         }
     }
     else
@@ -504,18 +504,18 @@ void HornoadJumping(void)
         else if (gCurrentSprite.properties & SP_CAN_ABSORB_X)
         {
             if (movement > 0)
-                gCurrentSprite.xPosition -= ONE_SUB_PIXEL * 1;
+                gCurrentSprite.xPosition -= PIXEL_SIZE / 4;
             else if (MOD_AND(gSpriteRandomNumber, 2))
-                gCurrentSprite.xPosition -= ONE_SUB_PIXEL * 2;
+                gCurrentSprite.xPosition -= PIXEL_SIZE / 2;
             else    
-                gCurrentSprite.xPosition -= ONE_SUB_PIXEL * 1;
+                gCurrentSprite.xPosition -= PIXEL_SIZE / 4;
         }
         else
         {
             if (movement > 0)
-                gCurrentSprite.xPosition -= ONE_SUB_PIXEL * 2;
+                gCurrentSprite.xPosition -= PIXEL_SIZE / 2;
             else    
-                gCurrentSprite.xPosition -= ONE_SUB_PIXEL * 3;
+                gCurrentSprite.xPosition -= PIXEL_SIZE * 3 / 4;
         }
     }
 
@@ -616,7 +616,7 @@ void HornoadLanding(void)
         {
             gCurrentSprite.pose = 0x1C;
 
-            gCurrentSprite.pOam = sHornoadOam_2eb844;
+            gCurrentSprite.pOam = sHornoadOam_HalfAsleepHidden;
             gCurrentSprite.animationDurationCounter = 0;
             gCurrentSprite.currentAnimationFrame = 0;
 
@@ -1172,8 +1172,8 @@ void Hornoad(void)
             HornoadFalling();
             break;
 
-        case 0x37:
-            unk_1ccec();
+        case SPRITE_POSE_STOPPED:
+            HornoadTouchedSamusInit();
             break;
 
         case SPRITE_POSE_DYING_INIT:

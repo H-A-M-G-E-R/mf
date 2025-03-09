@@ -1953,11 +1953,11 @@ void SaXBeamMove(void)
     switch (gCurrentSprite.roomSlot)
     {
         case DIAG_AIM_UP:
-            gCurrentSprite.yPosition -= (QUARTER_BLOCK_SIZE - ONE_SUB_PIXEL);
+            gCurrentSprite.yPosition -= PIXEL_TO_SUB_PIXEL(3.75);
 
             if (gCurrentSprite.status & SS_X_FLIP)
             {
-                gCurrentSprite.xPosition += (QUARTER_BLOCK_SIZE - ONE_SUB_PIXEL);
+                gCurrentSprite.xPosition += PIXEL_TO_SUB_PIXEL(3.75);
 
                 yMovement = sSaXBeamDiagonalYMovement[offset];
                 xMovement = yMovement;
@@ -1970,7 +1970,7 @@ void SaXBeamMove(void)
             }
             else
             {
-                gCurrentSprite.xPosition -= (QUARTER_BLOCK_SIZE - ONE_SUB_PIXEL);
+                gCurrentSprite.xPosition -= PIXEL_TO_SUB_PIXEL(3.75);
 
                 yMovement = sSaXBeamDiagonalYMovement[offset];
                 xMovement = sSaXBeamDiagonalXMovement[offset];
@@ -1988,11 +1988,11 @@ void SaXBeamMove(void)
             break;
 
         case DIAG_AIM_DOWN:
-            gCurrentSprite.yPosition += (QUARTER_BLOCK_SIZE - ONE_SUB_PIXEL);
+            gCurrentSprite.yPosition += PIXEL_TO_SUB_PIXEL(3.75);
 
             if (gCurrentSprite.status & SS_X_FLIP)
             {
-                gCurrentSprite.xPosition += (QUARTER_BLOCK_SIZE - ONE_SUB_PIXEL);
+                gCurrentSprite.xPosition += PIXEL_TO_SUB_PIXEL(3.75);
 
                 yMovement = sSaXBeamDiagonalYMovement[offset];
                 xMovement = sSaXBeamDiagonalXMovement[offset];
@@ -2005,7 +2005,7 @@ void SaXBeamMove(void)
             }
             else
             {
-                gCurrentSprite.xPosition -= (QUARTER_BLOCK_SIZE - ONE_SUB_PIXEL);
+                gCurrentSprite.xPosition -= PIXEL_TO_SUB_PIXEL(3.75);
 
                 yMovement = sSaXBeamDiagonalYMovement[offset];
                 xMovement = yMovement;

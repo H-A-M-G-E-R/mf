@@ -159,7 +159,7 @@ void ProjectileUpdate(void)
     gArmCannonX = PIXEL_TO_SUB_PIXEL(SUB_PIXEL_TO_PIXEL(gSamusData.xPosition) + gSamusGraphicsInfo.armCannonXOffset);
 
     // Check spawn the charging beam particle effect
-    if (gSamusData.chargeBeamCounter == 0x10)
+    if (gSamusData.chargeBeamCounter == CHARGE_BEAM_START_THRESHOLD)
     {
         checks = FALSE;
 
@@ -181,7 +181,7 @@ void ProjectileUpdate(void)
     }
 
     // Check spawn the charging missile particle effect
-    if ((u32)gSamusEnvironmentalEffects[1].externalTimer == 0x10)
+    if (gSamusEnvironmentalEffects[1].externalTimer == CHARGE_MISSILE_START_THRESHOLD)
     {
         checks = FALSE;
 
@@ -205,7 +205,7 @@ void ProjectileUpdate(void)
     // If the spawn is successful, cooldown and other things are set depending on the type of projectile.
     switch (gSamusData.newProjectile)
     {
-        case 1:
+        case PROJECTILE_CATEGORY_UNCHARGED_BEAM:
             beams = gEquipment.beamStatus;
             if (beams & BF_WAVE_BEAM)
             {
@@ -267,16 +267,16 @@ void ProjectileUpdate(void)
                 }
             }
 
-            gSamusData.newProjectile = 0;
+            gSamusData.newProjectile = PROJECTILE_CATEGORY_NONE;
             break;
 
-        case 2:
+        case PROJECTILE_CATEGORY_MISSILE:
             missiles = gEquipment.weaponsStatus;
             if (missiles & MBF_DIFFUSION_MISSILES)
             {
                 if (ProjectileCount(PROJ_TYPE_DIFFUSION_MISSILE, 2))
                 {
-                    if (gSamusEnvironmentalEffects[1].externalTimer < 0)
+                    if (gSamusEnvironmentalEffects[1].externalTimer >= CHARGE_MISSILE_THRESHOLD)
                         ProjectileInit(PROJ_TYPE_CHARGED_DIFFUSION_MISSILE, gArmCannonY, gArmCannonX, 0);
                     else
                         ProjectileInit(PROJ_TYPE_DIFFUSION_MISSILE, gArmCannonY, gArmCannonX, 0);
@@ -309,30 +309,30 @@ void ProjectileUpdate(void)
                 }
             }
 
-            gSamusData.newProjectile = 0;
+            gSamusData.newProjectile = PROJECTILE_CATEGORY_NONE;
             break;
 
-        case 4:
+        case PROJECTILE_CATEGORY_BOMB:
             if (ProjectileCount(PROJ_TYPE_BOMB, 4))
             {
                 ProjectileInit(PROJ_TYPE_BOMB, gSamusData.yPosition, gSamusData.xPosition, 0);
                 gSamusData.cooldownTimer = 7;
             }
 
-            gSamusData.newProjectile = 0;
+            gSamusData.newProjectile = PROJECTILE_CATEGORY_NONE;
             break;
 
-        case 6:
+        case PROJECTILE_CATEGORY_POWER_BOMB:
             if (ProjectileCount(PROJ_TYPE_POWER_BOMB, 1) && gCurrentPowerBomb.animationState == 0)
             {
                 ProjectileInit(PROJ_TYPE_POWER_BOMB, gSamusData.yPosition, gSamusData.xPosition, 0);
                 gSamusData.cooldownTimer = 5;
             }
 
-            gSamusData.newProjectile = 0;
+            gSamusData.newProjectile = PROJECTILE_CATEGORY_NONE;
             break;
 
-        case 5:
+        case PROJECTILE_CATEGORY_CHARGED_BEAM:
             beams = gEquipment.beamStatus;
             if (beams & BF_WAVE_BEAM)
             {
@@ -394,7 +394,7 @@ void ProjectileUpdate(void)
                 }
             }
 
-            gSamusData.newProjectile = 0;
+            gSamusData.newProjectile = PROJECTILE_CATEGORY_NONE;
             break;
 
     }
@@ -3641,7 +3641,7 @@ void ProjectileCheckSamusBombBounce(void)
                     else
                         direction = FORCED_MOVEMENT_BOMB_JUMP;
         
-                    if (samusX < projX + (PIXEL_SIZE + ONE_SUB_PIXEL) && samusX > projX - (PIXEL_SIZE + ONE_SUB_PIXEL))
+                    if (samusX < projX + PIXEL_TO_SUB_PIXEL(1.25) && samusX > projX - PIXEL_TO_SUB_PIXEL(1.25))
                         SamusBombBounce(direction + FORCED_MOVEMENT_BOMB_JUMP_UP);
                     else if (bombMiddleX >= previousX)
                         SamusBombBounce(direction + FORCED_MOVEMENT_BOMB_JUMP_LEFT);

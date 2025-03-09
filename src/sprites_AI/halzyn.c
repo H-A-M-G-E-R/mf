@@ -209,14 +209,14 @@ void HalzynSwinging(void)
     }
     else if (gCurrentSprite.work4 == 1)
     {
-        gCurrentSprite.yPosition -= ONE_SUB_PIXEL;
+        gCurrentSprite.yPosition -= PIXEL_SIZE / 4;
 
         if (gCurrentSprite.yPosition == gCurrentSprite.xParasiteTimer)
             gCurrentSprite.work4 = 0;
     }
     else if (gCurrentSprite.work4 == 2)
     {
-        gCurrentSprite.yPosition += ONE_SUB_PIXEL;
+        gCurrentSprite.yPosition += PIXEL_SIZE / 4;
 
         if (gCurrentSprite.yPosition == gCurrentSprite.xParasiteTimer)
             gCurrentSprite.work4 = 0;
@@ -277,10 +277,10 @@ void HalzynLunging(void)
         xPosition = gCurrentSprite.xPosition;
 
         SpriteDebrisInit(0, DEBRIS_TYPE_FALLING | DEBRIS_TYPE_HOPPING_SLOW_LEFT, yPosition - PIXEL_SIZE, xPosition);
-        SpriteDebrisInit(0, DEBRIS_TYPE_HOPPING_SLOW_LEFT, yPosition - (PIXEL_SIZE + PIXEL_SIZE / 2), xPosition - (QUARTER_BLOCK_SIZE - ONE_SUB_PIXEL));
+        SpriteDebrisInit(0, DEBRIS_TYPE_HOPPING_SLOW_LEFT, yPosition - (PIXEL_SIZE + PIXEL_SIZE / 2), xPosition - PIXEL_TO_SUB_PIXEL(3.75));
         SpriteDebrisInit(0, DEBRIS_TYPE_HOPPING_SLOW_RIGHT, yPosition - PIXEL_SIZE / 2, xPosition + PIXEL_SIZE * 2);
         SpriteDebrisInit(0, DEBRIS_TYPE_HOPPING_FAST_RIGHT, yPosition - PIXEL_SIZE * 2, xPosition + (QUARTER_BLOCK_SIZE + PIXEL_SIZE / 2));
-        SpriteDebrisInit(0, DEBRIS_TYPE_HOPPING_FAST_LEFT, yPosition - PIXEL_SIZE * 2, xPosition - (PIXEL_SIZE * 2 - ONE_SUB_PIXEL));
+        SpriteDebrisInit(0, DEBRIS_TYPE_HOPPING_FAST_LEFT, yPosition - PIXEL_SIZE * 2, xPosition - PIXEL_TO_SUB_PIXEL(1.75));
 
         SoundPlay(0x152);
         return;
@@ -564,7 +564,7 @@ void HalzynWingFalling(void)
             ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition + HALF_BLOCK_SIZE, 0x27);
         }
 
-        gCurrentSprite.xPosition += ONE_SUB_PIXEL;
+        gCurrentSprite.xPosition += PIXEL_SIZE / 4;
 
         blockTop = SpriteUtilCheckVerticalCollisionAtPositionSlopes(gCurrentSprite.yPosition, gCurrentSprite.xPosition + HALF_BLOCK_SIZE);
     }
@@ -575,7 +575,7 @@ void HalzynWingFalling(void)
             ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition - HALF_BLOCK_SIZE, 0x27);
         }
 
-        gCurrentSprite.xPosition -= ONE_SUB_PIXEL;
+        gCurrentSprite.xPosition -= PIXEL_SIZE / 4;
 
         blockTop = SpriteUtilCheckVerticalCollisionAtPositionSlopes(gCurrentSprite.yPosition, gCurrentSprite.xPosition - HALF_BLOCK_SIZE);
     }

@@ -93,7 +93,7 @@ void RipperIdle(void)
         if (gPreviousCollisionCheck == COLLISION_SOLID)
             gCurrentSprite.pose = 0x3;
         else
-            gCurrentSprite.xPosition += ONE_SUB_PIXEL * 2;
+            gCurrentSprite.xPosition += PIXEL_SIZE / 2;
     }
     else
     {
@@ -103,7 +103,7 @@ void RipperIdle(void)
         if (gPreviousCollisionCheck == COLLISION_SOLID)
             gCurrentSprite.pose = 0x3;
         else
-            gCurrentSprite.xPosition -= ONE_SUB_PIXEL * 2;
+            gCurrentSprite.xPosition -= PIXEL_SIZE / 2;
     }
 }
 

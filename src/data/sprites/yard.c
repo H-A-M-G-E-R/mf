@@ -4,7 +4,7 @@
 const u32 sYardGfx[512 * 3] = INCBIN_U32("data/sprites/yard.gfx");
 const u16 sYardPal[16 * 3] = INCBIN_U16("data/sprites/yard.pal");
 
-static const u16 sYardOam_3552c8_Frame0[] = {
+static const u16 sYardOam_CrawlingHorizontal_Frame0[] = {
     6,
     OBJ_SHAPE_HORIZONTAL | 0xeb, OBJ_SIZE_32x16 | 0x1ec, OBJ_PALETTE_8 | 0x20b,
     0xf3, 0x1f5, OBJ_PALETTE_8 | 0x240,
@@ -14,7 +14,7 @@ static const u16 sYardOam_3552c8_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xeb, 0x1f6, OBJ_PALETTE_8 | 0x241
 };
 
-static const u16 sYardOam_3552c8_Frame1[] = {
+static const u16 sYardOam_CrawlingHorizontal_Frame1[] = {
     6,
     0xf3, 0x1f3, OBJ_PALETTE_8 | 0x240,
     OBJ_SHAPE_HORIZONTAL | 0xe3, 0x1fb, OBJ_PALETTE_8 | 0x222,
@@ -24,7 +24,7 @@ static const u16 sYardOam_3552c8_Frame1[] = {
     OBJ_SHAPE_HORIZONTAL | 0xf7, 0x1f9, OBJ_PALETTE_8 | 0x220
 };
 
-static const u16 sYardOam_3552c8_Frame2[] = {
+static const u16 sYardOam_CrawlingHorizontal_Frame2[] = {
     6,
     0xf2, 0x1f5, OBJ_PALETTE_8 | 0x240,
     OBJ_SHAPE_HORIZONTAL | 0xe9, OBJ_SIZE_32x16 | 0x1ec, OBJ_PALETTE_8 | 0x20b,
@@ -34,7 +34,7 @@ static const u16 sYardOam_3552c8_Frame2[] = {
     OBJ_SHAPE_VERTICAL | 0xe9, 0x1f6, OBJ_PALETTE_8 | 0x241
 };
 
-static const u16 sYardOam_3552e8_Frame0[] = {
+static const u16 sYardOam_ChargingHorizontal_Frame0[] = {
     6,
     0xef, 0x1f5, OBJ_PALETTE_8 | 0x240,
     OBJ_SHAPE_HORIZONTAL | 0xe9, OBJ_SIZE_32x16 | 0x1ec, OBJ_PALETTE_8 | 0x20b,
@@ -44,7 +44,7 @@ static const u16 sYardOam_3552e8_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xe9, 0x1f6, OBJ_PALETTE_8 | 0x241
 };
 
-static const u16 sYardOam_3552e8_Frame1[] = {
+static const u16 sYardOam_ChargingHorizontal_Frame1[] = {
     5,
     0xf0, 0x2, OBJ_PALETTE_8 | 0x236,
     OBJ_SHAPE_HORIZONTAL | 0xe6, 0x0, OBJ_PALETTE_8 | 0x20f,
@@ -53,7 +53,7 @@ static const u16 sYardOam_3552e8_Frame1[] = {
     0xf1, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_8 | 0x204
 };
 
-static const u16 sYardOam_3552e8_Frame2[] = {
+static const u16 sYardOam_ChargingHorizontal_Frame2[] = {
     5,
     0xf0, 0x2, OBJ_PALETTE_8 | 0x216,
     OBJ_SHAPE_HORIZONTAL | 0xe6, 0x0, OBJ_PALETTE_8 | 0x20f,
@@ -62,7 +62,7 @@ static const u16 sYardOam_3552e8_Frame2[] = {
     0xf1, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_8 | 0x204
 };
 
-static const u16 sYardOam_3552e8_Frame3[] = {
+static const u16 sYardOam_ChargingHorizontal_Frame3[] = {
     5,
     0xf0, 0x2, OBJ_PALETTE_8 | 0x236,
     OBJ_SHAPE_HORIZONTAL | 0xe6, 0x0, OBJ_PALETTE_8 | 0x20f,
@@ -71,7 +71,7 @@ static const u16 sYardOam_3552e8_Frame3[] = {
     0xf1, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_8 | 0x204
 };
 
-static const u16 sYardOam_3552e8_Frame4[] = {
+static const u16 sYardOam_ChargingHorizontal_Frame4[] = {
     5,
     0xf0, 0x2, OBJ_PALETTE_8 | 0x216,
     OBJ_SHAPE_HORIZONTAL | 0xe6, 0x0, OBJ_PALETTE_8 | 0x20f,
@@ -80,7 +80,7 @@ static const u16 sYardOam_3552e8_Frame4[] = {
     0xf1, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_8 | 0x204
 };
 
-static const u16 sYardOam_355318_Frame1[] = {
+static const u16 sYardOam_ShootingHorizontal_Frame1[] = {
     4,
     OBJ_SHAPE_HORIZONTAL | 0xe6, 0x0, OBJ_PALETTE_8 | 0x20f,
     OBJ_SHAPE_HORIZONTAL | 0xee, OBJ_SIZE_32x16 | 0x1f8, OBJ_PALETTE_8 | 0x208,
@@ -88,7 +88,7 @@ static const u16 sYardOam_355318_Frame1[] = {
     0xf8, 0x1f9, OBJ_PALETTE_8 | 0x213
 };
 
-static const u16 sYardOam_355318_Frame0[] = {
+static const u16 sYardOam_ShootingHorizontal_Frame0[] = {
     7,
     OBJ_SHAPE_HORIZONTAL | 0xe7, OBJ_SIZE_32x16 | 0x1fc, OBJ_PALETTE_8 | 0x21a,
     OBJ_SHAPE_HORIZONTAL | 0xdf, 0x4, OBJ_PALETTE_8 | 0x21e,
@@ -99,7 +99,7 @@ static const u16 sYardOam_355318_Frame0[] = {
     0xf8, 0x1f9, OBJ_PALETTE_8 | 0x213
 };
 
-static const u16 sYardOam_355318_Frame2[] = {
+static const u16 sYardOam_ShootingHorizontal_Frame2[] = {
     7,
     0xe4, OBJ_SIZE_16x16 | 0x6, OBJ_PALETTE_8 | 0x214,
     0xec, OBJ_SIZE_16x16 | 0x1fe, OBJ_PALETTE_8 | 0x233,
@@ -110,7 +110,7 @@ static const u16 sYardOam_355318_Frame2[] = {
     0xf8, 0x1f9, OBJ_PALETTE_8 | 0x213
 };
 
-static const u16 sYardOam_355318_Frame4[] = {
+static const u16 sYardOam_ShootingHorizontal_Frame4[] = {
     7,
     OBJ_SHAPE_HORIZONTAL | 0xe7, OBJ_SIZE_32x16 | 0x4, OBJ_PALETTE_8 | 0x217,
     OBJ_SHAPE_HORIZONTAL | 0xdf, 0x4, OBJ_PALETTE_8 | 0x23e,
@@ -121,7 +121,7 @@ static const u16 sYardOam_355318_Frame4[] = {
     0xf8, 0x1f9, OBJ_PALETTE_8 | 0x213
 };
 
-static const u16 sYardOam_3553e8_Frame0[] = {
+static const u16 sYardOam_CrawlingVertical_Frame0[] = {
     7,
     0xfa, OBJ_SIZE_16x16 | 0x6, OBJ_PALETTE_8 | 0x24f,
     OBJ_SHAPE_HORIZONTAL | 0xf2, 0x6, OBJ_PALETTE_8 | 0x251,
@@ -132,7 +132,7 @@ static const u16 sYardOam_3553e8_Frame0[] = {
     OBJ_SHAPE_HORIZONTAL | 0xf3, 0x6, OBJ_PALETTE_8 | 0x271
 };
 
-static const u16 sYardOam_3553e8_Frame1[] = {
+static const u16 sYardOam_CrawlingVertical_Frame1[] = {
     5,
     0xf2, 0x5, OBJ_PALETTE_8 | 0x230,
     OBJ_SHAPE_HORIZONTAL | 0xfa, OBJ_SIZE_32x16 | 0x5, OBJ_PALETTE_8 | 0x255,
@@ -141,7 +141,7 @@ static const u16 sYardOam_3553e8_Frame1[] = {
     OBJ_SHAPE_VERTICAL | 0xf8, 0x1, OBJ_PALETTE_8 | 0x249
 };
 
-static const u16 sYardOam_3553e8_Frame2[] = {
+static const u16 sYardOam_CrawlingVertical_Frame2[] = {
     7,
     0xf4, 0x6, OBJ_PALETTE_8 | 0x230,
     0xfb, OBJ_SIZE_16x16 | 0x7, OBJ_PALETTE_8 | 0x24f,
@@ -152,7 +152,7 @@ static const u16 sYardOam_3553e8_Frame2[] = {
     OBJ_SHAPE_VERTICAL | 0xf8, 0x0, OBJ_PALETTE_8 | 0x24a
 };
 
-static const u16 sYardOam_355408_Frame0[] = {
+static const u16 sYardOam_ChargingVertical_Frame0[] = {
     7,
     0xf4, 0x9, OBJ_PALETTE_8 | 0x230,
     OBJ_SHAPE_HORIZONTAL | 0xf5, 0x1fc, OBJ_PALETTE_8 | 0x264,
@@ -163,7 +163,7 @@ static const u16 sYardOam_355408_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xf8, 0x0, OBJ_PALETTE_8 | 0x24a
 };
 
-static const u16 sYardOam_355408_Frame1[] = {
+static const u16 sYardOam_ChargingVertical_Frame1[] = {
     5,
     0x1, 0x8, OBJ_PALETTE_8 | 0x26e,
     OBJ_SHAPE_HORIZONTAL | 0xff, OBJ_SIZE_32x16 | 0x1fa, OBJ_PALETTE_8 | 0x258,
@@ -172,7 +172,7 @@ static const u16 sYardOam_355408_Frame1[] = {
     0xf6, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x246
 };
 
-static const u16 sYardOam_355408_Frame2[] = {
+static const u16 sYardOam_ChargingVertical_Frame2[] = {
     5,
     0x1, 0x8, OBJ_PALETTE_8 | 0x24e,
     OBJ_SHAPE_HORIZONTAL | 0xff, OBJ_SIZE_32x16 | 0x1fa, OBJ_PALETTE_8 | 0x258,
@@ -181,7 +181,7 @@ static const u16 sYardOam_355408_Frame2[] = {
     0xf6, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x246
 };
 
-static const u16 sYardOam_355408_Frame3[] = {
+static const u16 sYardOam_ChargingVertical_Frame3[] = {
     5,
     0x1, 0x8, OBJ_PALETTE_8 | 0x26e,
     OBJ_SHAPE_HORIZONTAL | 0xff, OBJ_SIZE_32x16 | 0x1fa, OBJ_PALETTE_8 | 0x258,
@@ -190,7 +190,7 @@ static const u16 sYardOam_355408_Frame3[] = {
     0xf6, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x246
 };
 
-static const u16 sYardOam_355408_Frame4[] = {
+static const u16 sYardOam_ChargingVertical_Frame4[] = {
     5,
     0x1, 0x8, OBJ_PALETTE_8 | 0x24e,
     OBJ_SHAPE_HORIZONTAL | 0xff, OBJ_SIZE_32x16 | 0x1fa, OBJ_PALETTE_8 | 0x258,
@@ -199,7 +199,7 @@ static const u16 sYardOam_355408_Frame4[] = {
     0xf6, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x246
 };
 
-static const u16 sYardOam_355438_Frame1[] = {
+static const u16 sYardOam_ShootingVertical_Frame1[] = {
     4,
     OBJ_SHAPE_HORIZONTAL | 0xff, OBJ_SIZE_32x16 | 0x1fa, OBJ_PALETTE_8 | 0x258,
     OBJ_SHAPE_HORIZONTAL | 0xf7, 0x2, OBJ_PALETTE_8 | 0x273,
@@ -207,7 +207,7 @@ static const u16 sYardOam_355438_Frame1[] = {
     0xf8, 0x0, OBJ_PALETTE_8 | 0x24d
 };
 
-static const u16 sYardOam_355438_Frame0[] = {
+static const u16 sYardOam_ShootingVertical_Frame0[] = {
     7,
     OBJ_SHAPE_HORIZONTAL | 0x3, OBJ_Y_FLIP | OBJ_SIZE_32x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     OBJ_SHAPE_HORIZONTAL | 0x13, OBJ_Y_FLIP | 0x9, OBJ_PALETTE_8 | 0x21e,
@@ -218,7 +218,7 @@ static const u16 sYardOam_355438_Frame0[] = {
     0xf8, 0x0, OBJ_PALETTE_8 | 0x24d
 };
 
-static const u16 sYardOam_355438_Frame2[] = {
+static const u16 sYardOam_ShootingVertical_Frame2[] = {
     7,
     0x5, OBJ_Y_FLIP | OBJ_SIZE_16x16 | 0xc, OBJ_PALETTE_8 | 0x214,
     0xfd, OBJ_Y_FLIP | OBJ_SIZE_16x16 | 0x4, OBJ_PALETTE_8 | 0x233,
@@ -229,7 +229,7 @@ static const u16 sYardOam_355438_Frame2[] = {
     0xf8, 0x0, OBJ_PALETTE_8 | 0x24d
 };
 
-static const u16 sYardOam_355438_Frame4[] = {
+static const u16 sYardOam_ShootingVertical_Frame4[] = {
     7,
     OBJ_SHAPE_HORIZONTAL | 0x3, OBJ_Y_FLIP | OBJ_SIZE_32x16 | 0x9, OBJ_PALETTE_8 | 0x217,
     OBJ_SHAPE_HORIZONTAL | 0x13, OBJ_Y_FLIP | 0x9, OBJ_PALETTE_8 | 0x23e,
@@ -240,7 +240,7 @@ static const u16 sYardOam_355438_Frame4[] = {
     0xf8, 0x0, OBJ_PALETTE_8 | 0x24d
 };
 
-static const u16 sYardOam_355370_Frame0[] = {
+static const u16 sYardOam_StartledHorizontal_Frame0[] = {
     6,
     OBJ_SHAPE_HORIZONTAL | 0xe7, 0x1fb, OBJ_PALETTE_8 | 0x222,
     OBJ_SHAPE_VERTICAL | 0xef, 0x1f4, OBJ_PALETTE_8 | 0x241,
@@ -250,7 +250,7 @@ static const u16 sYardOam_355370_Frame0[] = {
     OBJ_SHAPE_HORIZONTAL | 0xf9, 0x1fa, OBJ_PALETTE_8 | 0x266
 };
 
-static const u16 sYardOam_355370_Frame1[] = {
+static const u16 sYardOam_StartledHorizontal_Frame1[] = {
     6,
     OBJ_SHAPE_HORIZONTAL | 0xee, OBJ_SIZE_32x16 | 0x1ec, OBJ_PALETTE_8 | 0x20b,
     0xe8, 0x1fd, OBJ_PALETTE_8 | 0x222,
@@ -260,7 +260,7 @@ static const u16 sYardOam_355370_Frame1[] = {
     OBJ_SHAPE_HORIZONTAL | 0xf9, 0x1fb, OBJ_PALETTE_8 | 0x266
 };
 
-static const u16 sYardOam_355490_Frame0[] = {
+static const u16 sYardOam_StartledVertical_Frame0[] = {
     5,
     OBJ_SHAPE_HORIZONTAL | 0xfa, OBJ_SIZE_32x16 | 0x1, OBJ_PALETTE_8 | 0x255,
     OBJ_SHAPE_HORIZONTAL | 0xf2, 0x1, OBJ_PALETTE_8 | 0x271,
@@ -269,7 +269,7 @@ static const u16 sYardOam_355490_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xf9, OBJ_X_FLIP | OBJ_Y_FLIP | 0x1ff, OBJ_PALETTE_8 | 0x205
 };
 
-static const u16 sYardOam_355490_Frame1[] = {
+static const u16 sYardOam_StartledVertical_Frame1[] = {
     7,
     0xfb, OBJ_SIZE_16x16 | 0x2, OBJ_PALETTE_8 | 0x24f,
     OBJ_SHAPE_HORIZONTAL | 0xf3, 0x2, OBJ_PALETTE_8 | 0x251,
@@ -280,7 +280,7 @@ static const u16 sYardOam_355490_Frame1[] = {
     OBJ_SHAPE_VERTICAL | 0xfa, OBJ_X_FLIP | OBJ_Y_FLIP | 0x1ff, OBJ_PALETTE_8 | 0x205
 };
 
-static const u16 sYardOam_3553a8_Frame1[] = {
+static const u16 sYardOam_TurningAroundHorizontal1_Frame1[] = {
     6,
     0xf6, 0x1f9, OBJ_PALETTE_8 | 0x240,
     0xf6, OBJ_X_FLIP | OBJ_Y_FLIP | 0x1f5, OBJ_PALETTE_8 | 0x22f,
@@ -290,7 +290,7 @@ static const u16 sYardOam_3553a8_Frame1[] = {
     OBJ_SHAPE_VERTICAL | 0xec, 0x1f6, OBJ_PALETTE_8 | 0x241
 };
 
-static const u16 sYardOam_3553a8_Frame2[] = {
+static const u16 sYardOam_TurningAroundHorizontal1_Frame2[] = {
     6,
     0xf6, 0x1fa, OBJ_PALETTE_8 | 0x240,
     0xf7, OBJ_Y_FLIP | 0x1ff, OBJ_PALETTE_8 | 0x22f,
@@ -300,7 +300,7 @@ static const u16 sYardOam_3553a8_Frame2[] = {
     0xf8, OBJ_X_FLIP | OBJ_Y_FLIP | 0x1f6, OBJ_PALETTE_8 | 0x22f
 };
 
-static const u16 sYardOam_3554c8_Frame1[] = {
+static const u16 sYardOam_TurningAroundVertical1_Frame1[] = {
     7,
     0x1, OBJ_Y_FLIP | 0x1ff, OBJ_PALETTE_8 | 0x260,
     0xf9, 0x2, OBJ_PALETTE_8 | 0x230,
@@ -311,7 +311,7 @@ static const u16 sYardOam_3554c8_Frame1[] = {
     OBJ_SHAPE_HORIZONTAL | 0xf5, 0x4, OBJ_PALETTE_8 | 0x271
 };
 
-static const u16 sYardOam_3554c8_Frame2[] = {
+static const u16 sYardOam_TurningAroundVertical1_Frame2[] = {
     7,
     0xfa, 0x2, OBJ_PALETTE_8 | 0x230,
     0xff, OBJ_Y_FLIP | 0x1, OBJ_PALETTE_8 | 0x260,
@@ -322,37 +322,37 @@ static const u16 sYardOam_3554c8_Frame2[] = {
     0xf6, 0x0, OBJ_PALETTE_8 | 0x260
 };
 
-static const u16 sYardOam_355530_Frame0[] = {
+static const u16 sYardOam_UninfectedHorizontal_Frame0[] = {
     1,
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x280
 };
 
-static const u16 sYardOam_355540_Frame0[] = {
+static const u16 sYardOam_UninfectedVertical_Frame0[] = {
     1,
     0xf8, OBJ_X_FLIP | OBJ_Y_FLIP | OBJ_SIZE_16x16 | 0x0, OBJ_PALETTE_8 | 0x284
 };
 
-static const u16 sYardOam_355508_Frame0[] = {
+static const u16 sYardProjectileOam_Moving_Frame0[] = {
     1,
     0xf8, OBJ_SIZE_16x16 | 0x1fc, OBJ_PALETTE_8 | 0x25c
 };
 
-static const u16 sYardOam_355508_Frame1[] = {
+static const u16 sYardProjectileOam_Moving_Frame1[] = {
     1,
     OBJ_SHAPE_HORIZONTAL | 0xfa, 0x1f8, OBJ_PALETTE_8 | 0x25e
 };
 
-static const u16 sYardOam_355508_Frame2[] = {
+static const u16 sYardProjectileOam_Moving_Frame2[] = {
     1,
     0xf8, OBJ_X_FLIP | OBJ_Y_FLIP | OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_8 | 0x25c
 };
 
-static const u16 sYardOam_355508_Frame3[] = {
+static const u16 sYardProjectileOam_Moving_Frame3[] = {
     1,
     OBJ_SHAPE_HORIZONTAL | 0xfe, OBJ_X_FLIP | OBJ_Y_FLIP | 0x1f8, OBJ_PALETTE_8 | 0x25e
 };
 
-static const u16 sYardOam_355550_Frame0[] = {
+static const u16 sYardProjectileOam_Exploding_Frame0[] = {
     7,
     OBJ_SHAPE_VERTICAL | 0xf9, OBJ_X_FLIP | OBJ_Y_FLIP | 0x1f8, OBJ_PALETTE_8 | 0x25d,
     OBJ_SHAPE_VERTICAL | 0xf8, 0x1ff, OBJ_PALETTE_8 | 0x25d,
@@ -363,7 +363,7 @@ static const u16 sYardOam_355550_Frame0[] = {
     0xf7, OBJ_X_FLIP | 0x0, OBJ_PALETTE_8 | 0x288
 };
 
-static const u16 sYardOam_355550_Frame1[] = {
+static const u16 sYardProjectileOam_Exploding_Frame1[] = {
     6,
     0xf6, 0x2, OBJ_PALETTE_8 | 0x27f,
     0x2, 0x1f6, OBJ_PALETTE_8 | 0x27f,
@@ -373,7 +373,7 @@ static const u16 sYardOam_355550_Frame1[] = {
     0xfc, 0x5, OBJ_PALETTE_8 | 0x288
 };
 
-static const u16 sYardOam_355550_Frame2[] = {
+static const u16 sYardProjectileOam_Exploding_Frame2[] = {
     4,
     0x5, OBJ_Y_FLIP | 0x1fc, OBJ_PALETTE_8 | 0x288,
     0xfd, OBJ_X_FLIP | OBJ_Y_FLIP | 0x1f0, OBJ_PALETTE_8 | 0x288,
@@ -381,7 +381,7 @@ static const u16 sYardOam_355550_Frame2[] = {
     0xf3, OBJ_X_FLIP | OBJ_Y_FLIP | 0x1fc, OBJ_PALETTE_8 | 0x288
 };
 
-static const u16 sYardOam_3553a8_Frame0[] = {
+static const u16 sYardOam_TurningAroundHorizontal1_Frame0[] = {
     7,
     0xf4, 0x1f7, OBJ_PALETTE_8 | 0x240,
     0xf8, OBJ_X_FLIP | OBJ_Y_FLIP | 0x1ff, OBJ_PALETTE_8 | 0x22f,
@@ -392,7 +392,7 @@ static const u16 sYardOam_3553a8_Frame0[] = {
     OBJ_SHAPE_HORIZONTAL | 0xf9, 0x1f6, OBJ_PALETTE_8 | 0x220
 };
 
-static const u16 sYardOam_3554c8_Frame0[] = {
+static const u16 sYardOam_TurningAroundVertical1_Frame0[] = {
     6,
     0xf6, 0x3, OBJ_PALETTE_8 | 0x230,
     0xff, 0x0, OBJ_PALETTE_8 | 0x260,
@@ -402,341 +402,341 @@ static const u16 sYardOam_3554c8_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xf6, 0x1ff, OBJ_PALETTE_8 | 0x249
 };
 
-const struct FrameData sYardOam_3552c8[4] = {
+const struct FrameData sYardOam_CrawlingHorizontal[4] = {
     [0] = {
-        .pFrame = sYardOam_3552c8_Frame0,
+        .pFrame = sYardOam_CrawlingHorizontal_Frame0,
         .timer = 12
     },
     [1] = {
-        .pFrame = sYardOam_3552c8_Frame1,
+        .pFrame = sYardOam_CrawlingHorizontal_Frame1,
         .timer = 12
     },
     [2] = {
-        .pFrame = sYardOam_3552c8_Frame2,
+        .pFrame = sYardOam_CrawlingHorizontal_Frame2,
         .timer = 12
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_3552e8[6] = {
+const struct FrameData sYardOam_ChargingHorizontal[6] = {
     [0] = {
-        .pFrame = sYardOam_3552e8_Frame0,
+        .pFrame = sYardOam_ChargingHorizontal_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sYardOam_3552e8_Frame1,
+        .pFrame = sYardOam_ChargingHorizontal_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sYardOam_3552e8_Frame2,
+        .pFrame = sYardOam_ChargingHorizontal_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sYardOam_3552e8_Frame3,
+        .pFrame = sYardOam_ChargingHorizontal_Frame3,
         .timer = 3
     },
     [4] = {
-        .pFrame = sYardOam_3552e8_Frame4,
+        .pFrame = sYardOam_ChargingHorizontal_Frame4,
         .timer = 3
     },
     [5] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355318[7] = {
+const struct FrameData sYardOam_ShootingHorizontal[7] = {
     [0] = {
-        .pFrame = sYardOam_355318_Frame0,
+        .pFrame = sYardOam_ShootingHorizontal_Frame0,
         .timer = 2
     },
     [1] = {
-        .pFrame = sYardOam_355318_Frame1,
+        .pFrame = sYardOam_ShootingHorizontal_Frame1,
         .timer = 2
     },
     [2] = {
-        .pFrame = sYardOam_355318_Frame2,
+        .pFrame = sYardOam_ShootingHorizontal_Frame2,
         .timer = 2
     },
     [3] = {
-        .pFrame = sYardOam_355318_Frame1,
+        .pFrame = sYardOam_ShootingHorizontal_Frame1,
         .timer = 2
     },
     [4] = {
-        .pFrame = sYardOam_355318_Frame4,
+        .pFrame = sYardOam_ShootingHorizontal_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sYardOam_355318_Frame1,
+        .pFrame = sYardOam_ShootingHorizontal_Frame1,
         .timer = 2
     },
     [6] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355350[4] = {
+const struct FrameData sYardOam_RecoilHorizontal[4] = {
     [0] = {
-        .pFrame = sYardOam_3552e8_Frame4,
+        .pFrame = sYardOam_ChargingHorizontal_Frame4,
         .timer = 2
     },
     [1] = {
-        .pFrame = sYardOam_3552e8_Frame2,
+        .pFrame = sYardOam_ChargingHorizontal_Frame2,
         .timer = 2
     },
     [2] = {
-        .pFrame = sYardOam_3552e8_Frame0,
+        .pFrame = sYardOam_ChargingHorizontal_Frame0,
         .timer = 2
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355370[7] = {
+const struct FrameData sYardOam_StartledHorizontal[7] = {
     [0] = {
-        .pFrame = sYardOam_355370_Frame0,
+        .pFrame = sYardOam_StartledHorizontal_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sYardOam_355370_Frame1,
+        .pFrame = sYardOam_StartledHorizontal_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sYardOam_355370_Frame0,
+        .pFrame = sYardOam_StartledHorizontal_Frame0,
         .timer = 3
     },
     [3] = {
-        .pFrame = sYardOam_355370_Frame1,
+        .pFrame = sYardOam_StartledHorizontal_Frame1,
         .timer = 3
     },
     [4] = {
-        .pFrame = sYardOam_355370_Frame0,
+        .pFrame = sYardOam_StartledHorizontal_Frame0,
         .timer = 3
     },
     [5] = {
-        .pFrame = sYardOam_355370_Frame1,
+        .pFrame = sYardOam_StartledHorizontal_Frame1,
         .timer = 3
     },
     [6] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_3553a8[4] = {
+const struct FrameData sYardOam_TurningAroundHorizontal1[4] = {
     [0] = {
-        .pFrame = sYardOam_3553a8_Frame0,
+        .pFrame = sYardOam_TurningAroundHorizontal1_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sYardOam_3553a8_Frame1,
+        .pFrame = sYardOam_TurningAroundHorizontal1_Frame1,
         .timer = 6
     },
     [2] = {
-        .pFrame = sYardOam_3553a8_Frame2,
+        .pFrame = sYardOam_TurningAroundHorizontal1_Frame2,
         .timer = 6
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_3553c8[4] = {
+const struct FrameData sYardOam_TurningAroundHorizontal2[4] = {
     [0] = {
-        .pFrame = sYardOam_3553a8_Frame2,
+        .pFrame = sYardOam_TurningAroundHorizontal1_Frame2,
         .timer = 6
     },
     [1] = {
-        .pFrame = sYardOam_3553a8_Frame1,
+        .pFrame = sYardOam_TurningAroundHorizontal1_Frame1,
         .timer = 6
     },
     [2] = {
-        .pFrame = sYardOam_3553a8_Frame0,
+        .pFrame = sYardOam_TurningAroundHorizontal1_Frame0,
         .timer = 4
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_3553e8[4] = {
+const struct FrameData sYardOam_CrawlingVertical[4] = {
     [0] = {
-        .pFrame = sYardOam_3553e8_Frame0,
+        .pFrame = sYardOam_CrawlingVertical_Frame0,
         .timer = 12
     },
     [1] = {
-        .pFrame = sYardOam_3553e8_Frame1,
+        .pFrame = sYardOam_CrawlingVertical_Frame1,
         .timer = 12
     },
     [2] = {
-        .pFrame = sYardOam_3553e8_Frame2,
+        .pFrame = sYardOam_CrawlingVertical_Frame2,
         .timer = 12
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355408[6] = {
+const struct FrameData sYardOam_ChargingVertical[6] = {
     [0] = {
-        .pFrame = sYardOam_355408_Frame0,
+        .pFrame = sYardOam_ChargingVertical_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sYardOam_355408_Frame1,
+        .pFrame = sYardOam_ChargingVertical_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sYardOam_355408_Frame2,
+        .pFrame = sYardOam_ChargingVertical_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sYardOam_355408_Frame3,
+        .pFrame = sYardOam_ChargingVertical_Frame3,
         .timer = 3
     },
     [4] = {
-        .pFrame = sYardOam_355408_Frame4,
+        .pFrame = sYardOam_ChargingVertical_Frame4,
         .timer = 3
     },
     [5] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355438[7] = {
+const struct FrameData sYardOam_ShootingVertical[7] = {
     [0] = {
-        .pFrame = sYardOam_355438_Frame0,
+        .pFrame = sYardOam_ShootingVertical_Frame0,
         .timer = 2
     },
     [1] = {
-        .pFrame = sYardOam_355438_Frame1,
+        .pFrame = sYardOam_ShootingVertical_Frame1,
         .timer = 2
     },
     [2] = {
-        .pFrame = sYardOam_355438_Frame2,
+        .pFrame = sYardOam_ShootingVertical_Frame2,
         .timer = 2
     },
     [3] = {
-        .pFrame = sYardOam_355438_Frame1,
+        .pFrame = sYardOam_ShootingVertical_Frame1,
         .timer = 2
     },
     [4] = {
-        .pFrame = sYardOam_355438_Frame4,
+        .pFrame = sYardOam_ShootingVertical_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sYardOam_355438_Frame1,
+        .pFrame = sYardOam_ShootingVertical_Frame1,
         .timer = 2
     },
     [6] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355470[4] = {
+const struct FrameData sYardOam_RecoilVertical[4] = {
     [0] = {
-        .pFrame = sYardOam_355408_Frame4,
+        .pFrame = sYardOam_ChargingVertical_Frame4,
         .timer = 2
     },
     [1] = {
-        .pFrame = sYardOam_355408_Frame2,
+        .pFrame = sYardOam_ChargingVertical_Frame2,
         .timer = 2
     },
     [2] = {
-        .pFrame = sYardOam_355408_Frame0,
+        .pFrame = sYardOam_ChargingVertical_Frame0,
         .timer = 2
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355490[7] = {
+const struct FrameData sYardOam_StartledVertical[7] = {
     [0] = {
-        .pFrame = sYardOam_355490_Frame0,
+        .pFrame = sYardOam_StartledVertical_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sYardOam_355490_Frame1,
+        .pFrame = sYardOam_StartledVertical_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sYardOam_355490_Frame0,
+        .pFrame = sYardOam_StartledVertical_Frame0,
         .timer = 3
     },
     [3] = {
-        .pFrame = sYardOam_355490_Frame1,
+        .pFrame = sYardOam_StartledVertical_Frame1,
         .timer = 3
     },
     [4] = {
-        .pFrame = sYardOam_355490_Frame0,
+        .pFrame = sYardOam_StartledVertical_Frame0,
         .timer = 3
     },
     [5] = {
-        .pFrame = sYardOam_355490_Frame1,
+        .pFrame = sYardOam_StartledVertical_Frame1,
         .timer = 3
     },
     [6] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_3554c8[4] = {
+const struct FrameData sYardOam_TurningAroundVertical1[4] = {
     [0] = {
-        .pFrame = sYardOam_3554c8_Frame0,
+        .pFrame = sYardOam_TurningAroundVertical1_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sYardOam_3554c8_Frame1,
+        .pFrame = sYardOam_TurningAroundVertical1_Frame1,
         .timer = 6
     },
     [2] = {
-        .pFrame = sYardOam_3554c8_Frame2,
+        .pFrame = sYardOam_TurningAroundVertical1_Frame2,
         .timer = 6
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_3554e8[4] = {
+const struct FrameData sYardOam_TurningAroundVertical2[4] = {
     [0] = {
-        .pFrame = sYardOam_3554c8_Frame2,
+        .pFrame = sYardOam_TurningAroundVertical1_Frame2,
         .timer = 6
     },
     [1] = {
-        .pFrame = sYardOam_3554c8_Frame1,
+        .pFrame = sYardOam_TurningAroundVertical1_Frame1,
         .timer = 6
     },
     [2] = {
-        .pFrame = sYardOam_3554c8_Frame0,
+        .pFrame = sYardOam_TurningAroundVertical1_Frame0,
         .timer = 4
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355508[5] = {
+const struct FrameData sYardProjectileOam_Moving[5] = {
     [0] = {
-        .pFrame = sYardOam_355508_Frame0,
+        .pFrame = sYardProjectileOam_Moving_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sYardOam_355508_Frame1,
+        .pFrame = sYardProjectileOam_Moving_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sYardOam_355508_Frame2,
+        .pFrame = sYardProjectileOam_Moving_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sYardOam_355508_Frame3,
+        .pFrame = sYardProjectileOam_Moving_Frame3,
         .timer = 3
     },
     [4] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355530[2] = {
+const struct FrameData sYardOam_UninfectedHorizontal[2] = {
     [0] = {
-        .pFrame = sYardOam_355530_Frame0,
+        .pFrame = sYardOam_UninfectedHorizontal_Frame0,
         .timer = 255
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355540[2] = {
+const struct FrameData sYardOam_UninfectedVertical[2] = {
     [0] = {
-        .pFrame = sYardOam_355540_Frame0,
+        .pFrame = sYardOam_UninfectedVertical_Frame0,
         .timer = 255
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sYardOam_355550[4] = {
+const struct FrameData sYardProjectileOam_Exploding[4] = {
     [0] = {
-        .pFrame = sYardOam_355550_Frame0,
+        .pFrame = sYardProjectileOam_Exploding_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sYardOam_355550_Frame1,
+        .pFrame = sYardProjectileOam_Exploding_Frame1,
         .timer = 2
     },
     [2] = {
-        .pFrame = sYardOam_355550_Frame2,
+        .pFrame = sYardProjectileOam_Exploding_Frame2,
         .timer = 2
     },
     [3] = FRAME_DATA_TERMINATOR

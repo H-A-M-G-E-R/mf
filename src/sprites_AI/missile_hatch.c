@@ -313,7 +313,7 @@ void MissileHatchDebrisFalling(void)
     }
     else if (gCurrentSprite.roomSlot == 1)
     {
-        gCurrentSprite.xPosition -= ONE_SUB_PIXEL;
+        gCurrentSprite.xPosition -= PIXEL_SIZE / 4;
         offset = gCurrentSprite.work4;
         speed = sSpritesFallingSpeed_2e499c[offset];
 

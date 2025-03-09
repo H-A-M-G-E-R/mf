@@ -41,7 +41,7 @@ void SpriteDebrisUpdateCurrent(void)
         case DEBRIS_TYPE_HOPPING_SLOW_LEFT | DEBRIS_TYPE_FALLING:
             movement = sDebris11Velocity[offset];
             gCurrentSpriteDebris.yPosition += movement;
-            gCurrentSpriteDebris.xPosition -= ONE_SUB_PIXEL;
+            gCurrentSpriteDebris.xPosition -= PIXEL_SIZE / 4;
 
             blockTop = SpriteUtilCheckVerticalCollisionAtPositionSlopes(gCurrentSpriteDebris.yPosition, gCurrentSpriteDebris.xPosition);
 
@@ -56,7 +56,7 @@ void SpriteDebrisUpdateCurrent(void)
         case DEBRIS_TYPE_HOPPING_SLOW_LEFT | DEBRIS_TYPE_BOUNCING:
             movement = sDebris80Velocity[offset];
             gCurrentSpriteDebris.yPosition += movement;
-            gCurrentSpriteDebris.xPosition -= ONE_SUB_PIXEL;
+            gCurrentSpriteDebris.xPosition -= PIXEL_SIZE / 4;
             break;
 
         case DEBRIS_TYPE_HOPPING_SLOW_RIGHT:
@@ -66,7 +66,7 @@ void SpriteDebrisUpdateCurrent(void)
         case DEBRIS_TYPE_HOPPING_SLOW_RIGHT | DEBRIS_TYPE_FALLING:
             movement = sDebris12Velocity[offset];
             gCurrentSpriteDebris.yPosition += movement;
-            gCurrentSpriteDebris.xPosition += ONE_SUB_PIXEL;
+            gCurrentSpriteDebris.xPosition += PIXEL_SIZE / 4;
 
             blockTop = SpriteUtilCheckVerticalCollisionAtPositionSlopes(gCurrentSpriteDebris.yPosition, gCurrentSpriteDebris.xPosition);
 
@@ -81,7 +81,7 @@ void SpriteDebrisUpdateCurrent(void)
         case DEBRIS_TYPE_HOPPING_SLOW_RIGHT | DEBRIS_TYPE_BOUNCING:
             movement = sDebris80Velocity[offset];
             gCurrentSpriteDebris.yPosition += movement;
-            gCurrentSpriteDebris.xPosition += ONE_SUB_PIXEL;
+            gCurrentSpriteDebris.xPosition += PIXEL_SIZE / 4;
             break;
 
         case DEBRIS_TYPE_HOPPING_FAST_RIGHT:
@@ -133,7 +133,7 @@ void SpriteDebrisUpdateCurrent(void)
         case DEBRIS_TYPE_LIGHT_SLOW_LEFT:
             movement = sDebris5Velocity[offset];
             gCurrentSpriteDebris.yPosition += movement;
-            gCurrentSpriteDebris.xPosition -= ONE_SUB_PIXEL;
+            gCurrentSpriteDebris.xPosition -= PIXEL_SIZE / 4;
 
             if (gCurrentSpriteDebris.fallingTimer < 20)
                 break;
@@ -151,7 +151,7 @@ void SpriteDebrisUpdateCurrent(void)
         case DEBRIS_TYPE_HEAVY_SLOW_RIGHT:
             movement = sDebris6Velocity[offset];
             gCurrentSpriteDebris.yPosition += movement;
-            gCurrentSpriteDebris.xPosition += ONE_SUB_PIXEL;
+            gCurrentSpriteDebris.xPosition += PIXEL_SIZE / 4;
 
             if (gCurrentSpriteDebris.fallingTimer < 20)
                 break;
@@ -169,7 +169,7 @@ void SpriteDebrisUpdateCurrent(void)
         case DEBRIS_TYPE_LIGHT_SLOW_RIGHT:
             movement = sDebris7Velocity[offset];
             gCurrentSpriteDebris.yPosition += movement;
-            gCurrentSpriteDebris.xPosition += ONE_SUB_PIXEL;
+            gCurrentSpriteDebris.xPosition += PIXEL_SIZE / 4;
 
             if (gCurrentSpriteDebris.fallingTimer < 20)
                 break;
@@ -187,7 +187,7 @@ void SpriteDebrisUpdateCurrent(void)
         case DEBRIS_TYPE_HEAVY_SLOW_LEFT:
             movement = sDebris8Velocity[offset];
             gCurrentSpriteDebris.yPosition += movement;
-            gCurrentSpriteDebris.xPosition -= ONE_SUB_PIXEL;
+            gCurrentSpriteDebris.xPosition -= PIXEL_SIZE / 4;
 
             if (gCurrentSpriteDebris.fallingTimer < 20)
                 break;

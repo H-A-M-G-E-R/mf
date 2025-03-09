@@ -20,7 +20,7 @@ extern const struct FrameData sHornoadOam_IdleHidden[5];
 extern const struct FrameData sHornoadOam_JumpingHidden[5];
 extern const struct FrameData sHornoadOam_LandingHidden[3];
 extern const struct FrameData sHornoadOam_FallingHidden[3];
-extern const struct FrameData sHornoadOam_2eb594[3];
+extern const struct FrameData sHornoadOam_TouchedSamusHidden[3];
 
 extern const struct FrameData sHornoadSpawnerOam_Idle[4];
 extern const struct FrameData sHornoadSpawnerOam_BeforeSpawning[7];
@@ -44,7 +44,7 @@ extern const struct FrameData sHornoadSpawnerOam_2eb7e4[2];
 extern const struct FrameData sHornoadSpawnerOam_Spawning[4];
 
 extern const struct FrameData sHornoadOam_Falling[3];
-extern const struct FrameData sHornoadOam_2eb82c[3];
-extern const struct FrameData sHornoadOam_2eb844[13];
+extern const struct FrameData sHornoadOam_TouchedSamus[3];
+extern const struct FrameData sHornoadOam_HalfAsleepHidden[13];
 
 #endif /* HORNOAD_DATA_H */

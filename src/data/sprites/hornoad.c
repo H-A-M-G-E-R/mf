@@ -240,7 +240,7 @@ static const u16 sHornoadOam_FallingHidden_Frame1[] = {
     OBJ_SHAPE_VERTICAL | 0xed, 0x0, OBJ_PALETTE_8 | 0x205
 };
 
-static const u16 sHornoadOam_2eb594_Frame0[] = {
+static const u16 sHornoadOam_TouchedSamusHidden_Frame0[] = {
     6,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf2, 0x1fc, OBJ_PALETTE_8 | 0x218,
@@ -250,7 +250,7 @@ static const u16 sHornoadOam_2eb594_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xed, 0x1, OBJ_PALETTE_8 | 0x205
 };
 
-static const u16 sHornoadOam_2eb594_Frame1[] = {
+static const u16 sHornoadOam_TouchedSamusHidden_Frame1[] = {
     6,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf2, 0x1fc, OBJ_PALETTE_8 | 0x218,
@@ -666,7 +666,7 @@ static const u16 sHornoadOam_Spitting_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xed, 0x0, OBJ_PALETTE_9 | 0x202
 };
 
-static const u16 sHornoadOam_2eb844_Frame0[] = {
+static const u16 sHornoadOam_HalfAsleepHidden_Frame0[] = {
     5,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf5, 0x1fb, OBJ_PALETTE_8 | 0x218,
@@ -675,7 +675,7 @@ static const u16 sHornoadOam_2eb844_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xf0, 0x0, OBJ_PALETTE_8 | 0x202
 };
 
-static const u16 sHornoadOam_2eb844_Frame1[] = {
+static const u16 sHornoadOam_HalfAsleepHidden_Frame1[] = {
     5,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf4, 0x1fb, OBJ_PALETTE_8 | 0x218,
@@ -684,7 +684,7 @@ static const u16 sHornoadOam_2eb844_Frame1[] = {
     OBJ_SHAPE_VERTICAL | 0xf0, 0x0, OBJ_PALETTE_8 | 0x202
 };
 
-static const u16 sHornoadOam_2eb844_Frame2[] = {
+static const u16 sHornoadOam_HalfAsleepHidden_Frame2[] = {
     5,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf3, 0x1fb, OBJ_PALETTE_8 | 0x218,
@@ -693,7 +693,7 @@ static const u16 sHornoadOam_2eb844_Frame2[] = {
     OBJ_SHAPE_VERTICAL | 0xef, 0x0, OBJ_PALETTE_8 | 0x202
 };
 
-static const u16 sHornoadOam_2eb844_Frame3[] = {
+static const u16 sHornoadOam_HalfAsleepHidden_Frame3[] = {
     5,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf4, 0x1fb, OBJ_PALETTE_8 | 0x218,
@@ -702,7 +702,7 @@ static const u16 sHornoadOam_2eb844_Frame3[] = {
     OBJ_SHAPE_VERTICAL | 0xef, 0x0, OBJ_PALETTE_8 | 0x202
 };
 
-static const u16 sHornoadOam_2eb844_Frame4[] = {
+static const u16 sHornoadOam_HalfAsleepHidden_Frame4[] = {
     5,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf5, 0x1fb, OBJ_PALETTE_8 | 0x218,
@@ -711,7 +711,7 @@ static const u16 sHornoadOam_2eb844_Frame4[] = {
     OBJ_SHAPE_HORIZONTAL | 0xf0, 0x1f0, OBJ_PALETTE_8 | 0x2ae
 };
 
-static const u16 sHornoadOam_2eb844_Frame5[] = {
+static const u16 sHornoadOam_HalfAsleepHidden_Frame5[] = {
     5,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf4, 0x1fb, OBJ_PALETTE_8 | 0x218,
@@ -720,7 +720,7 @@ static const u16 sHornoadOam_2eb844_Frame5[] = {
     OBJ_SHAPE_HORIZONTAL | 0xef, 0x1f0, OBJ_PALETTE_8 | 0x2ae
 };
 
-static const u16 sHornoadOam_2eb844_Frame6[] = {
+static const u16 sHornoadOam_HalfAsleepHidden_Frame6[] = {
     5,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf3, 0x1fb, OBJ_PALETTE_8 | 0x218,
@@ -729,7 +729,7 @@ static const u16 sHornoadOam_2eb844_Frame6[] = {
     OBJ_SHAPE_VERTICAL | 0xef, 0x0, OBJ_PALETTE_8 | 0x202
 };
 
-static const u16 sHornoadOam_2eb844_Frame7[] = {
+static const u16 sHornoadOam_HalfAsleepHidden_Frame7[] = {
     5,
     0xf0, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x237,
     0xf4, 0x1fb, OBJ_PALETTE_8 | 0x218,
@@ -902,13 +902,13 @@ const struct FrameData sHornoadOam_FallingHidden[3] = {
     [2] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sHornoadOam_2eb594[3] = {
+const struct FrameData sHornoadOam_TouchedSamusHidden[3] = {
     [0] = {
-        .pFrame = sHornoadOam_2eb594_Frame0,
+        .pFrame = sHornoadOam_TouchedSamusHidden_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sHornoadOam_2eb594_Frame1,
+        .pFrame = sHornoadOam_TouchedSamusHidden_Frame1,
         .timer = 16
     },
     [2] = FRAME_DATA_TERMINATOR
@@ -1234,7 +1234,7 @@ const struct FrameData sHornoadOam_Falling[3] = {
     [2] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sHornoadOam_2eb82c[3] = {
+const struct FrameData sHornoadOam_TouchedSamus[3] = {
     [0] = {
         .pFrame = sHornoadOam_Spitting_Frame4,
         .timer = 4
@@ -1246,53 +1246,53 @@ const struct FrameData sHornoadOam_2eb82c[3] = {
     [2] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sHornoadOam_2eb844[13] = {
+const struct FrameData sHornoadOam_HalfAsleepHidden[13] = {
     [0] = {
-        .pFrame = sHornoadOam_2eb844_Frame0,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame0,
         .timer = 34
     },
     [1] = {
-        .pFrame = sHornoadOam_2eb844_Frame1,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame1,
         .timer = 22
     },
     [2] = {
-        .pFrame = sHornoadOam_2eb844_Frame2,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame2,
         .timer = 18
     },
     [3] = {
-        .pFrame = sHornoadOam_2eb844_Frame3,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame3,
         .timer = 16
     },
     [4] = {
-        .pFrame = sHornoadOam_2eb844_Frame4,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame4,
         .timer = 34
     },
     [5] = {
-        .pFrame = sHornoadOam_2eb844_Frame5,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame5,
         .timer = 22
     },
     [6] = {
-        .pFrame = sHornoadOam_2eb844_Frame6,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame6,
         .timer = 18
     },
     [7] = {
-        .pFrame = sHornoadOam_2eb844_Frame7,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame7,
         .timer = 16
     },
     [8] = {
-        .pFrame = sHornoadOam_2eb844_Frame4,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame4,
         .timer = 34
     },
     [9] = {
-        .pFrame = sHornoadOam_2eb844_Frame5,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame5,
         .timer = 22
     },
     [10] = {
-        .pFrame = sHornoadOam_2eb844_Frame6,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame6,
         .timer = 18
     },
     [11] = {
-        .pFrame = sHornoadOam_2eb844_Frame7,
+        .pFrame = sHornoadOam_HalfAsleepHidden_Frame7,
         .timer = 16
     },
     [12] = FRAME_DATA_TERMINATOR
