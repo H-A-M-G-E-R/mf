@@ -3,7 +3,7 @@
 const u32 sAtmosphericStabilizerGfx[3 * 512] = INCBIN_U32("data/sprites/atmospheric_stabilizer.gfx");
 const u16 sAtmosphericStabilizerPal[3 * 16] = INCBIN_U16("data/sprites/atmospheric_stabilizer.pal");
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame0[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame0[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -12,7 +12,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame0[] = {
     0xf7, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_9 | 0x28c
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame1[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame1[] = {
     5,
     0xf5, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf5, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -21,7 +21,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame1[] = {
     0xf8, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_9 | 0x28e
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame2[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame2[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -30,7 +30,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame2[] = {
     0xfb, OBJ_SIZE_16x16 | 0x1fa, OBJ_PALETTE_9 | 0x270
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame3[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame3[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -39,7 +39,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame3[] = {
     0xf9, OBJ_SIZE_16x16 | 0x1f9, OBJ_PALETTE_9 | 0x28e
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame4[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame4[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f3, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x3, OBJ_PALETTE_9 | 0x212,
@@ -48,7 +48,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame4[] = {
     0xf4, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_9 | 0x28c
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame5[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame5[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -75,7 +75,7 @@ static const u16 sOam_327130[] = {
     0xf8, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_9 | 0x28e
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame6[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame6[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -84,7 +84,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame6[] = {
     0xf9, OBJ_SIZE_16x16 | 0x1f9, OBJ_PALETTE_9 | 0x270
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame7[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame7[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -93,7 +93,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame7[] = {
     0xf9, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_9 | 0x28e
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame8[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame8[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f3, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x3, OBJ_PALETTE_9 | 0x212,
@@ -102,7 +102,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame8[] = {
     0xf8, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_9 | 0x28c
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame9[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame9[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -111,7 +111,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame9[] = {
     0xf8, OBJ_SIZE_16x16 | 0x1f5, OBJ_PALETTE_9 | 0x28e
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame10[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame10[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -120,7 +120,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame10[] = {
     0xf5, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_9 | 0x28c
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame11[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame11[] = {
     5,
     0xf5, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf5, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -129,7 +129,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame11[] = {
     0xf7, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_9 | 0x28e
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame12[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame12[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -138,7 +138,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame12[] = {
     0xf6, OBJ_SIZE_16x16 | 0x1f9, OBJ_PALETTE_9 | 0x270
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame13[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame13[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -147,7 +147,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame13[] = {
     0xf8, OBJ_SIZE_16x16 | 0x1f9, OBJ_PALETTE_9 | 0x28e
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame14[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame14[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f3, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x3, OBJ_PALETTE_9 | 0x212,
@@ -156,7 +156,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame14[] = {
     0xf7, OBJ_SIZE_16x16 | 0x1f9, OBJ_PALETTE_9 | 0x28c
 };
 
-static const u16 sAtmosphericStabilizerOam_327970_Frame15[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_Idle_Frame15[] = {
     5,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
     OBJ_SHAPE_VERTICAL | 0xf4, 0x4, OBJ_PALETTE_9 | 0x212,
@@ -165,7 +165,7 @@ static const u16 sAtmosphericStabilizerOam_327970_Frame15[] = {
     0xfb, OBJ_SIZE_16x16 | 0x1fa, OBJ_PALETTE_9 | 0x28e
 };
 
-static const u16 sAtmosphericStabilizerOam_327640_Frame0[] = {
+static const u16 sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0[] = {
     4,
     0xe8, OBJ_SIZE_32x32 | 0x1e8, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_VERTICAL | 0xe8, OBJ_SIZE_16x32 | 0x8, OBJ_PALETTE_8 | 0x20a,
@@ -173,7 +173,7 @@ static const u16 sAtmosphericStabilizerOam_327640_Frame0[] = {
     0x8, OBJ_SIZE_16x16 | 0x8, OBJ_PALETTE_8 | 0x28a
 };
 
-static const u16 sAtmosphericStabilizerOam_327640_Frame1[] = {
+static const u16 sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1[] = {
     7,
     OBJ_SHAPE_HORIZONTAL | 0x0, 0x1f8, OBJ_PALETTE_7 | 0x221,
     OBJ_SHAPE_HORIZONTAL | 0xf0, OBJ_SIZE_32x16 | 0x1f0, OBJ_PALETTE_8 | 0x20c,
@@ -184,7 +184,7 @@ static const u16 sAtmosphericStabilizerOam_327640_Frame1[] = {
     0x8, OBJ_SIZE_16x16 | 0x8, OBJ_PALETTE_8 | 0x28a
 };
 
-static const u16 sAtmosphericStabilizerOam_327640_Frame2[] = {
+static const u16 sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2[] = {
     7,
     OBJ_SHAPE_HORIZONTAL | 0x0, 0x1f8, OBJ_PALETTE_7 | 0x221,
     OBJ_SHAPE_HORIZONTAL | 0xf0, OBJ_SIZE_32x16 | 0x1f0, OBJ_PALETTE_8 | 0x24c,
@@ -195,7 +195,7 @@ static const u16 sAtmosphericStabilizerOam_327640_Frame2[] = {
     0x8, OBJ_SIZE_16x16 | 0x8, OBJ_PALETTE_8 | 0x28a
 };
 
-static const u16 sAtmosphericStabilizerOam_3277d8_Frame0[] = {
+static const u16 sAtmosphericStabilizerFanOam_OnlineVertical_Frame0[] = {
     5,
     OBJ_SHAPE_HORIZONTAL | 0xf0, 0x1f0, OBJ_PALETTE_8 | 0x227,
     0xe8, OBJ_SIZE_32x32 | 0x1e8, OBJ_PALETTE_8 | 0x200,
@@ -204,7 +204,7 @@ static const u16 sAtmosphericStabilizerOam_3277d8_Frame0[] = {
     0x8, OBJ_SIZE_16x16 | 0x8, OBJ_PALETTE_8 | 0x284
 };
 
-static const u16 sAtmosphericStabilizerOam_3277d8_Frame1[] = {
+static const u16 sAtmosphericStabilizerFanOam_OnlineVertical_Frame1[] = {
     8,
     OBJ_SHAPE_HORIZONTAL | 0x0, 0x1f8, OBJ_PALETTE_7 | 0x221,
     OBJ_SHAPE_HORIZONTAL | 0xf0, OBJ_SIZE_32x16 | 0x1f0, OBJ_PALETTE_8 | 0x20c,
@@ -216,7 +216,7 @@ static const u16 sAtmosphericStabilizerOam_3277d8_Frame1[] = {
     0x8, OBJ_SIZE_16x16 | 0x8, OBJ_PALETTE_8 | 0x284
 };
 
-static const u16 sAtmosphericStabilizerOam_3277d8_Frame2[] = {
+static const u16 sAtmosphericStabilizerFanOam_OnlineVertical_Frame2[] = {
     8,
     OBJ_SHAPE_HORIZONTAL | 0x0, 0x1f8, OBJ_PALETTE_7 | 0x221,
     OBJ_SHAPE_HORIZONTAL | 0xf0, OBJ_SIZE_32x16 | 0x1f0, OBJ_PALETTE_8 | 0x24c,
@@ -228,7 +228,7 @@ static const u16 sAtmosphericStabilizerOam_3277d8_Frame2[] = {
     0x8, OBJ_SIZE_16x16 | 0x8, OBJ_PALETTE_8 | 0x284
 };
 
-static const u16 sAtmosphericStabilizerOam_3279f8_Frame0[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_SpawningX_Frame0[] = {
     5,
     0xfa, OBJ_SIZE_16x16 | 0x1fa, OBJ_PALETTE_9 | 0x27d,
     0xf5, OBJ_SIZE_16x16 | 0x1f5, OBJ_PALETTE_9 | 0x210,
@@ -237,7 +237,7 @@ static const u16 sAtmosphericStabilizerOam_3279f8_Frame0[] = {
     0x5, 0x5, OBJ_PALETTE_9 | 0x252
 };
 
-static const u16 sAtmosphericStabilizerOam_3279f8_Frame1[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_SpawningX_Frame1[] = {
     5,
     0xf7, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_9 | 0x215,
     0xf4, OBJ_SIZE_16x16 | 0x1f4, OBJ_PALETTE_9 | 0x210,
@@ -246,7 +246,7 @@ static const u16 sAtmosphericStabilizerOam_3279f8_Frame1[] = {
     0x4, 0x4, OBJ_PALETTE_9 | 0x252
 };
 
-static const u16 sAtmosphericStabilizerOam_3279f8_Frame2[] = {
+static const u16 sAtmosphericStabilizerParasiteOam_SpawningX_Frame2[] = {
     5,
     0xfa, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_9 | 0x213,
     0xf5, OBJ_SIZE_16x16 | 0x1f3, OBJ_PALETTE_9 | 0x210,
@@ -255,7 +255,7 @@ static const u16 sAtmosphericStabilizerOam_3279f8_Frame2[] = {
     0x5, 0x3, OBJ_PALETTE_9 | 0x252
 };
 
-static const u16 sAtmosphericStabilizerOam_327a20_Frame0[] = {
+static const u16 sAtmosphericStabilizerCoverOam_Down_Frame0[] = {
     17,
     0xf0, OBJ_SIZE_16x16 | 0x8, OBJ_PALETTE_10 | 0x299,
     OBJ_SHAPE_HORIZONTAL | 0x0, 0x8, OBJ_PALETTE_10 | 0x25b,
@@ -276,7 +276,7 @@ static const u16 sAtmosphericStabilizerOam_327a20_Frame0[] = {
     0xfe, OBJ_SIZE_16x16 | 0xd, OBJ_PALETTE_10 | 0x219
 };
 
-static const u16 sAtmosphericStabilizerOam_327a30_Frame0[] = {
+static const u16 sAtmosphericStabilizerCoverOam_Right_Frame0[] = {
     13,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1e1, OBJ_PALETTE_10 | 0x297,
     0xe8, OBJ_SIZE_16x16 | 0x8, OBJ_PALETTE_10 | 0x257,
@@ -293,7 +293,7 @@ static const u16 sAtmosphericStabilizerOam_327a30_Frame0[] = {
     0xe, OBJ_SIZE_16x16 | 0x1fd, OBJ_PALETTE_10 | 0x219
 };
 
-static const u16 sAtmosphericStabilizerOam_327a40_Frame0[] = {
+static const u16 sAtmosphericStabilizerCoverOam_Left_Frame0[] = {
     17,
     0xe2, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x5, OBJ_PALETTE_10 | 0x297,
     0xa, OBJ_SIZE_16x16 | 0x0, OBJ_PALETTE_10 | 0x259,
@@ -314,7 +314,7 @@ static const u16 sAtmosphericStabilizerOam_327a40_Frame0[] = {
     0xe1, OBJ_SIZE_16x16 | 0x1ec, OBJ_PALETTE_10 | 0x255
 };
 
-static const u16 sAtmosphericStabilizerOam_327a50_Frame0[] = {
+static const u16 sAtmosphericStabilizerCoverOam_UpLeft_Frame0[] = {
     18,
     0xc, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_10 | 0x253,
     0x0, OBJ_SIZE_16x16 | 0x10, OBJ_PALETTE_10 | 0x257,
@@ -336,7 +336,7 @@ static const u16 sAtmosphericStabilizerOam_327a50_Frame0[] = {
     0xf4, 0x16, OBJ_PALETTE_10 | 0x25f
 };
 
-static const u16 sAtmosphericStabilizerOam_327a60_Frame0[] = {
+static const u16 sAtmosphericStabilizerCoverOam_UpRight_Frame0[] = {
     17,
     0xf6, OBJ_SIZE_16x16 | 0x1e7, OBJ_PALETTE_10 | 0x257,
     0xe8, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x4, OBJ_PALETTE_10 | 0x297,
@@ -410,537 +410,537 @@ static const u16 sAtmosphericStabilizerOam_327ad0_Frame0[] = {
     0xf8, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_10 | 0x297
 };
 
-const struct FrameData sAtmosphericStabilizerOam_327640[4] = {
+const struct FrameData sAtmosphericStabilizerFanOam_OnlineHorizontal[4] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 2
     },
     [1] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 2
     },
     [2] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 2
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_327660[16] = {
+const struct FrameData sAtmosphericStabilizerFanOam_CloggedHorizontal[16] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 3
     },
     [4] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 3
     },
     [5] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 3
     },
     [6] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 2
     },
     [7] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 2
     },
     [8] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 2
     },
     [9] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 5
     },
     [10] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 6
     },
     [11] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 7
     },
     [12] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 3
     },
     [13] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 4
     },
     [14] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 5
     },
     [15] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_3276e0[31] = {
+const struct FrameData sAtmosphericStabilizerFanOam_RestartingHorizontal[31] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 8
     },
     [3] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 8
     },
     [4] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 8
     },
     [5] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 8
     },
     [6] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 6
     },
     [7] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 6
     },
     [8] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 6
     },
     [9] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 6
     },
     [10] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 6
     },
     [11] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 6
     },
     [12] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 5
     },
     [13] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 5
     },
     [14] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 5
     },
     [15] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 5
     },
     [16] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 5
     },
     [17] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 5
     },
     [18] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 3
     },
     [19] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 3
     },
     [20] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 3
     },
     [21] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 3
     },
     [22] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 3
     },
     [23] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 3
     },
     [24] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 2
     },
     [25] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 2
     },
     [26] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 2
     },
     [27] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame0,
         .timer = 2
     },
     [28] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame1,
         .timer = 2
     },
     [29] = {
-        .pFrame = sAtmosphericStabilizerOam_327640_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineHorizontal_Frame2,
         .timer = 2
     },
     [30] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_3277d8[4] = {
+const struct FrameData sAtmosphericStabilizerFanOam_OnlineVertical[4] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 2
     },
     [1] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 2
     },
     [2] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 2
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_3277f8[16] = {
+const struct FrameData sAtmosphericStabilizerFanOam_CloggedVertical[16] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 3
     },
     [4] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 3
     },
     [5] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 3
     },
     [6] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 2
     },
     [7] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 2
     },
     [8] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 2
     },
     [9] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 5
     },
     [10] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 6
     },
     [11] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 7
     },
     [12] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 3
     },
     [13] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 4
     },
     [14] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 5
     },
     [15] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_327878[31] = {
+const struct FrameData sAtmosphericStabilizerFanOam_RestartingVertical[31] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 8
     },
     [3] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 8
     },
     [4] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 8
     },
     [5] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 8
     },
     [6] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 6
     },
     [7] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 6
     },
     [8] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 6
     },
     [9] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 6
     },
     [10] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 6
     },
     [11] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 6
     },
     [12] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 5
     },
     [13] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 5
     },
     [14] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 5
     },
     [15] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 5
     },
     [16] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 5
     },
     [17] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 5
     },
     [18] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 3
     },
     [19] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 3
     },
     [20] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 3
     },
     [21] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 3
     },
     [22] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 3
     },
     [23] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 3
     },
     [24] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 2
     },
     [25] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 2
     },
     [26] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 2
     },
     [27] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame0,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame0,
         .timer = 2
     },
     [28] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame1,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame1,
         .timer = 2
     },
     [29] = {
-        .pFrame = sAtmosphericStabilizerOam_3277d8_Frame2,
+        .pFrame = sAtmosphericStabilizerFanOam_OnlineVertical_Frame2,
         .timer = 2
     },
     [30] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_327970[17] = {
+const struct FrameData sAtmosphericStabilizerParasiteOam_Idle[17] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame0,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame0,
         .timer = 7
     },
     [1] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame1,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame1,
         .timer = 7
     },
     [2] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame2,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame2,
         .timer = 7
     },
     [3] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame3,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame3,
         .timer = 7
     },
     [4] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame4,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame4,
         .timer = 7
     },
     [5] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame5,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame5,
         .timer = 7
     },
     [6] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame6,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame6,
         .timer = 7
     },
     [7] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame7,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame7,
         .timer = 7
     },
     [8] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame8,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame8,
         .timer = 7
     },
     [9] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame9,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame9,
         .timer = 7
     },
     [10] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame10,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame10,
         .timer = 7
     },
     [11] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame11,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame11,
         .timer = 7
     },
     [12] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame12,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame12,
         .timer = 7
     },
     [13] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame13,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame13,
         .timer = 7
     },
     [14] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame14,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame14,
         .timer = 7
     },
     [15] = {
-        .pFrame = sAtmosphericStabilizerOam_327970_Frame15,
+        .pFrame = sAtmosphericStabilizerParasiteOam_Idle_Frame15,
         .timer = 7
     },
     [16] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_3279f8[5] = {
+const struct FrameData sAtmosphericStabilizerParasiteOam_SpawningX[5] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_3279f8_Frame0,
+        .pFrame = sAtmosphericStabilizerParasiteOam_SpawningX_Frame0,
         .timer = 5
     },
     [1] = {
-        .pFrame = sAtmosphericStabilizerOam_3279f8_Frame1,
+        .pFrame = sAtmosphericStabilizerParasiteOam_SpawningX_Frame1,
         .timer = 5
     },
     [2] = {
-        .pFrame = sAtmosphericStabilizerOam_3279f8_Frame2,
+        .pFrame = sAtmosphericStabilizerParasiteOam_SpawningX_Frame2,
         .timer = 5
     },
     [3] = {
-        .pFrame = sAtmosphericStabilizerOam_3279f8_Frame1,
+        .pFrame = sAtmosphericStabilizerParasiteOam_SpawningX_Frame1,
         .timer = 5
     },
     [4] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_327a20[2] = {
+const struct FrameData sAtmosphericStabilizerCoverOam_Down[2] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_327a20_Frame0,
+        .pFrame = sAtmosphericStabilizerCoverOam_Down_Frame0,
         .timer = 4
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_327a30[2] = {
+const struct FrameData sAtmosphericStabilizerCoverOam_Right[2] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_327a30_Frame0,
+        .pFrame = sAtmosphericStabilizerCoverOam_Right_Frame0,
         .timer = 4
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_327a40[2] = {
+const struct FrameData sAtmosphericStabilizerCoverOam_Left[2] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_327a40_Frame0,
+        .pFrame = sAtmosphericStabilizerCoverOam_Left_Frame0,
         .timer = 4
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_327a50[2] = {
+const struct FrameData sAtmosphericStabilizerCoverOam_UpLeft[2] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_327a50_Frame0,
+        .pFrame = sAtmosphericStabilizerCoverOam_UpLeft_Frame0,
         .timer = 4
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sAtmosphericStabilizerOam_327a60[2] = {
+const struct FrameData sAtmosphericStabilizerCoverOam_UpRight[2] = {
     [0] = {
-        .pFrame = sAtmosphericStabilizerOam_327a60_Frame0,
+        .pFrame = sAtmosphericStabilizerCoverOam_UpRight_Frame0,
         .timer = 4
     },
     [1] = FRAME_DATA_TERMINATOR

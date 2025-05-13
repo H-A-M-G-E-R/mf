@@ -11,19 +11,27 @@
 #include "structs/sprite.h"
 #include "structs/samus.h"
 
+#define GERUBOSS_POSE_STALLING 8
+#define GERUBOSS_POSE_CHARGING_INIT 0x29
+#define GERUBOSS_POSE_CHARGING 0x2a
+#define GERUBOSS_POSE_GOING_DOWN 0x2c
+#define GERUBOSS_POSE_CHANGING_DIRECTION 0x2e
+#define GERUBOSS_POSE_GOING_UP 0x30
+#define GERUBOSS_POSE_GRABBING_CEILING 0x32
+
 #define SS_GERUBOSS_FACING_DOWN SS_SAMUS_COLLIDING
 
 u8 GerubossYMovement(u16 movement) {
     if (gCurrentSprite.status & SS_GERUBOSS_FACING_DOWN) {
-        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition + 0x40, gCurrentSprite.xPosition - 0x30);
+        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition + PIXEL_SIZE * 0x10, gCurrentSprite.xPosition - PIXEL_SIZE * 0xc);
         if (gPreviousCollisionCheck == COLLISION_SOLID) return TRUE;
-        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition + 0x40, gCurrentSprite.xPosition + 0x30);
+        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition + PIXEL_SIZE * 0x10, gCurrentSprite.xPosition + PIXEL_SIZE * 0xc);
         if (gPreviousCollisionCheck == COLLISION_SOLID) return TRUE;
         gCurrentSprite.yPosition += movement;
     } else {
-        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - 0x20, gCurrentSprite.xPosition - 0x30);
+        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - PIXEL_SIZE * 8, gCurrentSprite.xPosition - PIXEL_SIZE * 0xc);
         if (gPreviousCollisionCheck == COLLISION_SOLID) return TRUE;
-        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - 0x20, gCurrentSprite.xPosition + 0x30);
+        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - PIXEL_SIZE * 8, gCurrentSprite.xPosition + PIXEL_SIZE * 0xc);
         if (gPreviousCollisionCheck == COLLISION_SOLID) return TRUE;
         gCurrentSprite.yPosition -= movement;
     }
@@ -32,15 +40,15 @@ u8 GerubossYMovement(u16 movement) {
 
 u8 GerubossXMovement(u16 movement) {
     if (gCurrentSprite.status & SS_FACING_RIGHT) {
-        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - 0x20, gCurrentSprite.xPosition + 0x40);
+        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - PIXEL_SIZE * 8, gCurrentSprite.xPosition + PIXEL_SIZE * 0x10);
         if (gPreviousCollisionCheck == COLLISION_SOLID) return TRUE;
-        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition + 0x20, gCurrentSprite.xPosition + 0x40);
+        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition + PIXEL_SIZE * 8, gCurrentSprite.xPosition + PIXEL_SIZE * 0x10);
         if (gPreviousCollisionCheck == COLLISION_SOLID) return TRUE;
         gCurrentSprite.xPosition += movement;
     } else {
-        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - 0x20, gCurrentSprite.xPosition - 0x40);
+        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - PIXEL_SIZE * 8, gCurrentSprite.xPosition - PIXEL_SIZE * 0x10);
         if (gPreviousCollisionCheck == COLLISION_SOLID) return TRUE;
-        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition + 0x20, gCurrentSprite.xPosition - 0x40);
+        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition + PIXEL_SIZE * 8, gCurrentSprite.xPosition - PIXEL_SIZE * 0x10);
         if (gPreviousCollisionCheck == COLLISION_SOLID) return TRUE;
         gCurrentSprite.xPosition -= movement;
     }
@@ -49,9 +57,9 @@ u8 GerubossXMovement(u16 movement) {
 
 void GerubossTurningIntoX(void) {
     SpriteSpawnNewXParasite(PSPRITE_X_PARASITE, gCurrentSprite.spriteId, 0, gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.spritesetSlotAndProperties,
-        gCurrentSprite.yPosition - 8, gCurrentSprite.xPosition + 0x24, SS_X_FLIP);
-    gCurrentSprite.yPosition += 8;
-    gCurrentSprite.xPosition -= 0x24;
+        gCurrentSprite.yPosition - PIXEL_SIZE * 2, gCurrentSprite.xPosition + PIXEL_SIZE * 9, SS_X_FLIP);
+    gCurrentSprite.yPosition += PIXEL_SIZE * 2;
+    gCurrentSprite.xPosition -= PIXEL_SIZE * 9;
 }
 
 void GerubossInit(void) {
@@ -64,11 +72,11 @@ void GerubossInit(void) {
     gCurrentSprite.drawDistanceTop = 0x20;
     gCurrentSprite.drawDistanceBottom = 0x28;
     gCurrentSprite.drawDistanceHorizontal = 0x18;
-    gCurrentSprite.hitboxTop = -0x20;
-    gCurrentSprite.hitboxBottom = 0x30;
-    gCurrentSprite.hitboxLeft = -0x38;
-    gCurrentSprite.hitboxRight = 0x38;
-    gCurrentSprite.pOam = sGerubossOam_358e14;
+    gCurrentSprite.hitboxTop = -PIXEL_SIZE * 8;
+    gCurrentSprite.hitboxBottom = PIXEL_SIZE * 0xc;
+    gCurrentSprite.hitboxLeft = -PIXEL_SIZE * 0xe;
+    gCurrentSprite.hitboxRight = PIXEL_SIZE * 0xe;
+    gCurrentSprite.pOam = sGerubossOam_Idle;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.bgPriority = gIoRegisters.bg1Cnt & 3;
@@ -78,75 +86,75 @@ void GerubossInit(void) {
         gCurrentSprite.pose = SPRITE_POSE_SPAWNING_FROM_X;
         gCurrentSprite.xParasiteTimer = X_PARASITE_MOSAIC_MAX_INDEX;
     } else {
-        gCurrentSprite.yPosition -= 0x20;
-        gCurrentSprite.pose = 1;
+        gCurrentSprite.yPosition -= PIXEL_SIZE * 8;
+        gCurrentSprite.pose = SPRITE_POSE_IDLE_INIT;
     }
 }
 
 void GerubossIdleInit(void) {
-    gCurrentSprite.pose = 2;
+    gCurrentSprite.pose = SPRITE_POSE_IDLE;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
-    gCurrentSprite.pOam = sGerubossOam_358e14;
+    gCurrentSprite.pOam = sGerubossOam_Idle;
     gCurrentSprite.work1 = 48;
 }
 
 void GerubossIdle(void) {
     if (gCurrentSprite.status & SS_HIDDEN) return;
 
-    SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - 0x24, gCurrentSprite.xPosition - 0x30);
+    SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - PIXEL_SIZE * 9, gCurrentSprite.xPosition - PIXEL_SIZE * 0xc);
     if (gPreviousCollisionCheck != COLLISION_SOLID) {
-        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - 0x24, gCurrentSprite.xPosition + 0x30);
+        SpriteUtilCheckCollisionAtPosition(gCurrentSprite.yPosition - PIXEL_SIZE * 9, gCurrentSprite.xPosition + PIXEL_SIZE * 0xc);
         if (gPreviousCollisionCheck != COLLISION_SOLID) {
             SpriteUtilMakeSpriteFaceSamusDirection();
-            gCurrentSprite.pose = 0x29;
+            gCurrentSprite.pose = GERUBOSS_POSE_CHARGING_INIT;
             return;
         }
     }
 
     if (SPRITE_HAS_ISFT(gCurrentSprite) != 0) {
-        gCurrentSprite.pose = 8;
+        gCurrentSprite.pose = GERUBOSS_POSE_STALLING;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sGerubossOam_358df4;
-        gCurrentSprite.work1 = 0x5a;
+        gCurrentSprite.pOam = sGerubossOam_Stalling;
+        gCurrentSprite.work1 = 90;
         SoundPlayNotAlreadyPlaying(0x1a0);
         return;
     }
 
     if (gCurrentSprite.work1 > 0) {
         gCurrentSprite.work1--;
-    } else if (gSamusData.yPosition - 0x48 >= gCurrentSprite.yPosition) {
-        u8 nslr = SpriteUtilCheckSamusNearSpriteLeftRight(0x200, 0x140);
+    } else if (gSamusData.yPosition - PIXEL_SIZE * 0x12 >= gCurrentSprite.yPosition) {
+        u8 nslr = SpriteUtilCheckSamusNearSpriteLeftRight(BLOCK_SIZE * 8, BLOCK_SIZE * 5);
         if (nslr == NSLR_RIGHT) {
             gCurrentSprite.status |= SS_FACING_RIGHT;
-            gCurrentSprite.pose = 0x29;
+            gCurrentSprite.pose = GERUBOSS_POSE_CHARGING_INIT;
         } else if (nslr == NSLR_LEFT) {
             gCurrentSprite.status &= ~SS_FACING_RIGHT;
-            gCurrentSprite.pose = 0x29;
+            gCurrentSprite.pose = GERUBOSS_POSE_CHARGING_INIT;
         }
     }
 }
 
 void GerubossStalling(void) {
     if (--gCurrentSprite.work1 == 0)
-        gCurrentSprite.pose = 1;
+        gCurrentSprite.pose = SPRITE_POSE_IDLE_INIT;
 }
 
-void GerubossLaunchingInit(void) {
-    gCurrentSprite.pose = 0x2a;
+void GerubossChargingInit(void) {
+    gCurrentSprite.pose = GERUBOSS_POSE_CHARGING;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
-    gCurrentSprite.pOam = sGerubossOam_358e3c;
+    gCurrentSprite.pOam = sGerubossOam_Charging;
     SoundPlayNotAlreadyPlaying(0x19d);
 }
 
 void GerubossCharging(void) {
     if (SpriteUtilCheckEndCurrentSpriteAnim()) {
-        gCurrentSprite.pose = 0x2c;
+        gCurrentSprite.pose = GERUBOSS_POSE_GOING_DOWN;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sGerubossOam_358e6c;
+        gCurrentSprite.pOam = sGerubossOam_StartGoingDown;
         gCurrentSprite.status |= SS_GERUBOSS_FACING_DOWN;
         gCurrentSprite.work1 = 24;
         SoundPlayNotAlreadyPlaying(0x19e);
@@ -158,7 +166,7 @@ void GerubossGoingDown(void) {
         if (--gCurrentSprite.work1 == 0) {
             gCurrentSprite.animationDurationCounter = 0;
             gCurrentSprite.currentAnimationFrame = 0;
-            gCurrentSprite.pOam = sGerubossOam_358e8c;
+            gCurrentSprite.pOam = sGerubossOam_GoingDown;
             gCurrentSprite.work2 = 0;
         }
     } else {
@@ -166,21 +174,21 @@ void GerubossGoingDown(void) {
             SoundPlay(0x19f);
         gCurrentSprite.work2++;
     }
-    GerubossXMovement(2);
-    if (GerubossYMovement(0xc)) {
-        gCurrentSprite.pose = 0x2e;
+    GerubossXMovement(PIXEL_SIZE / 2);
+    if (GerubossYMovement(PIXEL_SIZE * 3)) {
+        gCurrentSprite.pose = GERUBOSS_POSE_CHANGING_DIRECTION;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sGerubossOam_358eec;
+        gCurrentSprite.pOam = sGerubossOam_TiltingUp;
     }
 }
 
 void GerubossChangingDirection(void) {
     if (SpriteUtilCheckEndCurrentSpriteAnim()) {
-        gCurrentSprite.pose = 0x30;
+        gCurrentSprite.pose = GERUBOSS_POSE_GOING_UP;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sGerubossOam_358eac;
+        gCurrentSprite.pOam = sGerubossOam_StartGoingUp;
         gCurrentSprite.status &= ~SS_GERUBOSS_FACING_DOWN;
         gCurrentSprite.work1 = 24;
         SoundPlayNotAlreadyPlaying(0x19e);
@@ -192,7 +200,7 @@ void GerubossGoingUp(void) {
         if (--gCurrentSprite.work1 == 0) {
             gCurrentSprite.animationDurationCounter = 0;
             gCurrentSprite.currentAnimationFrame = 0;
-            gCurrentSprite.pOam = sGerubossOam_358ecc;
+            gCurrentSprite.pOam = sGerubossOam_GoingUp;
             gCurrentSprite.work2 = 0;
         }
     } else {
@@ -200,18 +208,18 @@ void GerubossGoingUp(void) {
             SoundPlay(0x19f);
         gCurrentSprite.work2++;
     }
-    GerubossXMovement(2);
-    if (GerubossYMovement(0xc)) {
-        gCurrentSprite.pose = 0x32;
+    GerubossXMovement(PIXEL_SIZE / 2);
+    if (GerubossYMovement(PIXEL_SIZE * 3)) {
+        gCurrentSprite.pose = GERUBOSS_POSE_GRABBING_CEILING;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sGerubossOam_358f3c;
+        gCurrentSprite.pOam = sGerubossOam_GrabbingCeiling;
     }
 }
 
 void GerubossGrabbingCeiling(void) {
     if (SpriteUtilCheckNearEndCurrentSpriteAnim())
-        gCurrentSprite.pose = 1;
+        gCurrentSprite.pose = SPRITE_POSE_IDLE_INIT;
 }
 
 void Geruboss(void) {
@@ -222,45 +230,45 @@ void Geruboss(void) {
         return;
     }
     switch (gCurrentSprite.pose) {
-        case 0:
+        case SPRITE_POSE_UNINITIALIZED:
             GerubossInit();
             break;
-        case 1:
+        case SPRITE_POSE_IDLE_INIT:
             GerubossIdleInit();
-        case 2:
+        case SPRITE_POSE_IDLE:
             GerubossIdle();
             break;
-        case 8:
+        case GERUBOSS_POSE_STALLING:
             GerubossStalling();
             break;
-        case 0x29:
-            GerubossLaunchingInit();
-        case 0x2a:
+        case GERUBOSS_POSE_CHARGING_INIT:
+            GerubossChargingInit();
+        case GERUBOSS_POSE_CHARGING:
             GerubossCharging();
             break;
-        case 0x2c:
+        case GERUBOSS_POSE_GOING_DOWN:
             GerubossGoingDown();
             break;
-        case 0x2e:
+        case GERUBOSS_POSE_CHANGING_DIRECTION:
             GerubossChangingDirection();
             break;
-        case 0x30:
+        case GERUBOSS_POSE_GOING_UP:
             GerubossGoingUp();
             break;
-        case 0x32:
+        case GERUBOSS_POSE_GRABBING_CEILING:
             GerubossGrabbingCeiling();
             break;
-        case 0x57:
+        case SPRITE_POSE_DYING_INIT:
             SpriteDyingInit();
-        case 0x58:
+        case SPRITE_POSE_DYING:
             SpriteDying();
             break;
-        case 0x59:
+        case SPRITE_POSE_SPAWNING_FROM_X_INIT:
             GerubossInit();
-        case 0x5a:
+        case SPRITE_POSE_SPAWNING_FROM_X:
             SpriteSpawningFromX();
             break;
-        case 0x5b:
+        case SPRITE_POSE_TURNING_INTO_X:
             GerubossTurningIntoX();
             XParasiteInit();
     }

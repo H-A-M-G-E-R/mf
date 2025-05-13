@@ -4,7 +4,7 @@
 const u32 sEvirGfx[512 * 2] = INCBIN_U32("data/sprites/evir.gfx");
 const u16 sEvirPal[16 * 2] = INCBIN_U16("data/sprites/evir.pal");
 
-static const u16 sEvirOam_356abc_Frame0[] = {
+static const u16 sEvirOam_Idle_Frame0[] = {
     11,
     0xde, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x206,
     0xf2, 0x1, OBJ_PALETTE_8 | 0x20e,
@@ -19,7 +19,7 @@ static const u16 sEvirOam_356abc_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xf4, 0x1, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356abc_Frame1[] = {
+static const u16 sEvirOam_Idle_Frame1[] = {
     12,
     0xdf, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf1, 0x1fa, OBJ_PALETTE_8 | 0x22c,
@@ -35,7 +35,7 @@ static const u16 sEvirOam_356abc_Frame1[] = {
     OBJ_SHAPE_VERTICAL | 0xf5, 0x0, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356abc_Frame2[] = {
+static const u16 sEvirOam_Idle_Frame2[] = {
     12,
     0xdf, OBJ_SIZE_16x16 | 0x0, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf2, 0x1f9, OBJ_PALETTE_8 | 0x20c,
@@ -51,7 +51,7 @@ static const u16 sEvirOam_356abc_Frame2[] = {
     OBJ_SHAPE_VERTICAL | 0xf6, 0x0, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356abc_Frame3[] = {
+static const u16 sEvirOam_Idle_Frame3[] = {
     11,
     0xdf, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf2, 0x1fa, OBJ_PALETTE_8 | 0x22c,
@@ -66,7 +66,7 @@ static const u16 sEvirOam_356abc_Frame3[] = {
     OBJ_SHAPE_VERTICAL | 0xf6, 0x0, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356abc_Frame4[] = {
+static const u16 sEvirOam_Idle_Frame4[] = {
     11,
     0xde, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x206,
     0xf2, 0x1, OBJ_PALETTE_8 | 0x20e,
@@ -81,7 +81,7 @@ static const u16 sEvirOam_356abc_Frame4[] = {
     OBJ_SHAPE_VERTICAL | 0xf6, 0x0, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356abc_Frame5[] = {
+static const u16 sEvirOam_Idle_Frame5[] = {
     11,
     0xdf, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf1, 0x1fa, OBJ_PALETTE_8 | 0x22c,
@@ -96,7 +96,7 @@ static const u16 sEvirOam_356abc_Frame5[] = {
     OBJ_SHAPE_VERTICAL | 0xf5, 0x0, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356abc_Frame6[] = {
+static const u16 sEvirOam_Idle_Frame6[] = {
     11,
     0xdf, OBJ_SIZE_16x16 | 0x0, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf2, 0x1f9, OBJ_PALETTE_8 | 0x20c,
@@ -111,7 +111,7 @@ static const u16 sEvirOam_356abc_Frame6[] = {
     OBJ_SHAPE_VERTICAL | 0xf4, 0x0, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356abc_Frame7[] = {
+static const u16 sEvirOam_Idle_Frame7[] = {
     11,
     0xde, OBJ_SIZE_16x16 | 0x0, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf2, 0x1fa, OBJ_PALETTE_8 | 0x22c,
@@ -126,7 +126,7 @@ static const u16 sEvirOam_356abc_Frame7[] = {
     OBJ_SHAPE_VERTICAL | 0xf3, 0x0, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356b04_Frame0[] = {
+static const u16 sEvirOam_Shooting_Frame0[] = {
     12,
     0xe6, 0x1f8, OBJ_PALETTE_8 | 0x20f,
     0xde, OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x206,
@@ -142,7 +142,7 @@ static const u16 sEvirOam_356b04_Frame0[] = {
     OBJ_SHAPE_VERTICAL | 0xf3, 0x0, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356b04_Frame1[] = {
+static const u16 sEvirOam_Shooting_Frame1[] = {
     12,
     0xe5, 0x1f8, OBJ_PALETTE_8 | 0x22f,
     0xdd, OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x206,
@@ -158,7 +158,7 @@ static const u16 sEvirOam_356b04_Frame1[] = {
     OBJ_SHAPE_VERTICAL | 0xf3, 0x0, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356b04_Frame2[] = {
+static const u16 sEvirOam_Shooting_Frame2[] = {
     11,
     0xde, OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf2, 0x1fa, OBJ_PALETTE_8 | 0x22c,
@@ -173,7 +173,7 @@ static const u16 sEvirOam_356b04_Frame2[] = {
     OBJ_SHAPE_VERTICAL | 0xf3, 0x0, OBJ_PALETTE_8 | 0x211
 };
 
-static const u16 sEvirOam_356b04_Frame3[] = {
+static const u16 sEvirOam_Shooting_Frame3[] = {
     11,
     0xdf, OBJ_SIZE_16x16 | 0x2, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf3, 0x1fb, OBJ_PALETTE_8 | 0x20c,
@@ -188,7 +188,7 @@ static const u16 sEvirOam_356b04_Frame3[] = {
     OBJ_SHAPE_VERTICAL | 0xf4, 0x1, OBJ_PALETTE_8 | 0x212
 };
 
-static const u16 sEvirOam_356b04_Frame4[] = {
+static const u16 sEvirOam_Shooting_Frame4[] = {
     11,
     0xe0, OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf2, 0x1fc, OBJ_PALETTE_8 | 0x22c,
@@ -203,7 +203,7 @@ static const u16 sEvirOam_356b04_Frame4[] = {
     0xef, OBJ_SIZE_16x16 | 0x1f7, OBJ_PALETTE_8 | 0x24c
 };
 
-static const u16 sEvirOam_356b04_Frame5[] = {
+static const u16 sEvirOam_Shooting_Frame5[] = {
     11,
     0xde, OBJ_SIZE_16x16 | 0x0, OBJ_PALETTE_8 | 0x206,
     OBJ_SHAPE_HORIZONTAL | 0xf2, 0x1fa, OBJ_PALETTE_8 | 0x22c,
@@ -218,7 +218,7 @@ static const u16 sEvirOam_356b04_Frame5[] = {
     0xef, OBJ_SIZE_16x16 | 0x1f9, OBJ_PALETTE_8 | 0x24c
 };
 
-static const u16 sEvirOam_356b04_Frame6[] = {
+static const u16 sEvirOam_Shooting_Frame6[] = {
     11,
     0xde, OBJ_SIZE_16x16 | 0x0, OBJ_PALETTE_8 | 0x206,
     0xf2, 0x1, OBJ_PALETTE_8 | 0x20e,
@@ -233,7 +233,7 @@ static const u16 sEvirOam_356b04_Frame6[] = {
     OBJ_SHAPE_VERTICAL | 0xf5, 0x1fe, OBJ_PALETTE_8 | 0x210
 };
 
-static const u16 sEvirOam_356b44_Frame1[] = {
+static const u16 sEvirOam_TurningAround1_Frame1[] = {
     8,
     0xeb, OBJ_SIZE_16x16 | 0x1fd, OBJ_PALETTE_8 | 0x257,
     OBJ_SHAPE_HORIZONTAL | 0xe3, OBJ_SIZE_32x16 | 0x1ee, OBJ_PALETTE_8 | 0x233,
@@ -245,7 +245,7 @@ static const u16 sEvirOam_356b44_Frame1[] = {
     0xeb, OBJ_SIZE_16x16 | 0x1ed, OBJ_PALETTE_8 | 0x217
 };
 
-static const u16 sEvirOam_356b44_Frame2[] = {
+static const u16 sEvirOam_TurningAround1_Frame2[] = {
     5,
     OBJ_SHAPE_HORIZONTAL | 0xed, OBJ_SIZE_32x16 | 0x1f0, OBJ_PALETTE_8 | 0x259,
     0xdd, OBJ_SIZE_16x16 | 0x1f0, OBJ_PALETTE_8 | 0x219,
@@ -254,27 +254,27 @@ static const u16 sEvirOam_356b44_Frame2[] = {
     OBJ_SHAPE_HORIZONTAL | 0xfd, 0x1f8, OBJ_PALETTE_8 | 0x23d
 };
 
-static const u16 sEvirOam_356b84_Frame0[] = {
+static const u16 sEvirProjectileOam_Moving_Frame0[] = {
     1,
     0xf8, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x240
 };
 
-static const u16 sEvirOam_356b84_Frame1[] = {
+static const u16 sEvirProjectileOam_Moving_Frame1[] = {
     1,
     0xf8, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x242
 };
 
-static const u16 sEvirOam_356b84_Frame2[] = {
+static const u16 sEvirProjectileOam_Moving_Frame2[] = {
     1,
     0xf8, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x244
 };
 
-static const u16 sEvirOam_356b84_Frame3[] = {
+static const u16 sEvirProjectileOam_Moving_Frame3[] = {
     1,
     0xf8, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x246
 };
 
-static const u16 sEvirOam_356bac_Frame0[] = {
+static const u16 sEvirProjectileOam_Exploding_Frame0[] = {
     4,
     0xf5, OBJ_SIZE_16x16 | 0x1f3, OBJ_PALETTE_8 | 0x25d,
     OBJ_SHAPE_VERTICAL | 0xf5, 0x3, OBJ_PALETTE_8 | 0x25f,
@@ -282,7 +282,7 @@ static const u16 sEvirOam_356bac_Frame0[] = {
     0x5, 0x1fe, OBJ_PALETTE_8 | 0x23f
 };
 
-static const u16 sEvirOam_356bac_Frame1[] = {
+static const u16 sEvirProjectileOam_Exploding_Frame1[] = {
     10,
     0xf7, OBJ_X_FLIP | 0x1fa, OBJ_PALETTE_8 | 0x216,
     0x6, 0x1f5, OBJ_PALETTE_8 | 0x273,
@@ -296,7 +296,7 @@ static const u16 sEvirOam_356bac_Frame1[] = {
     0x1, OBJ_Y_FLIP | 0x1, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sEvirOam_356bac_Frame2[] = {
+static const u16 sEvirProjectileOam_Exploding_Frame2[] = {
     7,
     0xb, 0x1f5, OBJ_PALETTE_8 | 0x273,
     0x9, OBJ_X_FLIP | OBJ_Y_FLIP | 0x4, OBJ_PALETTE_8 | 0x273,
@@ -307,137 +307,137 @@ static const u16 sEvirOam_356bac_Frame2[] = {
     0xeb, OBJ_Y_FLIP | 0x1f3, OBJ_PALETTE_8 | 0x273
 };
 
-const struct FrameData sEvirOam_356abc[9] = {
+const struct FrameData sEvirOam_Idle[9] = {
     [0] = {
-        .pFrame = sEvirOam_356abc_Frame0,
+        .pFrame = sEvirOam_Idle_Frame0,
         .timer = 10
     },
     [1] = {
-        .pFrame = sEvirOam_356abc_Frame1,
+        .pFrame = sEvirOam_Idle_Frame1,
         .timer = 10
     },
     [2] = {
-        .pFrame = sEvirOam_356abc_Frame2,
+        .pFrame = sEvirOam_Idle_Frame2,
         .timer = 10
     },
     [3] = {
-        .pFrame = sEvirOam_356abc_Frame3,
+        .pFrame = sEvirOam_Idle_Frame3,
         .timer = 10
     },
     [4] = {
-        .pFrame = sEvirOam_356abc_Frame4,
+        .pFrame = sEvirOam_Idle_Frame4,
         .timer = 10
     },
     [5] = {
-        .pFrame = sEvirOam_356abc_Frame5,
+        .pFrame = sEvirOam_Idle_Frame5,
         .timer = 10
     },
     [6] = {
-        .pFrame = sEvirOam_356abc_Frame6,
+        .pFrame = sEvirOam_Idle_Frame6,
         .timer = 10
     },
     [7] = {
-        .pFrame = sEvirOam_356abc_Frame7,
+        .pFrame = sEvirOam_Idle_Frame7,
         .timer = 10
     },
     [8] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sEvirOam_356b04[8] = {
+const struct FrameData sEvirOam_Shooting[8] = {
     [0] = {
-        .pFrame = sEvirOam_356b04_Frame0,
+        .pFrame = sEvirOam_Shooting_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sEvirOam_356b04_Frame1,
+        .pFrame = sEvirOam_Shooting_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sEvirOam_356b04_Frame2,
+        .pFrame = sEvirOam_Shooting_Frame2,
         .timer = 4
     },
     [3] = {
-        .pFrame = sEvirOam_356b04_Frame3,
+        .pFrame = sEvirOam_Shooting_Frame3,
         .timer = 4
     },
     [4] = {
-        .pFrame = sEvirOam_356b04_Frame4,
+        .pFrame = sEvirOam_Shooting_Frame4,
         .timer = 8
     },
     [5] = {
-        .pFrame = sEvirOam_356b04_Frame5,
+        .pFrame = sEvirOam_Shooting_Frame5,
         .timer = 6
     },
     [6] = {
-        .pFrame = sEvirOam_356b04_Frame6,
+        .pFrame = sEvirOam_Shooting_Frame6,
         .timer = 10
     },
     [7] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sEvirOam_356b44[4] = {
+const struct FrameData sEvirOam_TurningAround1[4] = {
     [0] = {
-        .pFrame = sEvirOam_356abc_Frame0,
+        .pFrame = sEvirOam_Idle_Frame0,
         .timer = 2
     },
     [1] = {
-        .pFrame = sEvirOam_356b44_Frame1,
+        .pFrame = sEvirOam_TurningAround1_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sEvirOam_356b44_Frame2,
+        .pFrame = sEvirOam_TurningAround1_Frame2,
         .timer = 4
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sEvirOam_356b64[4] = {
+const struct FrameData sEvirOam_TurningAround2[4] = {
     [0] = {
-        .pFrame = sEvirOam_356b44_Frame2,
+        .pFrame = sEvirOam_TurningAround1_Frame2,
         .timer = 4
     },
     [1] = {
-        .pFrame = sEvirOam_356b44_Frame1,
+        .pFrame = sEvirOam_TurningAround1_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sEvirOam_356abc_Frame0,
+        .pFrame = sEvirOam_Idle_Frame0,
         .timer = 2
     },
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sEvirOam_356b84[5] = {
+const struct FrameData sEvirProjectileOam_Moving[5] = {
     [0] = {
-        .pFrame = sEvirOam_356b84_Frame0,
+        .pFrame = sEvirProjectileOam_Moving_Frame0,
         .timer = 12
     },
     [1] = {
-        .pFrame = sEvirOam_356b84_Frame1,
+        .pFrame = sEvirProjectileOam_Moving_Frame1,
         .timer = 12
     },
     [2] = {
-        .pFrame = sEvirOam_356b84_Frame2,
+        .pFrame = sEvirProjectileOam_Moving_Frame2,
         .timer = 12
     },
     [3] = {
-        .pFrame = sEvirOam_356b84_Frame3,
+        .pFrame = sEvirProjectileOam_Moving_Frame3,
         .timer = 12
     },
     [4] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sEvirOam_356bac[4] = {
+const struct FrameData sEvirProjectileOam_Exploding[4] = {
     [0] = {
-        .pFrame = sEvirOam_356bac_Frame0,
+        .pFrame = sEvirProjectileOam_Exploding_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sEvirOam_356bac_Frame1,
+        .pFrame = sEvirProjectileOam_Exploding_Frame1,
         .timer = 2
     },
     [2] = {
-        .pFrame = sEvirOam_356bac_Frame2,
+        .pFrame = sEvirProjectileOam_Exploding_Frame2,
         .timer = 2
     },
     [3] = FRAME_DATA_TERMINATOR

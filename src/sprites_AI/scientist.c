@@ -18,7 +18,7 @@ void ScientistInit(void) {
         return;
     }
     gCurrentSprite.drawOrder = 12;
-    gCurrentSprite.status &= ~SS_NOT_DRAWN; // Needed to do this because it's spawned from the boiler control pad
+    gCurrentSprite.status &= ~SS_NOT_DRAWN; // Needed to do this because it's spawned by the boiler control pad
     gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
     gCurrentSprite.drawDistanceTop = 0x28;
     gCurrentSprite.drawDistanceBottom = 0;

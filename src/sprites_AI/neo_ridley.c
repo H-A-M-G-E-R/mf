@@ -260,7 +260,7 @@ void RidleySyncSubSprites(void) {
         gCurrentSprite.xPosition = gSubSpriteData1.xPosition + pData[gCurrentSprite.roomSlot][MULTI_SPRITE_DATA_ELEMENT_X_OFFSET];
     }
 
-    if (gCurrentSprite.roomSlot == RIDLEY_PART_TAIL_START)
+    if (gCurrentSprite.roomSlot == RIDLEY_PART_TAIL)
     {
         // Sync tail's position
         gSubSpriteData2.yPosition = gCurrentSprite.yPosition;
@@ -753,7 +753,7 @@ void RidleyInit(void) {
 
     SpriteSpawnSecondary(SSPRITE_RIDLEY_PART, RIDLEY_PART_FRONT_WING, gCurrentSprite.spritesetGfxSlot,
         gCurrentSprite.primarySpriteRamSlot, gSubSpriteData1.yPosition, gSubSpriteData1.xPosition, 0);
-    SpriteSpawnSecondary(SSPRITE_RIDLEY_PART, RIDLEY_PART_TAIL_START, gCurrentSprite.spritesetGfxSlot,
+    SpriteSpawnSecondary(SSPRITE_RIDLEY_PART, RIDLEY_PART_TAIL, gCurrentSprite.spritesetGfxSlot,
         gCurrentSprite.primarySpriteRamSlot, gSubSpriteData1.yPosition, gSubSpriteData1.xPosition, 0);
     SpriteSpawnSecondary(SSPRITE_RIDLEY_TAIL_PART, RIDLEY_TAIL_PART_TIP, gCurrentSprite.spritesetGfxSlot,
         gCurrentSprite.primarySpriteRamSlot, gSubSpriteData1.yPosition, gSubSpriteData1.xPosition, 0);
@@ -769,7 +769,7 @@ void RidleyInit(void) {
         gCurrentSprite.primarySpriteRamSlot, gSubSpriteData1.yPosition, gSubSpriteData1.xPosition, 0);
     SpriteSpawnSecondary(SSPRITE_RIDLEY_TAIL_PART, RIDLEY_TAIL_PART_1, gCurrentSprite.spritesetGfxSlot,
         gCurrentSprite.primarySpriteRamSlot, gSubSpriteData1.yPosition, gSubSpriteData1.xPosition, 0);
-    SpriteSpawnSecondary(SSPRITE_RIDLEY_TAIL_PART, RIDLEY_TAIL_PART_0, gCurrentSprite.spritesetGfxSlot,
+    SpriteSpawnSecondary(SSPRITE_RIDLEY_TAIL_PART, RIDLEY_TAIL_PART_BODY_ATTACHMENT, gCurrentSprite.spritesetGfxSlot,
         gCurrentSprite.primarySpriteRamSlot, gSubSpriteData1.yPosition, gSubSpriteData1.xPosition, 0);
     SpriteSpawnSecondary(SSPRITE_RIDLEY_PART, RIDLEY_PART_BACK_WING, gCurrentSprite.spritesetGfxSlot,
         gCurrentSprite.primarySpriteRamSlot, gSubSpriteData1.yPosition, gSubSpriteData1.xPosition, 0);
@@ -953,7 +953,7 @@ void RidleyPartInit(void) {
             gCurrentSprite.hitboxRight = 4;
             gCurrentSprite.samusCollision = SSC_NONE;
             break;
-        case RIDLEY_PART_TAIL_START:
+        case RIDLEY_PART_TAIL:
             gCurrentSprite.drawDistanceTop = 1;
             gCurrentSprite.drawDistanceBottom = 1;
             gCurrentSprite.drawDistanceHorizontal = 1;

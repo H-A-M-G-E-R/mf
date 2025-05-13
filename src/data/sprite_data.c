@@ -2449,13 +2449,13 @@ const u16 sSecondarySpriteStats[SSPRITE_END][4] = {
         SDRT_30_10 | SDRT_CAN_CREATE_DEBRIS,
         WEAKNESS_NONE
     },
-    [SSPRITE_23] = {
+    [SSPRITE_ATMOSPHERIC_STABILIZER_COVER_RIGHT] = {
         1,
         32,
         SDRT_30_10 | SDRT_CAN_CREATE_DEBRIS,
         WEAKNESS_NONE
     },
-    [SSPRITE_24] = {
+    [SSPRITE_ATMOSPHERIC_STABILIZER_COVER_LEFT] = {
         1,
         32,
         SDRT_30_10 | SDRT_CAN_CREATE_DEBRIS,

@@ -38,7 +38,7 @@ void GeegaInit(void) {
     gCurrentSprite.hitboxBottom = 0;
     gCurrentSprite.hitboxLeft = -0x1c;
     gCurrentSprite.hitboxRight = 0x1c;
-    gCurrentSprite.pOam = sGeegaOam_379aa8;
+    gCurrentSprite.pOam = sGeegaOam_GoingUp;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.health = GET_PSPRITE_HEALTH(gCurrentSprite.spriteId);
@@ -93,7 +93,7 @@ void GeegaGoingUp(void) {
             gCurrentSprite.yPosition -= 4;
         } else {
             gCurrentSprite.work1 = 20;
-            gCurrentSprite.pOam = sGeegaOam_379ad0;
+            gCurrentSprite.pOam = sGeegaOam_GoingForward;
             gCurrentSprite.animationDurationCounter = 0;
             gCurrentSprite.currentAnimationFrame = 0;
             gCurrentSprite.pose = 0x18;
@@ -111,7 +111,7 @@ void GeegaGoingForward(void) {
         gCurrentSprite.pose = 1;
         gCurrentSprite.yPosition = gCurrentSprite.xParasiteTimer;
         gCurrentSprite.xPosition = gCurrentSprite.unk_8;
-        gCurrentSprite.pOam = sGeegaOam_379aa8;
+        gCurrentSprite.pOam = sGeegaOam_GoingUp;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
         gCurrentSprite.work1 = 120;

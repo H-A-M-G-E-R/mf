@@ -7,17 +7,17 @@
 extern const u32 sDataPadGfx[512 * 3];
 extern const u16 sDataPadPal[16 * 3];
 
-extern const struct FrameData sDataPadOam_3219c4[2];
-extern const struct FrameData sDataPadOam_3219d4[2];
-extern const struct FrameData sDataPadOam_3219e4[5];
-extern const struct FrameData sDataPadOam_321a0c[5];
-extern const struct FrameData sDataPadOam_321a34[2];
-extern const struct FrameData sDataPadOam_321a44[4];
-extern const struct FrameData sDataPadOam_321a64[5];
-extern const struct FrameData sDataPadOam_321a8c[2];
-extern const struct FrameData sDataPadOam_321a9c[4];
-extern const struct FrameData sDataPadOam_321abc[4];
-extern const struct FrameData sDataPadOam_321adc[2];
+extern const struct FrameData sDataPadOam_Unpressed[2];
+extern const struct FrameData sDataPadOam_Pressed[2];
+extern const struct FrameData sDataPadOam_Pressing[5];
+extern const struct FrameData sDataPadOam_Depressing[5];
+extern const struct FrameData sDataPadCenterOam_Offline[2];
+extern const struct FrameData sDataPadCenterOam_Online[4];
+extern const struct FrameData sDataPadCenterOam_DownloadingData[5];
+extern const struct FrameData sDataPadSidesOam_Idle[2];
+extern const struct FrameData sDataPadSidesOam_Engaging[4];
+extern const struct FrameData sDataPadSidesOam_Disengaging[4];
+extern const struct FrameData sDataPadSidesOam_DownloadingData[2];
 extern const struct FrameData sDataPadOam_321aec[2];
 extern const struct FrameData sDataPadOam_321afc[4];
 extern const struct FrameData sDataPadOam_321b1c[9];

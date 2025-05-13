@@ -40,10 +40,10 @@ void DataPadIdleInit(void) {
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.work1 = 1;
     if (gCurrentSprite.work2) {
-        gCurrentSprite.pOam = sDataPadOam_3219c4;
+        gCurrentSprite.pOam = sDataPadOam_Unpressed;
         gCurrentSprite.pose = 2;
     } else {
-        gCurrentSprite.pOam = sDataPadOam_3219d4;
+        gCurrentSprite.pOam = sDataPadOam_Pressed;
         gCurrentSprite.pose = 0x1e;
     }
 }
@@ -52,7 +52,7 @@ void DataPadIdle(void) {
     if (NavPadDetectSamus()) {
         if (--gCurrentSprite.work1 == 0) {
             gCurrentSprite.pose = 0x18;
-            gCurrentSprite.pOam = sDataPadOam_3219e4;
+            gCurrentSprite.pOam = sDataPadOam_Pressing;
             gCurrentSprite.animationDurationCounter = 0;
             gCurrentSprite.currentAnimationFrame = 0;
             SoundPlay(0x101);
@@ -64,7 +64,7 @@ void DataPadIdle(void) {
 void DataPadPressingSwitch(void) {
     if (SpriteUtilCheckEndCurrentSpriteAnim()) {
         gCurrentSprite.pose = 0x1a;
-        gCurrentSprite.pOam = sDataPadOam_3219d4;
+        gCurrentSprite.pOam = sDataPadOam_Pressed;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
     }
@@ -82,7 +82,7 @@ void DataPadSwitchPressed(void) {
         }
     } else {
         gCurrentSprite.pose = 0x1c;
-        gCurrentSprite.pOam = sDataPadOam_321a0c;
+        gCurrentSprite.pOam = sDataPadOam_Depressing;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
         SoundPlay(0x102);
@@ -126,9 +126,9 @@ void DataPadCenterInit(void) {
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     if (gSpriteData[gCurrentSprite.primarySpriteRamSlot].work2)
-        gCurrentSprite.pOam = sDataPadOam_321a44;
+        gCurrentSprite.pOam = sDataPadCenterOam_Online;
     else
-        gCurrentSprite.pOam = sDataPadOam_321a34;
+        gCurrentSprite.pOam = sDataPadCenterOam_Offline;
 }
 
 void DataPadCenterIdle(void) {
@@ -137,7 +137,7 @@ void DataPadCenterIdle(void) {
             gCurrentSprite.pose = 0x18;
             gCurrentSprite.animationDurationCounter = 0;
             gCurrentSprite.currentAnimationFrame = 0;
-            gCurrentSprite.pOam = sDataPadOam_321a64;
+            gCurrentSprite.pOam = sDataPadCenterOam_DownloadingData;
             SoundPlay(0x10a);
         }
     }
@@ -148,7 +148,7 @@ void DataPadCenterEngaging(void) {
         gCurrentSprite.pose = 0x1a;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sDataPadOam_321a44;
+        gCurrentSprite.pOam = sDataPadCenterOam_Online;
         gCurrentSprite.work1 = 0x14;
     }
 }
@@ -158,7 +158,7 @@ void DataPadCenterDownloadingData(void) {
         gCurrentSprite.pose = 0x1c;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sDataPadOam_321a34;
+        gCurrentSprite.pOam = sDataPadCenterOam_Offline;
     }
 }
 
@@ -175,7 +175,7 @@ void DataPadSidesInit(void) {
     gCurrentSprite.hitboxRight = 4;
     gCurrentSprite.drawOrder = 13;
     gCurrentSprite.pose = 2;
-    gCurrentSprite.pOam = sDataPadOam_321a8c;
+    gCurrentSprite.pOam = sDataPadSidesOam_Idle;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
@@ -185,7 +185,7 @@ void DataPadSidesIdle(void) {
         gCurrentSprite.pose = 0x18;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sDataPadOam_321a9c;
+        gCurrentSprite.pOam = sDataPadSidesOam_Engaging;
         SoundPlay(0x108);
     }
 }
@@ -195,7 +195,7 @@ void DataPadSidesEngaging(void) {
         gCurrentSprite.pose = 0x1a;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sDataPadOam_321adc;
+        gCurrentSprite.pOam = sDataPadSidesOam_DownloadingData;
     }
 }
 
@@ -214,7 +214,7 @@ void DataPadSidesDoneDownloadingData(void) {
         gCurrentSprite.pose = 0x1e;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sDataPadOam_321abc;
+        gCurrentSprite.pOam = sDataPadSidesOam_Disengaging;
         SoundPlay(0x109);
     }
 }
@@ -224,7 +224,7 @@ void DataPadSidesDisengaging(void) {
         gCurrentSprite.pose = 0x46;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
-        gCurrentSprite.pOam = sDataPadOam_321a8c;
+        gCurrentSprite.pOam = sDataPadSidesOam_Idle;
         TrySpawnMessageBanner(0);
     }
 }

@@ -81,7 +81,7 @@ void GateInit(void) {
             break;
     }
     GateSetCollision(CAA_MAKE_SOLID);
-    if (type < 5) {
+    if (type < GATE_TYPE_HABITATION) {
         type = SpriteSpawnSecondary(SSPRITE_GATE_SWITCH, type, gCurrentSprite.spritesetGfxSlot,
             gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.yPosition, gCurrentSprite.xPosition, 0);
         if (type == UCHAR_MAX)

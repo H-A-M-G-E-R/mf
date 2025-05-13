@@ -85,7 +85,7 @@ void ChozoStatueTransformingInit(void) {
 
 void ChozoStatueTransforming(void) {
     gWrittenToMosaic_H = sXParasiteMosaicValues[gCurrentSprite.xParasiteTimer];
-    gCurrentSprite.xParasiteTimer -= 1;
+    gCurrentSprite.xParasiteTimer--;
     if (gCurrentSprite.xParasiteTimer < sizeof(sChargeBeamCoreXGfx) / 512) {
         SpriteLoadGfx(PSPRITE_CHARGE_BEAM_CORE_X, 0, gCurrentSprite.xParasiteTimer);
         if (gCurrentSprite.xParasiteTimer == 0) {

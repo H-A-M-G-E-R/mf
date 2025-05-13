@@ -7,17 +7,17 @@
 extern const u32 sGenesisGfx[512 * 2];
 extern const u16 sGenesisPal[16 * 2];
 
-extern const struct FrameData sGenesisOam_37c360[7];
-extern const struct FrameData sGenesisOam_37c398[7];
+extern const struct FrameData sGenesisOam_Walking[7];
+extern const struct FrameData sGenesisOam_Running[7];
 extern const struct FrameData sGenesisOam_37c3d0[4];
 extern const struct FrameData sGenesisOam_37c3f0[4];
 extern const struct FrameData sGenesisOam_37c410[4];
 extern const struct FrameData sGenesisOam_37c430[4];
-extern const struct FrameData sGenesisOam_37c450[5];
-extern const struct FrameData sGenesisOam_37c478[2];
-extern const struct FrameData sGenesisOam_37c488[2];
-extern const struct FrameData sGenesisOam_37c498[22];
-extern const struct FrameData sGenesisOam_37c548[2];
-extern const struct FrameData sGenesisOam_37c558[4];
+extern const struct FrameData sGenesisOam_Waiting[5];
+extern const struct FrameData sGenesisOam_Skidding[2];
+extern const struct FrameData sGenesisOam_TurningAround[2];
+extern const struct FrameData sGenesisOam_Barfing[22];
+extern const struct FrameData sGenesisBarfOam_Hanging[2];
+extern const struct FrameData sGenesisBarfOam_Splashing[4];
 
 #endif /* GENESIS_DATA_H */

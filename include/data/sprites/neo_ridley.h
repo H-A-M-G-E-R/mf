@@ -44,7 +44,7 @@ enum RidleyOam {
 
 enum RidleyPart {
     RIDLEY_PART_FRONT_WING,
-    RIDLEY_PART_TAIL_START,
+    RIDLEY_PART_TAIL,
     RIDLEY_PART_BODY,
     RIDLEY_PART_BACK_WING,
 
@@ -52,7 +52,7 @@ enum RidleyPart {
 };
 
 enum RidleyTailPart {
-    RIDLEY_TAIL_PART_0,
+    RIDLEY_TAIL_PART_BODY_ATTACHMENT,
     RIDLEY_TAIL_PART_1,
     RIDLEY_TAIL_PART_2,
     RIDLEY_TAIL_PART_3,

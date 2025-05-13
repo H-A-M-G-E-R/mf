@@ -71,23 +71,23 @@ void AtmosphericStabilizerInit(void) {
     switch (gCurrentSprite.spriteId) {
         case PSPRITE_ATMOSPHERIC_STABILIZER_1:
         case PSPRITE_ATMOSPHERIC_STABILIZER_3:
-            secondarySpriteId = SSPRITE_23;
+            secondarySpriteId = SSPRITE_ATMOSPHERIC_STABILIZER_COVER_RIGHT;
             gCurrentSprite.hitboxTop = -0x60;
             gCurrentSprite.hitboxBottom = 0x60;
             gCurrentSprite.hitboxLeft = -0x60;
             gCurrentSprite.hitboxRight = 0x20;
             gCurrentSprite.work2 = FALSE;
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_3277f8;
+            gCurrentSprite.pOam = sAtmosphericStabilizerFanOam_CloggedVertical;
             break;
         case PSPRITE_ATMOSPHERIC_STABILIZER_4:
         case PSPRITE_ATMOSPHERIC_STABILIZER_5:
-            secondarySpriteId = SSPRITE_24;
+            secondarySpriteId = SSPRITE_ATMOSPHERIC_STABILIZER_COVER_LEFT;
             gCurrentSprite.hitboxTop = -0x60;
             gCurrentSprite.hitboxBottom = 0x60;
             gCurrentSprite.hitboxLeft = -0x20;
             gCurrentSprite.hitboxRight = 0x60;
             gCurrentSprite.work2 = FALSE;
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_3277f8;
+            gCurrentSprite.pOam = sAtmosphericStabilizerFanOam_CloggedVertical;
             break;
         case PSPRITE_ATMOSPHERIC_STABILIZER_2:
             secondarySpriteId = SSPRITE_ATMOSPHERIC_STABILIZER_COVER_DOWN;
@@ -96,7 +96,7 @@ void AtmosphericStabilizerInit(void) {
             gCurrentSprite.hitboxLeft = -0x60;
             gCurrentSprite.hitboxRight = 0x60;
             gCurrentSprite.work2 = TRUE;
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327660;
+            gCurrentSprite.pOam = sAtmosphericStabilizerFanOam_CloggedHorizontal;
             break;
         default:
             gCurrentSprite.status = 0;
@@ -114,20 +114,20 @@ void AtmosphericStabilizerInit(void) {
         gCurrentSprite.samusCollision = SSC_NONE;
         gCurrentSprite.health = 0;
         if (gCurrentSprite.work2)
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327640;
+            gCurrentSprite.pOam = sAtmosphericStabilizerFanOam_OnlineHorizontal;
         else
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_3277d8;
+            gCurrentSprite.pOam = sAtmosphericStabilizerFanOam_OnlineVertical;
         SoundPlay(SOUND_FE);
     } else {
         gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
-        if (secondarySpriteId == SSPRITE_23) {
-            tmp = SpriteSpawnSecondary(SSPRITE_23, 0, gCurrentSprite.spritesetGfxSlot,
+        if (secondarySpriteId == SSPRITE_ATMOSPHERIC_STABILIZER_COVER_RIGHT) {
+            tmp = SpriteSpawnSecondary(SSPRITE_ATMOSPHERIC_STABILIZER_COVER_RIGHT, 0, gCurrentSprite.spritesetGfxSlot,
                 gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.yPosition, gCurrentSprite.xPosition, 0);
             if (tmp == UCHAR_MAX) {
                 gCurrentSprite.status = 0;
                 return;
             }
-            tmp = SpriteSpawnSecondary(SSPRITE_23, 1, gCurrentSprite.spritesetGfxSlot,
+            tmp = SpriteSpawnSecondary(SSPRITE_ATMOSPHERIC_STABILIZER_COVER_RIGHT, 1, gCurrentSprite.spritesetGfxSlot,
                 gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.yPosition, gCurrentSprite.xPosition, 0);
             if (tmp == UCHAR_MAX) {
                 gCurrentSprite.status = 0;
@@ -139,14 +139,14 @@ void AtmosphericStabilizerInit(void) {
                 gCurrentSprite.status = 0;
                 return;
             }
-        } else if (secondarySpriteId == SSPRITE_24) {
-            tmp = SpriteSpawnSecondary(SSPRITE_24, 2, gCurrentSprite.spritesetGfxSlot,
+        } else if (secondarySpriteId == SSPRITE_ATMOSPHERIC_STABILIZER_COVER_LEFT) {
+            tmp = SpriteSpawnSecondary(SSPRITE_ATMOSPHERIC_STABILIZER_COVER_LEFT, 2, gCurrentSprite.spritesetGfxSlot,
                 gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.yPosition, gCurrentSprite.xPosition, 0);
             if (tmp == UCHAR_MAX) {
                 gCurrentSprite.status = 0;
                 return;
             }
-            tmp = SpriteSpawnSecondary(SSPRITE_24, 3, gCurrentSprite.spritesetGfxSlot,
+            tmp = SpriteSpawnSecondary(SSPRITE_ATMOSPHERIC_STABILIZER_COVER_LEFT, 3, gCurrentSprite.spritesetGfxSlot,
                 gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.yPosition, gCurrentSprite.xPosition, 0);
             if (tmp == UCHAR_MAX) {
                 gCurrentSprite.status = 0;
@@ -193,9 +193,9 @@ void AtmosphericStabilizerBackOnlineInit(void) {
     gCurrentSprite.samusCollision = SSC_NONE;
     gCurrentSprite.health = 0;
     if (gCurrentSprite.work2)
-        gCurrentSprite.pOam = sAtmosphericStabilizerOam_3276e0;
+        gCurrentSprite.pOam = sAtmosphericStabilizerFanOam_RestartingHorizontal;
     else
-        gCurrentSprite.pOam = sAtmosphericStabilizerOam_327878;
+        gCurrentSprite.pOam = sAtmosphericStabilizerFanOam_RestartingVertical;
     SoundPlay(SOUND_100);
 }
 
@@ -205,9 +205,9 @@ void AtmosphericStabilizerBackOnline(void) {
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
         if (gCurrentSprite.work2)
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327640;
+            gCurrentSprite.pOam = sAtmosphericStabilizerFanOam_OnlineHorizontal;
         else
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_3277d8;
+            gCurrentSprite.pOam = sAtmosphericStabilizerFanOam_OnlineVertical;
         StartStopEventBasedEffect(1); // FIXME enum
     }
 }
@@ -225,14 +225,14 @@ void AtmosphericStabilizerCoverInit(void) {
     switch (gCurrentSprite.roomSlot) {
         case 0:
             gCurrentSprite.status &= ~SS_NOT_DRAWN;
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327a30;
+            gCurrentSprite.pOam = sAtmosphericStabilizerCoverOam_Right;
             gCurrentSprite.hitboxTop = -0x60;
             gCurrentSprite.hitboxBottom = -0x20;
             gCurrentSprite.hitboxLeft = 0x20;
             gCurrentSprite.hitboxRight = 0x60;
             break;
         case 1:
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327a30;
+            gCurrentSprite.pOam = sAtmosphericStabilizerCoverOam_Right;
             gCurrentSprite.hitboxTop = 0x20;
             gCurrentSprite.hitboxBottom = 0x60;
             gCurrentSprite.hitboxLeft = 0x20;
@@ -240,14 +240,14 @@ void AtmosphericStabilizerCoverInit(void) {
             break;
         case 2:
             gCurrentSprite.status &= ~SS_NOT_DRAWN;
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327a40;
+            gCurrentSprite.pOam = sAtmosphericStabilizerCoverOam_Left;
             gCurrentSprite.hitboxTop = 0x20;
             gCurrentSprite.hitboxBottom = 0x60;
             gCurrentSprite.hitboxLeft = -0x60;
             gCurrentSprite.hitboxRight = -0x20;
             break;
         case 3:
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327a40;
+            gCurrentSprite.pOam = sAtmosphericStabilizerCoverOam_Left;
             gCurrentSprite.hitboxTop = -0x60;
             gCurrentSprite.hitboxBottom = -0x20;
             gCurrentSprite.hitboxLeft = -0x60;
@@ -255,14 +255,14 @@ void AtmosphericStabilizerCoverInit(void) {
             break;
         case 4:
             gCurrentSprite.status &= ~SS_NOT_DRAWN;
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327a20;
+            gCurrentSprite.pOam = sAtmosphericStabilizerCoverOam_Down;
             gCurrentSprite.hitboxTop = 0x20;
             gCurrentSprite.hitboxBottom = 0x60;
             gCurrentSprite.hitboxLeft = -0x60;
             gCurrentSprite.hitboxRight = -0x20;
             break;
         case 5:
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327a20;
+            gCurrentSprite.pOam = sAtmosphericStabilizerCoverOam_Down;
             gCurrentSprite.hitboxTop = 0x20;
             gCurrentSprite.hitboxBottom = 0x60;
             gCurrentSprite.hitboxLeft = 0x20;
@@ -270,14 +270,14 @@ void AtmosphericStabilizerCoverInit(void) {
             break;
         case 6:
             gCurrentSprite.status &= ~SS_NOT_DRAWN;
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327a60;
+            gCurrentSprite.pOam = sAtmosphericStabilizerCoverOam_UpRight;
             gCurrentSprite.hitboxTop = -0x60;
             gCurrentSprite.hitboxBottom = 0;
             gCurrentSprite.hitboxLeft = -0x60;
             gCurrentSprite.hitboxRight = -0x20;
             break;
         case 7:
-            gCurrentSprite.pOam = sAtmosphericStabilizerOam_327a60;
+            gCurrentSprite.pOam = sAtmosphericStabilizerCoverOam_UpRight;
             gCurrentSprite.hitboxTop = 0x20;
             gCurrentSprite.hitboxBottom = 0x60;
             gCurrentSprite.hitboxLeft = 0;
@@ -575,7 +575,7 @@ void AtmosphericStabilizerParasiteInit(void) {
 }
 
 void AtmosphericStabilizerParasiteIdleInit(void) {
-    gCurrentSprite.pOam = sAtmosphericStabilizerOam_327970;
+    gCurrentSprite.pOam = sAtmosphericStabilizerParasiteOam_Idle;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.work1 = 120;
@@ -590,7 +590,7 @@ void AtmosphericStabilizerParasiteIdle(void) {
         gCurrentSprite.work1 = 120;
     } else if (--gCurrentSprite.work1 == 0) {
         gCurrentSprite.pose = 0x18;
-        gCurrentSprite.pOam = sAtmosphericStabilizerOam_3279f8;
+        gCurrentSprite.pOam = sAtmosphericStabilizerParasiteOam_SpawningX;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
         gCurrentSprite.status |= SS_ENABLE_MOSAIC;
@@ -618,7 +618,7 @@ void AtmosphericStabilizerParasiteDeath(void) {
     u16 stabilizerBit;
     u8 primary = gCurrentSprite.primarySpriteRamSlot;
 
-    gCurrentSprite.pOam = sAtmosphericStabilizerOam_327970;
+    gCurrentSprite.pOam = sAtmosphericStabilizerParasiteOam_Idle;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gSpriteData[primary].pose = 0x17;

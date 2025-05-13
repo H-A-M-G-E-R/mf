@@ -59,7 +59,7 @@ void EvirInit(void) {
     gCurrentSprite.health = GET_PSPRITE_HEALTH(gCurrentSprite.spriteId);
     gCurrentSprite.drawOrder = 5;
     gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
-    gCurrentSprite.pOam = sEvirOam_356abc;
+    gCurrentSprite.pOam = sEvirOam_Idle;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.work1 = 0;
@@ -113,7 +113,7 @@ void EvirInit(void) {
 
 void EvirShootingInit(void) {
     gCurrentSprite.pose = 0x2a;
-    gCurrentSprite.pOam = sEvirOam_356b04;
+    gCurrentSprite.pOam = sEvirOam_Shooting;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.work1 = 90;
@@ -137,7 +137,7 @@ void EvirShooting(void) {
 
 void EvirIdleInit(void) {
     gCurrentSprite.pose = 2;
-    gCurrentSprite.pOam = sEvirOam_356abc;
+    gCurrentSprite.pOam = sEvirOam_Idle;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
@@ -195,7 +195,7 @@ void EvirIdle(void) {
 
 void EvirTurningAroundInit(void) {
     gCurrentSprite.pose = 4;
-    gCurrentSprite.pOam = sEvirOam_356b44;
+    gCurrentSprite.pOam = sEvirOam_TurningAround1;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
@@ -203,7 +203,7 @@ void EvirTurningAroundInit(void) {
 void EvirTurningAround(void) {
     if (SpriteUtilCheckEndCurrentSpriteAnim()) {
         gCurrentSprite.pose = 5;
-        gCurrentSprite.pOam = sEvirOam_356b64;
+        gCurrentSprite.pOam = sEvirOam_TurningAround2;
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
         gCurrentSprite.status ^= SS_X_FLIP;
@@ -228,7 +228,7 @@ void EvirCollisionInit(void) {
     gCurrentSprite.health = GET_SSPRITE_HEALTH(gCurrentSprite.spriteId);
     gCurrentSprite.pose = 2;
     gCurrentSprite.drawOrder = 3;
-    gCurrentSprite.pOam = sEvirOam_356b84;
+    gCurrentSprite.pOam = sEvirProjectileOam_Moving;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     if (gCurrentSprite.roomSlot) {
@@ -291,7 +291,7 @@ void EvirProjectileInit(void) {
     gCurrentSprite.hitboxBottom = 0xc;
     gCurrentSprite.hitboxLeft = -0xc;
     gCurrentSprite.hitboxRight = 0xc;
-    gCurrentSprite.pOam = sEvirOam_356b84;
+    gCurrentSprite.pOam = sEvirProjectileOam_Moving;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.scaling = 0x40;
@@ -358,7 +358,7 @@ void EvirProjectileExplodingInit(void) {
     gCurrentSprite.ignoreSamusCollisionTimer = 1;
     gCurrentSprite.pose = 0x38;
     gCurrentSprite.samusCollision = SSC_NONE;
-    gCurrentSprite.pOam = sEvirOam_356bac;
+    gCurrentSprite.pOam = sEvirProjectileOam_Exploding;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.drawDistanceTop = 0x18;

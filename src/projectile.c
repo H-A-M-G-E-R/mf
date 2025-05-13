@@ -1879,7 +1879,7 @@ void ProjectileContactDamageHitSprite(u8 spriteSlot, u16 yPosition, u16 xPositio
     {
         if (gSpriteData[spriteSlot].spriteId == PSPRITE_SA_X_BOSS)
         {
-            ProjecileDealDamage(spriteSlot, 10);
+            ProjectileDealDamage(spriteSlot, 10);
 
             if (gSamusData.xPosition > gSpriteData[spriteSlot].xPosition)
                 gSamusData.direction = KEY_LEFT;
@@ -1906,7 +1906,7 @@ void ProjectileContactDamageHitSprite(u8 spriteSlot, u16 yPosition, u16 xPositio
  * @param damage Damage
  * @return u8 Isft
  */
-u8 ProjecileDealDamage(u8 spriteSlot, u16 damage)
+u8 ProjectileDealDamage(u8 spriteSlot, u16 damage)
 {
     u8 isft;
 
@@ -1992,7 +1992,7 @@ void ProjectileSudoScrewHitSprite(u8 spriteSlot, u16 yPosition, u16 xPosition)
     if (damage == 0)
         return;
 
-    ProjecileDealDamage(spriteSlot, damage);
+    ProjectileDealDamage(spriteSlot, damage);
 
     if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         ParticleSet(yPosition, xPosition, 0x40);
@@ -2277,7 +2277,7 @@ void ProjectileNormalBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yPositi
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & WEAKNESS_BEAM_BOMBS)
     {
-        isft = ProjecileDealDamage(spriteSlot, 2);
+        isft = ProjectileDealDamage(spriteSlot, 2);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2318,7 +2318,7 @@ void ProjectileChargedNormalBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & (WEAKNESS_CHARGE_BEAM | WEAKNESS_BEAM_BOMBS))
     {
-        isft = ProjecileDealDamage(spriteSlot, 10);
+        isft = ProjectileDealDamage(spriteSlot, 10);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2359,7 +2359,7 @@ void ProjectileChargeBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yPositi
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & WEAKNESS_BEAM_BOMBS)
     {
-        isft = ProjecileDealDamage(spriteSlot, 2);
+        isft = ProjectileDealDamage(spriteSlot, 2);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2406,7 +2406,7 @@ void ProjectileChargedChargeBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & (WEAKNESS_CHARGE_BEAM | WEAKNESS_BEAM_BOMBS))
     {
-        isft = ProjecileDealDamage(spriteSlot, 10);
+        isft = ProjectileDealDamage(spriteSlot, 10);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2453,7 +2453,7 @@ void ProjectileWideBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yPosition
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & WEAKNESS_BEAM_BOMBS)
     {
-        isft = ProjecileDealDamage(spriteSlot, 3);
+        isft = ProjectileDealDamage(spriteSlot, 3);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2494,7 +2494,7 @@ void ProjectileChargedWideBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yP
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & (WEAKNESS_CHARGE_BEAM | WEAKNESS_BEAM_BOMBS))
     {
-        isft = ProjecileDealDamage(spriteSlot, 15);
+        isft = ProjectileDealDamage(spriteSlot, 15);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2537,7 +2537,7 @@ void ProjectilePlasmaBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yPositi
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & WEAKNESS_BEAM_BOMBS)
     {
-        isft = ProjecileDealDamage(spriteSlot, 3);
+        isft = ProjectileDealDamage(spriteSlot, 3);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2576,7 +2576,7 @@ void ProjectileChargedPlasmaBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & (WEAKNESS_CHARGE_BEAM | WEAKNESS_BEAM_BOMBS))
     {
-        isft = ProjecileDealDamage(spriteSlot, 9);
+        isft = ProjectileDealDamage(spriteSlot, 9);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2637,7 +2637,7 @@ void ProjectileWaveBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yPosition
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & WEAKNESS_BEAM_BOMBS)
     {
-        isft = ProjecileDealDamage(spriteSlot, 3);
+        isft = ProjectileDealDamage(spriteSlot, 3);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2698,7 +2698,7 @@ void ProjectileChargedWaveBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yP
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & (WEAKNESS_CHARGE_BEAM | WEAKNESS_BEAM_BOMBS))
     {
-        isft = ProjecileDealDamage(spriteSlot, 9);
+        isft = ProjectileDealDamage(spriteSlot, 9);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2709,7 +2709,7 @@ void ProjectileChargedWaveBeamHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yP
     {
         if (gSpriteData[spriteSlot].spriteId == PSPRITE_SA_X_BOSS)
         {
-            isft = ProjecileDealDamage(spriteSlot, 9);
+            isft = ProjectileDealDamage(spriteSlot, 9);
 
             if (ProjectileCheckSpriteCreateDebris(spriteSlot))
             {
@@ -2762,7 +2762,7 @@ void ProjectileFlareHitSprite(u8 spriteSlot, u16 yPosition, u16 xPosition, u16 s
         else
             damage = 6;
 
-        isft = ProjecileDealDamage(spriteSlot, damage);
+        isft = ProjectileDealDamage(spriteSlot, damage);
         
         hitY = yPosition;
         hitX = xPosition;
@@ -2847,7 +2847,7 @@ void ProjectileNormalMissileHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yPos
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & WEAKNESS_MISSILES)
     {
-        isft = ProjecileDealDamage(spriteSlot, 10);
+        isft = ProjectileDealDamage(spriteSlot, 10);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -2892,7 +2892,7 @@ void ProjectileSuperMissileHitSprite(u8 spriteSlot, u8 projectileSlot, u16 yPosi
     }
     else if (ProjectileGetSpriteWeakness(spriteSlot) & (WEAKNESS_MISSILES | WEAKNESS_SUPER_MISSILES))
     {
-        isft = ProjecileDealDamage(spriteSlot, 30);
+        isft = ProjectileDealDamage(spriteSlot, 30);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {
@@ -3110,7 +3110,7 @@ void ProjectileBombHitSprite(u8 spriteSlot, u16 yPosition, u16 xPosition)
 
     if (ProjectileGetSpriteWeakness(spriteSlot) & WEAKNESS_BEAM_BOMBS)
     {
-        isft = ProjecileDealDamage(spriteSlot, 8);
+        isft = ProjectileDealDamage(spriteSlot, 8);
 
         if (ProjectileCheckSpriteCreateDebris(spriteSlot))
         {

@@ -3,7 +3,7 @@
 const u32 sGenesisGfx[512 * 2] = INCBIN_U32("data/sprites/genesis.gfx");
 const u16 sGenesisPal[16 * 2] = INCBIN_U16("data/sprites/genesis.pal");
 
-static const u16 sGenesisOam_37c360_Frame0[] = {
+static const u16 sGenesisOam_Walking_Frame0[] = {
     8,
     0xf0, OBJ_SIZE_16x16 | 0x1f1, OBJ_PALETTE_8 | 0x206,
     0xf0, OBJ_SIZE_16x16 | 0x1ff, OBJ_PALETTE_8 | 0x20f,
@@ -15,7 +15,7 @@ static const u16 sGenesisOam_37c360_Frame0[] = {
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1fb, OBJ_PALETTE_8 | 0x240
 };
 
-static const u16 sGenesisOam_37c360_Frame1[] = {
+static const u16 sGenesisOam_Walking_Frame1[] = {
     7,
     0xeb, OBJ_SIZE_16x16 | 0x1fe, OBJ_PALETTE_8 | 0x212,
     0xf0, OBJ_SIZE_16x16 | 0x1f1, OBJ_PALETTE_8 | 0x204,
@@ -26,7 +26,7 @@ static const u16 sGenesisOam_37c360_Frame1[] = {
     OBJ_SHAPE_VERTICAL | 0xee, 0x1, OBJ_PALETTE_8 | 0x242
 };
 
-static const u16 sGenesisOam_37c360_Frame2[] = {
+static const u16 sGenesisOam_Walking_Frame2[] = {
     8,
     0xe9, OBJ_SIZE_16x16 | 0x1f6, OBJ_PALETTE_8 | 0x214,
     0xe9, 0x6, OBJ_PALETTE_8 | 0x216,
@@ -38,7 +38,7 @@ static const u16 sGenesisOam_37c360_Frame2[] = {
     0xf0, OBJ_SIZE_16x16 | 0x1fa, OBJ_PALETTE_8 | 0x243
 };
 
-static const u16 sGenesisOam_37c360_Frame3[] = {
+static const u16 sGenesisOam_Walking_Frame3[] = {
     7,
     OBJ_SHAPE_HORIZONTAL | 0xf8, 0x1e8, OBJ_PALETTE_8 | 0x237,
     OBJ_SHAPE_HORIZONTAL | 0xf0, 0x1f4, OBJ_PALETTE_8 | 0x217,
@@ -49,7 +49,7 @@ static const u16 sGenesisOam_37c360_Frame3[] = {
     OBJ_SHAPE_VERTICAL | 0xf0, OBJ_X_FLIP | 0x1f7, OBJ_PALETTE_8 | 0x242
 };
 
-static const u16 sGenesisOam_37c360_Frame4[] = {
+static const u16 sGenesisOam_Walking_Frame4[] = {
     7,
     0xf0, OBJ_SIZE_16x16 | 0x1f3, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x202,
@@ -60,7 +60,7 @@ static const u16 sGenesisOam_37c360_Frame4[] = {
     0xee, OBJ_SIZE_16x16 | 0x1ef, OBJ_PALETTE_8 | 0x212
 };
 
-static const u16 sGenesisOam_37c360_Frame5[] = {
+static const u16 sGenesisOam_Walking_Frame5[] = {
     7,
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x21c,
     0xf0, OBJ_SIZE_16x16 | 0x1f1, OBJ_PALETTE_8 | 0x204,
@@ -150,7 +150,7 @@ static const u16 sOam_37be20[] = {
     0x0, OBJ_X_FLIP | OBJ_Y_FLIP | OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x240
 };
 
-static const u16 sGenesisOam_37c488_Frame0[] = {
+static const u16 sGenesisOam_TurningAround_Frame0[] = {
     6,
     0xf0, OBJ_SIZE_16x16 | 0x1fc, OBJ_PALETTE_8 | 0x21c,
     0xf0, OBJ_SIZE_16x16 | 0x1f5, OBJ_PALETTE_8 | 0x208,
@@ -160,7 +160,7 @@ static const u16 sGenesisOam_37c488_Frame0[] = {
     0xf0, OBJ_SIZE_16x16 | 0x4, OBJ_PALETTE_8 | 0x21e
 };
 
-static const u16 sGenesisOam_37c450_Frame0[] = {
+static const u16 sGenesisOam_Waiting_Frame0[] = {
     7,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -171,7 +171,7 @@ static const u16 sGenesisOam_37c450_Frame0[] = {
     0xf0, OBJ_SIZE_16x16 | 0x1ec, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sGenesisOam_37c498_Frame1[] = {
+static const u16 sGenesisOam_Barfing_Frame1[] = {
     8,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xef, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -183,7 +183,7 @@ static const u16 sGenesisOam_37c498_Frame1[] = {
     0xf0, OBJ_SIZE_16x16 | 0x1ec, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sGenesisOam_37c498_Frame2[] = {
+static const u16 sGenesisOam_Barfing_Frame2[] = {
     8,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xee, OBJ_SIZE_16x16 | 0x1f3, OBJ_PALETTE_8 | 0x200,
@@ -195,7 +195,7 @@ static const u16 sGenesisOam_37c498_Frame2[] = {
     0xf0, OBJ_SIZE_16x16 | 0x1ec, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sGenesisOam_37c498_Frame4[] = {
+static const u16 sGenesisOam_Barfing_Frame4[] = {
     8,
     0xf7, 0x1f6, OBJ_PALETTE_8 | 0x276,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
@@ -207,7 +207,7 @@ static const u16 sGenesisOam_37c498_Frame4[] = {
     0xf0, OBJ_SIZE_16x16 | 0x1ec, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sGenesisOam_37c498_Frame5[] = {
+static const u16 sGenesisOam_Barfing_Frame5[] = {
     8,
     0xf8, 0x1f6, OBJ_PALETTE_8 | 0x277,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
@@ -219,7 +219,7 @@ static const u16 sGenesisOam_37c498_Frame5[] = {
     0xf0, OBJ_SIZE_16x16 | 0x1ec, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sGenesisOam_37c498_Frame6[] = {
+static const u16 sGenesisOam_Barfing_Frame6[] = {
     9,
     0xf8, 0x1f6, OBJ_PALETTE_8 | 0x278,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x2, OBJ_PALETTE_8 | 0x21a,
@@ -232,7 +232,7 @@ static const u16 sGenesisOam_37c498_Frame6[] = {
     0xef, 0x1f5, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sGenesisOam_37c498_Frame7[] = {
+static const u16 sGenesisOam_Barfing_Frame7[] = {
     9,
     0xf8, 0x1f6, OBJ_PALETTE_8 | 0x259,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x3, OBJ_PALETTE_8 | 0x21a,
@@ -245,7 +245,7 @@ static const u16 sGenesisOam_37c498_Frame7[] = {
     0xef, 0x1f4, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sGenesisOam_37c498_Frame8[] = {
+static const u16 sGenesisOam_Barfing_Frame8[] = {
     9,
     0xf9, 0x1f5, OBJ_PALETTE_8 | 0x259,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x3, OBJ_PALETTE_8 | 0x21a,
@@ -258,7 +258,7 @@ static const u16 sGenesisOam_37c498_Frame8[] = {
     0xef, 0x1f3, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sGenesisOam_37c498_Frame9[] = {
+static const u16 sGenesisOam_Barfing_Frame9[] = {
     9,
     0xfc, 0x1f3, OBJ_PALETTE_8 | 0x279,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x3, OBJ_PALETTE_8 | 0x21a,
@@ -271,7 +271,7 @@ static const u16 sGenesisOam_37c498_Frame9[] = {
     0xef, 0x1f3, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sGenesisOam_37c498_Frame10[] = {
+static const u16 sGenesisOam_Barfing_Frame10[] = {
     9,
     0xfd, 0x1f2, OBJ_PALETTE_8 | 0x279,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x3, OBJ_PALETTE_8 | 0x21a,
@@ -284,7 +284,7 @@ static const u16 sGenesisOam_37c498_Frame10[] = {
     0xef, 0x1f3, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sGenesisOam_37c498_Frame11[] = {
+static const u16 sGenesisOam_Barfing_Frame11[] = {
     9,
     OBJ_SHAPE_VERTICAL | 0xfc, 0x1f1, OBJ_PALETTE_8 | 0x25a,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x2, OBJ_PALETTE_8 | 0x21a,
@@ -297,7 +297,7 @@ static const u16 sGenesisOam_37c498_Frame11[] = {
     0xef, 0x1f4, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sGenesisOam_37c498_Frame12[] = {
+static const u16 sGenesisOam_Barfing_Frame12[] = {
     9,
     OBJ_SHAPE_VERTICAL | 0x1, 0x1f1, OBJ_PALETTE_8 | 0x25b,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
@@ -310,7 +310,7 @@ static const u16 sGenesisOam_37c498_Frame12[] = {
     0xef, 0x1f5, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sGenesisOam_37c498_Frame13[] = {
+static const u16 sGenesisOam_Barfing_Frame13[] = {
     8,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -322,7 +322,7 @@ static const u16 sGenesisOam_37c498_Frame13[] = {
     OBJ_SHAPE_VERTICAL | 0x5, 0x1f1, OBJ_PALETTE_8 | 0x25c
 };
 
-static const u16 sGenesisOam_37c498_Frame14[] = {
+static const u16 sGenesisOam_Barfing_Frame14[] = {
     9,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -335,7 +335,7 @@ static const u16 sGenesisOam_37c498_Frame14[] = {
     OBJ_SHAPE_VERTICAL | 0x9, 0x1f2, OBJ_PALETTE_8 | 0x25c
 };
 
-static const u16 sGenesisOam_37c498_Frame15[] = {
+static const u16 sGenesisOam_Barfing_Frame15[] = {
     9,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -348,7 +348,7 @@ static const u16 sGenesisOam_37c498_Frame15[] = {
     OBJ_SHAPE_VERTICAL | 0xc, 0x1f4, OBJ_PALETTE_8 | 0x25c
 };
 
-static const u16 sGenesisOam_37c498_Frame16[] = {
+static const u16 sGenesisOam_Barfing_Frame16[] = {
     9,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -361,7 +361,7 @@ static const u16 sGenesisOam_37c498_Frame16[] = {
     OBJ_SHAPE_VERTICAL | 0xc, 0x1f5, OBJ_PALETTE_8 | 0x25c
 };
 
-static const u16 sGenesisOam_37c498_Frame17[] = {
+static const u16 sGenesisOam_Barfing_Frame17[] = {
     9,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -374,7 +374,7 @@ static const u16 sGenesisOam_37c498_Frame17[] = {
     OBJ_SHAPE_VERTICAL | 0xe, 0x1f6, OBJ_PALETTE_8 | 0x25c
 };
 
-static const u16 sGenesisOam_37c498_Frame18[] = {
+static const u16 sGenesisOam_Barfing_Frame18[] = {
     8,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -386,7 +386,7 @@ static const u16 sGenesisOam_37c498_Frame18[] = {
     0xc, OBJ_X_FLIP | 0x1f5, OBJ_PALETTE_8 | 0x278
 };
 
-static const u16 sGenesisOam_37c498_Frame19[] = {
+static const u16 sGenesisOam_Barfing_Frame19[] = {
     8,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -398,7 +398,7 @@ static const u16 sGenesisOam_37c498_Frame19[] = {
     0xc, OBJ_X_FLIP | 0x1f6, OBJ_PALETTE_8 | 0x277
 };
 
-static const u16 sGenesisOam_37c498_Frame20[] = {
+static const u16 sGenesisOam_Barfing_Frame20[] = {
     8,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0x1f2, OBJ_PALETTE_8 | 0x200,
@@ -410,29 +410,29 @@ static const u16 sGenesisOam_37c498_Frame20[] = {
     0xc, 0x1f7, OBJ_PALETTE_8 | 0x276
 };
 
-static const u16 sGenesisOam_37c548_Frame0[] = {
+static const u16 sGenesisBarfOam_Hanging_Frame0[] = {
     1,
     OBJ_SHAPE_VERTICAL | 0xf0, 0x1fc, OBJ_PALETTE_8 | 0x25d
 };
 
-static const u16 sGenesisOam_37c558_Frame0[] = {
+static const u16 sGenesisBarfOam_Splashing_Frame0[] = {
     1,
     0xfc, 0x1fc, OBJ_PALETTE_8 | 0x25e
 };
 
-static const u16 sGenesisOam_37c558_Frame1[] = {
+static const u16 sGenesisBarfOam_Splashing_Frame1[] = {
     3,
     0xfc, 0x1fc, OBJ_PALETTE_8 | 0x25f,
     0xf9, 0x1f9, OBJ_PALETTE_8 | 0x27e,
     0xfe, 0x0, OBJ_PALETTE_8 | 0x27e
 };
 
-static const u16 sGenesisOam_37c558_Frame2[] = {
+static const u16 sGenesisBarfOam_Splashing_Frame2[] = {
     1,
     0xfc, 0x1fc, OBJ_PALETTE_8 | 0x27e
 };
 
-static const u16 sGenesisOam_37c450_Frame1[] = {
+static const u16 sGenesisOam_Waiting_Frame1[] = {
     7,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0xb, OBJ_PALETTE_8 | 0x21e,
@@ -443,7 +443,7 @@ static const u16 sGenesisOam_37c450_Frame1[] = {
     0xf0, OBJ_SIZE_16x16 | 0x1ec, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sGenesisOam_37c450_Frame2[] = {
+static const u16 sGenesisOam_Waiting_Frame2[] = {
     7,
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1, OBJ_PALETTE_8 | 0x21a,
     0xf0, OBJ_SIZE_16x16 | 0xb, OBJ_PALETTE_8 | 0x21e,
@@ -454,7 +454,7 @@ static const u16 sGenesisOam_37c450_Frame2[] = {
     0xf0, OBJ_SIZE_16x16 | 0x1ec, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sGenesisOam_37c478_Frame0[] = {
+static const u16 sGenesisOam_Skidding_Frame0[] = {
     9,
     0xf0, OBJ_SIZE_16x16 | 0x1f1, OBJ_PALETTE_8 | 0x202,
     0xf0, OBJ_SIZE_16x16 | 0x1fd, OBJ_PALETTE_8 | 0x20f,
@@ -467,57 +467,57 @@ static const u16 sGenesisOam_37c478_Frame0[] = {
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1fb, OBJ_PALETTE_8 | 0x240
 };
 
-const struct FrameData sGenesisOam_37c360[7] = {
+const struct FrameData sGenesisOam_Walking[7] = {
     [0] = {
-        .pFrame = sGenesisOam_37c360_Frame0,
+        .pFrame = sGenesisOam_Walking_Frame0,
         .timer = 10
     },
     [1] = {
-        .pFrame = sGenesisOam_37c360_Frame1,
+        .pFrame = sGenesisOam_Walking_Frame1,
         .timer = 10
     },
     [2] = {
-        .pFrame = sGenesisOam_37c360_Frame2,
+        .pFrame = sGenesisOam_Walking_Frame2,
         .timer = 10
     },
     [3] = {
-        .pFrame = sGenesisOam_37c360_Frame3,
+        .pFrame = sGenesisOam_Walking_Frame3,
         .timer = 7
     },
     [4] = {
-        .pFrame = sGenesisOam_37c360_Frame4,
+        .pFrame = sGenesisOam_Walking_Frame4,
         .timer = 7
     },
     [5] = {
-        .pFrame = sGenesisOam_37c360_Frame5,
+        .pFrame = sGenesisOam_Walking_Frame5,
         .timer = 7
     },
     [6] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sGenesisOam_37c398[7] = {
+const struct FrameData sGenesisOam_Running[7] = {
     [0] = {
-        .pFrame = sGenesisOam_37c360_Frame0,
+        .pFrame = sGenesisOam_Walking_Frame0,
         .timer = 6
     },
     [1] = {
-        .pFrame = sGenesisOam_37c360_Frame1,
+        .pFrame = sGenesisOam_Walking_Frame1,
         .timer = 6
     },
     [2] = {
-        .pFrame = sGenesisOam_37c360_Frame2,
+        .pFrame = sGenesisOam_Walking_Frame2,
         .timer = 6
     },
     [3] = {
-        .pFrame = sGenesisOam_37c360_Frame3,
+        .pFrame = sGenesisOam_Walking_Frame3,
         .timer = 4
     },
     [4] = {
-        .pFrame = sGenesisOam_37c360_Frame4,
+        .pFrame = sGenesisOam_Walking_Frame4,
         .timer = 4
     },
     [5] = {
-        .pFrame = sGenesisOam_37c360_Frame5,
+        .pFrame = sGenesisOam_Walking_Frame5,
         .timer = 4
     },
     [6] = FRAME_DATA_TERMINATOR
@@ -587,149 +587,149 @@ const struct FrameData sGenesisOam_37c430[4] = {
     [3] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sGenesisOam_37c450[5] = {
+const struct FrameData sGenesisOam_Waiting[5] = {
     [0] = {
-        .pFrame = sGenesisOam_37c450_Frame0,
+        .pFrame = sGenesisOam_Waiting_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sGenesisOam_37c450_Frame1,
+        .pFrame = sGenesisOam_Waiting_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sGenesisOam_37c450_Frame2,
+        .pFrame = sGenesisOam_Waiting_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sGenesisOam_37c450_Frame1,
+        .pFrame = sGenesisOam_Waiting_Frame1,
         .timer = 16
     },
     [4] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sGenesisOam_37c478[2] = {
+const struct FrameData sGenesisOam_Skidding[2] = {
     [0] = {
-        .pFrame = sGenesisOam_37c478_Frame0,
+        .pFrame = sGenesisOam_Skidding_Frame0,
         .timer = 10
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sGenesisOam_37c488[2] = {
+const struct FrameData sGenesisOam_TurningAround[2] = {
     [0] = {
-        .pFrame = sGenesisOam_37c488_Frame0,
+        .pFrame = sGenesisOam_TurningAround_Frame0,
         .timer = 8
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sGenesisOam_37c498[22] = {
+const struct FrameData sGenesisOam_Barfing[22] = {
     [0] = {
-        .pFrame = sGenesisOam_37c450_Frame0,
+        .pFrame = sGenesisOam_Waiting_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sGenesisOam_37c498_Frame1,
+        .pFrame = sGenesisOam_Barfing_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sGenesisOam_37c498_Frame2,
+        .pFrame = sGenesisOam_Barfing_Frame2,
         .timer = 8
     },
     [3] = {
-        .pFrame = sGenesisOam_37c498_Frame1,
+        .pFrame = sGenesisOam_Barfing_Frame1,
         .timer = 4
     },
     [4] = {
-        .pFrame = sGenesisOam_37c498_Frame4,
+        .pFrame = sGenesisOam_Barfing_Frame4,
         .timer = 6
     },
     [5] = {
-        .pFrame = sGenesisOam_37c498_Frame5,
+        .pFrame = sGenesisOam_Barfing_Frame5,
         .timer = 6
     },
     [6] = {
-        .pFrame = sGenesisOam_37c498_Frame6,
+        .pFrame = sGenesisOam_Barfing_Frame6,
         .timer = 6
     },
     [7] = {
-        .pFrame = sGenesisOam_37c498_Frame7,
+        .pFrame = sGenesisOam_Barfing_Frame7,
         .timer = 4
     },
     [8] = {
-        .pFrame = sGenesisOam_37c498_Frame8,
+        .pFrame = sGenesisOam_Barfing_Frame8,
         .timer = 4
     },
     [9] = {
-        .pFrame = sGenesisOam_37c498_Frame9,
+        .pFrame = sGenesisOam_Barfing_Frame9,
         .timer = 8
     },
     [10] = {
-        .pFrame = sGenesisOam_37c498_Frame10,
+        .pFrame = sGenesisOam_Barfing_Frame10,
         .timer = 8
     },
     [11] = {
-        .pFrame = sGenesisOam_37c498_Frame11,
+        .pFrame = sGenesisOam_Barfing_Frame11,
         .timer = 6
     },
     [12] = {
-        .pFrame = sGenesisOam_37c498_Frame12,
+        .pFrame = sGenesisOam_Barfing_Frame12,
         .timer = 6
     },
     [13] = {
-        .pFrame = sGenesisOam_37c498_Frame13,
+        .pFrame = sGenesisOam_Barfing_Frame13,
         .timer = 6
     },
     [14] = {
-        .pFrame = sGenesisOam_37c498_Frame14,
+        .pFrame = sGenesisOam_Barfing_Frame14,
         .timer = 6
     },
     [15] = {
-        .pFrame = sGenesisOam_37c498_Frame15,
+        .pFrame = sGenesisOam_Barfing_Frame15,
         .timer = 6
     },
     [16] = {
-        .pFrame = sGenesisOam_37c498_Frame16,
+        .pFrame = sGenesisOam_Barfing_Frame16,
         .timer = 6
     },
     [17] = {
-        .pFrame = sGenesisOam_37c498_Frame17,
+        .pFrame = sGenesisOam_Barfing_Frame17,
         .timer = 6
     },
     [18] = {
-        .pFrame = sGenesisOam_37c498_Frame18,
+        .pFrame = sGenesisOam_Barfing_Frame18,
         .timer = 6
     },
     [19] = {
-        .pFrame = sGenesisOam_37c498_Frame19,
+        .pFrame = sGenesisOam_Barfing_Frame19,
         .timer = 6
     },
     [20] = {
-        .pFrame = sGenesisOam_37c498_Frame20,
+        .pFrame = sGenesisOam_Barfing_Frame20,
         .timer = 6
     },
     [21] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sGenesisOam_37c548[2] = {
+const struct FrameData sGenesisBarfOam_Hanging[2] = {
     [0] = {
-        .pFrame = sGenesisOam_37c548_Frame0,
+        .pFrame = sGenesisBarfOam_Hanging_Frame0,
         .timer = 255
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sGenesisOam_37c558[4] = {
+const struct FrameData sGenesisBarfOam_Splashing[4] = {
     [0] = {
-        .pFrame = sGenesisOam_37c558_Frame0,
+        .pFrame = sGenesisBarfOam_Splashing_Frame0,
         .timer = 6
     },
     [1] = {
-        .pFrame = sGenesisOam_37c558_Frame1,
+        .pFrame = sGenesisBarfOam_Splashing_Frame1,
         .timer = 6
     },
     [2] = {
-        .pFrame = sGenesisOam_37c558_Frame2,
+        .pFrame = sGenesisBarfOam_Splashing_Frame2,
         .timer = 6
     },
     [3] = FRAME_DATA_TERMINATOR

@@ -305,8 +305,8 @@ SECTIONS {
         src/sprites_AI/owtch.o(.text);
         src/sprites_AI/geega.o(.text);
         src/sprites_AI/pillar.o(.text);
+        src/sprites_AI/genesis.o(.text);
 
-        asm/sprites_AI/genesis.o(.text);
         asm/sprites_AI/puyo.o(.text);
         asm/sprites_AI/fake_tank.o(.text);
         asm/sprites_AI/flashing_number.o(.text);
