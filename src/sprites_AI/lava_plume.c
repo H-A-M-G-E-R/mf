@@ -17,7 +17,7 @@
 void LavaPlumeInit(void) {
     gCurrentSprite.health = GET_PSPRITE_HEALTH(gCurrentSprite.spriteId);
     gCurrentSprite.samusCollision = SSC_HURTS_SAMUS_DIES_WHEN_HIT;
-    gCurrentSprite.properties = gCurrentSprite.properties | 8;
+    gCurrentSprite.properties |= SP_SOLID_FOR_PROJECTILES;
     gCurrentSprite.drawDistanceTop = 8;
     gCurrentSprite.drawDistanceBottom = 0x68;
     gCurrentSprite.drawDistanceHorizontal = 0x10;

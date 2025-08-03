@@ -134,7 +134,7 @@ void GenesisIdle(void) {
     }
 }
 
-void GensisWaitingInit(void) {
+void GenesisWaitingInit(void) {
     gCurrentSprite.pose = GENESIS_POSE_WAITING;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
@@ -282,7 +282,7 @@ void Genesis(void) {
             GenesisIdle();
             break;
         case GENESIS_POSE_WAITING_INIT:
-            GensisWaitingInit();
+            GenesisWaitingInit();
         case GENESIS_POSE_WAITING:
             GenesisWaiting();
             break;

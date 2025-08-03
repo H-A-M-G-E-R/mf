@@ -42,7 +42,7 @@
 #define RIDLEY_TAIL_POSE_STRIKING_FORWARD 0x44
 #define RIDLEY_TAIL_POSE_END_STRIKING 0x46
 
-#define RIDLEY_FIRE_POSE_MOVING_TOWARD_SAMUS 0x18
+#define RIDLEY_FIRE_POSE_MOVING_TOWARDS_SAMUS 0x18
 
 #define RIDLEY_SCREAM_HEALTH_THRESHOLD 500
 
@@ -1304,7 +1304,7 @@ void RidleyFireMoving(void) {
     else
         gCurrentSprite.rotation += Q_8_8(1.f/8);
     if (--gCurrentSprite.work1 == 0) {
-        gCurrentSprite.pose = RIDLEY_FIRE_POSE_MOVING_TOWARD_SAMUS;
+        gCurrentSprite.pose = RIDLEY_FIRE_POSE_MOVING_TOWARDS_SAMUS;
         gCurrentSprite.work2 = 0;
         gCurrentSprite.work3 = 0x10;
         gCurrentSprite.work1 = 0;
@@ -1528,7 +1528,7 @@ void RidleyFire(void) {
         case SPRITE_POSE_IDLE:
             RidleyFireMoving();
             break;
-        case RIDLEY_FIRE_POSE_MOVING_TOWARD_SAMUS:
+        case RIDLEY_FIRE_POSE_MOVING_TOWARDS_SAMUS:
             RidleyFireMovingTowardsSamus();
             break;
         case SPRITE_POSE_STOPPED:
