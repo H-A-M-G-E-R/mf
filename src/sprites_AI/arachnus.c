@@ -185,6 +185,7 @@ void ArachnusRolling(void) {
                         SpriteDebrisInit(0, DEBRIS_TYPE_FALLING | DEBRIS_TYPE_HOPPING_SLOW_LEFT, yPosition, xPosition + MOD_AND(gFrameCounter8Bit, HALF_BLOCK_SIZE));
                     }
                 }
+                // BUG: hitWall uninitialized
             }
         } else {
             SpriteUtilCheckCollisionAtPosition(gSpriteData[shellSpriteSlot].yPosition - PIXEL_TO_SUB_PIXEL(18),

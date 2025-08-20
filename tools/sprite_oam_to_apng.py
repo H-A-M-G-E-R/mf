@@ -166,6 +166,7 @@ labelsFile = open("./mf_us.map")
 allAnimations = {}
 lastpGfx = 0
 lastpPal = 0
+particleAnimations = []
 
 line = labelsFile.readline()
 while line != '':
@@ -176,16 +177,22 @@ while line != '':
             if int(split[0], 16) < 0x082e926c: # sHornoadGfx
                 line = labelsFile.readline()
                 continue
-            if int(split[0], 16) >= 0x083bdebc: # sXParasite_3bdebc
+            if int(split[0], 16) >= 0x083bdebc and int(split[0], 16) < 0x083ea57c: # sXParasite_3bdebc sParticleOam_Bomb
+                line = labelsFile.readline()
+                continue
+            if int(split[0], 16) > 0x083eed58: # sParticleOam_ChargingMissileCharged
                 break
             if split[1] == "sYakuzaMouthGlowingPal" or split[1] == "sBlueZoroGfx" or split[1] == "sBlueZoroPal":
                 line = labelsFile.readline()
                 continue
             if ("Oam" in split[1] or "FrameData" in split[1]) and "MultiOam" not in split[1]:
-                if (lastpGfx, lastpPal) in allAnimations:
-                    allAnimations[(lastpGfx, lastpPal)].append((int(split[0], 16), split[1]))
+                if int(split[0], 16) >= 0x083ea57c:
+                    particleAnimations.append((int(split[0], 16), split[1]))
                 else:
-                    allAnimations[(lastpGfx, lastpPal)] = [(int(split[0], 16), split[1])]
+                    if (lastpGfx, lastpPal) in allAnimations:
+                        allAnimations[(lastpGfx, lastpPal)].append((int(split[0], 16), split[1]))
+                    else:
+                        allAnimations[(lastpGfx, lastpPal)] = [(int(split[0], 16), split[1])]
             if "Gfx" in split[1]:
                 lastpGfx = int(split[0], 16)
             if "Pal" in split[1]:
@@ -221,3 +228,24 @@ for ((pGfx, pPal), pAnims) in allAnimations.items():
 
         exportAnimation(gfx, paletteRgba, pAnim, f'tools/animations/{name}.png')
 
+romSeek(0x083e40dc) # sCommonOamPal
+palette555 = [romRead(2) for i in range(8*16)]
+
+paletteRgba = [0]*(4*256)
+for i in range(6*16):
+    paletteRgba[(i+0x20)*4] = (palette555[i] & 0x1F) << 3
+    paletteRgba[(i+0x20)*4+1] = (palette555[i] >> 5 & 0x1F) << 3
+    paletteRgba[(i+0x20)*4+2] = (palette555[i] >> 10 & 0x1F) << 3
+    paletteRgba[(i+0x20)*4+3] = 255
+
+gfx = [[0]*0x20]*0x40
+romSeek(0x083e419c) # sCommonOamGfx
+for i in range(0x40*8):
+    gfx.append([romRead() for j in range(0x20)])
+gfx += [[0]*0x20]*0x200
+
+for (pAnim, name) in particleAnimations:
+    if os.access(f'tools/animations/{name}.png', os.F_OK):
+        continue
+
+    exportAnimation(gfx, paletteRgba, pAnim, f'tools/animations/{name}.png')
