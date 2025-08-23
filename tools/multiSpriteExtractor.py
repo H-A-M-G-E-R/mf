@@ -1,3 +1,5 @@
+from labels import extract_labels
+
 def toPixels(value):
     if value > 0x7FFF:
         value = -(0x10000 - value)
@@ -5,16 +7,17 @@ def toPixels(value):
     return value//4
 
 partNames = [
-    "OMEGA_METROID_PART_0",
-    "OMEGA_METROID_PART_1",
-    "OMEGA_METROID_PART_2",
-    "OMEGA_METROID_PART_3",
-    "OMEGA_METROID_PART_4",
-    "OMEGA_METROID_PART_5",
-    "OMEGA_METROID_PART_6",
-    "OMEGA_METROID_PART_7",
+    "ZAZABI_PART_MOUTH_FRONT",
+    "ZAZABI_PART_MOUTH_BACK",
+    "ZAZABI_PART_HAIR",
+    "ZAZABI_PART_EYE_SHELL",
+    "ZAZABI_PART_PUPIL",
+    "ZAZABI_PART_EYE",
+    "ZAZABI_PART_UPPER_SHELL",
+    #"ZAZABI_PART_MIDDLE_SHELL",
+    #"ZAZABI_PART_LOWER_SHELL",
 
-    "OMEGA_METROID_PART_END"
+    #"ZAZABI_PART_END"
 ]
 
 def ParseMultiSpriteFrame():
@@ -29,7 +32,7 @@ def ParseMultiSpriteFrame():
 
     result = f"static const s16 sMultiSpriteFrame_{startAddr:x}[{partNames[len(partNames)-1]}][MULTI_SPRITE_DATA_ELEMENT_END] = " + "{\n"
     for i in range(len(partNames)-1):
-        result += f"    [{partNames[i]}] = MULTI_SPRITE_DATA_INFO(OmegaMetroidPartOam_{animations[multiSpriteData[i][0]]:x}, {toPixels(multiSpriteData[i][1])}, {toPixels(multiSpriteData[i][2])})"
+        result += f"    [{partNames[i]}] = MULTI_SPRITE_DATA_INFO({labels[animations[multiSpriteData[i][0]]+0x08000000][1:]}, {toPixels(multiSpriteData[i][1])}, {toPixels(multiSpriteData[i][2])})"
         if i < len(partNames)-2:
             result += ",\n"
     result += "\n};\n"
@@ -46,7 +49,7 @@ def ParseMultiSpriteData():
             break
         frameData.append((pFrame, timer))
 
-    result = f"const struct MultiSpriteData sOmegaMetroidMultiSpriteData_{startAddr:x}[{(len(frameData)+1)}] = " + "{\n"
+    result = f"const struct MultiSpriteData {labels[startAddr+0x08000000]}[{(len(frameData)+1)}] = " + "{\n"
 
     index = 0
     for (pFrame, timer) in frameData:
@@ -57,20 +60,25 @@ def ParseMultiSpriteData():
     return (result, frameData)
 
 file = open("../mf_us_baserom.gba", "rb")
-file.seek(0x79b634)
-animations = [int.from_bytes(file.read(4), 'little') & 0x1ffffff for i in range(53)]
+labels = extract_labels()
 
-print("const struct FrameData* const sOmegaMetroidFrameDataPointers[OMEGA_METROID_OAM_END] = {")
+file.seek(0x79b0c8)
+animations = [int.from_bytes(file.read(4), 'little') & 0x1ffffff for i in range(57)]
+
+print("const struct FrameData* const sZazabiFrameDataPointers4[ZAZABI_OAM_END] = {")
 for addr in animations:
-    print(f"    [OmegaMetroidPartOam_{addr:x}] = sOmegaMetroidPartOam_{addr:x},")
+    print(f"    [{labels[addr+0x08000000][1:]}] = {labels[addr+0x08000000]},")
 print("};\n")
 
-print("enum OmegaMetroidOam {")
+print("enum ZazabiOam {")
 for addr in animations:
-    print(f"    OmegaMetroidPartOam_{addr:x},")
-print("\n    OMEGA_METROID_OAM_END\n};\n")
+    print(f"    {labels[addr+0x08000000][1:]},")
+print("\n    ZAZABI_OAM_END\n};\n")
 
-file.seek(0x395a08)
+#file.seek(0x36a520)
+#file.seek(0x36b8b8)
+#file.seek(0x36c878)
+file.seek(0x36d4cc)
 frames = set()
 output = ""
 while True:
@@ -99,14 +107,14 @@ while True:
     animations.append((currentAddr, len(frameData)+1))
     for i in range(len(frameData)):
         if frameData[i][0] not in namedFrames:
-            namedFrames[frameData[i][0]] = f"sOmegaMetroidMultiSpriteData_{currentAddr:x}_Frame{i}"
+            namedFrames[frameData[i][0]] = f"{labels[currentAddr+0x08000000]}_Frame{i}"
 
 for (addr, name) in namedFrames.items():
     output = output.replace(f"sMultiSpriteFrame_{addr:x}", name)
 print(output)
 
 for (addr, count) in animations:
-    print(f"extern const struct MultiSpriteData sOmegaMetroidMultiSpriteData_{addr:x}[{count}];")
+    print(f"extern const struct MultiSpriteData {labels[addr+0x08000000]}[{count}];")
 
 print(f"\nEnd: {file.tell():x}\n")
 

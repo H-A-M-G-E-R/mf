@@ -321,7 +321,7 @@ void ZazabiInit(void)
         gCurrentSprite.pose = ZAZABI_POSE_IDLE_INIT;
     }
 
-    ramSlot = SpriteSpawnSecondary(SSPRITE_ZAZABI_PART, ZAZABI_PART_0, gCurrentSprite.spritesetGfxSlot,
+    ramSlot = SpriteSpawnSecondary(SSPRITE_ZAZABI_PART, ZAZABI_PART_MOUTH_FRONT, gCurrentSprite.spritesetGfxSlot,
         gCurrentSprite.primarySpriteRamSlot, gSubSpriteData1.yPosition, gSubSpriteData1.xPosition, 0);
 
     if (ramSlot == UCHAR_MAX)
@@ -330,7 +330,7 @@ void ZazabiInit(void)
         return;
     }
 
-    ramSlot = SpriteSpawnSecondary(SSPRITE_ZAZABI_PART, ZAZABI_PART_MOUTH, gCurrentSprite.spritesetGfxSlot,
+    ramSlot = SpriteSpawnSecondary(SSPRITE_ZAZABI_PART, ZAZABI_PART_MOUTH_BACK, gCurrentSprite.spritesetGfxSlot,
         gCurrentSprite.primarySpriteRamSlot, gSubSpriteData1.yPosition, gSubSpriteData1.xPosition, 0);
 
     if (ramSlot == UCHAR_MAX)
@@ -1487,7 +1487,7 @@ void ZazabiPartInit(void)
 
     switch (gCurrentSprite.roomSlot)
     {
-        case ZAZABI_PART_0:
+        case ZAZABI_PART_MOUTH_FRONT:
             gCurrentSprite.drawDistanceTop = SUB_PIXEL_TO_PIXEL(BLOCK_SIZE + HALF_BLOCK_SIZE);
             gCurrentSprite.drawDistanceBottom = SUB_PIXEL_TO_PIXEL(BLOCK_SIZE + HALF_BLOCK_SIZE);
             gCurrentSprite.drawDistanceHorizontal = SUB_PIXEL_TO_PIXEL(BLOCK_SIZE * 2);
@@ -1498,7 +1498,7 @@ void ZazabiPartInit(void)
             gCurrentSprite.hitboxRight = BLOCK_SIZE;
             break;
 
-        case ZAZABI_PART_MOUTH:
+        case ZAZABI_PART_MOUTH_BACK:
             gCurrentSprite.drawDistanceTop = SUB_PIXEL_TO_PIXEL(HALF_BLOCK_SIZE);
             gCurrentSprite.drawDistanceBottom = SUB_PIXEL_TO_PIXEL(BLOCK_SIZE + HALF_BLOCK_SIZE);
             gCurrentSprite.drawDistanceHorizontal = SUB_PIXEL_TO_PIXEL(BLOCK_SIZE + HALF_BLOCK_SIZE);
@@ -1629,7 +1629,7 @@ void ZazabiPartDefault(void)
 
         case ZAZABI_POSE_FALLING_INIT:
         case ZAZABI_POSE_FALLING:
-            if (gCurrentSprite.roomSlot != ZAZABI_PART_0)
+            if (gCurrentSprite.roomSlot != ZAZABI_PART_MOUTH_FRONT)
                 break;
 
             if (gSpriteData[ramSlot].work3 != 0)
@@ -1668,7 +1668,7 @@ void ZazabiPartDefault(void)
             break;
 
         case ZAZABI_POSE_LANDING_MOUTH_OPEN_INIT:
-            if (gCurrentSprite.roomSlot == ZAZABI_PART_0)
+            if (gCurrentSprite.roomSlot == ZAZABI_PART_MOUTH_FRONT)
             {
                 gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
                 
@@ -1694,7 +1694,7 @@ void ZazabiPartDefault(void)
             break;
 
         case ZAZABI_POSE_LANDING_MOUTH_OPEN:
-            if (gCurrentSprite.roomSlot == ZAZABI_PART_0)
+            if (gCurrentSprite.roomSlot == ZAZABI_PART_MOUTH_FRONT)
             {
                 if (gSamusData.pose == SPOSE_GRABBED_BY_ZAZABI)
                 {
@@ -2039,7 +2039,7 @@ void ZazabiPart(void)
             SpriteUtilSyncCurrentSpritePositionWithSubSprite1Position();
             break;
 
-        case ZAZABI_PART_MOUTH:
+        case ZAZABI_PART_MOUTH_BACK:
             ZazabiPartMouth();
             break;
 

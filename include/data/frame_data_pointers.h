@@ -11,10 +11,10 @@
 
 extern const struct FrameData* const sBoxFrameDataPointers[BOX_OAM_END];
 
-extern const struct FrameData* const sZazabiFrameDataPointers4[57];
-extern const struct FrameData* const sZazabiFrameDataPointers3[57];
-extern const struct FrameData* const sZazabiFrameDataPointers2[57];
-extern const struct FrameData* const sZazabiFrameDataPointers1[57];
+extern const struct FrameData* const sZazabiFrameDataPointers4[ZAZABI_OAM_END];
+extern const struct FrameData* const sZazabiFrameDataPointers3[ZAZABI_OAM_END];
+extern const struct FrameData* const sZazabiFrameDataPointers2[ZAZABI_OAM_END];
+extern const struct FrameData* const sZazabiFrameDataPointers1[ZAZABI_OAM_END];
 
 extern const struct FrameData* const sSaXMonsterFrameDataPointers[SA_X_MONSTER_OAM_END];
 

@@ -4,77 +4,141 @@
 #include "types.h"
 #include "oam.h"
 
-extern const struct FrameData sZazabiMultiOam_Idle4[5];
-extern const struct FrameData sZazabiMultiOam_Crawling4[9];
-extern const struct FrameData sZazabiMultiOam_JumpWarning4[3];
-extern const struct FrameData sZazabiMultiOam_JumpingSmall4[4];
-extern const struct FrameData sZazabiMultiOam_JumpingBigRight4[4];
-extern const struct FrameData sZazabiMultiOam_JumpingBigLeft4[4];
-extern const struct FrameData sZazabiMultiOam_FallingSlow4[7];
-extern const struct FrameData sZazabiMultiOam_FallingSlowMouthOpened4[7];
-extern const struct FrameData sZazabiMultiOam_FallingLeft4[9];
-extern const struct FrameData sZazabiMultiOam_FallingMouthOpenedLeft4[9];
-extern const struct FrameData sZazabiMultiOam_FallingRight4[9];
-extern const struct FrameData sZazabiMultiOam_FallingMouthOpenedRight4[9];
-extern const struct FrameData sZazabiMultiOam_LandingMouthOpen4[7];
-extern const struct FrameData sZazabiMultiOam_Landing4[3];
-extern const struct FrameData sZazabiMultiOam_SpittingSamus4[7];
-extern const struct FrameData sZazabiMultiOam_LandingAfterSpitting4[5];
-extern const struct FrameData sZazabiMultiOam_EatingSamus1[5];
-extern const struct FrameData sZazabiMultiOam_EatingSamus2[5];
-extern const struct FrameData sZazabiMultiOam_EatingSamus3_4[5];
-extern const struct FrameData sZazabiMultiOam_EatingSamus4_4[5];
-extern const struct FrameData sZazabiMultiOam_EatingSamus5_4[5];
+#include "structs/sprite.h"
 
-extern const struct FrameData sZazabiMultiOam_Idle3[5];
-extern const struct FrameData sZazabiMultiOam_Crawling3[9];
-extern const struct FrameData sZazabiMultiOam_JumpWarning3[3];
-extern const struct FrameData sZazabiMultiOam_JumpingSmall3[4];
-extern const struct FrameData sZazabiMultiOam_JumpingBigRight3[4];
-extern const struct FrameData sZazabiMultiOam_JumpingBigLeft3[4];
-extern const struct FrameData sZazabiMultiOam_FallingSlow3[7];
-extern const struct FrameData sZazabiMultiOam_FallingSlowMouthOpened3[7];
-extern const struct FrameData sZazabiMultiOam_FallingLeft3[9];
-extern const struct FrameData sZazabiMultiOam_FallingMouthOpenedLeft3[9];
-extern const struct FrameData sZazabiMultiOam_FallingRight3[9];
-extern const struct FrameData sZazabiMultiOam_FallingMouthOpenedRight3[9];
-extern const struct FrameData sZazabiMultiOam_LandingMouthOpen3[7];
-extern const struct FrameData sZazabiMultiOam_Landing3[3];
-extern const struct FrameData sZazabiMultiOam_SpittingSamus3[7];
-extern const struct FrameData sZazabiMultiOam_LandingAfterSpitting3[5];
-extern const struct FrameData sZazabiMultiOam_EatingSamus3_3[5];
-extern const struct FrameData sZazabiMultiOam_EatingSamus4_3[5];
-extern const struct FrameData sZazabiMultiOam_EatingSamus5_3[5];
+enum ZazabiOam {
+    ZazabiPartOam_LowerShellIdle,
+    ZazabiPartOam_LowerShellEatingSamus,
+    ZazabiPartOam_LowerShellSwallowingSamus,
+    Zazabi_372820,
+    ZazabiPartOam_MiddleShellIdle,
+    ZazabiPartOam_MiddleShellEatingSamus,
+    ZazabiPartOam_MiddleShellSwallowingSamus,
+    Zazabi_372890,
+    ZazabiPartOam_UpperShellIdle,
+    ZazabiPartOam_UpperShellEatingSamus,
+    ZazabiPartOam_UpperShellSwallowingSamus,
+    Zazabi_372900,
+    ZazabiPartOam_EyeShellIdle,
+    ZazabiPartOam_EyeShellSwallowingSamusLow,
+    Zazabi_372950,
+    Zazabi_372970,
+    ZazabiPartOam_MouthIdle,
+    ZazabiPartOam_MouthLanding,
+    ZazabiPartOam_MouthCrawlingLow,
+    ZazabiPartOam_MouthCrawlingHigh,
+    ZazabiPartOam_MouthCrawlingHalted,
+    ZazabiPartOam_MouthOpening,
+    Zazabi_3729e8,
+    Zazabi_3729f8,
+    Zazabi_372a08,
+    ZazabiPartOam_MouthOpened,
+    ZazabiPartOam_EyeIdle,
+    ZazabiPartOam_EyeEatingSamus,
+    ZazabiPartOam_PupilBlinking,
+    ZazabiPartOam_HairMoving,
+    ZazabiPartOam_HairStill,
+    ZazabiPartOam_HairDownLow,
+    ZazabiPartOam_HairDownMid,
+    ZazabiPartOam_HairDownHigh,
+    ZazabiPartOam_HairEatingSamus,
+    ZazabiPartOam_EyeShellJumpingRight,
+    ZazabiPartOam_EyeShellJumpingSmallRight,
+    ZazabiPartOam_EyeShellJumpingLeft,
+    ZazabiPartOam_EyeShellJumpingSmallLeft,
+    ZazabiPartOam_UpperShellJumpingRight,
+    ZazabiPartOam_UpperShellJumpingLeft,
+    ZazabiPartOam_HairJumpingBigRight_1,
+    ZazabiPartOam_HairJumpingBigRight_2,
+    Zazabi_372bf0,
+    ZazabiPartOam_HairLandingLeft_1,
+    ZazabiPartOam_HairLandingLeft_2,
+    ZazabiPartOam_HairJumpingLeft_1,
+    ZazabiPartOam_HairJumpingLeft_2,
+    Zazabi_372c40,
+    ZazabiPartOam_HairLandingMouthOpened_1,
+    ZazabiPartOam_HairLandingMouthOpened_2,
+    ZazabiPartOam_PupilClosed,
+    Zazabi_372c80,
+    ZazabiPartOam_EyeJumpingRight,
+    ZazabiPartOam_EyeLandingRight,
+    ZazabiPartOam_EyeJumpingLeft,
+    ZazabiPartOam_EyeLandingLeft,
 
-extern const struct FrameData sZazabiMultiOam_Idle2[5];
-extern const struct FrameData sZazabiMultiOam_Crawling2[9];
-extern const struct FrameData sZazabiMultiOam_JumpWarning2[3];
-extern const struct FrameData sZazabiMultiOam_JumpingSmall2[4];
-extern const struct FrameData sZazabiMultiOam_JumpingBigRight2[4];
-extern const struct FrameData sZazabiMultiOam_JumpingBigLeft2[4];
-extern const struct FrameData sZazabiMultiOam_FallingSlow2[7];
-extern const struct FrameData sZazabiMultiOam_FallingSlowMouthOpened2[7];
-extern const struct FrameData sZazabiMultiOam_FallingLeft2[9];
-extern const struct FrameData sZazabiMultiOam_FallingMouthOpenedLeft2[9];
-extern const struct FrameData sZazabiMultiOam_FallingRight2[9];
-extern const struct FrameData sZazabiMultiOam_FallingMouthOpenedRight2[9];
-extern const struct FrameData sZazabiMultiOam_LandingMouthOpen2[7];
-extern const struct FrameData sZazabiMultiOam_Landing2[3];
-extern const struct FrameData sZazabiMultiOam_SpittingSamus2[7];
-extern const struct FrameData sZazabiMultiOam_LandingAfterSpitting2[5];
-extern const struct FrameData sZazabiMultiOam_EatingSamus5_2[5];
+    ZAZABI_OAM_END
+};
 
-extern const struct FrameData sZazabiMultiOam_Idle1[5];
-extern const struct FrameData sZazabiMultiOam_Crawling1[9];
-extern const struct FrameData sZazabiMultiOam_JumpWarning1[3];
-extern const struct FrameData sZazabiMultiOam_JumpingSmall1[4];
-extern const struct FrameData sZazabiMultiOam_JumpingBigRight1[4];
-extern const struct FrameData sZazabiMultiOam_JumpingBigLeft1[4];
-extern const struct FrameData sZazabiMultiOam_FallingSlowMouthOpened1[7];
-extern const struct FrameData sZazabiMultiOam_FallingMouthOpenedLeft1[9];
-extern const struct FrameData sZazabiMultiOam_FallingMouthOpenedRight1[9];
-extern const struct FrameData sZazabiMultiOam_LandingMouthOpen1[7];
-extern const struct FrameData sZazabiMultiOam_Landing1[3];
+extern const struct MultiSpriteData sZazabiMultiOam_Idle4[5];
+extern const struct MultiSpriteData sZazabiMultiOam_Crawling4[9];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpWarning4[3];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingSmall4[4];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingBigRight4[4];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingBigLeft4[4];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingSlow4[7];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingSlowMouthOpened4[7];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingLeft4[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedLeft4[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingRight4[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedRight4[9];
+extern const struct MultiSpriteData sZazabiMultiOam_LandingMouthOpen4[7];
+extern const struct MultiSpriteData sZazabiMultiOam_Landing4[3];
+extern const struct MultiSpriteData sZazabiMultiOam_SpittingSamus4[7];
+extern const struct MultiSpriteData sZazabiMultiOam_LandingAfterSpitting4[5];
+extern const struct MultiSpriteData sZazabiMultiOam_EatingSamus1[5];
+extern const struct MultiSpriteData sZazabiMultiOam_EatingSamus2[5];
+extern const struct MultiSpriteData sZazabiMultiOam_EatingSamus3_4[5];
+extern const struct MultiSpriteData sZazabiMultiOam_EatingSamus4_4[5];
+extern const struct MultiSpriteData sZazabiMultiOam_EatingSamus5_4[5];
+
+extern const struct MultiSpriteData sZazabiMultiOam_Idle3[5];
+extern const struct MultiSpriteData sZazabiMultiOam_Crawling3[9];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpWarning3[3];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingSmall3[4];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingBigRight3[4];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingBigLeft3[4];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingSlow3[7];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingSlowMouthOpened3[7];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingLeft3[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedLeft3[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingRight3[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedRight3[9];
+extern const struct MultiSpriteData sZazabiMultiOam_LandingMouthOpen3[7];
+extern const struct MultiSpriteData sZazabiMultiOam_Landing3[3];
+extern const struct MultiSpriteData sZazabiMultiOam_SpittingSamus3[7];
+extern const struct MultiSpriteData sZazabiMultiOam_LandingAfterSpitting3[5];
+extern const struct MultiSpriteData sZazabiMultiOam_EatingSamus3_3[5];
+extern const struct MultiSpriteData sZazabiMultiOam_EatingSamus4_3[5];
+extern const struct MultiSpriteData sZazabiMultiOam_EatingSamus5_3[5];
+
+extern const struct MultiSpriteData sZazabiMultiOam_Idle2[5];
+extern const struct MultiSpriteData sZazabiMultiOam_Crawling2[9];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpWarning2[3];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingSmall2[4];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingBigRight2[4];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingBigLeft2[4];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingSlow2[7];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingSlowMouthOpened2[7];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingLeft2[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedLeft2[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingRight2[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedRight2[9];
+extern const struct MultiSpriteData sZazabiMultiOam_LandingMouthOpen2[7];
+extern const struct MultiSpriteData sZazabiMultiOam_Landing2[3];
+extern const struct MultiSpriteData sZazabiMultiOam_SpittingSamus2[7];
+extern const struct MultiSpriteData sZazabiMultiOam_LandingAfterSpitting2[5];
+extern const struct MultiSpriteData sZazabiMultiOam_EatingSamus5_2[5];
+
+extern const struct MultiSpriteData sZazabiMultiOam_Idle1[5];
+extern const struct MultiSpriteData sZazabiMultiOam_Crawling1[9];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpWarning1[3];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingSmall1[4];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingBigRight1[4];
+extern const struct MultiSpriteData sZazabiMultiOam_JumpingBigLeft1[4];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingSlowMouthOpened1[7];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedLeft1[9];
+extern const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedRight1[9];
+extern const struct MultiSpriteData sZazabiMultiOam_LandingMouthOpen1[7];
+extern const struct MultiSpriteData sZazabiMultiOam_Landing1[3];
 
 extern const s16 sZazabiJumpingSpeedMouthOpened[40];
 extern const s16 sZazabiFallingSpeedMouthOpened[8];

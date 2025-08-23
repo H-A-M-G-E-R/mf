@@ -2,4191 +2,4191 @@
 #include "macros.h"
 #include "sprites_AI/zazabi.h"
 
-static const s16 sZazabiMultiOam_Idle4_Frame2[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    29, -72, 0,
-    12, 24, 0,
-    51, 8, 0,
-    26, 8, 0,
-    8, 136, 0,
-    4, 196, 0,
-    0, 244, 0
-};
-
-static const s16 sZazabiMultiOam_Idle4_Frame1[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    29, -76, 0,
-    12, 20, 0,
-    51, 4, 0,
-    26, 4, 0,
-    8, 132, 0,
-    4, 188, 0,
-    0, 236, 0
-};
-
-static const s16 sZazabiMultiOam_Crawling4_Frame2[ZAZABI_PART_END * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    29, -80, 0,
-    12, 16, 0,
-    51, 0, 0,
-    26, 0, 0,
-    8, 124, 0,
-    4, 180, 0,
-    0, 228, 0
-};
-
-static const s16 sZazabiMultiOam_Idle4_Frame0[ZAZABI_PART_END * 3] = {
-    19, 276, 0,
-    52, 368, 0,
-    29, -92, 0,
-    12, 4, 0,
-    51, -12, 0,
-    26, -12, 0,
-    8, 108, 0,
-    4, 164, 0,
-    0, 212, 0
-};
-
-static const s16 sZazabiMultiOam_Crawling4_Frame4[ZAZABI_PART_END * 3] = {
-    20, 280, 0,
-    52, 368, 0,
-    29, -96, 0,
-    12, 0, 0,
-    51, -16, 0,
-    26, -16, 0,
-    8, 108, 0,
-    4, 164, 0,
-    0, 216, 0
-};
-
-static const s16 sZazabiMultiOam_JumpWarning4_Frame0[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    30, -60, 0,
-    12, 36, 0,
-    51, 20, 0,
-    26, 20, 0,
-    8, 136, 0,
-    4, 192, 0,
-    0, 240, 0
-};
-
-static const s16 sZazabiMultiOam_JumpWarning4_Frame1[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    30, -24, 0,
-    12, 72, 0,
-    51, 56, 0,
-    26, 56, 0,
-    8, 164, 0,
-    4, 216, 0,
-    0, 260, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingSmall4_Frame0[ZAZABI_PART_END * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    31, -112, 0,
-    12, -16, 0,
-    51, -32, 0,
-    26, -32, 0,
-    8, 96, 0,
-    4, 152, 0,
-    0, 200, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingSmall4_Frame1[ZAZABI_PART_END * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    32, -128, 0,
-    12, -32, 0,
-    51, -48, 0,
-    26, -48, 0,
-    8, 88, 0,
-    4, 152, 0,
-    0, 204, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingSmall4_Frame2[ZAZABI_PART_END * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    33, -116, 0,
-    12, -20, 0,
-    51, -36, 0,
-    26, -36, 0,
-    8, 92, 0,
-    4, 152, 0,
-    0, 204, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame0[ZAZABI_PART_END * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    30, -92, 0,
-    12, 4, 0,
-    51, -12, 0,
-    26, -12, 0,
-    8, 104, 0,
-    4, 148, 0,
-    0, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame1[ZAZABI_PART_END * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    30, -84, 0,
-    12, 12, 0,
-    51, -4, 0,
-    26, -4, 0,
-    8, 96, 0,
-    4, 132, 0,
-    0, 164, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame2[ZAZABI_PART_END * 3] = {
-    25, 196, 0,
-    52, 368, 0,
-    30, -72, 0,
-    12, 24, 0,
-    51, 8, 0,
-    26, 8, 0,
-    8, 100, 0,
-    4, 124, 0,
-    0, 140, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame3[ZAZABI_PART_END * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    30, -32, 0,
-    12, 64, 0,
-    51, 48, 0,
-    26, 48, 0,
-    8, 144, 0,
-    4, 152, 0,
-    0, 184, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame4[ZAZABI_PART_END * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    30, -8, 0,
-    12, 88, 0,
-    51, 72, 0,
-    26, 72, 0,
-    8, 164, 0,
-    4, 188, 0,
-    0, 184, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow4_Frame5[ZAZABI_PART_END * 3] = {
-    19, 264, 0,
-    52, 368, 0,
-    30, 4, 0,
-    12, 100, 0,
-    51, 84, 0,
-    26, 84, 0,
-    8, 180, 0,
-    4, 220, 0,
-    0, 184, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame0[ZAZABI_PART_END * 3] = {
-    16, 300, 0,
-    52, 368, 0,
-    31, 68, 0,
-    12, 164, 0,
-    51, 148, 0,
-    26, 148, 0,
-    8, 224, 0,
-    4, 252, 0,
-    0, 272, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame1[ZAZABI_PART_END * 3] = {
-    17, 292, 0,
-    52, 368, 0,
-    31, 24, 0,
-    12, 120, 0,
-    51, 104, 0,
-    26, 104, 0,
-    8, 200, 0,
-    4, 228, 0,
-    0, 256, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame2[ZAZABI_PART_END * 3] = {
-    17, 292, 0,
-    52, 368, 0,
-    32, 28, 0,
-    12, 124, 0,
-    51, 108, 0,
-    26, 108, 0,
-    8, 204, 0,
-    4, 232, 0,
-    0, 260, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame3[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    32, -12, 0,
-    12, 84, 0,
-    51, 68, 0,
-    26, 68, 0,
-    8, 172, 0,
-    4, 208, 0,
-    0, 248, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame4[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    33, -8, 0,
-    12, 88, 0,
-    51, 72, 0,
-    26, 72, 0,
-    8, 176, 0,
-    4, 212, 0,
-    0, 252, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow4_Frame2[ZAZABI_PART_END * 3] = {
-    20, 200, 0,
-    52, 368, 0,
-    30, -72, 0,
-    12, 24, 0,
-    51, 8, 0,
-    26, 8, 0,
-    8, 100, 0,
-    4, 124, 0,
-    0, 140, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus1_Frame0[ZAZABI_PART_END * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -80, 0,
-    12, 16, 0,
-    51, 0, 0,
-    27, 0, 0,
-    8, 124, 0,
-    4, 180, 0,
-    1, 228, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus1_Frame1[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -76, 0,
-    12, 20, 0,
-    51, 4, 0,
-    27, 4, 0,
-    8, 132, 0,
-    4, 188, 0,
-    1, 236, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus1_Frame2[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -72, 0,
-    12, 24, 0,
-    51, 8, 0,
-    27, 8, 0,
-    8, 136, 0,
-    4, 196, 0,
-    1, 244, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus2_Frame0[ZAZABI_PART_END * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -80, 0,
-    12, 16, 0,
-    51, 0, 0,
-    27, 0, 0,
-    8, 124, 0,
-    7, 180, 0,
-    2, 228, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus2_Frame1[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -76, 0,
-    12, 20, 0,
-    51, 4, 0,
-    27, 4, 0,
-    8, 132, 0,
-    7, 188, 0,
-    2, 236, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus2_Frame2[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -72, 0,
-    12, 24, 0,
-    51, 8, 0,
-    27, 8, 0,
-    8, 136, 0,
-    7, 196, 0,
-    2, 244, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus3_4_Frame0[ZAZABI_PART_END * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -80, 0,
-    12, 16, 0,
-    51, 0, 0,
-    27, 0, 0,
-    8, 124, 0,
-    5, 180, 0,
-    0, 228, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus3_4_Frame1[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -76, 0,
-    12, 20, 0,
-    51, 4, 0,
-    27, 4, 0,
-    8, 132, 0,
-    5, 188, 0,
-    0, 236, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus3_4_Frame2[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -72, 0,
-    12, 24, 0,
-    51, 8, 0,
-    27, 8, 0,
-    8, 136, 0,
-    5, 196, 0,
-    0, 244, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus4_4_Frame0[ZAZABI_PART_END * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -80, 0,
-    15, 16, 0,
-    51, 0, 0,
-    27, 0, 0,
-    11, 124, 0,
-    6, 180, 0,
-    0, 228, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus4_4_Frame1[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -76, 0,
-    15, 20, 0,
-    51, 4, 0,
-    27, 4, 0,
-    11, 132, 0,
-    6, 188, 0,
-    0, 236, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus4_4_Frame2[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -72, 0,
-    15, 24, 0,
-    51, 8, 0,
-    27, 8, 0,
-    11, 136, 0,
-    6, 196, 0,
-    0, 244, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus5_4_Frame0[ZAZABI_PART_END * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -80, 0,
-    13, 16, 0,
-    51, 0, 0,
-    27, 0, 0,
-    9, 124, 0,
-    4, 180, 0,
-    0, 228, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus5_4_Frame1[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -76, 0,
-    13, 20, 0,
-    51, 4, 0,
-    27, 4, 0,
-    9, 132, 0,
-    4, 188, 0,
-    0, 236, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus5_4_Frame2[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -72, 0,
-    13, 24, 0,
-    51, 8, 0,
-    27, 8, 0,
-    9, 136, 0,
-    4, 196, 0,
-    0, 244, 0
-};
-
-static const s16 sZazabi_36acee[ZAZABI_PART_END * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -80, 0,
-    14, 16, 0,
-    51, 0, 0,
-    27, 0, 0,
-    10, 124, 0,
-    7, 180, 0,
-    0, 228, 0
-};
-
-static const s16 sZazabi_36ad24[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -76, 0,
-    14, 20, 0,
-    51, 4, 0,
-    27, 4, 0,
-    10, 132, 0,
-    7, 188, 0,
-    0, 236, 0
-};
-
-static const s16 sZazabi_36ad5a[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -72, 0,
-    14, 24, 0,
-    51, 8, 0,
-    27, 8, 0,
-    10, 136, 0,
-    7, 196, 0,
-    0, 244, 0
-};
-
-static const s16 sZazabi_36ad90[ZAZABI_PART_END * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -80, 0,
-    12, 16, 0,
-    51, 0, 0,
-    27, 0, 0,
-    8, 124, 0,
-    6, 180, 0,
-    3, 228, 0
-};
-
-static const s16 sZazabi_36adc6[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -76, 0,
-    12, 20, 0,
-    51, 4, 0,
-    27, 4, 0,
-    8, 132, 0,
-    6, 188, 0,
-    3, 236, 0
-};
-
-static const s16 sZazabi_36adfc[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -72, 0,
-    12, 24, 0,
-    51, 8, 0,
-    27, 8, 0,
-    8, 136, 0,
-    6, 196, 0,
-    3, 244, 0
-};
-
-static const s16 sZazabi_36ae32[ZAZABI_PART_END * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -80, 0,
-    12, 16, 0,
-    51, 0, 0,
-    27, 0, 0,
-    8, 124, 0,
-    4, 180, 0,
-    2, 228, 0
-};
-
-static const s16 sZazabi_36ae68[ZAZABI_PART_END * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -76, 0,
-    12, 20, 0,
-    51, 4, 0,
-    27, 4, 0,
-    8, 132, 0,
-    4, 188, 0,
-    2, 236, 0
-};
-
-static const s16 sZazabi_36ae9e[ZAZABI_PART_END * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -72, 0,
-    12, 24, 0,
-    51, 8, 0,
-    26, 8, 0,
-    8, 136, 0,
-    4, 196, 0,
-    2, 244, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigRight4_Frame0[ZAZABI_PART_END * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    41, -112, -32,
-    35, -16, -32,
-    51, -48, 0,
-    53, -16, -32,
-    39, 92, -4,
-    4, 152, 0,
-    0, 200, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigRight4_Frame1[ZAZABI_PART_END * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    42, -132, -40,
-    35, -36, -36,
-    51, -64, 0,
-    53, -36, -36,
-    39, 80, -4,
-    4, 152, 0,
-    0, 204, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigRight4_Frame2[ZAZABI_PART_END * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    43, -116, -36,
-    35, -20, -32,
-    51, -52, 0,
-    53, -20, -32,
-    39, 88, -4,
-    4, 152, 0,
-    0, 204, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame2[ZAZABI_PART_END * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    44, -92, -36,
-    35, 4, -32,
-    51, -28, -32,
-    53, 4, -32,
-    39, 100, -4,
-    4, 148, 0,
-    0, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame3[ZAZABI_PART_END * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    44, -84, -36,
-    35, 12, -32,
-    51, -20, -32,
-    53, 12, -32,
-    39, 88, -4,
-    4, 132, 0,
-    0, 164, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame4[ZAZABI_PART_END * 3] = {
-    25, 196, 0,
-    52, 368, 0,
-    44, -76, -36,
-    35, 20, -32,
-    51, -12, -32,
-    53, 20, -32,
-    39, 96, -4,
-    4, 124, 0,
-    0, 140, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame5[ZAZABI_PART_END * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    45, -32, -12,
-    36, 64, -8,
-    51, 32, -8,
-    54, 64, -8,
-    8, 144, 0,
-    4, 152, 0,
-    0, 184, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigLeft4_Frame0[ZAZABI_PART_END * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    46, -112, 32,
-    37, -16, 32,
-    51, -48, 0,
-    55, -16, 32,
-    40, 92, 4,
-    4, 152, 0,
-    0, 200, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigLeft4_Frame1[ZAZABI_PART_END * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    47, -132, 40,
-    37, -36, 36,
-    51, -64, 0,
-    55, -36, 36,
-    40, 80, 4,
-    4, 152, 0,
-    0, 204, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigLeft4_Frame2[ZAZABI_PART_END * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    48, -116, 36,
-    37, -20, 32,
-    51, -52, 0,
-    55, -20, 32,
-    40, 88, 4,
-    4, 152, 0,
-    0, 204, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame2[ZAZABI_PART_END * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    49, -92, 36,
-    37, 4, 32,
-    51, -28, 0,
-    55, 4, 32,
-    40, 100, 4,
-    4, 148, 0,
-    0, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame3[ZAZABI_PART_END * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    49, -84, 36,
-    37, 12, 32,
-    51, -20, 0,
-    55, 12, 32,
-    40, 88, 4,
-    4, 132, 0,
-    0, 164, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame4[ZAZABI_PART_END * 3] = {
-    25, 196, 0,
-    52, 368, 0,
-    49, -76, 36,
-    37, 20, 32,
-    51, -12, 32,
-    55, 20, 32,
-    40, 96, 4,
-    4, 124, 0,
-    0, 140, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame5[ZAZABI_PART_END * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    50, -32, 12,
-    38, 64, 8,
-    51, 32, 8,
-    56, 64, 8,
-    8, 144, 0,
-    4, 152, 0,
-    0, 184, 0
-};
-
-static const s16 sZazabiMultiOam_FallingLeft4_Frame4[ZAZABI_PART_END * 3] = {
-    20, 200, 0,
-    52, 368, 0,
-    44, -76, -36,
-    35, 20, -32,
-    51, -12, -32,
-    53, 20, -32,
-    39, 96, -4,
-    4, 124, 0,
-    0, 140, 0
-};
-
-static const s16 sZazabiMultiOam_FallingRight4_Frame4[ZAZABI_PART_END * 3] = {
-    20, 200, 0,
-    52, 368, 0,
-    49, -76, 36,
-    37, 20, 32,
-    51, -12, 32,
-    55, 20, 32,
-    40, 96, 4,
-    4, 124, 0,
-    0, 140, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow4_Frame0[ZAZABI_PART_END * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    30, -92, 0,
-    12, 4, 0,
-    51, -12, 0,
-    26, -12, 0,
-    8, 104, 0,
-    4, 148, 0,
-    0, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow4_Frame1[ZAZABI_PART_END * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    30, -84, 0,
-    12, 12, 0,
-    51, -4, 0,
-    26, -4, 0,
-    8, 96, 0,
-    4, 132, 0,
-    0, 164, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow4_Frame3[ZAZABI_PART_END * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    30, -32, 0,
-    12, 64, 0,
-    51, 48, 0,
-    26, 48, 0,
-    8, 144, 0,
-    4, 152, 0,
-    0, 184, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow4_Frame4[ZAZABI_PART_END * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    30, -8, 0,
-    12, 88, 0,
-    51, 72, 0,
-    26, 72, 0,
-    8, 164, 0,
-    4, 188, 0,
-    0, 184, 0
-};
-
-static const s16 sZazabiMultiOam_FallingLeft4_Frame2[ZAZABI_PART_END * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    44, -92, -36,
-    35, 4, -32,
-    51, -28, -32,
-    53, 4, -32,
-    39, 100, -4,
-    4, 148, 0,
-    0, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingLeft4_Frame3[ZAZABI_PART_END * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    44, -84, -36,
-    35, 12, -32,
-    51, -20, -32,
-    53, 12, -32,
-    39, 88, -4,
-    4, 132, 0,
-    0, 164, 0
-};
-
-static const s16 sZazabiMultiOam_FallingLeft4_Frame5[ZAZABI_PART_END * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    45, -32, -12,
-    36, 64, -8,
-    51, 32, -8,
-    54, 64, -8,
-    8, 144, 0,
-    4, 152, 0,
-    0, 184, 0
-};
-
-static const s16 sZazabiMultiOam_FallingRight4_Frame2[ZAZABI_PART_END * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    49, -92, 36,
-    37, 4, 32,
-    51, -28, 0,
-    55, 4, 32,
-    40, 100, 4,
-    4, 148, 0,
-    0, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingRight4_Frame3[ZAZABI_PART_END * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    49, -84, 36,
-    37, 12, 32,
-    51, -20, 0,
-    55, 12, 32,
-    40, 88, 4,
-    4, 132, 0,
-    0, 164, 0
-};
-
-static const s16 sZazabiMultiOam_FallingRight4_Frame5[ZAZABI_PART_END * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    50, -32, 12,
-    38, 64, 8,
-    51, 32, 8,
-    56, 64, 8,
-    8, 144, 0,
-    4, 152, 0,
-    0, 184, 0
-};
-
-
-const struct FrameData sZazabiMultiOam_Idle4[5] = {
+static const s16 sZazabiMultiOam_Idle4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 61, 0)
+};
+
+static const s16 sZazabiMultiOam_Idle4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 59, 0)
+};
+
+static const s16 sZazabiMultiOam_Crawling4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 0, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 57, 0)
+};
+
+static const s16 sZazabiMultiOam_Idle4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHigh, 69, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -23, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -3, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 27, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 41, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 53, 0)
+};
+
+static const s16 sZazabiMultiOam_Crawling4_Frame4[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 70, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -24, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -4, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -4, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 27, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 41, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 54, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpWarning4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -15, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 9, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 5, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 5, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 60, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpWarning4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -6, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 18, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 14, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 14, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 54, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 65, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingSmall4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, -28, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, -4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -8, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -8, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 24, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 50, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingSmall4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, -32, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, -8, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -12, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 22, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 51, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingSmall4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, -29, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, -5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -9, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -9, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 23, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 51, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -23, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -3, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 26, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -21, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 3, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 24, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 41, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpened, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 25, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 35, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame3[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -8, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 12, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 46, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame4[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -2, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 22, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 18, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 18, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 46, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow4_Frame5[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHigh, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 1, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 25, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 21, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 21, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 55, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 46, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 75, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 17, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 56, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 63, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 68, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 6, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 30, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 26, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 50, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 57, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 64, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 31, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 27, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 65, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame3[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, -3, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 21, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 17, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 17, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 43, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 52, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 62, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame4[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, -2, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 22, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 18, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 18, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 53, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 63, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 50, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 25, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 35, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus1_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellEatingSamus, 57, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus1_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellEatingSamus, 59, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus1_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellEatingSamus, 61, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus2_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372890, 45, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellSwallowingSamus, 57, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus2_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372890, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellSwallowingSamus, 59, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus2_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372890, 49, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellSwallowingSamus, 61, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus3_4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus, 45, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 57, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus3_4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 59, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus3_4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus, 49, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 61, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus4_4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372900, 31, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 45, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 57, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus4_4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372900, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 59, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus4_4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372900, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 49, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 61, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus5_4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus, 31, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 57, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus5_4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 59, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus5_4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 61, 0)
+};
+
+static const s16 sZazabi_36b840_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 31, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372890, 45, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 57, 0)
+};
+
+static const s16 sZazabi_36b840_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372890, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 59, 0)
+};
+
+static const s16 sZazabi_36b840_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372890, 49, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 61, 0)
+};
+
+static const s16 sZazabi_36b868_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 45, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372820, 57, 0)
+};
+
+static const s16 sZazabi_36b868_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372820, 59, 0)
+};
+
+static const s16 sZazabi_36b868_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 49, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372820, 61, 0)
+};
+
+static const s16 sZazabi_36b890_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellSwallowingSamus, 57, 0)
+};
+
+static const s16 sZazabi_36b890_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellSwallowingSamus, 59, 0)
+};
+
+static const s16 sZazabi_36b890_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellSwallowingSamus, 61, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigRight4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingBigRight_1, -28, -8),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, -4, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, -4, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 23, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 50, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigRight4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingBigRight_2, -33, -10),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, -9, -9),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -16, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, -9, -9),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 20, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 51, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigRight4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(Zazabi_372bf0, -29, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, -5, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, -5, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 22, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 51, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -23, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 1, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -7, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 1, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 25, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame3[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -21, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 3, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -5, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 3, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 22, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 41, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame4[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpened, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -19, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 5, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 5, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 24, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 35, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame5[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, -8, -3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 16, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, -2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 16, -2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 46, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigLeft4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_1, -28, 8),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, -4, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, -4, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 23, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 50, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigLeft4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_2, -33, 10),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, -9, 9),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -16, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, -9, 9),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 20, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 51, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigLeft4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(Zazabi_372c40, -29, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, -5, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, -5, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 22, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 51, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -23, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 1, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -7, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 1, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 25, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame3[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -21, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 3, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -5, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 3, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 22, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 41, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame4[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpened, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -19, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 5, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 5, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 24, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 35, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame5[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_2, -8, 3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 16, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 16, 2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 46, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingLeft4_Frame4[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 50, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -19, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 5, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 5, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 24, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 35, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingRight4_Frame4[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 50, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -19, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 5, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 5, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 24, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 35, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -23, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -3, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 26, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -21, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 3, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 24, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 41, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow4_Frame3[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -8, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 12, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 46, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow4_Frame4[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -2, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 22, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 18, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 18, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 46, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingLeft4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -23, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 1, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -7, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 1, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 25, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingLeft4_Frame3[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -21, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 3, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -5, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 3, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 22, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 41, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingLeft4_Frame5[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, -8, -3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 16, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, -2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 16, -2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 46, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingRight4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -23, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 1, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -7, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 1, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 25, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingRight4_Frame3[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -21, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 3, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -5, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 3, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 22, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 41, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingRight4_Frame5[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_2, -8, 3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 16, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 16, 2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
+    [ZAZABI_PART_LOWER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_LowerShellIdle, 46, 0)
+};
+
+
+const struct MultiSpriteData sZazabiMultiOam_Idle4[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_Idle4_Frame0,
+        .pData = sZazabiMultiOam_Idle4_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_Idle4_Frame1,
+        .pData = sZazabiMultiOam_Idle4_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_Idle4_Frame2,
+        .pData = sZazabiMultiOam_Idle4_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_Idle4_Frame1,
+        .pData = sZazabiMultiOam_Idle4_Frame1,
         .timer = 16
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_Crawling4[9] = {
+const struct MultiSpriteData sZazabiMultiOam_Crawling4[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_Idle4_Frame2,
+        .pData = sZazabiMultiOam_Idle4_Frame2,
         .timer = 8
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_Idle4_Frame1,
+        .pData = sZazabiMultiOam_Idle4_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_Crawling4_Frame2,
+        .pData = sZazabiMultiOam_Crawling4_Frame2,
         .timer = 8
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_Idle4_Frame0,
+        .pData = sZazabiMultiOam_Idle4_Frame0,
         .timer = 8
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_Crawling4_Frame4,
+        .pData = sZazabiMultiOam_Crawling4_Frame4,
         .timer = 10
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_Idle4_Frame0,
+        .pData = sZazabiMultiOam_Idle4_Frame0,
         .timer = 8
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_Crawling4_Frame2,
+        .pData = sZazabiMultiOam_Crawling4_Frame2,
         .timer = 8
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_Idle4_Frame1,
+        .pData = sZazabiMultiOam_Idle4_Frame1,
         .timer = 8
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpWarning4[3] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpWarning4[3] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpWarning4_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning4_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpWarning4_Frame1,
+        .pData = sZazabiMultiOam_JumpWarning4_Frame1,
         .timer = 16
     },
-    [2] = FRAME_DATA_TERMINATOR
+    [2] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingSmall4[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingSmall4[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall4_Frame0,
+        .pData = sZazabiMultiOam_JumpingSmall4_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall4_Frame1,
+        .pData = sZazabiMultiOam_JumpingSmall4_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall4_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingSmall4_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingBigRight4[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingBigRight4[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight4_Frame0,
+        .pData = sZazabiMultiOam_JumpingBigRight4_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight4_Frame1,
+        .pData = sZazabiMultiOam_JumpingBigRight4_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight4_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingBigRight4_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingBigLeft4[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingBigLeft4[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft4_Frame0,
+        .pData = sZazabiMultiOam_JumpingBigLeft4_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft4_Frame1,
+        .pData = sZazabiMultiOam_JumpingBigLeft4_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft4_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingBigLeft4_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingSlow4[7] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingSlow4[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame0,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame1,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame1,
         .timer = 6
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame2,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame2,
         .timer = 100
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame3,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame3,
         .timer = 2
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame4,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame5,
         .timer = 2
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingSlowMouthOpened4[7] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingSlowMouthOpened4[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame0,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame1,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame1,
         .timer = 6
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame2,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame2,
         .timer = 100
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame3,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame3,
         .timer = 2
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame5,
         .timer = 2
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingLeft4[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingLeft4[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall4_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall4_Frame2,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight4_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigRight4_Frame2,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingLeft4_Frame2,
+        .pData = sZazabiMultiOam_FallingLeft4_Frame2,
         .timer = 4
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingLeft4_Frame3,
+        .pData = sZazabiMultiOam_FallingLeft4_Frame3,
         .timer = 6
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingLeft4_Frame4,
+        .pData = sZazabiMultiOam_FallingLeft4_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingLeft4_Frame5,
+        .pData = sZazabiMultiOam_FallingLeft4_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame4,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingMouthOpenedLeft4[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedLeft4[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall4_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall4_Frame2,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight4_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigRight4_Frame2,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft4_Frame2,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft4_Frame2,
         .timer = 4
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft4_Frame3,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft4_Frame3,
         .timer = 6
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft4_Frame4,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft4_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft4_Frame5,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft4_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingRight4[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingRight4[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall4_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall4_Frame2,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft4_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigLeft4_Frame2,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingRight4_Frame2,
+        .pData = sZazabiMultiOam_FallingRight4_Frame2,
         .timer = 4
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingRight4_Frame3,
+        .pData = sZazabiMultiOam_FallingRight4_Frame3,
         .timer = 6
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingRight4_Frame4,
+        .pData = sZazabiMultiOam_FallingRight4_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingRight4_Frame5,
+        .pData = sZazabiMultiOam_FallingRight4_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame4,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingMouthOpenedRight4[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedRight4[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall4_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall4_Frame2,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft4_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigLeft4_Frame2,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight4_Frame2,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight4_Frame2,
         .timer = 4
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight4_Frame3,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight4_Frame3,
         .timer = 6
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight4_Frame4,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight4_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight4_Frame5,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight4_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_LandingMouthOpen4[7] = {
+const struct MultiSpriteData sZazabiMultiOam_LandingMouthOpen4[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame0,
         .timer = 12
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame1,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame2,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame2,
         .timer = 4
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame3,
         .timer = 6
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame4,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame4,
         .timer = 6
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_JumpWarning4_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning4_Frame0,
         .timer = 8
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_Landing4[3] = {
+const struct MultiSpriteData sZazabiMultiOam_Landing4[3] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame0,
         .timer = 12
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame3,
         .timer = 8
     },
-    [2] =FRAME_DATA_TERMINATOR
+    [2] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_SpittingSamus4[7] = {
+const struct MultiSpriteData sZazabiMultiOam_SpittingSamus4[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall4_Frame0,
+        .pData = sZazabiMultiOam_JumpingSmall4_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame0,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame0,
         .timer = 5
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame1,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame1,
         .timer = 8
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame3,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame3,
         .timer = 3
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened4_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened4_Frame4,
         .timer = 3
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlow4_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow4_Frame5,
         .timer = 4
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_LandingAfterSpitting4[5] = {
+const struct MultiSpriteData sZazabiMultiOam_LandingAfterSpitting4[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame0,
         .timer = 12
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame1,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen4_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen4_Frame3,
         .timer = 6
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_JumpWarning4_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning4_Frame0,
         .timer = 8
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_EatingSamus1[5] = {
+const struct MultiSpriteData sZazabiMultiOam_EatingSamus1[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_EatingSamus1_Frame0,
+        .pData = sZazabiMultiOam_EatingSamus1_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_EatingSamus1_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus1_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_EatingSamus1_Frame2,
+        .pData = sZazabiMultiOam_EatingSamus1_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_EatingSamus1_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus1_Frame1,
         .timer = 16
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_EatingSamus2[5] = {
+const struct MultiSpriteData sZazabiMultiOam_EatingSamus2[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_EatingSamus2_Frame0,
+        .pData = sZazabiMultiOam_EatingSamus2_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_EatingSamus2_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus2_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_EatingSamus2_Frame2,
+        .pData = sZazabiMultiOam_EatingSamus2_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_EatingSamus2_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus2_Frame1,
         .timer = 16
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_EatingSamus3_4[5] = {
+const struct MultiSpriteData sZazabiMultiOam_EatingSamus3_4[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_EatingSamus3_4_Frame0,
+        .pData = sZazabiMultiOam_EatingSamus3_4_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_EatingSamus3_4_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus3_4_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_EatingSamus3_4_Frame2,
+        .pData = sZazabiMultiOam_EatingSamus3_4_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_EatingSamus3_4_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus3_4_Frame1,
         .timer = 16
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_EatingSamus4_4[5] = {
+const struct MultiSpriteData sZazabiMultiOam_EatingSamus4_4[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_EatingSamus4_4_Frame0,
+        .pData = sZazabiMultiOam_EatingSamus4_4_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_EatingSamus4_4_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus4_4_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_EatingSamus4_4_Frame2,
+        .pData = sZazabiMultiOam_EatingSamus4_4_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_EatingSamus4_4_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus4_4_Frame1,
         .timer = 16
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_EatingSamus5_4[5] = {
+const struct MultiSpriteData sZazabiMultiOam_EatingSamus5_4[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_4_Frame0,
+        .pData = sZazabiMultiOam_EatingSamus5_4_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_4_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus5_4_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_4_Frame2,
+        .pData = sZazabiMultiOam_EatingSamus5_4_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_4_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus5_4_Frame1,
         .timer = 16
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabi_36b840[5] = {
+const struct MultiSpriteData sZazabi_36b840[5] = {
     [0] = {
-        .pFrame = sZazabi_36acee,
+        .pData = sZazabi_36b840_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sZazabi_36ad24,
+        .pData = sZazabi_36b840_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sZazabi_36ad5a,
+        .pData = sZazabi_36b840_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sZazabi_36ad24,
+        .pData = sZazabi_36b840_Frame1,
         .timer = 16
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabi_36b868[5] = {
+const struct MultiSpriteData sZazabi_36b868[5] = {
     [0] = {
-        .pFrame = sZazabi_36ad90,
+        .pData = sZazabi_36b868_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sZazabi_36adc6,
+        .pData = sZazabi_36b868_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sZazabi_36adfc,
+        .pData = sZazabi_36b868_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sZazabi_36adc6,
+        .pData = sZazabi_36b868_Frame1,
         .timer = 16
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabi_36b890[5] = {
+const struct MultiSpriteData sZazabi_36b890[5] = {
     [0] = {
-        .pFrame = sZazabi_36ae32,
+        .pData = sZazabi_36b890_Frame0,
         .timer = 16
     },
     [1] = {
-        .pFrame = sZazabi_36ae68,
+        .pData = sZazabi_36b890_Frame1,
         .timer = 16
     },
     [2] = {
-        .pFrame = sZazabi_36ae9e,
+        .pData = sZazabi_36b890_Frame2,
         .timer = 16
     },
     [3] = {
-        .pFrame = sZazabi_36ae68,
+        .pData = sZazabi_36b890_Frame1,
         .timer = 16
     },
-    [4] = FRAME_DATA_TERMINATOR
-};
-
-
-static const s16 sZazabiMultiOam_Idle3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    29, -28, 0,
-    12, 68, 0,
-    51, 52, 0,
-    26, 52, 0,
-    8, 180, 0,
-    4, 240, 0
-};
-
-static const s16 sZazabiMultiOam_Idle3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    29, -32, 0,
-    12, 64, 0,
-    51, 48, 0,
-    26, 48, 0,
-    8, 176, 0,
-    4, 232, 0
-};
-
-static const s16 sZazabiMultiOam_Idle3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    29, -40, 0,
-    12, 56, 0,
-    51, 40, 0,
-    26, 40, 0,
-    8, 164, 0,
-    4, 220, 0
-};
-
-static const s16 sZazabiMultiOam_Crawling3_Frame3[ZAZABI_PART_LOWER_SHELL * 3] = {
-    19, 276, 0,
-    52, 368, 0,
-    29, -48, 0,
-    12, 48, 0,
-    51, 32, 0,
-    26, 32, 0,
-    8, 152, 0,
-    4, 208, 0
-};
-
-static const s16 sZazabiMultiOam_Crawling3_Frame4[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 280, 0,
-    52, 368, 0,
-    29, -52, 0,
-    12, 44, 0,
-    51, 28, 0,
-    26, 28, 0,
-    8, 152, 0,
-    4, 208, 0
-};
-
-static const s16 sZazabiMultiOam_JumpWarning3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    30, -16, 0,
-    12, 80, 0,
-    51, 64, 0,
-    26, 64, 0,
-    8, 180, 0,
-    4, 236, 0
-};
-
-static const s16 sZazabiMultiOam_JumpWarning3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    30, 20, 0,
-    12, 116, 0,
-    51, 100, 0,
-    26, 100, 0,
-    8, 208, 0,
-    4, 260, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingSmall3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    31, -68, 0,
-    12, 28, 0,
-    51, 12, 0,
-    26, 12, 0,
-    8, 140, 0,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingSmall3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    32, -84, 0,
-    12, 12, 0,
-    51, -4, 0,
-    26, -4, 0,
-    8, 132, 0,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingSmall3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    33, -72, 0,
-    12, 24, 0,
-    51, 8, 0,
-    26, 8, 0,
-    8, 136, 0,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    30, -48, 0,
-    12, 48, 0,
-    51, 32, 0,
-    26, 32, 0,
-    8, 148, 0,
-    4, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    30, -40, 0,
-    12, 56, 0,
-    51, 40, 0,
-    26, 40, 0,
-    8, 140, 0,
-    4, 176, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    25, 196, 0,
-    52, 368, 0,
-    30, -28, 0,
-    12, 68, 0,
-    51, 52, 0,
-    26, 52, 0,
-    8, 144, 0,
-    4, 168, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame3[ZAZABI_PART_LOWER_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    30, 12, 0,
-    12, 108, 0,
-    51, 92, 0,
-    26, 92, 0,
-    8, 188, 0,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame4[ZAZABI_PART_LOWER_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    30, 36, 0,
-    12, 132, 0,
-    51, 116, 0,
-    26, 116, 0,
-    8, 208, 0,
-    4, 232, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow3_Frame5[ZAZABI_PART_LOWER_SHELL * 3] = {
-    19, 264, 0,
-    52, 368, 0,
-    30, 48, 0,
-    12, 144, 0,
-    51, 128, 0,
-    26, 128, 0,
-    8, 224, 0,
-    4, 264, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    16, 300, 0,
-    52, 368, 0,
-    31, 112, 0,
-    12, 208, 0,
-    51, 192, 0,
-    26, 192, 0,
-    8, 268, 0,
-    4, 296, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 292, 0,
-    52, 368, 0,
-    31, 68, 0,
-    12, 164, 0,
-    51, 148, 0,
-    26, 148, 0,
-    8, 244, 0,
-    4, 272, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 292, 0,
-    52, 368, 0,
-    32, 72, 0,
-    12, 168, 0,
-    51, 152, 0,
-    26, 152, 0,
-    8, 248, 0,
-    4, 276, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame3[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    32, 32, 0,
-    12, 128, 0,
-    51, 112, 0,
-    26, 112, 0,
-    8, 216, 0,
-    4, 252, 0
-};
-
-static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame4[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    33, 36, 0,
-    12, 132, 0,
-    51, 116, 0,
-    26, 116, 0,
-    8, 220, 0,
-    4, 256, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 196, 0,
-    52, 368, 0,
-    30, -28, 0,
-    12, 68, 0,
-    51, 52, 0,
-    26, 52, 0,
-    8, 144, 0,
-    4, 168, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus3_3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -40, 0,
-    12, 56, 0,
-    51, 40, 0,
-    27, 40, 0,
-    8, 164, 0,
-    5, 220, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus3_3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -32, 0,
-    12, 64, 0,
-    51, 48, 0,
-    27, 48, 0,
-    8, 176, 0,
-    5, 232, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus3_3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -28, 0,
-    12, 68, 0,
-    51, 52, 0,
-    27, 52, 0,
-    8, 180, 0,
-    5, 240, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus4_3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -40, 0,
-    15, 56, 0,
-    51, 40, 0,
-    27, 40, 0,
-    11, 164, 0,
-    6, 220, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus4_3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -32, 0,
-    15, 64, 0,
-    51, 48, 0,
-    27, 48, 0,
-    11, 176, 0,
-    6, 232, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus4_3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -28, 0,
-    15, 68, 0,
-    51, 52, 0,
-    27, 52, 0,
-    11, 180, 0,
-    6, 240, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus5_3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -40, 0,
-    13, 56, 0,
-    51, 40, 0,
-    27, 40, 0,
-    9, 164, 0,
-    4, 220, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus5_3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -32, 0,
-    13, 64, 0,
-    51, 48, 0,
-    27, 48, 0,
-    9, 176, 0,
-    4, 232, 0
-};
-
-static const s16 sZazabiMultiOam_EatingSamus5_3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -28, 0,
-    13, 68, 0,
-    51, 52, 0,
-    27, 52, 0,
-    9, 180, 0,
-    4, 240, 0
-};
-
-static const s16 sZazabi_36be88[ZAZABI_PART_LOWER_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -40, 0,
-    14, 56, 0,
-    51, 40, 0,
-    27, 40, 0,
-    10, 164, 0,
-    7, 220, 0
-};
-
-static const s16 sZazabi_36beb8[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -32, 0,
-    14, 64, 0,
-    51, 48, 0,
-    27, 48, 0,
-    10, 176, 0,
-    7, 232, 0
-};
-
-static const s16 sZazabi_36bee8[ZAZABI_PART_LOWER_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -28, 0,
-    14, 68, 0,
-    51, 52, 0,
-    27, 52, 0,
-    10, 180, 0,
-    7, 240, 0
-};
-
-static const s16 sZazabi_36bf18[ZAZABI_PART_LOWER_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, -40, 0,
-    12, 56, 0,
-    51, 40, 0,
-    27, 40, 0,
-    8, 164, 0,
-    6, 220, 0
-};
-
-static const s16 sZazabi_36bf48[ZAZABI_PART_LOWER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, -32, 0,
-    12, 64, 0,
-    51, 48, 0,
-    27, 48, 0,
-    8, 176, 0,
-    6, 232, 0
-};
-
-static const s16 sZazabi_36bf78[ZAZABI_PART_LOWER_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, -28, 0,
-    12, 68, 0,
-    51, 52, 0,
-    27, 52, 0,
-    8, 180, 0,
-    6, 240, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigRight3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    41, -64, -32,
-    35, 32, -32,
-    51, 16, 0,
-    53, 32, -32,
-    39, 140, -4,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigRight3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    42, -84, -40,
-    35, 12, -36,
-    51, 0, 0,
-    53, 12, -36,
-    39, 128, -4,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigRight3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    43, -68, -36,
-    35, 28, -32,
-    51, 12, 0,
-    53, 28, -32,
-    39, 136, -4,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    44, -44, -36,
-    35, 52, -32,
-    51, 36, -32,
-    53, 52, -32,
-    39, 148, -4,
-    4, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame3[ZAZABI_PART_LOWER_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    44, -36, -36,
-    35, 60, -32,
-    51, 44, -32,
-    53, 60, -32,
-    39, 136, -4,
-    4, 180, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame4[ZAZABI_PART_LOWER_SHELL * 3] = {
-    25, 196, 0,
-    52, 368, 0,
-    44, -28, -36,
-    35, 68, -32,
-    51, 52, -32,
-    53, 68, -32,
-    39, 144, -4,
-    4, 172, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame5[ZAZABI_PART_LOWER_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    45, 16, -12,
-    36, 112, -8,
-    51, 96, -8,
-    54, 112, -8,
-    8, 192, 0,
-    4, 200, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigLeft3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    46, -64, 32,
-    37, 32, 32,
-    51, 16, 0,
-    55, 32, 32,
-    40, 140, 4,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigLeft3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    47, -84, 40,
-    37, 12, 36,
-    51, 0, 0,
-    55, 12, 36,
-    40, 128, 4,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_JumpingBigLeft3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    48, -68, 36,
-    37, 28, 32,
-    51, 12, 0,
-    55, 28, 32,
-    40, 136, 4,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    49, -44, 36,
-    37, 52, 32,
-    51, 36, 0,
-    55, 52, 32,
-    40, 148, 4,
-    4, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame3[ZAZABI_PART_LOWER_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    49, -36, 36,
-    37, 60, 32,
-    51, 44, 0,
-    55, 60, 32,
-    40, 136, 4,
-    4, 180, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame4[ZAZABI_PART_LOWER_SHELL * 3] = {
-    25, 196, 0,
-    52, 368, 0,
-    49, -28, 36,
-    37, 68, 32,
-    51, 52, 32,
-    55, 68, 32,
-    40, 144, 4,
-    4, 172, 0
-};
-
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame5[ZAZABI_PART_LOWER_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    50, 16, 12,
-    38, 112, 8,
-    51, 96, 8,
-    56, 112, 8,
-    8, 192, 0,
-    4, 200, 0
-};
-
-static const s16 sZazabiMultiOam_FallingLeft3_Frame4[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 196, 0,
-    52, 368, 0,
-    44, -28, -36,
-    35, 68, -32,
-    51, 52, -32,
-    53, 68, -32,
-    39, 144, -4,
-    4, 172, 0
-};
-
-static const s16 sZazabiMultiOam_FallingRight3_Frame4[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 196, 0,
-    52, 368, 0,
-    49, -28, 36,
-    37, 68, 32,
-    51, 52, 32,
-    55, 68, 32,
-    40, 144, 4,
-    4, 172, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow3_Frame0[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    30, -48, 0,
-    12, 48, 0,
-    51, 32, 0,
-    26, 32, 0,
-    8, 148, 0,
-    4, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow3_Frame1[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    30, -40, 0,
-    12, 56, 0,
-    51, 40, 0,
-    26, 40, 0,
-    8, 140, 0,
-    4, 176, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow3_Frame3[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    30, 12, 0,
-    12, 108, 0,
-    51, 92, 0,
-    26, 92, 0,
-    8, 188, 0,
-    4, 196, 0
-};
-
-static const s16 sZazabiMultiOam_FallingSlow3_Frame4[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    30, 36, 0,
-    12, 132, 0,
-    51, 116, 0,
-    26, 116, 0,
-    8, 208, 0,
-    4, 232, 0
-};
-
-static const s16 sZazabiMultiOam_FallingLeft3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    44, -44, -36,
-    35, 52, -32,
-    51, 36, -32,
-    53, 52, -32,
-    39, 148, -4,
-    4, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingLeft3_Frame3[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    44, -36, -36,
-    35, 60, -32,
-    51, 44, -32,
-    53, 60, -32,
-    39, 136, -4,
-    4, 180, 0
-};
-
-static const s16 sZazabiMultiOam_FallingLeft3_Frame5[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    45, 16, -12,
-    36, 112, -8,
-    51, 96, -8,
-    54, 112, -8,
-    8, 192, 0,
-    4, 200, 0
-};
-
-static const s16 sZazabiMultiOam_FallingRight3_Frame2[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    49, -44, 36,
-    37, 52, 32,
-    51, 36, 0,
-    55, 52, 32,
-    40, 148, 4,
-    4, 192, 0
-};
-
-static const s16 sZazabiMultiOam_FallingRight3_Frame3[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    49, -36, 36,
-    37, 60, 32,
-    51, 44, 0,
-    55, 60, 32,
-    40, 136, 4,
-    4, 180, 0
-};
-
-static const s16 sZazabiMultiOam_FallingRight3_Frame5[ZAZABI_PART_LOWER_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    50, 16, 12,
-    38, 112, 8,
-    51, 96, 8,
-    56, 112, 8,
-    8, 192, 0,
-    4, 200, 0
-};
-
-
-const struct FrameData sZazabiMultiOam_Idle3[5] = {
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
+};
+
+
+static const s16 sZazabiMultiOam_Idle3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 13, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 60, 0)
+};
+
+static const s16 sZazabiMultiOam_Idle3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -8, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 12, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0)
+};
+
+static const s16 sZazabiMultiOam_Idle3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 10, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 55, 0)
+};
+
+static const s16 sZazabiMultiOam_Crawling3_Frame3[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHigh, 69, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -12, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 8, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 38, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 52, 0)
+};
+
+static const s16 sZazabiMultiOam_Crawling3_Frame4[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 70, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -13, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 11, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 7, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 7, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 38, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 52, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpWarning3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -4, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 20, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 16, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 16, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 59, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpWarning3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 5, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 29, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 25, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 25, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 65, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingSmall3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, -17, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 7, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 3, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 3, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 35, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingSmall3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, -21, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 3, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -1, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -1, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingSmall3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, -18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -12, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 8, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 37, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 10, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 35, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 44, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpened, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 13, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 42, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame3[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 3, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 23, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 23, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame4[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 9, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 29, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 29, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow3_Frame5[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHigh, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 12, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 36, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 32, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 32, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 56, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 66, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 75, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 28, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 52, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 48, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 48, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 67, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 74, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 17, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 61, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 68, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 42, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 38, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 38, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 62, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 69, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame3[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 8, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 32, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 28, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 28, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 54, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 63, 0)
+};
+
+static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame4[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, 9, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 29, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 29, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 55, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 64, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 13, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 42, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus3_3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus, 55, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus3_3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus, 58, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus3_3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus, 60, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus4_3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 14, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372900, 41, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 55, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus4_3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372900, 44, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 58, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus4_3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372900, 45, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 60, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus5_3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 14, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus, 41, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 55, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus5_3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus, 44, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0)
+};
+
+static const s16 sZazabiMultiOam_EatingSamus5_3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus, 45, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 60, 0)
+};
+
+static const s16 sZazabi_36c828_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 14, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 41, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372890, 55, 0)
+};
+
+static const s16 sZazabi_36c828_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 44, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372890, 58, 0)
+};
+
+static const s16 sZazabi_36c828_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 45, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372890, 60, 0)
+};
+
+static const s16 sZazabi_36c850_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 55, 0)
+};
+
+static const s16 sZazabi_36c850_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 58, 0)
+};
+
+static const s16 sZazabi_36c850_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 60, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigRight3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingBigRight_1, -16, -8),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 8, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 4, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 8, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 35, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigRight3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingBigRight_2, -21, -10),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 3, -9),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 3, -9),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 32, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigRight3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(Zazabi_372bf0, -17, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 7, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 3, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 7, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 34, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -11, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 13, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 9, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 13, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 37, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame3[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -9, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 15, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 11, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 15, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 34, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame4[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpened, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -7, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 17, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 17, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 36, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 43, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame5[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 4, -3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 28, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, -2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 28, -2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 50, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigLeft3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_1, -16, 8),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 8, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 4, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 8, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 35, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigLeft3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_2, -21, 10),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 3, 9),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 3, 9),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 32, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_JumpingBigLeft3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(Zazabi_372c40, -17, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 7, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 3, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 7, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 34, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -11, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 13, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 9, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 13, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 37, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame3[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -9, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 15, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 11, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 15, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 34, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame4[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpened, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -7, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 17, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 17, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 36, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 43, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame5[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_2, 4, 3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 28, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 28, 2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 50, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingLeft3_Frame4[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -7, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 17, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 17, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 36, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 43, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingRight3_Frame4[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -7, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 17, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 17, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 36, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 43, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -12, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 8, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 37, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 10, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 35, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 44, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow3_Frame3[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 3, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 23, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 23, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingSlow3_Frame4[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 9, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 29, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 29, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingLeft3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -11, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 13, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 9, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 13, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 37, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingLeft3_Frame3[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -9, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 15, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 11, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 15, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 34, -1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingLeft3_Frame5[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 4, -3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 28, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, -2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 28, -2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 50, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingRight3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -11, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 13, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 9, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 13, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 37, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingRight3_Frame3[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, -9, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 15, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 11, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 15, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 34, 1),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0)
+};
+
+static const s16 sZazabiMultiOam_FallingRight3_Frame5[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_2, 4, 3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 28, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 28, 2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0),
+    [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 50, 0)
+};
+
+
+const struct MultiSpriteData sZazabiMultiOam_Idle3[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_Idle3_Frame0,
+        .pData = sZazabiMultiOam_Idle3_Frame0,
         .timer = 13
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_Idle3_Frame1,
+        .pData = sZazabiMultiOam_Idle3_Frame1,
         .timer = 13
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_Idle3_Frame2,
+        .pData = sZazabiMultiOam_Idle3_Frame2,
         .timer = 13
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_Idle3_Frame1,
+        .pData = sZazabiMultiOam_Idle3_Frame1,
         .timer = 13
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_Crawling3[9] = {
+const struct MultiSpriteData sZazabiMultiOam_Crawling3[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_Idle3_Frame2,
+        .pData = sZazabiMultiOam_Idle3_Frame2,
         .timer = 7
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_Idle3_Frame1,
+        .pData = sZazabiMultiOam_Idle3_Frame1,
         .timer = 7
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_Idle3_Frame0,
+        .pData = sZazabiMultiOam_Idle3_Frame0,
         .timer = 7
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_Crawling3_Frame3,
+        .pData = sZazabiMultiOam_Crawling3_Frame3,
         .timer = 7
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_Crawling3_Frame4,
+        .pData = sZazabiMultiOam_Crawling3_Frame4,
         .timer = 8
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_Crawling3_Frame3,
+        .pData = sZazabiMultiOam_Crawling3_Frame3,
         .timer = 7
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_Idle3_Frame0,
+        .pData = sZazabiMultiOam_Idle3_Frame0,
         .timer = 7
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_Idle3_Frame1,
+        .pData = sZazabiMultiOam_Idle3_Frame1,
         .timer = 7
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpWarning3[3] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpWarning3[3] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpWarning3_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning3_Frame0,
         .timer = 7
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpWarning3_Frame1,
+        .pData = sZazabiMultiOam_JumpWarning3_Frame1,
         .timer = 13
     },
-    [2] = FRAME_DATA_TERMINATOR
+    [2] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingSmall3[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingSmall3[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall3_Frame0,
+        .pData = sZazabiMultiOam_JumpingSmall3_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall3_Frame1,
+        .pData = sZazabiMultiOam_JumpingSmall3_Frame1,
         .timer = 7
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall3_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingSmall3_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingBigRight3[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingBigRight3[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight3_Frame0,
+        .pData = sZazabiMultiOam_JumpingBigRight3_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight3_Frame1,
+        .pData = sZazabiMultiOam_JumpingBigRight3_Frame1,
         .timer = 7
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight3_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingBigRight3_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingBigLeft3[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingBigLeft3[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft3_Frame0,
+        .pData = sZazabiMultiOam_JumpingBigLeft3_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft3_Frame1,
+        .pData = sZazabiMultiOam_JumpingBigLeft3_Frame1,
         .timer = 7
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft3_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingBigLeft3_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingSlow3[7] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingSlow3[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame0,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame1,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame1,
         .timer = 5
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame2,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame2,
         .timer = 100
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame3,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame3,
         .timer = 2
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame4,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame5,
         .timer = 2
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingSlowMouthOpened3[7] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingSlowMouthOpened3[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame0,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame1,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame1,
         .timer = 5
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame2,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame2,
         .timer = 100
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame3,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame3,
         .timer = 2
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame5,
         .timer = 2
     },
-    [6] =FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingLeft3[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingLeft3[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall3_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall3_Frame2,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight3_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigRight3_Frame2,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingLeft3_Frame2,
+        .pData = sZazabiMultiOam_FallingLeft3_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingLeft3_Frame3,
+        .pData = sZazabiMultiOam_FallingLeft3_Frame3,
         .timer = 5
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingLeft3_Frame4,
+        .pData = sZazabiMultiOam_FallingLeft3_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingLeft3_Frame5,
+        .pData = sZazabiMultiOam_FallingLeft3_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame4,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingMouthOpenedLeft3[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedLeft3[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall3_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall3_Frame2,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight3_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigRight3_Frame2,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft3_Frame2,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft3_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft3_Frame3,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft3_Frame3,
         .timer = 5
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft3_Frame4,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft3_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft3_Frame5,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft3_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingRight3[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingRight3[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall3_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall3_Frame2,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft3_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigLeft3_Frame2,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingRight3_Frame2,
+        .pData = sZazabiMultiOam_FallingRight3_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingRight3_Frame3,
+        .pData = sZazabiMultiOam_FallingRight3_Frame3,
         .timer = 5
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingRight3_Frame4,
+        .pData = sZazabiMultiOam_FallingRight3_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingRight3_Frame5,
+        .pData = sZazabiMultiOam_FallingRight3_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame4,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingMouthOpenedRight3[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedRight3[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall3_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall3_Frame2,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft3_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigLeft3_Frame2,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight3_Frame2,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight3_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight3_Frame3,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight3_Frame3,
         .timer = 5
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight3_Frame4,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight3_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight3_Frame5,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight3_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_LandingMouthOpen3[7] = {
+const struct MultiSpriteData sZazabiMultiOam_LandingMouthOpen3[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame0,
         .timer = 10
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame1,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame2,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame3,
         .timer = 5
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame4,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame4,
         .timer = 5
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_JumpWarning3_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning3_Frame0,
         .timer = 7
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_Landing3[3] = {
+const struct MultiSpriteData sZazabiMultiOam_Landing3[3] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame0,
         .timer = 10
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame3,
         .timer = 7
     },
-    [2] = FRAME_DATA_TERMINATOR
+    [2] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_SpittingSamus3[7] = {
+const struct MultiSpriteData sZazabiMultiOam_SpittingSamus3[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall3_Frame0,
+        .pData = sZazabiMultiOam_JumpingSmall3_Frame0,
         .timer = 7
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame0,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame0,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame1,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame1,
         .timer = 7
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame3,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame3,
         .timer = 3
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened3_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened3_Frame4,
         .timer = 3
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlow3_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow3_Frame5,
         .timer = 3
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_LandingAfterSpitting3[5] = {
+const struct MultiSpriteData sZazabiMultiOam_LandingAfterSpitting3[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame0,
         .timer = 10
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame1,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen3_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen3_Frame3,
         .timer = 5
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_JumpWarning3_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning3_Frame0,
         .timer = 7
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_EatingSamus3_3[5] = {
+const struct MultiSpriteData sZazabiMultiOam_EatingSamus3_3[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_EatingSamus3_3_Frame0,
+        .pData = sZazabiMultiOam_EatingSamus3_3_Frame0,
         .timer = 13
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_EatingSamus3_3_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus3_3_Frame1,
         .timer = 13
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_EatingSamus3_3_Frame2,
+        .pData = sZazabiMultiOam_EatingSamus3_3_Frame2,
         .timer = 13
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_EatingSamus3_3_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus3_3_Frame1,
         .timer = 13
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_EatingSamus4_3[5] = {
+const struct MultiSpriteData sZazabiMultiOam_EatingSamus4_3[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_EatingSamus4_3_Frame0,
+        .pData = sZazabiMultiOam_EatingSamus4_3_Frame0,
         .timer = 13
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_EatingSamus4_3_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus4_3_Frame1,
         .timer = 13
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_EatingSamus4_3_Frame2,
+        .pData = sZazabiMultiOam_EatingSamus4_3_Frame2,
         .timer = 13
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_EatingSamus4_3_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus4_3_Frame1,
         .timer = 13
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_EatingSamus5_3[5] = {
+const struct MultiSpriteData sZazabiMultiOam_EatingSamus5_3[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_3_Frame0,
+        .pData = sZazabiMultiOam_EatingSamus5_3_Frame0,
         .timer = 13
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_3_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus5_3_Frame1,
         .timer = 13
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_3_Frame2,
+        .pData = sZazabiMultiOam_EatingSamus5_3_Frame2,
         .timer = 13
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_3_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus5_3_Frame1,
         .timer = 13
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabi_36c828[5] = {
+const struct MultiSpriteData sZazabi_36c828[5] = {
     [0] = {
-        .pFrame = sZazabi_36be88,
+        .pData = sZazabi_36c828_Frame0,
         .timer = 13
     },
     [1] = {
-        .pFrame = sZazabi_36beb8,
+        .pData = sZazabi_36c828_Frame1,
         .timer = 13
     },
     [2] = {
-        .pFrame = sZazabi_36bee8,
+        .pData = sZazabi_36c828_Frame2,
         .timer = 13
     },
     [3] = {
-        .pFrame = sZazabi_36beb8,
+        .pData = sZazabi_36c828_Frame1,
         .timer = 13
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabi_36c850[5] = {
+const struct MultiSpriteData sZazabi_36c850[5] = {
     [0] = {
-        .pFrame = sZazabi_36bf18,
+        .pData = sZazabi_36c850_Frame0,
         .timer = 13
     },
     [1] = {
-        .pFrame = sZazabi_36bf48,
+        .pData = sZazabi_36c850_Frame1,
         .timer = 13
     },
     [2] = {
-        .pFrame = sZazabi_36bf78,
+        .pData = sZazabi_36c850_Frame2,
         .timer = 13
     },
     [3] = {
-        .pFrame = sZazabi_36bf48,
+        .pData = sZazabi_36c850_Frame1,
         .timer = 13
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
 
-static const s16 sZazabiMultiOam_Idle2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    29, 28, 0,
-    12, 124, 0,
-    51, 108, 0,
-    26, 108, 0,
-    8, 236, 0
+static const s16 sZazabiMultiOam_Idle2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 31, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 27, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 59, 0)
 };
 
-static const s16 sZazabiMultiOam_Idle2_Frame1[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    29, 24, 0,
-    12, 120, 0,
-    51, 104, 0,
-    26, 104, 0,
-    8, 232, 0
+static const s16 sZazabiMultiOam_Idle2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 6, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 30, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 26, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 58, 0)
 };
 
-static const s16 sZazabiMultiOam_Idle2_Frame0[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    29, 16, 0,
-    12, 112, 0,
-    51, 96, 0,
-    26, 96, 0,
-    8, 220, 0
+static const s16 sZazabiMultiOam_Idle2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 4, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 28, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 24, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 55, 0)
 };
 
-static const s16 sZazabiMultiOam_Crawling2_Frame3[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    19, 276, 0,
-    52, 368, 0,
-    29, 8, 0,
-    12, 104, 0,
-    51, 88, 0,
-    26, 88, 0,
-    8, 208, 0
+static const s16 sZazabiMultiOam_Crawling2_Frame3[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHigh, 69, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 2, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 26, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 22, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0)
 };
 
-static const s16 sZazabiMultiOam_Crawling2_Frame4[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 280, 0,
-    52, 368, 0,
-    29, 4, 0,
-    12, 100, 0,
-    51, 84, 0,
-    26, 84, 0,
-    8, 208, 0
+static const s16 sZazabiMultiOam_Crawling2_Frame4[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 70, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 1, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 25, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 21, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 21, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpWarning2_Frame0[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    30, 40, 0,
-    12, 136, 0,
-    51, 120, 0,
-    26, 120, 0,
-    8, 236, 0
+static const s16 sZazabiMultiOam_JumpWarning2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 34, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 30, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 30, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 59, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpWarning2_Frame1[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    30, 76, 0,
-    12, 172, 0,
-    51, 156, 0,
-    26, 156, 0,
-    8, 248, 0
+static const s16 sZazabiMultiOam_JumpWarning2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 19, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 43, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 39, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 39, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 62, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpingSmall2_Frame0[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    31, -12, 0,
-    12, 84, 0,
-    51, 68, 0,
-    26, 68, 0,
-    8, 196, 0
+static const s16 sZazabiMultiOam_JumpingSmall2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, -3, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 21, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 17, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 17, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 49, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpingSmall2_Frame1[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    32, -28, 0,
-    12, 68, 0,
-    51, 52, 0,
-    26, 52, 0,
-    8, 188, 0
+static const s16 sZazabiMultiOam_JumpingSmall2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, -7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 13, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpingSmall2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    33, -16, 0,
-    12, 80, 0,
-    51, 64, 0,
-    26, 64, 0,
-    8, 192, 0
+static const s16 sZazabiMultiOam_JumpingSmall2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, -4, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 20, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 16, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 16, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame0[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    30, 8, 0,
-    12, 104, 0,
-    51, 88, 0,
-    26, 88, 0,
-    8, 188, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 2, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 26, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 22, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame1[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    30, 12, 0,
-    12, 108, 0,
-    51, 92, 0,
-    26, 92, 0,
-    8, 176, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 3, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 23, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 23, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    25, 196, 0,
-    52, 368, 0,
-    30, 28, 0,
-    12, 124, 0,
-    51, 108, 0,
-    26, 108, 0,
-    8, 176, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpened, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 31, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 27, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame3[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    30, 52, 0,
-    12, 148, 0,
-    51, 132, 0,
-    26, 132, 0,
-    8, 212, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame3[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 13, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 53, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame4[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    30, 68, 0,
-    12, 164, 0,
-    51, 148, 0,
-    26, 148, 0,
-    8, 216, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame4[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 17, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 54, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlow2_Frame5[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    19, 264, 0,
-    52, 368, 0,
-    30, 80, 0,
-    12, 176, 0,
-    51, 160, 0,
-    26, 160, 0,
-    8, 232, 0
+static const s16 sZazabiMultiOam_FallingSlow2_Frame5[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHigh, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 44, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 40, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 40, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 58, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame0[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    16, 300, 0,
-    52, 368, 0,
-    31, 108, 0,
-    12, 204, 0,
-    51, 188, 0,
-    26, 188, 0,
-    8, 244, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 75, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 27, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 51, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 47, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 47, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 61, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame1[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    17, 292, 0,
-    52, 368, 0,
-    31, 68, 0,
-    12, 164, 0,
-    51, 148, 0,
-    26, 148, 0,
-    8, 244, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 17, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 61, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    17, 292, 0,
-    52, 368, 0,
-    32, 72, 0,
-    12, 168, 0,
-    51, 152, 0,
-    26, 152, 0,
-    8, 248, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 42, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 38, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 38, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 62, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame3[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    32, 52, 0,
-    12, 148, 0,
-    51, 132, 0,
-    26, 132, 0,
-    8, 232, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame3[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 13, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 58, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame4[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    33, 56, 0,
-    12, 152, 0,
-    51, 136, 0,
-    26, 136, 0,
-    8, 236, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame4[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, 14, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 38, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 34, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 34, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 59, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlow2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 196, 0,
-    52, 368, 0,
-    30, 28, 0,
-    12, 124, 0,
-    51, 108, 0,
-    26, 108, 0,
-    8, 176, 0
+static const s16 sZazabiMultiOam_FallingSlow2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 31, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 27, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0)
 };
 
-static const s16 sZazabiMultiOam_EatingSamus5_2_Frame0[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, 16, 0,
-    13, 112, 0,
-    51, 96, 0,
-    27, 96, 0,
-    9, 220, 0
+static const s16 sZazabiMultiOam_EatingSamus5_2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 4, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 28, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 24, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus, 55, 0)
 };
 
-static const s16 sZazabiMultiOam_EatingSamus5_2_Frame1[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, 24, 0,
-    13, 120, 0,
-    51, 104, 0,
-    27, 104, 0,
-    9, 232, 0
+static const s16 sZazabiMultiOam_EatingSamus5_2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 6, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 30, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 26, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus, 58, 0)
 };
 
-static const s16 sZazabiMultiOam_EatingSamus5_2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, 28, 0,
-    13, 124, 0,
-    51, 108, 0,
-    27, 108, 0,
-    9, 236, 0
+static const s16 sZazabiMultiOam_EatingSamus5_2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 31, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 27, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus, 59, 0)
 };
 
-static const s16 sZazabi_36cc92[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    34, 16, 0,
-    14, 112, 0,
-    51, 96, 0,
-    27, 96, 0,
-    10, 220, 0
+static const s16 sZazabi_36d4a4_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 4, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 28, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 24, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 55, 0)
 };
 
-static const s16 sZazabi_36ccbc[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    34, 24, 0,
-    14, 120, 0,
-    51, 104, 0,
-    27, 104, 0,
-    10, 232, 0
+static const s16 sZazabi_36d4a4_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 6, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 30, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 26, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 58, 0)
 };
 
-static const s16 sZazabi_36cce6[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    34, 28, 0,
-    14, 124, 0,
-    51, 108, 0,
-    27, 108, 0,
-    10, 236, 0
+static const s16 sZazabi_36d4a4_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 7, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 31, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 27, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 59, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigRight2_Frame0[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    41, -12, -32,
-    35, 84, -32,
-    51, 68, 0,
-    53, 84, -32,
-    39, 192, -4
+static const s16 sZazabiMultiOam_JumpingBigRight2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingBigRight_1, -3, -8),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 21, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 17, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 21, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 48, -1)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigRight2_Frame1[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    42, -32, -40,
-    35, 64, -36,
-    51, 52, 0,
-    53, 64, -36,
-    39, 180, -4
+static const s16 sZazabiMultiOam_JumpingBigRight2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingBigRight_2, -8, -10),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 16, -9),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 16, -9),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 45, -1)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigRight2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    43, -16, -36,
-    35, 80, -32,
-    51, 64, 0,
-    53, 80, -32,
-    39, 188, -4
+static const s16 sZazabiMultiOam_JumpingBigRight2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(Zazabi_372bf0, -4, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 20, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 16, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 20, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 47, -1)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    44, 8, -36,
-    35, 104, -32,
-    51, 88, -32,
-    53, 104, -32,
-    39, 200, -4
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 2, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 26, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 26, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 50, -1)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame3[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    44, 16, -36,
-    35, 112, -32,
-    51, 96, -32,
-    53, 112, -32,
-    39, 188, -4
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame3[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 4, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 28, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 28, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 47, -1)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame4[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    25, 196, 0,
-    52, 368, 0,
-    44, 24, -36,
-    35, 120, -32,
-    51, 104, -32,
-    53, 120, -32,
-    39, 196, -4
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame4[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpened, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 6, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 30, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 30, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 49, -1)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame5[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    45, 68, -12,
-    36, 164, -8,
-    51, 148, -8,
-    54, 164, -8,
-    8, 204, 0
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame5[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 17, -3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 41, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, -2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 41, -2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigLeft2_Frame0[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    46, -12, 32,
-    37, 84, 32,
-    51, 68, 0,
-    55, 84, 32,
-    40, 192, 4
+static const s16 sZazabiMultiOam_JumpingBigLeft2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_1, -3, 8),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 21, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 17, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 21, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 48, 1)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigLeft2_Frame1[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    47, -32, 40,
-    37, 64, 36,
-    51, 52, 0,
-    55, 64, 36,
-    40, 180, 4
+static const s16 sZazabiMultiOam_JumpingBigLeft2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_2, -8, 10),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 16, 9),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 16, 9),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 45, 1)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigLeft2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    48, -16, 36,
-    37, 80, 32,
-    51, 64, 0,
-    55, 80, 32,
-    40, 188, 4
+static const s16 sZazabiMultiOam_JumpingBigLeft2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(Zazabi_372c40, -4, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 20, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 16, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 20, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 47, 1)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    49, 8, 36,
-    37, 104, 32,
-    51, 88, 0,
-    55, 104, 32,
-    40, 200, 4
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, 2, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 26, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 26, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 50, 1)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame3[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    49, 16, 36,
-    37, 112, 32,
-    51, 96, 0,
-    55, 112, 32,
-    40, 188, 4
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame3[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, 4, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 28, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 28, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 47, 1)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame4[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    25, 196, 0,
-    52, 368, 0,
-    49, 24, 36,
-    37, 120, 32,
-    51, 104, 32,
-    55, 120, 32,
-    40, 196, 4
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame4[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpened, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, 6, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 30, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 30, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 49, 1)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame5[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    23, 216, 0,
-    24, 216, 0,
-    50, 68, 12,
-    38, 164, 8,
-    51, 148, 8,
-    56, 164, 8,
-    8, 204, 0
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame5[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 54, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_2, 17, 3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 41, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 41, 2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingLeft2_Frame4[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 196, 0,
-    52, 368, 0,
-    44, 24, -36,
-    35, 120, -32,
-    51, 104, -32,
-    53, 120, -32,
-    39, 196, -4
+static const s16 sZazabiMultiOam_FallingLeft2_Frame4[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 6, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 30, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 30, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 49, -1)
 };
 
-static const s16 sZazabiMultiOam_FallingRight2_Frame4[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 196, 0,
-    52, 368, 0,
-    49, 24, 36,
-    37, 120, 32,
-    51, 104, 32,
-    55, 120, 32,
-    40, 196, 4
+static const s16 sZazabiMultiOam_FallingRight2_Frame4[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 49, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, 6, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 30, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 30, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 49, 1)
 };
 
-static const s16 sZazabiMultiOam_FallingSlow2_Frame0[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    30, 8, 0,
-    12, 104, 0,
-    51, 88, 0,
-    26, 88, 0,
-    8, 188, 0
+static const s16 sZazabiMultiOam_FallingSlow2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 2, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 26, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 22, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlow2_Frame1[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    30, 12, 0,
-    12, 108, 0,
-    51, 92, 0,
-    26, 92, 0,
-    8, 176, 0
+static const s16 sZazabiMultiOam_FallingSlow2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 3, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 23, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 23, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlow2_Frame3[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    30, 52, 0,
-    12, 148, 0,
-    51, 132, 0,
-    26, 132, 0,
-    8, 212, 0
+static const s16 sZazabiMultiOam_FallingSlow2_Frame3[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 13, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 53, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlow2_Frame4[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    30, 68, 0,
-    12, 164, 0,
-    51, 148, 0,
-    26, 148, 0,
-    8, 216, 0
+static const s16 sZazabiMultiOam_FallingSlow2_Frame4[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 17, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 54, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingLeft2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    44, 8, -36,
-    35, 104, -32,
-    51, 88, -32,
-    53, 104, -32,
-    39, 200, -4
+static const s16 sZazabiMultiOam_FallingLeft2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 2, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 26, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 26, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 50, -1)
 };
 
-static const s16 sZazabiMultiOam_FallingLeft2_Frame3[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    44, 16, -36,
-    35, 112, -32,
-    51, 96, -32,
-    53, 112, -32,
-    39, 188, -4
+static const s16 sZazabiMultiOam_FallingLeft2_Frame3[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 4, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 28, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 28, -8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 47, -1)
 };
 
-static const s16 sZazabiMultiOam_FallingLeft2_Frame5[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    45, 68, -12,
-    36, 164, -8,
-    51, 148, -8,
-    54, 164, -8,
-    8, 204, 0
+static const s16 sZazabiMultiOam_FallingLeft2_Frame5[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 17, -3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 41, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, -2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 41, -2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingRight2_Frame2[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 248, 0,
-    52, 368, 0,
-    49, 8, 36,
-    37, 104, 32,
-    51, 88, 0,
-    55, 104, 32,
-    40, 200, 4
+static const s16 sZazabiMultiOam_FallingRight2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, 2, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 26, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 26, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 50, 1)
 };
 
-static const s16 sZazabiMultiOam_FallingRight2_Frame3[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    49, 16, 36,
-    37, 112, 32,
-    51, 96, 0,
-    55, 112, 32,
-    40, 188, 4
+static const s16 sZazabiMultiOam_FallingRight2_Frame3[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, 4, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 28, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 28, 8),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 47, 1)
 };
 
-static const s16 sZazabiMultiOam_FallingRight2_Frame5[ZAZABI_PART_MIDDLE_SHELL * 3] = {
-    20, 216, 0,
-    52, 368, 0,
-    50, 68, 12,
-    38, 164, 8,
-    51, 148, 8,
-    56, 164, 8,
-    8, 204, 0
+static const s16 sZazabiMultiOam_FallingRight2_Frame5[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 54, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_2, 17, 3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 41, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 41, 2),
+    [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0)
 };
 
 
-const struct FrameData sZazabiMultiOam_Idle2[5] = {
+const struct MultiSpriteData sZazabiMultiOam_Idle2[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_Idle2_Frame0,
+        .pData = sZazabiMultiOam_Idle2_Frame0,
         .timer = 11
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_Idle2_Frame1,
+        .pData = sZazabiMultiOam_Idle2_Frame1,
         .timer = 11
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_Idle2_Frame2,
+        .pData = sZazabiMultiOam_Idle2_Frame2,
         .timer = 11
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_Idle2_Frame1,
+        .pData = sZazabiMultiOam_Idle2_Frame1,
         .timer = 11
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_Crawling2[9] = {
+const struct MultiSpriteData sZazabiMultiOam_Crawling2[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_Idle2_Frame2,
+        .pData = sZazabiMultiOam_Idle2_Frame2,
         .timer = 5
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_Idle2_Frame1,
+        .pData = sZazabiMultiOam_Idle2_Frame1,
         .timer = 5
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_Idle2_Frame0,
+        .pData = sZazabiMultiOam_Idle2_Frame0,
         .timer = 5
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_Crawling2_Frame3,
+        .pData = sZazabiMultiOam_Crawling2_Frame3,
         .timer = 5
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_Crawling2_Frame4,
+        .pData = sZazabiMultiOam_Crawling2_Frame4,
         .timer = 7
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_Crawling2_Frame3,
+        .pData = sZazabiMultiOam_Crawling2_Frame3,
         .timer = 5
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_Idle2_Frame0,
+        .pData = sZazabiMultiOam_Idle2_Frame0,
         .timer = 5
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_Idle2_Frame1,
+        .pData = sZazabiMultiOam_Idle2_Frame1,
         .timer = 5
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpWarning2[3] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpWarning2[3] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpWarning2_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning2_Frame0,
         .timer = 5
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpWarning2_Frame1,
+        .pData = sZazabiMultiOam_JumpWarning2_Frame1,
         .timer = 11
     },
-    [2] = FRAME_DATA_TERMINATOR
+    [2] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingSmall2[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingSmall2[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall2_Frame0,
+        .pData = sZazabiMultiOam_JumpingSmall2_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall2_Frame1,
+        .pData = sZazabiMultiOam_JumpingSmall2_Frame1,
         .timer = 5
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall2_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingSmall2_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingBigRight2[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingBigRight2[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight2_Frame0,
+        .pData = sZazabiMultiOam_JumpingBigRight2_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight2_Frame1,
+        .pData = sZazabiMultiOam_JumpingBigRight2_Frame1,
         .timer = 5
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight2_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingBigRight2_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingBigLeft2[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingBigLeft2[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft2_Frame0,
+        .pData = sZazabiMultiOam_JumpingBigLeft2_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft2_Frame1,
+        .pData = sZazabiMultiOam_JumpingBigLeft2_Frame1,
         .timer = 5
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft2_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingBigLeft2_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingSlow2[7] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingSlow2[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame0,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame1,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame2,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame2,
         .timer = 100
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame3,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame3,
         .timer = 2
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame4,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame5,
         .timer = 2
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingSlowMouthOpened2[7] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingSlowMouthOpened2[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame0,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame1,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame2,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame2,
         .timer = 100
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame3,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame3,
         .timer = 2
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame5,
         .timer = 2
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingLeft2[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingLeft2[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall2_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall2_Frame2,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight2_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigRight2_Frame2,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingLeft2_Frame2,
+        .pData = sZazabiMultiOam_FallingLeft2_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingLeft2_Frame3,
+        .pData = sZazabiMultiOam_FallingLeft2_Frame3,
         .timer = 4
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingLeft2_Frame4,
+        .pData = sZazabiMultiOam_FallingLeft2_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingLeft2_Frame5,
+        .pData = sZazabiMultiOam_FallingLeft2_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame4,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingMouthOpenedLeft2[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedLeft2[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall2_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall2_Frame2,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight2_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigRight2_Frame2,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft2_Frame2,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft2_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft2_Frame3,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft2_Frame3,
         .timer = 4
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft2_Frame4,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft2_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft2_Frame5,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft2_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingRight2[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingRight2[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall2_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall2_Frame2,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft2_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigLeft2_Frame2,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingRight2_Frame2,
+        .pData = sZazabiMultiOam_FallingRight2_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingRight2_Frame3,
+        .pData = sZazabiMultiOam_FallingRight2_Frame3,
         .timer = 4
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingRight2_Frame4,
+        .pData = sZazabiMultiOam_FallingRight2_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingRight2_Frame5,
+        .pData = sZazabiMultiOam_FallingRight2_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame4,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingMouthOpenedRight2[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedRight2[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall2_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall2_Frame2,
         .timer = 3
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft2_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigLeft2_Frame2,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight2_Frame2,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight2_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight2_Frame3,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight2_Frame3,
         .timer = 4
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight2_Frame4,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight2_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight2_Frame5,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight2_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_LandingMouthOpen2[7] = {
+const struct MultiSpriteData sZazabiMultiOam_LandingMouthOpen2[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame1,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame2,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame3,
         .timer = 4
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame4,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame4,
         .timer = 4
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_JumpWarning2_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning2_Frame0,
         .timer = 5
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_Landing2[3] = {
+const struct MultiSpriteData sZazabiMultiOam_Landing2[3] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame3,
         .timer = 5
     },
-    [2] = FRAME_DATA_TERMINATOR
+    [2] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_SpittingSamus2[7] = {
+const struct MultiSpriteData sZazabiMultiOam_SpittingSamus2[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall2_Frame0,
+        .pData = sZazabiMultiOam_JumpingSmall2_Frame0,
         .timer = 5
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame0,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame0,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame1,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame1,
         .timer = 5
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame3,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame3,
         .timer = 2
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened2_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened2_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlow2_Frame5,
+        .pData = sZazabiMultiOam_FallingSlow2_Frame5,
         .timer = 3
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_LandingAfterSpitting2[5] = {
+const struct MultiSpriteData sZazabiMultiOam_LandingAfterSpitting2[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame1,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen2_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen2_Frame3,
         .timer = 4
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_JumpWarning2_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning2_Frame0,
         .timer = 5
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_EatingSamus5_2[5] = {
+const struct MultiSpriteData sZazabiMultiOam_EatingSamus5_2[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_2_Frame0,
+        .pData = sZazabiMultiOam_EatingSamus5_2_Frame0,
         .timer = 11
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_2_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus5_2_Frame1,
         .timer = 11
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_2_Frame2,
+        .pData = sZazabiMultiOam_EatingSamus5_2_Frame2,
         .timer = 11
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_EatingSamus5_2_Frame1,
+        .pData = sZazabiMultiOam_EatingSamus5_2_Frame1,
         .timer = 11
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabi_36d4a4[5] = {
+const struct MultiSpriteData sZazabi_36d4a4[5] = {
     [0] = {
-        .pFrame = sZazabi_36cc92,
+        .pData = sZazabi_36d4a4_Frame0,
         .timer = 11
     },
     [1] = {
-        .pFrame = sZazabi_36ccbc,
+        .pData = sZazabi_36d4a4_Frame1,
         .timer = 11
     },
     [2] = {
-        .pFrame = sZazabi_36cce6,
+        .pData = sZazabi_36d4a4_Frame2,
         .timer = 11
     },
     [3] = {
-        .pFrame = sZazabi_36ccbc,
+        .pData = sZazabi_36d4a4_Frame1,
         .timer = 11
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
 
-static const s16 sZazabiMultiOam_Idle1_Frame2[ZAZABI_PART_UPPER_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    29, 92, 0,
-    12, 188, 0,
-    51, 172, 0,
-    26, 172, 0
+static const s16 sZazabiMultiOam_Idle1_Frame2[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 23, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 47, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 43, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 43, 0)
 };
 
-static const s16 sZazabiMultiOam_Idle1_Frame1[ZAZABI_PART_UPPER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    29, 88, 0,
-    12, 184, 0,
-    51, 168, 0,
-    26, 168, 0
+static const s16 sZazabiMultiOam_Idle1_Frame1[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 22, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 46, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 42, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 42, 0)
 };
 
-static const s16 sZazabiMultiOam_Idle1_Frame0[ZAZABI_PART_UPPER_SHELL * 3] = {
-    18, 284, 0,
-    52, 368, 0,
-    29, 80, 0,
-    12, 176, 0,
-    51, 160, 0,
-    26, 160, 0
+static const s16 sZazabiMultiOam_Idle1_Frame0[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingLow, 71, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 20, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 44, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 40, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 40, 0)
 };
 
-static const s16 sZazabiMultiOam_Crawling1_Frame3[ZAZABI_PART_UPPER_SHELL * 3] = {
-    19, 276, 0,
-    52, 368, 0,
-    29, 72, 0,
-    12, 168, 0,
-    51, 152, 0,
-    26, 152, 0
+static const s16 sZazabiMultiOam_Crawling1_Frame3[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHigh, 69, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 18, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 42, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 38, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 38, 0)
 };
 
-static const s16 sZazabiMultiOam_Crawling1_Frame4[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 280, 0,
-    52, 368, 0,
-    29, 68, 0,
-    12, 164, 0,
-    51, 148, 0,
-    26, 148, 0
+static const s16 sZazabiMultiOam_Crawling1_Frame4[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 70, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 17, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpWarning1_Frame0[ZAZABI_PART_UPPER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    30, 88, 0,
-    12, 184, 0,
-    51, 168, 0,
-    26, 168, 0
+static const s16 sZazabiMultiOam_JumpWarning1_Frame0[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 22, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 46, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 42, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 42, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpWarning1_Frame1[ZAZABI_PART_UPPER_SHELL * 3] = {
-    16, 292, 0,
-    52, 368, 0,
-    30, 104, 0,
-    12, 200, 0,
-    51, 184, 0,
-    26, 184, 0
+static const s16 sZazabiMultiOam_JumpWarning1_Frame1[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 26, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 50, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 46, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 46, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpingSmall1_Frame0[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    31, 52, 0,
-    12, 148, 0,
-    51, 132, 0,
-    26, 132, 0
+static const s16 sZazabiMultiOam_JumpingSmall1_Frame0[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 13, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpingSmall1_Frame1[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    32, 48, 0,
-    12, 144, 0,
-    51, 128, 0,
-    26, 128, 0
+static const s16 sZazabiMultiOam_JumpingSmall1_Frame1[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 12, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 36, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 32, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 32, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpingSmall1_Frame2[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    33, 56, 0,
-    12, 152, 0,
-    51, 136, 0,
-    26, 136, 0
+static const s16 sZazabiMultiOam_JumpingSmall1_Frame2[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, 14, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 38, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 34, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 34, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame0[ZAZABI_PART_UPPER_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    30, 52, 0,
-    12, 148, 0,
-    51, 132, 0,
-    26, 132, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame0[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 13, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame1[ZAZABI_PART_UPPER_SHELL * 3] = {
-    23, 232, 0,
-    24, 232, 0,
-    30, 40, 0,
-    12, 136, 0,
-    51, 120, 0,
-    26, 120, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame1[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 58, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 58, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 10, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 34, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 30, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 30, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame2[ZAZABI_PART_UPPER_SHELL * 3] = {
-    23, 244, 0,
-    24, 244, 0,
-    30, 52, 0,
-    12, 148, 0,
-    51, 132, 0,
-    26, 132, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame2[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 61, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 61, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 13, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame3[ZAZABI_PART_UPPER_SHELL * 3] = {
-    23, 256, 0,
-    24, 256, 0,
-    30, 84, 0,
-    12, 180, 0,
-    51, 164, 0,
-    26, 164, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame3[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 64, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 64, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 21, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 45, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 41, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 41, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame4[ZAZABI_PART_UPPER_SHELL * 3] = {
-    21, 276, 0,
-    22, 276, 0,
-    30, 96, 0,
-    12, 192, 0,
-    51, 176, 0,
-    26, 176, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame4[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 69, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 69, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 24, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 48, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 44, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 44, 0)
 };
 
-static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame5[ZAZABI_PART_UPPER_SHELL * 3] = {
-    19, 288, 0,
-    52, 368, 0,
-    30, 104, 0,
-    12, 200, 0,
-    51, 184, 0,
-    26, 184, 0
+static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame5[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHigh, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 26, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 50, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 46, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 46, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame0[ZAZABI_PART_UPPER_SHELL * 3] = {
-    16, 300, 0,
-    52, 368, 0,
-    31, 144, 0,
-    12, 240, 0,
-    51, 224, 0,
-    26, 224, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame0[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthIdle, 75, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 36, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 60, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 56, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 56, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame1[ZAZABI_PART_UPPER_SHELL * 3] = {
-    17, 292, 0,
-    52, 368, 0,
-    31, 124, 0,
-    12, 220, 0,
-    51, 204, 0,
-    26, 204, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame1[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 31, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 55, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 51, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 51, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame2[ZAZABI_PART_UPPER_SHELL * 3] = {
-    17, 292, 0,
-    52, 368, 0,
-    32, 120, 0,
-    12, 216, 0,
-    51, 200, 0,
-    26, 200, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame2[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 73, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 30, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 54, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 50, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 50, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame3[ZAZABI_PART_UPPER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    32, 88, 0,
-    12, 184, 0,
-    51, 168, 0,
-    26, 168, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame3[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 22, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 46, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 42, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 42, 0)
 };
 
-static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame4[ZAZABI_PART_UPPER_SHELL * 3] = {
-    17, 288, 0,
-    52, 368, 0,
-    33, 92, 0,
-    12, 188, 0,
-    51, 172, 0,
-    26, 172, 0
+static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame4[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthLanding, 72, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, 23, 0),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 47, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 43, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 43, 0)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigRight1_Frame0[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    41, 52, -32,
-    35, 148, -32,
-    51, 132, 0,
-    53, 148, -32
+static const s16 sZazabiMultiOam_JumpingBigRight1_Frame0[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingBigRight_1, 13, -8),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 37, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 37, -8)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigRight1_Frame1[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    42, 48, -40,
-    35, 144, -36,
-    51, 132, 0,
-    53, 144, -36
+static const s16 sZazabiMultiOam_JumpingBigRight1_Frame1[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingBigRight_2, 12, -10),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 36, -9),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 36, -9)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigRight1_Frame2[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    43, 56, -36,
-    35, 152, -32,
-    51, 136, 0,
-    53, 152, -32
+static const s16 sZazabiMultiOam_JumpingBigRight1_Frame2[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(Zazabi_372bf0, 14, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 38, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 34, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 38, -8)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame2[ZAZABI_PART_UPPER_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    44, 52, -36,
-    35, 148, -32,
-    51, 132, -32,
-    53, 148, -32
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame2[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 13, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 37, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 37, -8)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame3[ZAZABI_PART_UPPER_SHELL * 3] = {
-    23, 232, 0,
-    24, 232, 0,
-    44, 40, -36,
-    35, 136, -32,
-    51, 120, -32,
-    53, 136, -32
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame3[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 58, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 58, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 10, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 34, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 30, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 34, -8)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame5[ZAZABI_PART_UPPER_SHELL * 3] = {
-    23, 256, 0,
-    24, 256, 0,
-    45, 84, -12,
-    36, 180, -8,
-    51, 164, -8,
-    54, 180, -8
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame5[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 64, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 64, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 21, -3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 45, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 41, -2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 45, -2)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigLeft1_Frame0[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 264, 0,
-    52, 368, 0,
-    46, 52, 32,
-    37, 148, 32,
-    51, 132, 0,
-    55, 148, 32
+static const s16 sZazabiMultiOam_JumpingBigLeft1_Frame0[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 66, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_1, 13, 8),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 37, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 37, 8)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigLeft1_Frame1[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    47, 48, 40,
-    37, 144, 36,
-    51, 132, 0,
-    55, 144, 36
+static const s16 sZazabiMultiOam_JumpingBigLeft1_Frame1[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_2, 12, 10),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 36, 9),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 36, 9)
 };
 
-static const s16 sZazabiMultiOam_JumpingBigLeft1_Frame2[ZAZABI_PART_UPPER_SHELL * 3] = {
-    20, 268, 0,
-    52, 368, 0,
-    48, 56, 36,
-    37, 152, 32,
-    51, 136, 0,
-    55, 152, 32
+static const s16 sZazabiMultiOam_JumpingBigLeft1_Frame2[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthCrawlingHalted, 67, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372c80, 92, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(Zazabi_372c40, 14, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 38, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 34, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 38, 8)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame2[ZAZABI_PART_UPPER_SHELL * 3] = {
-    21, 248, 0,
-    22, 248, 0,
-    49, 52, 36,
-    37, 148, 32,
-    51, 132, 0,
-    55, 148, 32
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame2[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthOpening, 62, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_3729e8, 62, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, 13, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 37, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 37, 8)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame3[ZAZABI_PART_UPPER_SHELL * 3] = {
-    23, 232, 0,
-    24, 232, 0,
-    49, 40, 36,
-    37, 136, 32,
-    51, 120, 0,
-    55, 136, 32
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame3[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 58, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 58, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, 10, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 34, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 30, 0),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 34, 8)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame5[ZAZABI_PART_UPPER_SHELL * 3] = {
-    23, 256, 0,
-    24, 256, 0,
-    50, 84, 12,
-    38, 180, 8,
-    51, 164, 8,
-    56, 180, 8
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame5[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 64, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 64, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_2, 21, 3),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 45, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 41, 2),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 45, 2)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame4[ZAZABI_PART_UPPER_SHELL * 3] = {
-    23, 244, 0,
-    24, 244, 0,
-    44, 52, -36,
-    35, 148, -32,
-    51, 132, -32,
-    53, 148, -32
+static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame4[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 61, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 61, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 13, -9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 37, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, -8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 37, -8)
 };
 
-static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame4[ZAZABI_PART_UPPER_SHELL * 3] = {
-    23, 244, 0,
-    24, 244, 0,
-    49, 52, 36,
-    37, 148, 32,
-    51, 132, 32,
-    55, 148, 32
+static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame4[ZAZABI_PART_UPPER_SHELL][MULTI_SPRITE_DATA_ELEMENT_END] = {
+    [ZAZABI_PART_MOUTH_FRONT] = MULTI_SPRITE_DATA_INFO(Zazabi_3729f8, 61, 0),
+    [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(Zazabi_372a08, 61, 0),
+    [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingMouthOpened_1, 13, 9),
+    [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 37, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 8),
+    [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 37, 8)
 };
 
 
-const struct FrameData sZazabiMultiOam_Idle1[5] = {
+const struct MultiSpriteData sZazabiMultiOam_Idle1[5] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_Idle1_Frame0,
+        .pData = sZazabiMultiOam_Idle1_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_Idle1_Frame1,
+        .pData = sZazabiMultiOam_Idle1_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_Idle1_Frame2,
+        .pData = sZazabiMultiOam_Idle1_Frame2,
         .timer = 8
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_Idle1_Frame1,
+        .pData = sZazabiMultiOam_Idle1_Frame1,
         .timer = 8
     },
-    [4] = FRAME_DATA_TERMINATOR
+    [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_Crawling1[9] = {
+const struct MultiSpriteData sZazabiMultiOam_Crawling1[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_Idle1_Frame2,
+        .pData = sZazabiMultiOam_Idle1_Frame2,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_Idle1_Frame1,
+        .pData = sZazabiMultiOam_Idle1_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_Idle1_Frame0,
+        .pData = sZazabiMultiOam_Idle1_Frame0,
         .timer = 4
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_Crawling1_Frame3,
+        .pData = sZazabiMultiOam_Crawling1_Frame3,
         .timer = 4
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_Crawling1_Frame4,
+        .pData = sZazabiMultiOam_Crawling1_Frame4,
         .timer = 5
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_Crawling1_Frame3,
+        .pData = sZazabiMultiOam_Crawling1_Frame3,
         .timer = 4
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_Idle1_Frame0,
+        .pData = sZazabiMultiOam_Idle1_Frame0,
         .timer = 4
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_Idle1_Frame1,
+        .pData = sZazabiMultiOam_Idle1_Frame1,
         .timer = 4
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpWarning1[3] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpWarning1[3] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpWarning1_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning1_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpWarning1_Frame1,
+        .pData = sZazabiMultiOam_JumpWarning1_Frame1,
         .timer = 8
     },
-    [2] = FRAME_DATA_TERMINATOR
+    [2] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingSmall1[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingSmall1[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall1_Frame0,
+        .pData = sZazabiMultiOam_JumpingSmall1_Frame0,
         .timer = 2
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall1_Frame1,
+        .pData = sZazabiMultiOam_JumpingSmall1_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall1_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingSmall1_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingBigRight1[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingBigRight1[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight1_Frame0,
+        .pData = sZazabiMultiOam_JumpingBigRight1_Frame0,
         .timer = 2
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight1_Frame1,
+        .pData = sZazabiMultiOam_JumpingBigRight1_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight1_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingBigRight1_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_JumpingBigLeft1[4] = {
+const struct MultiSpriteData sZazabiMultiOam_JumpingBigLeft1[4] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft1_Frame0,
+        .pData = sZazabiMultiOam_JumpingBigLeft1_Frame0,
         .timer = 2
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft1_Frame1,
+        .pData = sZazabiMultiOam_JumpingBigLeft1_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft1_Frame2,
-        .timer = UCHAR_MAX
+        .pData = sZazabiMultiOam_JumpingBigLeft1_Frame2,
+        .timer = 255
     },
-    [3] = FRAME_DATA_TERMINATOR
+    [3] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingSlowMouthOpened1[7] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingSlowMouthOpened1[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame0,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame0,
         .timer = 2
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame1,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame2,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame2,
         .timer = 100
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame3,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame3,
         .timer = 2
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame4,
         .timer = 2
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame5,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame5,
         .timer = 2
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingMouthOpenedLeft1[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedLeft1[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall1_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall1_Frame2,
         .timer = 2
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigRight1_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigRight1_Frame2,
         .timer = 2
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft1_Frame2,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft1_Frame2,
         .timer = 2
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft1_Frame3,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft1_Frame3,
         .timer = 3
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft1_Frame4,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft1_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedLeft1_Frame5,
+        .pData = sZazabiMultiOam_FallingMouthOpenedLeft1_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame5,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_FallingMouthOpenedRight1[9] = {
+const struct MultiSpriteData sZazabiMultiOam_FallingMouthOpenedRight1[9] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_JumpingSmall1_Frame2,
+        .pData = sZazabiMultiOam_JumpingSmall1_Frame2,
         .timer = 2
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_JumpingBigLeft1_Frame2,
+        .pData = sZazabiMultiOam_JumpingBigLeft1_Frame2,
         .timer = 2
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight1_Frame2,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight1_Frame2,
         .timer = 2
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight1_Frame3,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight1_Frame3,
         .timer = 3
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight1_Frame4,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight1_Frame4,
         .timer = 100
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_FallingMouthOpenedRight1_Frame5,
+        .pData = sZazabiMultiOam_FallingMouthOpenedRight1_Frame5,
         .timer = 2
     },
     [6] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame4,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame4,
         .timer = 2
     },
     [7] = {
-        .pFrame = sZazabiMultiOam_FallingSlowMouthOpened1_Frame5,
+        .pData = sZazabiMultiOam_FallingSlowMouthOpened1_Frame5,
         .timer = 2
     },
-    [8] = FRAME_DATA_TERMINATOR
+    [8] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_LandingMouthOpen1[7] = {
+const struct MultiSpriteData sZazabiMultiOam_LandingMouthOpen1[7] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen1_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen1_Frame0,
         .timer = 6
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen1_Frame1,
+        .pData = sZazabiMultiOam_LandingMouthOpen1_Frame1,
         .timer = 2
     },
     [2] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen1_Frame2,
+        .pData = sZazabiMultiOam_LandingMouthOpen1_Frame2,
         .timer = 2
     },
     [3] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen1_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen1_Frame3,
         .timer = 3
     },
     [4] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen1_Frame4,
+        .pData = sZazabiMultiOam_LandingMouthOpen1_Frame4,
         .timer = 3
     },
     [5] = {
-        .pFrame = sZazabiMultiOam_JumpWarning1_Frame0,
+        .pData = sZazabiMultiOam_JumpWarning1_Frame0,
         .timer = 4
     },
-    [6] = FRAME_DATA_TERMINATOR
+    [6] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiMultiOam_Landing1[3] = {
+const struct MultiSpriteData sZazabiMultiOam_Landing1[3] = {
     [0] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen1_Frame0,
+        .pData = sZazabiMultiOam_LandingMouthOpen1_Frame0,
         .timer = 6
     },
     [1] = {
-        .pFrame = sZazabiMultiOam_LandingMouthOpen1_Frame3,
+        .pData = sZazabiMultiOam_LandingMouthOpen1_Frame3,
         .timer = 4
     },
-    [2] = FRAME_DATA_TERMINATOR
+    [2] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
 
