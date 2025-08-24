@@ -48,7 +48,7 @@ void ToxicGasIdle(void) {
         u16 spawnX = gCurrentSprite.xPosition + BLOCK_SIZE;
         SpriteSpawnSecondary(SSPRITE_TOXIC_GAS_EXPLOSION, gCurrentSprite.roomSlot,
             gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot, spawnY, spawnX, 0);
-        SoundPlay(SOUND_15A);
+        SoundPlay(SOUND_TOXIC_GAS_EXPLODE);
     }
 }
 

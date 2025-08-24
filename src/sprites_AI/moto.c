@@ -6,6 +6,7 @@
 #include "data/sprites/x_parasite.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/particle.h"
 #include "constants/sprite.h"
@@ -312,23 +313,23 @@ void MotoWalking(void)
 
         if (gCurrentSprite.work3 == 1)
         {
-            SoundPlayNotAlreadyPlaying(0x155);
+            SoundPlayNotAlreadyPlaying(SOUND_MOTO_WALK_FASTER_0);
         }
         else if (gCurrentSprite.work3 == 17)
         {
-            SoundPlayNotAlreadyPlaying(0x156);
+            SoundPlayNotAlreadyPlaying(SOUND_MOTO_WALK_FASTER_1);
         }
         else if (gCurrentSprite.work3 == 33)
         {
             gCurrentSprite.work1 = 0;
-            SoundPlayNotAlreadyPlaying(0x157);
+            SoundPlayNotAlreadyPlaying(SOUND_MOTO_WALK_FASTER_2);
         }
         else if (gCurrentSprite.work3 > 33)
         {
             gCurrentSprite.work1++;
 
             if (MOD_AND(gCurrentSprite.work1, 16) == 0)
-                SoundPlayNotAlreadyPlaying(0x157);
+                SoundPlayNotAlreadyPlaying(SOUND_MOTO_WALK_FASTER_2);
         }
     }
     else if (gCurrentSprite.pose == MOTO_POSE_WALKING_SLOWER)
@@ -340,7 +341,7 @@ void MotoWalking(void)
             else
                 ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_DUST_2);
 
-            SoundPlayNotAlreadyPlaying(0x159);
+            SoundPlayNotAlreadyPlaying(SOUND_MOTO_WALK_SLOWER);
         }
 
         gCurrentSprite.work1++;
@@ -463,7 +464,7 @@ void MotoCharging(void)
         else
             ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_DUST_2);
 
-        SoundPlayNotAlreadyPlaying(0x158);
+        SoundPlayNotAlreadyPlaying(SOUND_MOTO_CHARGE);
     }
     else if (gCurrentSprite.currentAnimationFrame == 7 && gCurrentSprite.animationDurationCounter == 2)
     {
@@ -472,7 +473,7 @@ void MotoCharging(void)
         else
             ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_DUST_2);
 
-        SoundPlayNotAlreadyPlaying(0x158);
+        SoundPlayNotAlreadyPlaying(SOUND_MOTO_CHARGE);
     }
 
     if (SpriteUtilCheckEndCurrentSpriteAnim())
@@ -629,7 +630,7 @@ void MotoFrontIdle(void)
 void Moto(void)
 {
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 4)
-        SoundPlayNotAlreadyPlaying(0x154);
+        SoundPlayNotAlreadyPlaying(SOUND_MOTO_HURT);
 
     if (gCurrentSprite.freezeTimer != 0)
     {

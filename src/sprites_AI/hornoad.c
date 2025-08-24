@@ -5,6 +5,7 @@
 #include "data/sprites/x_parasite.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/event.h"
 #include "constants/sprite.h"
@@ -273,7 +274,7 @@ void HornoadJumpingInit(void)
     else
     {
         gCurrentSprite.pOam = sHornoadOam_Jumping;
-        SoundPlayNotAlreadyPlaying(0x14C);
+        SoundPlayNotAlreadyPlaying(SOUND_HORNOAD_JUMP);
     }
 
     // Set random jump height
@@ -866,7 +867,7 @@ void HornoadSpitting(void)
                 gCurrentSprite.xPosition - HALF_BLOCK_SIZE, 0);
         }
 
-        SoundPlayNotAlreadyPlaying(0x14B);
+        SoundPlayNotAlreadyPlaying(SOUND_HORNOAD_SPIT);
     }
 
     if (SpriteUtilCheckEndCurrentSpriteAnim())
@@ -1116,7 +1117,7 @@ void HornoadSpwanerSpawnHornoad(void)
 void Hornoad(void)
 {
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 0x4)
-        SoundPlayNotAlreadyPlaying(0x14A);
+        SoundPlayNotAlreadyPlaying(SOUND_HORNOAD_HURT);
 
     if (gCurrentSprite.freezeTimer != 0)
     {

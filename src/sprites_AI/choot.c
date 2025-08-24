@@ -5,6 +5,7 @@
 #include "data/sprites/x_parasite.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/samus.h"
 
@@ -92,7 +93,7 @@ void ChootGoingUpInit(void) {
     gCurrentSprite.work4 = 0;
     ChootSetClosedHitbox();
     if (gCurrentSprite.status & SS_ON_SCREEN)
-        SoundPlayNotAlreadyPlaying(0x1a2);
+        SoundPlayNotAlreadyPlaying(SOUND_CHOOT_JUMP);
 }
 
 void ChootGoingUp(void) {
@@ -153,7 +154,7 @@ void ChootGoingDown(void) {
                 SpriteSpawnSecondary(SSPRITE_CHOOT_SPIT, 0, gCurrentSprite.spritesetGfxSlot,
                     gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.yPosition + PIXEL_TO_SUB_PIXEL(8), gCurrentSprite.xPosition, 0);
                 if (gCurrentSprite.status & SS_ON_SCREEN)
-                    SoundPlayNotAlreadyPlaying(0x1a3);
+                    SoundPlayNotAlreadyPlaying(SOUND_CHOOT_SPIT);
             }
             gCurrentSprite.work1++;
         }
@@ -210,7 +211,7 @@ void ChootSpitExploding(void) {
 
 void Choot(void) {
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 4)
-        SoundPlayNotAlreadyPlaying(0x1a4);
+        SoundPlayNotAlreadyPlaying(SOUND_CHOOT_HURT);
     if (gCurrentSprite.freezeTimer > 0) {
         SpriteUtilUpdateFreezeTimer();
         return;

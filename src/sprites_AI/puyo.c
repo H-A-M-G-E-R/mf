@@ -59,7 +59,7 @@ void PuyoIdle(void) {
         return;
 
     if (gCurrentSprite.currentAnimationFrame == 0 && gCurrentSprite.animationDurationCounter == 1 && gCurrentSprite.status & SS_ON_SCREEN)
-        SoundPlayNotAlreadyPlaying(0x1c3);
+        SoundPlayNotAlreadyPlaying(SOUND_PUYO_IDLE);
 
     SpriteUtilAlignYPosOnSlope();
     if (gPreviousVerticalCollisionCheck == COLLISION_AIR) {
@@ -159,7 +159,7 @@ void PuyoJumpWarning(void) {
         gCurrentSprite.pOam = sPuyoOam_37cec4;
         gCurrentSprite.work4 = 0;
         if (gCurrentSprite.status & SS_ON_SCREEN)
-            SoundPlayNotAlreadyPlaying(0x1c4);
+            SoundPlayNotAlreadyPlaying(SOUND_PUYO_JUMP);
     }
 }
 
@@ -221,7 +221,7 @@ void PuyoJumpingDown(void) {
         gCurrentSprite.currentAnimationFrame = 0;
         gCurrentSprite.pOam = sPuyoOam_37ced4;
         if (gCurrentSprite.status & SS_ON_SCREEN)
-            SoundPlayNotAlreadyPlaying(0x1c5);
+            SoundPlayNotAlreadyPlaying(SOUND_PUYO_LAND);
     } else {
         u8 offset = gCurrentSprite.work4;
         s16 movement = sPuyoJumpingDownSpeed[offset];
@@ -263,7 +263,7 @@ void PuyoLanding(void) {
 
 void Puyo(void) {
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 4)
-        SoundPlayNotAlreadyPlaying(0x1c6);
+        SoundPlayNotAlreadyPlaying(SOUND_PUYO_HURT);
     if (gCurrentSprite.freezeTimer > 0) {
         SpriteUtilUpdateFreezeTimer();
         return;

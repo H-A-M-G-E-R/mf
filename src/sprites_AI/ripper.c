@@ -6,6 +6,7 @@
 #include "data/sprites/x_parasite.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/sprite.h"
 #include "constants/samus.h"
@@ -152,7 +153,7 @@ void RipperTurningAroundSecondPart(void)
 void Ripper(void)
 {
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 4)
-        SoundPlayNotAlreadyPlaying(0x1D3);
+        SoundPlayNotAlreadyPlaying(SOUND_RIPPER_HURT);
 
     if (gCurrentSprite.freezeTimer != 0)
     {

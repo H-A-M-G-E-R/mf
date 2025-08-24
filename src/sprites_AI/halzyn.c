@@ -6,6 +6,7 @@
 #include "data/sprites/halzyn.h"
 #include "data/sprites/x_parasite.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/sprite.h"
 
@@ -248,7 +249,7 @@ void HalzynLungingInit(void)
 
     gCurrentSprite.work4 = 0;
 
-    SoundPlay(0x151);
+    SoundPlay(SOUND_HALZYN_LUNGE);
 }
 
 /**
@@ -282,7 +283,7 @@ void HalzynLunging(void)
         SpriteDebrisInit(0, DEBRIS_TYPE_HOPPING_FAST_RIGHT, yPosition - PIXEL_SIZE * 2, xPosition + (QUARTER_BLOCK_SIZE + PIXEL_SIZE / 2));
         SpriteDebrisInit(0, DEBRIS_TYPE_HOPPING_FAST_LEFT, yPosition - PIXEL_SIZE * 2, xPosition - PIXEL_TO_SUB_PIXEL(1.75));
 
-        SoundPlay(0x152);
+        SoundPlay(SOUND_HALZYN_LAND);
         return;
     }
 
@@ -364,7 +365,7 @@ void HalzynFlyingUp(void)
     }
 
     if (gCurrentSprite.currentAnimationFrame == 3 && gCurrentSprite.animationDurationCounter == 2)
-        SoundPlay(0x153);
+        SoundPlay(SOUND_HALZYN_FLAP);
 }
 
 /**
@@ -613,7 +614,7 @@ void HalzynWingFalling(void)
 void Halzyn(void)
 {
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 0x4)
-        SoundPlayNotAlreadyPlaying(0x150);
+        SoundPlayNotAlreadyPlaying(SOUND_HALZYN_HURT);
 
     if (gCurrentSprite.freezeTimer != 0)
     {

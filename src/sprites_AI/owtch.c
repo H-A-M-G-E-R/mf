@@ -6,6 +6,7 @@
 #include "data/sprites/x_parasite.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/particle.h"
 #include "constants/sprite.h"
@@ -687,7 +688,7 @@ void OwtchFalling(void)
 void Owtch(void)
 {
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 4)
-        SoundPlayNotAlreadyPlaying(0x1d4);
+        SoundPlayNotAlreadyPlaying(SOUND_OWTCH_HURT);
 
     if (gCurrentSprite.freezeTimer != 0)
         SpriteUtilUpdateFreezeTimer();

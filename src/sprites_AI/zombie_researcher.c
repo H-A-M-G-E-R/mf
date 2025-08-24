@@ -6,6 +6,7 @@
 #include "data/sprites/x_parasite.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/particle.h"
 #include "constants/sprite.h"
@@ -167,7 +168,7 @@ void ZombieForming(void) {
         gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
     } else if (gCurrentSprite.currentAnimationFrame == 7 && gCurrentSprite.animationDurationCounter == 3) {
         SpriteUtilMakeSpriteFaceSamusXFlip();
-        SoundPlayNotAlreadyPlaying(0x14d);
+        SoundPlayNotAlreadyPlaying(SOUND_ZOMBIE_FORMING);
     }
     if (SpriteUtilCheckNearEndCurrentSpriteAnim()) {
         gCurrentSprite.hitboxLeft = -0x18;
@@ -276,7 +277,7 @@ void ZombieLungingInit(void) {
         gCurrentSprite.animationDurationCounter = 0;
         gCurrentSprite.currentAnimationFrame = 0;
         gCurrentSprite.pose = ZOMBIE_POSE_LUNGING;
-        SoundPlayNotAlreadyPlaying(0x14f);
+        SoundPlayNotAlreadyPlaying(SOUND_ZOMBIE_LUNGE);
     }
 }
 
@@ -379,7 +380,7 @@ void ZombieFalling(void) {
 
 void Zombie(void) {
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 4) {
-        SoundPlayNotAlreadyPlaying(0x14e);
+        SoundPlayNotAlreadyPlaying(SOUND_ZOMBIE_HURT);
     }
     if (gCurrentSprite.freezeTimer != 0) {
         SpriteUtilUpdateFreezeTimer();

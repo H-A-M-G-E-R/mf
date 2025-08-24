@@ -5,6 +5,7 @@
 #include "data/sprites/zoro_cocoon.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/sprite.h"
 #include "constants/clipdata.h"
 
@@ -170,7 +171,7 @@ void ZoroCocoon(void)
         ZoroCocoonInit();
 
     if (EventCheckAfter_EscapedSaXTro1() && gCurrentSprite.currentAnimationFrame == 1 && gCurrentSprite.animationDurationCounter == 1 && gCurrentSprite.status & SS_ON_SCREEN)
-        SoundPlayNotAlreadyPlaying(0x1D2);
+        SoundPlayNotAlreadyPlaying(SOUND_ZORO_COCOON_TRANSFORMED_IDLE);
 
     if (gCurrentSprite.work0)
     {

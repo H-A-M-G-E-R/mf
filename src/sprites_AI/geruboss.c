@@ -5,6 +5,7 @@
 #include "data/sprites/x_parasite.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/samus.h"
 
@@ -118,7 +119,7 @@ void GerubossIdle(void) {
         gCurrentSprite.currentAnimationFrame = 0;
         gCurrentSprite.pOam = sGerubossOam_Stalling;
         gCurrentSprite.work1 = 90;
-        SoundPlayNotAlreadyPlaying(0x1a0);
+        SoundPlayNotAlreadyPlaying(SOUND_GERUBOSS_STALL);
         return;
     }
 
@@ -146,7 +147,7 @@ void GerubossChargingInit(void) {
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.pOam = sGerubossOam_Charging;
-    SoundPlayNotAlreadyPlaying(0x19d);
+    SoundPlayNotAlreadyPlaying(SOUND_GERUBOSS_CHARGE);
 }
 
 void GerubossCharging(void) {
@@ -157,7 +158,7 @@ void GerubossCharging(void) {
         gCurrentSprite.pOam = sGerubossOam_StartGoingDown;
         gCurrentSprite.status |= SS_GERUBOSS_FACING_DOWN;
         gCurrentSprite.work1 = 24;
-        SoundPlayNotAlreadyPlaying(0x19e);
+        SoundPlayNotAlreadyPlaying(SOUND_GERUBOSS_START_MOVING);
     }
 }
 
@@ -171,7 +172,7 @@ void GerubossGoingDown(void) {
         }
     } else {
         if ((gCurrentSprite.work2 & 0xf) == 0)
-            SoundPlay(0x19f);
+            SoundPlay(SOUND_GERUBOSS_MOVING);
         gCurrentSprite.work2++;
     }
     GerubossXMovement(PIXEL_SIZE / 2);
@@ -191,7 +192,7 @@ void GerubossChangingDirection(void) {
         gCurrentSprite.pOam = sGerubossOam_StartGoingUp;
         gCurrentSprite.status &= ~SS_GERUBOSS_FACING_DOWN;
         gCurrentSprite.work1 = 24;
-        SoundPlayNotAlreadyPlaying(0x19e);
+        SoundPlayNotAlreadyPlaying(SOUND_GERUBOSS_START_MOVING);
     }
 }
 
@@ -205,7 +206,7 @@ void GerubossGoingUp(void) {
         }
     } else {
         if ((gCurrentSprite.work2 & 0xf) == 0)
-            SoundPlay(0x19f);
+            SoundPlay(SOUND_GERUBOSS_MOVING);
         gCurrentSprite.work2++;
     }
     GerubossXMovement(PIXEL_SIZE / 2);
@@ -224,7 +225,7 @@ void GerubossGrabbingCeiling(void) {
 
 void Geruboss(void) {
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 4)
-        SoundPlayNotAlreadyPlaying(0x1a1);
+        SoundPlayNotAlreadyPlaying(SOUND_GERUBOSS_HURT);
     if (gCurrentSprite.freezeTimer > 0) {
         SpriteUtilUpdateFreezeTimer();
         return;
