@@ -184,7 +184,7 @@ void BoxWaitingToEmergeInit(void) {
     gSubSpriteData1.xPosition += 0x100;
     gCurrentSprite.pose = BOX_POSE_WAITING_TO_EMERGE;
     gCurrentSprite.work1 = 0;
-    SoundPlay_3b1c(0x26d);
+    SoundPlay_3b1c(SOUND_BOX_WAITING_TO_EMERGE);
     ScreenShakeStartHorizontal(40, 0x81);
     gCurrentSprite.work4 = 0;
 }
@@ -194,7 +194,7 @@ void BoxWaitingToEmerge(void) {
     u16 x;
 
     if (++gCurrentSprite.work4 > 60) {
-        SoundPlay_3b1c(0x26d);
+        SoundPlay_3b1c(SOUND_BOX_WAITING_TO_EMERGE);
         ScreenShakeStartHorizontal(40, 0x81);
         gCurrentSprite.work4 = 0;
     }
@@ -243,7 +243,7 @@ void BoxFirstJumpInit(void) {
     gCurrentSprite.pose = BOX_POSE_FIRST_JUMP;
     gCurrentSprite.work4 = 0;
     gCurrentSprite.status &= ~SS_FACING_RIGHT;
-    SoundPlay(0x265);
+    SoundPlay(SOUND_BOX_JUMP);
 }
 
 void BoxFirstJump(void) {
@@ -255,7 +255,7 @@ void BoxFirstJump(void) {
     if (movement == SHORT_MAX) {
         gCurrentSprite.pose = BOX_POSE_SLOW_RUN_INIT;
         ParticleSet(gSubSpriteData1.yPosition, gSubSpriteData1.xPosition + 0xb4, PE_0x35);
-        SoundPlay(0x266);
+        SoundPlay(SOUND_BOX_LAND);
         ScreenShakeStartVertical(60, 0x81);
     } else {
         offset++;
@@ -271,7 +271,7 @@ void BoxWaitingToRunInit(void) {
     gSubSpriteData1.currentAnimationFrame = 0;
     gCurrentSprite.pose = BOX_POSE_WAITING_TO_RUN;
     gCurrentSprite.work1 = 0;
-    SoundPlay(0x26a);
+    SoundPlay(SOUND_BOX_WAIT_TO_RUN);
 }
 
 void BoxWaitingToRun(void) {
@@ -298,7 +298,7 @@ void BoxSlowRunningInit(void) {
 
 void BoxSlowRun(void) {
     if (gSubSpriteData1.currentAnimationFrame == 3 && gSubSpriteData1.animationDurationCounter == 1) {
-        SoundPlay(0x262);
+        SoundPlay(SOUND_BOX_FOOTSTEP);
     }
     if (!BoxXMovement(gCurrentSprite.work1, BOX_POSE_BONKING_INIT)) {
         if (SpriteUtilCheckNearEndSubSprite1Anim() && ++gCurrentSprite.work1 == 7) {
@@ -324,7 +324,7 @@ void BoxFastRunInit(void) {
 
 void BoxFastRun(void) {
     if (gSubSpriteData1.currentAnimationFrame == 3 && gSubSpriteData1.animationDurationCounter == 1) {
-        SoundPlay(0x262);
+        SoundPlay(SOUND_BOX_FOOTSTEP);
     }
     if (!BoxXMovement(8, BOX_POSE_BONKING_INIT)) {
         if (gCurrentSprite.work1 != 0) {
@@ -357,7 +357,7 @@ void BoxSkiddingInit(void) {
     gSubSpriteData1.currentAnimationFrame = 0;
     gCurrentSprite.pose = BOX_POSE_SKIDDING;
     gCurrentSprite.work1 = 0x20;
-    SoundPlay(0x263);
+    SoundPlay(SOUND_BOX_SKID);
 }
 
 void BoxSkidding(void) {
@@ -408,7 +408,7 @@ void BoxBonkingInit(void) {
     gCurrentSprite.pose = BOX_POSE_BONKING;
     gCurrentSprite.work4 = 0;
     gCurrentSprite.status ^= SS_FACING_RIGHT;
-    SoundPlay(0x267);
+    SoundPlay(SOUND_BOX_BONK);
     ScreenShakeStartHorizontal(20, 0x81);
 }
 
@@ -447,7 +447,7 @@ void BoxLandingFromBonkInit(void) {
     gCurrentSprite.pose = BOX_POSE_LANDING_FROM_BONK;
     gCurrentSprite.work2 = 0;
     gCurrentSprite.work4 = 0;
-    SoundPlay(0x266);
+    SoundPlay(SOUND_BOX_LAND);
 }
 
 void BoxLandingFromBonk(void) {
@@ -462,7 +462,7 @@ void BoxLandingInit(void) {
     gSubSpriteData1.currentAnimationFrame = 0;
     gCurrentSprite.pose = BOX_POSE_LANDING;
     gCurrentSprite.work4 = 0;
-    SoundPlay(0x266);
+    SoundPlay(SOUND_BOX_LAND);
 }
 
 void BoxLanding(void) {
@@ -485,7 +485,7 @@ void BoxFinishedCrawlingInit(void) {
     gSubSpriteData1.animationDurationCounter = 0;
     gSubSpriteData1.currentAnimationFrame = 0;
     gCurrentSprite.pose = BOX_POSE_FINISHED_CRAWLING;
-    SoundPlay(0x264);
+    SoundPlay(SOUND_BOX_FINISH_CRAWLING);
 }
 
 void BoxFinishedCrawling(void) {
@@ -556,7 +556,7 @@ void BoxJumpingInit(void) {
             }
         }
     }
-    SoundPlay(0x265);
+    SoundPlay(SOUND_BOX_JUMP);
 }
 
 void BoxJumping(void) {
@@ -581,7 +581,7 @@ void BoxStoppingToFireBombInit(void) {
     gSubSpriteData1.animationDurationCounter = 0;
     gSubSpriteData1.currentAnimationFrame = 0;
     gCurrentSprite.pose = BOX_POSE_STOPPING_TO_FIRE_BOMB;
-    SoundPlay(0x264);
+    SoundPlay(SOUND_BOX_FINISH_CRAWLING);
 }
 
 void BoxStoppingToFireBomb(void) {
@@ -601,7 +601,7 @@ void BoxLoweringToFireBombInit(void) {
     gSubSpriteData1.animationDurationCounter = 0;
     gSubSpriteData1.currentAnimationFrame = 0;
     gCurrentSprite.pose = BOX_POSE_LOWERING_TO_FIRE_BOMB;
-    SoundPlay(0x268);
+    SoundPlay(SOUND_BOX_LOWER_TO_FIRE_BOMB);
 }
 
 void BoxLoweringToFireBomb(void) {
@@ -622,7 +622,7 @@ void BoxFiringBomb(void) {
         gSubSpriteData1.pMultiOam = sBoxMultiSpriteData_DoneFiringBomb;
         gSubSpriteData1.animationDurationCounter = 0;
         gSubSpriteData1.currentAnimationFrame = 0;
-        SoundPlay(0x269);
+        SoundPlay(SOUND_BOX_DONE_FIRING_BOMB);
     } else {
         y = gCurrentSprite.yPosition;
         x = gCurrentSprite.xPosition;
@@ -698,7 +698,7 @@ void BoxMovingToFinalJumpInit(void) {
 
 void BoxMovingToFinalJump(void) {
     if (gSubSpriteData1.currentAnimationFrame == 3 && gSubSpriteData1.animationDurationCounter == 1) {
-        SoundPlay(0x262);
+        SoundPlay(SOUND_BOX_FOOTSTEP);
     }
     if ((gFrameCounter8Bit & 7) == 0) {
         if ((gFrameCounter8Bit & 8) != 0) {
@@ -723,7 +723,7 @@ void BoxWaitingForFinalJumpInit(void) {
     gSubSpriteData1.animationDurationCounter = 0;
     gSubSpriteData1.currentAnimationFrame = 0;
     gCurrentSprite.pose = BOX_POSE_WAITING_FOR_FINAL_JUMP;
-    SoundPlay(0x276);
+    SoundPlay(SOUND_BOX_PREPARE_FOR_FINAL_JUMP);
 }
 
 void BoxWaitingForFinalJump(void) {
@@ -771,7 +771,7 @@ void BoxFinalJumpInit(void) {
     gSubSpriteData1.currentAnimationFrame = 0;
     gCurrentSprite.pose = BOX_POSE_FINAL_JUMP;
     gCurrentSprite.work1 = 30;
-    SoundPlay(0x277);
+    SoundPlay(SOUND_BOX_FINAL_JUMP);
 }
 
 void BoxFinalJump(void) {
@@ -1023,7 +1023,7 @@ void BoxPartCenter(void) {
     }
     if (SPRITE_HAS_ISFT(gCurrentSprite) == 4) {
         BoxPartSetBoxWorkVar2(brainRamSlot, 2);
-        SoundPlay(0x278);
+        SoundPlay(SOUND_BOX_DAMAGED);
     }
 }
 
@@ -1137,7 +1137,7 @@ void BoxMissileInit(void) {
     gCurrentSprite.xParasiteTimer = 5 * 60;
     gCurrentSprite.pose = 2;
     gCurrentSprite.samusCollision = SSC_HURTS_SAMUS_DIES_WHEN_HIT;
-    SoundPlay(0x26b);
+    SoundPlay(SOUND_BOX_MISSILE_LAUNCH);
 }
 
 void BoxMissileSpawning(void) {
@@ -1189,7 +1189,7 @@ void BoxMissileMoving(void) {
 void BoxMissileExploding(void) {
     gCurrentSprite.status = 0;
     ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_0x25);
-    SoundPlay(0x26c);
+    SoundPlay(SOUND_BOX_MISSILE_EXPLODE);
 }
 
 enum BoxBombMovementStage {
@@ -1224,7 +1224,7 @@ void BoxBombInit(void) {
     gCurrentSprite.pose = 2;
     gCurrentSprite.properties |= SP_IMMUNE_TO_PROJECTILES;
     gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
-    SoundPlay(0x270);
+    SoundPlay(SOUND_BOX_BOMB_LAUNCH);
 }
 
 void BoxBombMoving(void) {
@@ -1289,7 +1289,7 @@ void BoxBombMoving(void) {
         if (gPreviousVerticalCollisionCheck != 0) {
             gCurrentSprite.yPosition = blockTop - 0x20;
             if (gCurrentSprite.work2 == 1) {
-                SoundPlay(0x271);
+                SoundPlay(SOUND_BOX_BOMB_BOUNCE);
             }
             gCurrentSprite.work2 += 1;
             gCurrentSprite.work4 = 0;
@@ -1324,7 +1324,7 @@ void BoxBombLanded(void) {
                 gCurrentSprite.yPosition + 0x20, gCurrentSprite.xPosition, SS_FACING_RIGHT);
             ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_0x22);
             gCurrentSprite.status = 0;
-            SoundPlay(0x272);
+            SoundPlay(SOUND_BOX_BOMB_EXPLODE);
         }
     }
 }
@@ -1332,7 +1332,7 @@ void BoxBombLanded(void) {
 void BoxBombExploding(void) {
     ParticleSet(gCurrentSprite.yPosition + 0x20, gCurrentSprite.xPosition, PE_0x32);
     gCurrentSprite.status = 0;
-    SoundPlay(0x273);
+    SoundPlay(SOUND_BOX_BOMB_DESTROYED);
 }
 
 void BoxFireInit(void) {
@@ -1367,7 +1367,7 @@ void BoxFireMovingHigh(void) {
         case 4:
             hitboxTop = -0x60;
             if (gCurrentSprite.animationDurationCounter == 1) {
-                SoundPlay(0x274);
+                SoundPlay(SOUND_BOX_FIRE_TRANSITION_TO_HIGH);
             }
             break;
         case 6:
@@ -1375,7 +1375,7 @@ void BoxFireMovingHigh(void) {
             break;
         case 27:
             if (gCurrentSprite.animationDurationCounter == 1) {
-                SoundPlay(0x275);
+                SoundPlay(SOUND_BOX_FIRE_TRANSITION_TO_LOW);
             }
         case 28:
             hitboxTop = -0x160;
@@ -1543,7 +1543,7 @@ void BoxDebrisWaitToFall(void) {
         ScreenShakeStartHorizontal(40, 0x81);
         ScreenShakeStartVertical(40, 0x81);
         BoxSpawnFallingDebris();
-        SoundPlay_3b1c(0x230);
+        SoundPlay_3b1c(SOUND_BOX_DEBRIS_FALLING);
     }
 }
 
