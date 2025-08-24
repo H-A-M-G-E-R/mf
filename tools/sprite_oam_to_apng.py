@@ -180,12 +180,15 @@ while line != '':
             if int(split[0], 16) >= 0x083bdebc and int(split[0], 16) < 0x083ea57c: # sXParasite_3bdebc sParticleOam_Bomb
                 line = labelsFile.readline()
                 continue
-            if int(split[0], 16) > 0x083eed58: # sParticleOam_ChargingMissileCharged
+            if int(split[0], 16) > 0x083eed58 and int(split[0], 16) < 0x0858d7ac: # sParticleOam_ChargingMissileCharged sNormalBeamOam_Horizontal
+                line = labelsFile.readline()
+                continue
+            if int(split[0], 16) > 0x0858eb58: # sPowerBombOam_Fast
                 break
             if split[1] == "sYakuzaMouthGlowingPal" or split[1] == "sBlueZoroGfx" or split[1] == "sBlueZoroPal":
                 line = labelsFile.readline()
                 continue
-            if ("Oam" in split[1] or "FrameData" in split[1]) and "MultiOam" not in split[1]:
+            if ("Oam" in split[1] or "FrameData" in split[1] or "sZazabi_37" in split[1]) and "MultiOam" not in split[1]:
                 if int(split[0], 16) >= 0x083ea57c:
                     particleAnimations.append((int(split[0], 16), split[1]))
                 else:
@@ -244,8 +247,89 @@ for i in range(0x40*8):
     gfx.append([romRead() for j in range(0x20)])
 gfx += [[0]*0x20]*0x200
 
+lastBeam = ''
+lastMissile = ''
 for (pAnim, name) in particleAnimations:
     if os.access(f'tools/animations/{name}.png', os.F_OK):
         continue
+
+    if 'NormalBeam' in name:
+        currentBeam = 'NormalBeam'
+    elif 'ChargeBeam' in name:
+        currentBeam = 'ChargeBeam'
+    elif 'WideBeam' in name:
+        currentBeam = 'WideBeam'
+    elif 'PlasmaBeam' in name:
+        currentBeam = 'PlasmaBeam'
+    elif 'WaveBeam' in name:
+        currentBeam = 'WaveBeam'
+    elif 'IceBeam' in name:
+        currentBeam = 'IceBeam'
+    else:
+        currentBeam = 'NormalBeam'
+
+    if currentBeam != lastBeam:
+        lastBeam = currentBeam
+        if currentBeam == 'NormalBeam':
+            beamPGfx = 0x0858b524 # sNormalBeamGfx_Top
+            beamPPal = 0x0858b464 # sNormalBeamPal
+        elif currentBeam == 'ChargeBeam':
+            beamPGfx = 0x0858ba24 # sChargeBeamGfx_Top
+            beamPPal = 0x0858b484 # sChargeBeamPal
+        elif currentBeam == 'WideBeam':
+            beamPGfx = 0x0858bf24 # sWideBeamGfx_Top
+            beamPPal = 0x0858b4a4 # sWideBeamPal
+        elif currentBeam == 'PlasmaBeam':
+            beamPGfx = 0x0858c424 # sPlasmaBeamGfx_Top
+            beamPPal = 0x0858b4c4 # sPlasmaBeamPal
+        elif currentBeam == 'WaveBeam':
+            beamPGfx = 0x0858c924 # sWaveBeamGfx_Top
+            beamPPal = 0x0858b4e4 # sWaveBeamPal
+        elif currentBeam == 'IceBeam':
+            beamPGfx = 0x0858ce24 # sIceBeamGfx_Top
+            beamPPal = 0x0858b504 # sIceBeamPal
+
+        romSeek(beamPPal)
+        palette555 = [romRead(2) for i in range(5)]
+
+        for i in range(5):
+            paletteRgba[(i+0x20)*4] = (palette555[i] & 0x1F) << 3
+            paletteRgba[(i+0x20)*4+1] = (palette555[i] >> 5 & 0x1F) << 3
+            paletteRgba[(i+0x20)*4+2] = (palette555[i] >> 10 & 0x1F) << 3
+            paletteRgba[(i+0x20)*4+3] = 255
+
+        romSeek(beamPGfx)
+        for i in range(0x14):
+            gfx[0x80+i] = [romRead() for j in range(0x20)]
+        for i in range(0x14):
+            gfx[0xA0+i] = [romRead() for j in range(0x20)]
+
+    if 'NormalMissile' in name or 'NormalSuperMissile' in name:
+        currentMissile = 'NormalMissile'
+    elif 'SuperMissile' in name:
+        currentMissile = 'SuperMissile'
+    elif 'IceMissile' in name:
+        currentMissile = 'IceMissile'
+    elif 'DiffusionMissile' in name:
+        currentMissile = 'DiffusionMissile'
+    else:
+        currentMissile = 'NormalMissile'
+
+    if currentMissile != lastMissile:
+        lastMissile = currentMissile
+        if currentMissile == 'NormalMissile':
+            missilePGfx = 0x0858d324 # sNormalMissileGfx_Top
+        elif currentMissile == 'SuperMissile':
+            missilePGfx = 0x0858d424 # sSuperMissileGfx_Top
+        elif currentMissile == 'IceMissile':
+            missilePGfx = 0x0858d524 # sIceMissileGfx_Top
+        elif currentMissile == 'DiffusionMissile':
+            missilePGfx = 0x0858d624 # sDiffusionMissileGfx_Top
+
+        romSeek(missilePGfx)
+        for i in range(4):
+            gfx[0x9C+i] = [romRead() for j in range(0x20)]
+        for i in range(4):
+            gfx[0xBC+i] = [romRead() for j in range(0x20)]
 
     exportAnimation(gfx, paletteRgba, pAnim, f'tools/animations/{name}.png')

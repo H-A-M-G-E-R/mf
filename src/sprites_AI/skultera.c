@@ -75,7 +75,7 @@ void SkulteraTurningIntoX(void) {
 
 void SkulteraInit(void) {
     if (gCurrentSprite.pose == SPRITE_POSE_UNINITIALIZED) {
-        if (gCurrentSprite.spritesetSlotAndProperties >= SSP_X_ABSORBABLE_BY_SAMUS && gCurrentSprite.spritesetSlotAndProperties < SSP_40 + 0x10) {
+        if (SPRITE_IS_INFECTED(gCurrentSprite)) {
             if (gCurrentSprite.status & SS_HIDDEN)
                 gCurrentSprite.work0 = SKULTERA_SIZE_SMALL_HIDDEN;
             else
