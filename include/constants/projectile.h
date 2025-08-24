@@ -64,6 +64,14 @@ enum ProjectileType {
 #define CHARGED_CHARGE_BEAM_DAMAGE 10
 #define CHARGE_BEAM_SUDO_SCREW_DAMAGE 14
 
+enum ProjectileChargeBeamStage {
+    CHARGE_BEAM_STAGE_INIT,
+    CHARGE_BEAM_STAGE_SPAWNING,
+    CHARGE_BEAM_STAGE_MOVING_FIRST_FRAME,
+    CHARGE_BEAM_STAGE_MOVING_SUBSEQUENT_FRAMES,
+    CHARGE_BEAM_STAGE_SINGLE_INIT // For primary projectile only
+};
+
 // Wide beam
 
 #define WIDE_BEAM_DAMAGE 3
@@ -91,6 +99,43 @@ enum ProjectileType {
 #define CHARGED_ICE_BEAM_DAMAGE 12
 #define ICE_BEAM_SUDO_SCREW_DAMAGE 48
 
+// Normal missile
+
+#define NORMAL_MISSILE_DAMAGE 10
+
+// Super missile
+
+#define SUPER_MISSILE_DAMAGE 30
+
+// Ice missile
+
+#define ICE_MISSILE_DAMAGE 40
+
+// Diffusion missile
+
+#define DIFFUSION_MISSILE_DAMAGE 45
+
+// Bomb
+
+#define BOMB_DAMAGE 8
+
+enum ProjectileBombStage {
+    BOMB_STAGE_INIT,
+    BOMB_STAGE_FIRST_SPIN,
+    BOMB_STAGE_FAST_SPIN,
+    BOMB_STAGE_EXPLODING
+};
+
+// Power bomb
+
+#define POWER_BOMB_DAMAGE 50
+
+enum ProjectilePowerBombStage {
+    POWER_BOMB_STAGE_INIT,
+    POWER_BOMB_STAGE_FIRST_SPIN,
+    POWER_BOMB_STAGE_FAST_SPIN
+};
+
 // Charge beam thresholds
 
 #define CHARGE_BEAM_START_THRESHOLD 16
@@ -104,5 +149,17 @@ enum ProjectileType {
 #define CHARGE_MISSILE_THRESHOLD 128
 
 #define PROJ_IS_BOMB_OR_FLAKE(type) ((type) >= PROJ_TYPE_BOMB)
+
+enum ProjectileStage {
+    PROJECTILE_STAGE_INIT,
+    PROJECTILE_STAGE_SPAWNING,
+    PROJECTILE_STAGE_MOVING,
+
+    PROJECTILE_STAGE_TUMBLING = 7
+};
+
+#define WIDE_PLASMA_BEAM_STAGE_FINISHED_SPREADING 9
+
+#define CHARGED_DIFFUSION_MISSILE_STAGE_DIFFUSION_FLAKES 3
 
 #endif /* PROJECTILE_CONSTANTS_H */
