@@ -783,8 +783,7 @@ void BoxFinalJump(void) {
         }
     }
     gSubSpriteData1.yPosition -= 0x28;
-    gCurrentSprite.work1 -= 1;
-    if (gCurrentSprite.work1 == 0) {
+    if (--gCurrentSprite.work1 == 0) {
         gSpriteData[gCurrentSprite.work2].pose = 0x18;
         gCurrentSprite.status = 0;
     }

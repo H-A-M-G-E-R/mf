@@ -8,6 +8,7 @@
 #include "data/sprites/x_parasite.h"
 #include "data/sprites/zazabi.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/samus.h"
 #include "constants/sprite.h"
@@ -22,6 +23,8 @@
 
 #define ZAZABI_HEIGHT (BLOCK_SIZE * 4 + HALF_BLOCK_SIZE)
 #define ZAZABI_WIDTH (BLOCK_SIZE + HALF_BLOCK_SIZE + PIXEL_SIZE)
+
+#define ZAZABI_EYE_DRAW_ORDER 12
 
 /**
  * @brief Synchronize the sub sprites of Zazabi
@@ -112,7 +115,7 @@ void ZazabiProjectilesCollision(void)
         if (gProjectileData[i].status & PROJ_STATUS_CAN_AFFECT_ENVIRONMENT)
             continue;
 
-        if (gProjectileData[i].movementStage <= 1)
+        if (gProjectileData[i].movementStage <= PROJECTILE_STAGE_SPAWNING)
             continue;
 
         if (gProjectileData[i].xPosition <= gCurrentSprite.xPosition - hitboxX)
@@ -131,13 +134,13 @@ void ZazabiProjectilesCollision(void)
         projX = gProjectileData[i].xPosition;
         if (gProjectileData[i].type == PROJ_TYPE_NORMAL_MISSILE)
         {
-            if (gProjectileData[i].movementStage != 0x7)
+            if (gProjectileData[i].movementStage != PROJECTILE_STAGE_TUMBLING)
             {
                 ProjectileDealDamageToZazabi(ZAZABI_DAMAGE_RECEIVED);
 
                 ParticleSet(projY, projX, PE_MISSILE_EXPLOSION);
                 SPRITE_CLEAR_AND_SET_ISFT(gCurrentSprite, 41);
-                SoundPlayNotAlreadyPlaying(0x285);
+                SoundPlayNotAlreadyPlaying(SOUND_ZAZABI_HURT);
 
                 gProjectileData[i].status = 0;
                 continue;
@@ -153,7 +156,7 @@ void ZazabiProjectilesCollision(void)
 
                     ParticleSet(projY, projX, PE_CHARGE_BEAM_HIT);
                     SPRITE_CLEAR_AND_SET_ISFT(gCurrentSprite, 41);
-                    SoundPlayNotAlreadyPlaying(0x285);
+                    SoundPlayNotAlreadyPlaying(SOUND_ZAZABI_HURT);
 
                     gProjectileData[i].status = 0;
                     continue;
@@ -297,7 +300,7 @@ void ZazabiInit(void)
     gCurrentSprite.hitboxLeft = -HALF_BLOCK_SIZE;
     gCurrentSprite.hitboxRight = HALF_BLOCK_SIZE;
 
-    gCurrentSprite.drawOrder = 12;
+    gCurrentSprite.drawOrder = ZAZABI_EYE_DRAW_ORDER;
     gCurrentSprite.work3 = 0;
     gCurrentSprite.roomSlot = ZAZABI_PART_EYE;
 
@@ -521,7 +524,7 @@ void ZazabiCrawling(void)
     {
         case 1:
             if (gSubSpriteData1.animationDurationCounter == 1)
-                SoundPlay(0x27B);
+                SoundPlay(SOUND_ZAZABI_CRAWL);
 
             movement = 2;
             break;
@@ -617,7 +620,7 @@ void ZazabiJumpWarning(void)
  */
 void ZazabiJumpingInit(void)
 {
-    SoundPlay(0x27c);
+    SoundPlay(SOUND_ZAZABI_JUMP);
 
     gSubSpriteData1.animationDurationCounter = 0;
     gSubSpriteData1.currentAnimationFrame = 0;
@@ -739,7 +742,7 @@ void ZazabiJumping(void)
 void ZazabiFallingInit(void)
 {
     if (gCurrentSprite.work3 == 0)
-        SoundPlay(0x27e);
+        SoundPlay(SOUND_ZAZABI_OPEN_MOUTH);
 
     gSubSpriteData1.animationDurationCounter = 0;
     gSubSpriteData1.currentAnimationFrame = 0;
@@ -928,7 +931,7 @@ void ZazabiFalling(void)
             ParticleSet(gSubSpriteData1.yPosition + BLOCK_SIZE * 5 + QUARTER_BLOCK_SIZE + PIXEL_SIZE,
                 gSubSpriteData1.xPosition + (BLOCK_SIZE + QUARTER_BLOCK_SIZE - PIXEL_SIZE), PE_SMOKE);
 
-            SoundPlay(0x27D);
+            SoundPlay(SOUND_ZAZABI_LAND);
         }
 
         return;
@@ -1001,7 +1004,7 @@ void ZazabiFalling(void)
         ParticleSet(gSubSpriteData1.yPosition + BLOCK_SIZE * 5 + QUARTER_BLOCK_SIZE,
             gSubSpriteData1.xPosition + (HALF_BLOCK_SIZE - PIXEL_SIZE), PE_SMOKE);
 
-        SoundPlay(0x27D);
+        SoundPlay(SOUND_ZAZABI_LAND);
     }
 }
 
@@ -1012,7 +1015,7 @@ void ZazabiFalling(void)
 void ZazabiLandingMouthOpenInit(void)
 {
     if (gSamusData.pose == SPOSE_GRABBED_BY_ZAZABI)
-        SoundPlay(0x280);
+        SoundPlay(SOUND_ZAZABI_LAND_EATING_SAMUS);
 
     if (gSubSpriteData1.health == 40)
         gSubSpriteData1.pMultiOam = sZazabiMultiOam_LandingMouthOpen1;
@@ -1036,7 +1039,7 @@ void ZazabiLandingMouthOpenInit(void)
 void ZazabiLandingMouthOpen(void)
 {
     if (gSubSpriteData1.currentAnimationFrame == 1 && gSubSpriteData1.animationDurationCounter == 1 && gSubSpriteData1.health != 40)
-        SoundPlay(0x27F);
+        SoundPlay(SOUND_ZAZABI_LAND_MOUTH_OPEN);
 
     if (SpriteUtilCheckNearEndSubSprite1Anim())
     {
@@ -1122,7 +1125,7 @@ void ZazabiEatingSamus1(void)
         if (gCurrentSprite.work1 == 0)
         {
             gCurrentSprite.pose = ZAZABI_POSE_EATING_SAMUS_2_INIT;
-            SoundPlay(0x281);
+            SoundPlay(SOUND_ZAZABI_SWALLOW_SAMUS);
         }
     }
 }
@@ -1159,7 +1162,7 @@ void ZazabiEatingSamus2(void)
         if (SpriteUtilCheckNearEndSubSprite1Anim())
         {
             gCurrentSprite.pose = ZAZABI_POSE_EATING_SAMUS_3_INIT;
-            SoundPlay(0x281);
+            SoundPlay(SOUND_ZAZABI_SWALLOW_SAMUS);
         }
     }
 }
@@ -1207,7 +1210,7 @@ void ZazabiEatingSamus3(void)
         if (gCurrentSprite.work1 == 0)
         {
             gCurrentSprite.pose = ZAZABI_POSE_EATING_SAMUS_4_INIT;
-            SoundPlay(0x281);
+            SoundPlay(SOUND_ZAZABI_SWALLOW_SAMUS);
         }
     }
 }
@@ -1248,7 +1251,7 @@ void ZazabiEatingSamus4(void)
         if (SpriteUtilCheckNearEndSubSprite1Anim())
         {
             gCurrentSprite.pose = ZAZABI_POSE_EATING_SAMUS_5_INIT;
-            SoundPlay(0x281);
+            SoundPlay(SOUND_ZAZABI_SWALLOW_SAMUS);
         }
     }
 }
@@ -1299,7 +1302,7 @@ void ZazabiEatingSamus5(void)
  */
 void ZazabiSpittingSamusInit(void)
 {
-    SoundPlayNotAlreadyPlaying(0x283);
+    SoundPlayNotAlreadyPlaying(SOUND_ZAZABI_SPIT_SAMUS);
 
     if (gSubSpriteData1.health == 60)
         gSubSpriteData1.pMultiOam = sZazabiMultiOam_SpittingSamus2;
@@ -1379,7 +1382,7 @@ void ZazabiDyingInit(void)
     gCurrentSprite.unk_8 = 1;
 
     ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_0x2F);
-    SoundPlay_3b1c(0x286);
+    SoundPlay_3b1c(SOUND_ZAZABI_DYING);
 }
 
 /**
@@ -1481,9 +1484,9 @@ void ZazabiPartInit(void)
     gCurrentSprite.health = 1;
 
     if (gCurrentSprite.roomSlot < ZAZABI_PART_EYE)
-        gCurrentSprite.drawOrder = 11;
+        gCurrentSprite.drawOrder = ZAZABI_EYE_DRAW_ORDER - 1;
     else
-        gCurrentSprite.drawOrder = 13;
+        gCurrentSprite.drawOrder = ZAZABI_EYE_DRAW_ORDER + 1;
 
     switch (gCurrentSprite.roomSlot)
     {
@@ -1637,7 +1640,7 @@ void ZazabiPartDefault(void)
 
             if (gSubSpriteData1.health == 40)
             {
-                if (gCurrentSprite.pOam == sZazabi_3729f8)
+                if (gCurrentSprite.pOam == sZazabiPartOam_MouthFrontOpening_2)
                 {
                     gCurrentSprite.hitboxTop = -(BLOCK_SIZE - QUARTER_BLOCK_SIZE);
                     gCurrentSprite.hitboxBottom = PIXEL_SIZE;
@@ -1647,7 +1650,7 @@ void ZazabiPartDefault(void)
             }
             else
             {
-                if (gCurrentSprite.pOam == sZazabiPartOam_MouthOpened)
+                if (gCurrentSprite.pOam == sZazabiPartOam_MouthFrontOpened)
                 {
                     gCurrentSprite.samusCollision = SSC_ZAZABI_CAN_GRAB;
 
@@ -1822,7 +1825,7 @@ void ZazabiPartMouth(void)
     {
         ZazabiSyncSubSprites();
 
-        if (gCurrentSprite.pOam == sZazabi_372c80)
+        if (gCurrentSprite.pOam == sZazabiPartOam_MouthBackHidden)
             gCurrentSprite.status |= SS_NOT_DRAWN;
         else
             gCurrentSprite.status &= ~SS_NOT_DRAWN;
@@ -1870,7 +1873,7 @@ void ZazabiPartPupil(void)
                 gCurrentSprite.currentAnimationFrame = 0;
 
                 gCurrentSprite.status &= ~SS_NOT_DRAWN;
-                SoundPlayNotAlreadyPlaying(0x287);
+                SoundPlayNotAlreadyPlaying(SOUND_ZAZABI_BLINK_EYE);
             }
             break;
 
@@ -2048,7 +2051,7 @@ void ZazabiPart(void)
             {
                 ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_0x2F);
                 gCurrentSprite.status = 0;
-                SoundPlay_3b1c(0x284);
+                SoundPlay_3b1c(SOUND_ZAZABI_SEGMENT_DESTROYED);
             }
             else
             {
@@ -2062,7 +2065,7 @@ void ZazabiPart(void)
             {
                 ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_0x2F);
                 gCurrentSprite.status = 0;
-                SoundPlay_3b1c(0x284);
+                SoundPlay_3b1c(SOUND_ZAZABI_SEGMENT_DESTROYED);
             }
             else
             {
@@ -2076,7 +2079,7 @@ void ZazabiPart(void)
             {
                 ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_0x2F);
                 gCurrentSprite.status = 0;
-                SoundPlay_3b1c(0x284);
+                SoundPlay_3b1c(SOUND_ZAZABI_SEGMENT_DESTROYED);
             }
             else
             {

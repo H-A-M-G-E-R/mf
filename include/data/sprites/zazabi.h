@@ -12,27 +12,27 @@ enum ZazabiOam {
     ZazabiPartOam_LowerShellSwallowingSamus,
     Zazabi_372820,
     ZazabiPartOam_MiddleShellIdle,
-    ZazabiPartOam_MiddleShellEatingSamus,
+    ZazabiPartOam_MiddleShellEatingSamus3,
     ZazabiPartOam_MiddleShellSwallowingSamus,
-    Zazabi_372890,
+    ZazabiPartOam_MiddleShellEatingSamus2,
     ZazabiPartOam_UpperShellIdle,
-    ZazabiPartOam_UpperShellEatingSamus,
+    ZazabiPartOam_UpperShellEatingSamus5,
     ZazabiPartOam_UpperShellSwallowingSamus,
-    Zazabi_372900,
+    ZazabiPartOam_UpperShellEatingSamus4,
     ZazabiPartOam_EyeShellIdle,
     ZazabiPartOam_EyeShellSwallowingSamusLow,
     Zazabi_372950,
     Zazabi_372970,
-    ZazabiPartOam_MouthIdle,
-    ZazabiPartOam_MouthLanding,
-    ZazabiPartOam_MouthCrawlingLow,
-    ZazabiPartOam_MouthCrawlingHigh,
-    ZazabiPartOam_MouthCrawlingHalted,
-    ZazabiPartOam_MouthOpening,
-    Zazabi_3729e8,
-    Zazabi_3729f8,
-    Zazabi_372a08,
-    ZazabiPartOam_MouthOpened,
+    ZazabiPartOam_MouthFrontIdle,
+    ZazabiPartOam_MouthFrontLanding,
+    ZazabiPartOam_MouthFrontCrawlingLow,
+    ZazabiPartOam_MouthFrontCrawlingHigh,
+    ZazabiPartOam_MouthFrontCrawlingHalted,
+    ZazabiPartOam_MouthFrontOpening_1,
+    ZazabiPartOam_MouthBackOpening_1,
+    ZazabiPartOam_MouthFrontOpening_2,
+    ZazabiPartOam_MouthBackOpening_2,
+    ZazabiPartOam_MouthFrontOpened,
     ZazabiPartOam_EyeIdle,
     ZazabiPartOam_EyeEatingSamus,
     ZazabiPartOam_PupilBlinking,
@@ -56,10 +56,10 @@ enum ZazabiOam {
     ZazabiPartOam_HairJumpingLeft_1,
     ZazabiPartOam_HairJumpingLeft_2,
     Zazabi_372c40,
-    ZazabiPartOam_HairLandingMouthOpened_1,
-    ZazabiPartOam_HairLandingMouthOpened_2,
+    ZazabiPartOam_HairLandingRight_1,
+    ZazabiPartOam_HairLandingRight_2,
     ZazabiPartOam_PupilClosed,
-    Zazabi_372c80,
+    ZazabiPartOam_MouthBackHidden,
     ZazabiPartOam_EyeJumpingRight,
     ZazabiPartOam_EyeLandingRight,
     ZazabiPartOam_EyeJumpingLeft,
@@ -155,27 +155,27 @@ extern const struct FrameData sZazabiPartOam_LowerShellEatingSamus[5];
 extern const struct FrameData sZazabiPartOam_LowerShellSwallowingSamus[4];
 extern const struct FrameData sZazabi_372820[3];
 extern const struct FrameData sZazabiPartOam_MiddleShellIdle[2];
-extern const struct FrameData sZazabiPartOam_MiddleShellEatingSamus[5];
+extern const struct FrameData sZazabiPartOam_MiddleShellEatingSamus3[5];
 extern const struct FrameData sZazabiPartOam_MiddleShellSwallowingSamus[4];
-extern const struct FrameData sZazabi_372890[3];
+extern const struct FrameData sZazabiPartOam_MiddleShellEatingSamus2[3];
 extern const struct FrameData sZazabiPartOam_UpperShellIdle[2];
-extern const struct FrameData sZazabiPartOam_UpperShellEatingSamus[5];
+extern const struct FrameData sZazabiPartOam_UpperShellEatingSamus5[5];
 extern const struct FrameData sZazabiPartOam_UpperShellSwallowingSamus[4];
-extern const struct FrameData sZazabi_372900[3];
+extern const struct FrameData sZazabiPartOam_UpperShellEatingSamus4[3];
 extern const struct FrameData sZazabiPartOam_EyeShellIdle[2];
 extern const struct FrameData sZazabiPartOam_EyeShellSwallowingSamusLow[5];
 extern const struct FrameData sZazabi_372950[4];
 extern const struct FrameData sZazabi_372970[3];
-extern const struct FrameData sZazabiPartOam_MouthIdle[2];
-extern const struct FrameData sZazabiPartOam_MouthLanding[2];
-extern const struct FrameData sZazabiPartOam_MouthCrawlingLow[2];
-extern const struct FrameData sZazabiPartOam_MouthCrawlingHigh[2];
-extern const struct FrameData sZazabiPartOam_MouthCrawlingHalted[2];
-extern const struct FrameData sZazabiPartOam_MouthOpening[2];
-extern const struct FrameData sZazabi_3729e8[2];
-extern const struct FrameData sZazabi_3729f8[2];
-extern const struct FrameData sZazabi_372a08[2];
-extern const struct FrameData sZazabiPartOam_MouthOpened[2];
+extern const struct FrameData sZazabiPartOam_MouthFrontIdle[2];
+extern const struct FrameData sZazabiPartOam_MouthFrontLanding[2];
+extern const struct FrameData sZazabiPartOam_MouthFrontCrawlingLow[2];
+extern const struct FrameData sZazabiPartOam_MouthFrontCrawlingHigh[2];
+extern const struct FrameData sZazabiPartOam_MouthFrontCrawlingHalted[2];
+extern const struct FrameData sZazabiPartOam_MouthFrontOpening_1[2];
+extern const struct FrameData sZazabiPartOam_MouthBackOpening_1[2];
+extern const struct FrameData sZazabiPartOam_MouthFrontOpening_2[2];
+extern const struct FrameData sZazabiPartOam_MouthBackOpening_2[2];
+extern const struct FrameData sZazabiPartOam_MouthFrontOpened[2];
 extern const struct FrameData sZazabiPartOam_EyeIdle[2];
 extern const struct FrameData sZazabiPartOam_EyeEatingSamus[5];
 extern const struct FrameData sZazabiPartOam_PupilBlinking[8];
@@ -199,10 +199,10 @@ extern const struct FrameData sZazabiPartOam_HairLandingLeft_2[2];
 extern const struct FrameData sZazabiPartOam_HairJumpingLeft_1[2];
 extern const struct FrameData sZazabiPartOam_HairJumpingLeft_2[2];
 extern const struct FrameData sZazabi_372c40[2];
-extern const struct FrameData sZazabiPartOam_HairLandingMouthOpened_1[2];
-extern const struct FrameData sZazabiPartOam_HairLandingMouthOpened_2[2];
+extern const struct FrameData sZazabiPartOam_HairLandingRight_1[2];
+extern const struct FrameData sZazabiPartOam_HairLandingRight_2[2];
 extern const struct FrameData sZazabiPartOam_PupilClosed[2];
-extern const struct FrameData sZazabi_372c80[2];
+extern const struct FrameData sZazabiPartOam_MouthBackHidden[2];
 extern const struct FrameData sZazabiPartOam_EyeJumpingRight[2];
 extern const struct FrameData sZazabiPartOam_EyeLandingRight[2];
 extern const struct FrameData sZazabiPartOam_EyeJumpingLeft[2];
