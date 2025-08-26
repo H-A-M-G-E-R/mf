@@ -25,9 +25,10 @@
 #define ZAZABI_WIDTH (BLOCK_SIZE + HALF_BLOCK_SIZE + PIXEL_SIZE)
 
 #define ZAZABI_EYE_DRAW_ORDER 12
+#define ZAZABI_DRAW_ORDER_EATING_SAMUS 4
 
 /**
- * @brief Synchronize the sub sprites of Zazabi
+ * @brief 45330 | 9c | Synchronize the sub sprites of Zazabi
  * 
  */
 void ZazabiSyncSubSprites(void)
@@ -995,7 +996,7 @@ void ZazabiFalling(void)
 
     if (gPreviousVerticalCollisionCheck != COLLISION_AIR)
     {
-        gSubSpriteData1.yPosition = blockTop - BLOCK_SIZE * 5 ;
+        gSubSpriteData1.yPosition = blockTop - BLOCK_SIZE * 5;
         gCurrentSprite.pose = ZAZABI_POSE_LANDING_INIT;
         gCurrentSprite.work3--;
 
@@ -1479,7 +1480,7 @@ void ZazabiPartInit(void)
     gCurrentSprite.status |= SS_IGNORE_PROJECTILES;
     gCurrentSprite.status |= SS_ENABLE_MOSAIC;
 
-    gCurrentSprite.pose = 0x2;
+    gCurrentSprite.pose = SPRITE_POSE_IDLE;
     gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
     gCurrentSprite.health = 1;
 
@@ -1690,9 +1691,9 @@ void ZazabiPartDefault(void)
             if (gSamusData.pose == SPOSE_GRABBED_BY_ZAZABI)
             {
                 if (gCurrentSprite.roomSlot < ZAZABI_PART_EYE)
-                    gCurrentSprite.drawOrder = 3;
+                    gCurrentSprite.drawOrder = ZAZABI_DRAW_ORDER_EATING_SAMUS - 1;
                 else
-                    gCurrentSprite.drawOrder = 5;
+                    gCurrentSprite.drawOrder = ZAZABI_DRAW_ORDER_EATING_SAMUS + 1;
             }
             break;
 
@@ -1795,9 +1796,9 @@ void ZazabiPartDefault(void)
             }
 
             if (gCurrentSprite.roomSlot < ZAZABI_PART_EYE)
-                gCurrentSprite.drawOrder = 11;
+                gCurrentSprite.drawOrder = ZAZABI_EYE_DRAW_ORDER - 1;
             else
-                gCurrentSprite.drawOrder = 13;
+                gCurrentSprite.drawOrder = ZAZABI_EYE_DRAW_ORDER + 1;
     }
 }
 

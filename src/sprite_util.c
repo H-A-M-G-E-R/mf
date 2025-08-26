@@ -7,6 +7,7 @@
 #include "data/samus_data.h"
 #include "data/projectile_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/projectile.h"
 #include "constants/samus.h"
@@ -167,7 +168,7 @@ void SpriteUtilTakeConstantDamageFromZazabi(void)
 
     // Play a sound every 16 frames
     if (MOD_AND(gFrameCounter8Bit, 16) == 0)
-        SoundPlay(0x282);
+        SoundPlay(SOUND_ZAZABI_EATING_SAMUS);
 
     // Set invincible
     gSamusData.invincibilityTimer = SPRITE_CONSTANT_DAMAGE_INTERVAL;
