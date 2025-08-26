@@ -58,7 +58,7 @@ enum ZazabiOam {
     ZazabiPartOam_HairJumpingLeft_3,
     ZazabiPartOam_HairLandingRight_1,
     ZazabiPartOam_HairLandingRight_2,
-    ZazabiPartOam_PupilClosed,
+    ZazabiPartOam_PupilOpen,
     ZazabiPartOam_MouthBackHidden,
     ZazabiPartOam_EyeJumpingRight,
     ZazabiPartOam_EyeLandingRight,
@@ -201,7 +201,7 @@ extern const struct FrameData sZazabiPartOam_HairJumpingLeft_2[2];
 extern const struct FrameData sZazabiPartOam_HairJumpingLeft_3[2];
 extern const struct FrameData sZazabiPartOam_HairLandingRight_1[2];
 extern const struct FrameData sZazabiPartOam_HairLandingRight_2[2];
-extern const struct FrameData sZazabiPartOam_PupilClosed[2];
+extern const struct FrameData sZazabiPartOam_PupilOpen[2];
 extern const struct FrameData sZazabiPartOam_MouthBackHidden[2];
 extern const struct FrameData sZazabiPartOam_EyeJumpingRight[2];
 extern const struct FrameData sZazabiPartOam_EyeLandingRight[2];

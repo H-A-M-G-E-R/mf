@@ -7,7 +7,7 @@ static const s16 sZazabiMultiOam_Idle4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0),
@@ -19,7 +19,7 @@ static const s16 sZazabiMultiOam_Idle4_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
@@ -31,7 +31,7 @@ static const s16 sZazabiMultiOam_Crawling4_Frame2[ZAZABI_PART_END][MULTI_SPRITE_
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 0, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0),
@@ -43,7 +43,7 @@ static const s16 sZazabiMultiOam_Idle4_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -23, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 1, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -3, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -3, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 27, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 41, 0),
@@ -55,7 +55,7 @@ static const s16 sZazabiMultiOam_Crawling4_Frame4[ZAZABI_PART_END][MULTI_SPRITE_
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -24, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 0, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -4, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -4, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 27, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 41, 0),
@@ -67,7 +67,7 @@ static const s16 sZazabiMultiOam_JumpWarning4_Frame0[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -15, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 9, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 5, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 5, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0),
@@ -79,7 +79,7 @@ static const s16 sZazabiMultiOam_JumpWarning4_Frame1[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -6, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 18, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 14, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 14, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 14, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 54, 0),
@@ -91,7 +91,7 @@ static const s16 sZazabiMultiOam_JumpingSmall4_Frame0[ZAZABI_PART_END][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, -28, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, -4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -8, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -8, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -8, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 24, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -103,7 +103,7 @@ static const s16 sZazabiMultiOam_JumpingSmall4_Frame1[ZAZABI_PART_END][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, -32, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, -8, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -12, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 22, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -115,7 +115,7 @@ static const s16 sZazabiMultiOam_JumpingSmall4_Frame2[ZAZABI_PART_END][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, -29, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, -5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -9, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -9, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -9, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 23, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -127,7 +127,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame0[ZAZABI_PART_END]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -23, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 1, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -3, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -3, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 26, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
@@ -139,7 +139,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame1[ZAZABI_PART_END]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -21, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 3, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 24, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
@@ -151,7 +151,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame2[ZAZABI_PART_END]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 25, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
@@ -163,7 +163,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame3[ZAZABI_PART_END]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -8, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 12, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -175,7 +175,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened4_Frame4[ZAZABI_PART_END]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -2, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 22, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 18, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 18, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 18, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
@@ -187,7 +187,7 @@ static const s16 sZazabiMultiOam_FallingSlow4_Frame5[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 1, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 25, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 21, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 21, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 21, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 55, 0),
@@ -199,7 +199,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame0[ZAZABI_PART_END][MULTI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 17, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 56, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 63, 0),
@@ -211,7 +211,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame1[ZAZABI_PART_END][MULTI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 6, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 30, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 26, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 26, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 50, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 57, 0),
@@ -223,7 +223,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame2[ZAZABI_PART_END][MULTI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 31, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 27, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 27, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0),
@@ -235,7 +235,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame3[ZAZABI_PART_END][MULTI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, -3, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 21, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 17, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 17, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 43, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 52, 0),
@@ -247,7 +247,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen4_Frame4[ZAZABI_PART_END][MULTI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, -2, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 22, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 18, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 18, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 18, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 53, 0),
@@ -259,7 +259,7 @@ static const s16 sZazabiMultiOam_FallingSlow4_Frame2[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 25, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
@@ -271,7 +271,7 @@ static const s16 sZazabiMultiOam_EatingSamus1_Frame0[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0),
@@ -283,7 +283,7 @@ static const s16 sZazabiMultiOam_EatingSamus1_Frame1[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
@@ -295,7 +295,7 @@ static const s16 sZazabiMultiOam_EatingSamus1_Frame2[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0),
@@ -307,7 +307,7 @@ static const s16 sZazabiMultiOam_EatingSamus2_Frame0[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus2, 45, 0),
@@ -319,7 +319,7 @@ static const s16 sZazabiMultiOam_EatingSamus2_Frame1[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus2, 47, 0),
@@ -331,7 +331,7 @@ static const s16 sZazabiMultiOam_EatingSamus2_Frame2[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus2, 49, 0),
@@ -343,7 +343,7 @@ static const s16 sZazabiMultiOam_EatingSamus3_4_Frame0[ZAZABI_PART_END][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus3, 45, 0),
@@ -355,7 +355,7 @@ static const s16 sZazabiMultiOam_EatingSamus3_4_Frame1[ZAZABI_PART_END][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus3, 47, 0),
@@ -367,7 +367,7 @@ static const s16 sZazabiMultiOam_EatingSamus3_4_Frame2[ZAZABI_PART_END][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus3, 49, 0),
@@ -379,7 +379,7 @@ static const s16 sZazabiMultiOam_EatingSamus4_4_Frame0[ZAZABI_PART_END][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus4, 31, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 45, 0),
@@ -391,7 +391,7 @@ static const s16 sZazabiMultiOam_EatingSamus4_4_Frame1[ZAZABI_PART_END][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus4, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 47, 0),
@@ -403,7 +403,7 @@ static const s16 sZazabiMultiOam_EatingSamus4_4_Frame2[ZAZABI_PART_END][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus4, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 49, 0),
@@ -415,7 +415,7 @@ static const s16 sZazabiMultiOam_EatingSamus5_4_Frame0[ZAZABI_PART_END][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus5, 31, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0),
@@ -427,7 +427,7 @@ static const s16 sZazabiMultiOam_EatingSamus5_4_Frame1[ZAZABI_PART_END][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus5, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
@@ -439,7 +439,7 @@ static const s16 sZazabiMultiOam_EatingSamus5_4_Frame2[ZAZABI_PART_END][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus5, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0),
@@ -451,7 +451,7 @@ static const s16 sZazabi_36b840_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMEN
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 31, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus2, 45, 0),
@@ -463,7 +463,7 @@ static const s16 sZazabi_36b840_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMEN
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus2, 47, 0),
@@ -475,7 +475,7 @@ static const s16 sZazabi_36b840_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMEN
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus2, 49, 0),
@@ -487,7 +487,7 @@ static const s16 sZazabi_36b868_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMEN
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 45, 0),
@@ -499,7 +499,7 @@ static const s16 sZazabi_36b868_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMEN
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 47, 0),
@@ -511,7 +511,7 @@ static const s16 sZazabi_36b868_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMEN
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 49, 0),
@@ -523,7 +523,7 @@ static const s16 sZazabi_36b890_Frame0[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMEN
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 4, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 0, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 31, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0),
@@ -535,7 +535,7 @@ static const s16 sZazabi_36b890_Frame1[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMEN
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 5, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
@@ -547,7 +547,7 @@ static const s16 sZazabi_36b890_Frame2[ZAZABI_PART_END][MULTI_SPRITE_DATA_ELEMEN
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0),
@@ -559,7 +559,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight4_Frame0[ZAZABI_PART_END][MULTI_
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_1, -28, -8),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, -4, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, -4, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 23, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -571,7 +571,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight4_Frame1[ZAZABI_PART_END][MULTI_
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_2, -33, -10),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, -9, -9),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -16, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, -9, -9),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 20, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -583,7 +583,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight4_Frame2[ZAZABI_PART_END][MULTI_
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_3, -29, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, -5, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, -5, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 22, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -595,7 +595,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame2[ZAZABI_PART_END]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -23, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 1, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -7, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -7, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 1, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 25, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
@@ -607,7 +607,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame3[ZAZABI_PART_END]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -21, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 3, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -5, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -5, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 3, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 22, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
@@ -619,7 +619,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame4[ZAZABI_PART_END]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -19, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 5, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -3, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 5, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 24, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
@@ -631,7 +631,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft4_Frame5[ZAZABI_PART_END]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, -8, -3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 16, -2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 8, -2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 16, -2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -643,7 +643,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft4_Frame0[ZAZABI_PART_END][MULTI_S
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_1, -28, 8),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, -4, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, -4, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 23, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -655,7 +655,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft4_Frame1[ZAZABI_PART_END][MULTI_S
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_2, -33, 10),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, -9, 9),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -16, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, -9, 9),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 20, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -667,7 +667,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft4_Frame2[ZAZABI_PART_END][MULTI_S
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_3, -29, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, -5, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, -5, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 22, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -679,7 +679,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame2[ZAZABI_PART_END
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -23, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 1, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -7, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -7, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 1, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 25, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
@@ -691,7 +691,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame3[ZAZABI_PART_END
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -21, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 3, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -5, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 3, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 22, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
@@ -703,7 +703,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame4[ZAZABI_PART_END
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -19, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 5, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -3, 8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 5, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 24, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
@@ -715,7 +715,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight4_Frame5[ZAZABI_PART_END
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_2, -8, 3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 16, 2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 8, 2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 16, 2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -727,7 +727,7 @@ static const s16 sZazabiMultiOam_FallingLeft4_Frame4[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -19, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 5, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -3, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 5, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 24, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
@@ -739,7 +739,7 @@ static const s16 sZazabiMultiOam_FallingRight4_Frame4[ZAZABI_PART_END][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -19, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 5, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -3, 8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 5, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 24, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 31, 0),
@@ -751,7 +751,7 @@ static const s16 sZazabiMultiOam_FallingSlow4_Frame0[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -23, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 1, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -3, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -3, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -3, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 26, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
@@ -763,7 +763,7 @@ static const s16 sZazabiMultiOam_FallingSlow4_Frame1[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -21, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 3, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 24, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
@@ -775,7 +775,7 @@ static const s16 sZazabiMultiOam_FallingSlow4_Frame3[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -8, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 12, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -787,7 +787,7 @@ static const s16 sZazabiMultiOam_FallingSlow4_Frame4[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -2, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 22, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 18, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 18, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 18, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 47, 0),
@@ -799,7 +799,7 @@ static const s16 sZazabiMultiOam_FallingLeft4_Frame2[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -23, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 1, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -7, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -7, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 1, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 25, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
@@ -811,7 +811,7 @@ static const s16 sZazabiMultiOam_FallingLeft4_Frame3[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -21, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 3, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -5, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -5, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 3, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 22, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
@@ -823,7 +823,7 @@ static const s16 sZazabiMultiOam_FallingLeft4_Frame5[ZAZABI_PART_END][MULTI_SPRI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, -8, -3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 16, -2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 8, -2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 16, -2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -835,7 +835,7 @@ static const s16 sZazabiMultiOam_FallingRight4_Frame2[ZAZABI_PART_END][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -23, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 1, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -7, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -7, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 1, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 25, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 37, 0),
@@ -847,7 +847,7 @@ static const s16 sZazabiMultiOam_FallingRight4_Frame3[ZAZABI_PART_END][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -21, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 3, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -5, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -5, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 3, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 22, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 33, 0),
@@ -859,7 +859,7 @@ static const s16 sZazabiMultiOam_FallingRight4_Frame5[ZAZABI_PART_END][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_2, -8, 3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 16, 2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 8, 2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 16, 2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 38, 0),
@@ -1437,7 +1437,7 @@ static const s16 sZazabiMultiOam_Idle3_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 13, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 60, 0)
@@ -1448,7 +1448,7 @@ static const s16 sZazabiMultiOam_Idle3_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -8, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 12, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0)
@@ -1459,7 +1459,7 @@ static const s16 sZazabiMultiOam_Idle3_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 10, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 10, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 55, 0)
@@ -1470,7 +1470,7 @@ static const s16 sZazabiMultiOam_Crawling3_Frame3[ZAZABI_PART_LOWER_SHELL][MULTI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -12, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 12, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 8, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 8, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 38, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 52, 0)
@@ -1481,7 +1481,7 @@ static const s16 sZazabiMultiOam_Crawling3_Frame4[ZAZABI_PART_LOWER_SHELL][MULTI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, -13, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 11, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 7, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 7, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 7, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 38, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 52, 0)
@@ -1492,7 +1492,7 @@ static const s16 sZazabiMultiOam_JumpWarning3_Frame0[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -4, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 20, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 16, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 16, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 59, 0)
@@ -1503,7 +1503,7 @@ static const s16 sZazabiMultiOam_JumpWarning3_Frame1[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 5, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 29, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 25, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 25, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 25, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 65, 0)
@@ -1514,7 +1514,7 @@ static const s16 sZazabiMultiOam_JumpingSmall3_Frame0[ZAZABI_PART_LOWER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, -17, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 7, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 3, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 3, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 3, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 35, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1525,7 +1525,7 @@ static const s16 sZazabiMultiOam_JumpingSmall3_Frame1[ZAZABI_PART_LOWER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, -21, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 3, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, -1, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, -1, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, -1, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 33, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1536,7 +1536,7 @@ static const s16 sZazabiMultiOam_JumpingSmall3_Frame2[ZAZABI_PART_LOWER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, -18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 6, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 2, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 2, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 2, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 34, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1547,7 +1547,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame0[ZAZABI_PART_LOWE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -12, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 12, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 8, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 8, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 37, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
@@ -1558,7 +1558,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame1[ZAZABI_PART_LOWE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 10, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 10, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 35, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 44, 0)
@@ -1569,7 +1569,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame2[ZAZABI_PART_LOWE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 13, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 42, 0)
@@ -1580,7 +1580,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame3[ZAZABI_PART_LOWE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 3, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 27, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 23, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 23, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 23, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1591,7 +1591,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened3_Frame4[ZAZABI_PART_LOWE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 9, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 33, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 29, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 29, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 29, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0)
@@ -1602,7 +1602,7 @@ static const s16 sZazabiMultiOam_FallingSlow3_Frame5[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 12, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 36, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 32, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 32, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 32, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 56, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 66, 0)
@@ -1613,7 +1613,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame0[ZAZABI_PART_LOWER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 28, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 52, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 48, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 48, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 48, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 67, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 74, 0)
@@ -1624,7 +1624,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame1[ZAZABI_PART_LOWER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 17, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 61, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 68, 0)
@@ -1635,7 +1635,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame2[ZAZABI_PART_LOWER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 42, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 38, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 38, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 38, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 62, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 69, 0)
@@ -1646,7 +1646,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame3[ZAZABI_PART_LOWER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 8, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 32, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 28, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 28, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 28, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 54, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 63, 0)
@@ -1657,7 +1657,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen3_Frame4[ZAZABI_PART_LOWER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, 9, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 33, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 29, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 29, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 29, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 55, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 64, 0)
@@ -1668,7 +1668,7 @@ static const s16 sZazabiMultiOam_FallingSlow3_Frame2[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 13, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 36, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 42, 0)
@@ -1679,7 +1679,7 @@ static const s16 sZazabiMultiOam_EatingSamus3_3_Frame0[ZAZABI_PART_LOWER_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 10, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus3, 55, 0)
@@ -1690,7 +1690,7 @@ static const s16 sZazabiMultiOam_EatingSamus3_3_Frame1[ZAZABI_PART_LOWER_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus3, 58, 0)
@@ -1701,7 +1701,7 @@ static const s16 sZazabiMultiOam_EatingSamus3_3_Frame2[ZAZABI_PART_LOWER_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus3, 60, 0)
@@ -1712,7 +1712,7 @@ static const s16 sZazabiMultiOam_EatingSamus4_3_Frame0[ZAZABI_PART_LOWER_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 14, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 10, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus4, 41, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 55, 0)
@@ -1723,7 +1723,7 @@ static const s16 sZazabiMultiOam_EatingSamus4_3_Frame1[ZAZABI_PART_LOWER_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 16, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus4, 44, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 58, 0)
@@ -1734,7 +1734,7 @@ static const s16 sZazabiMultiOam_EatingSamus4_3_Frame2[ZAZABI_PART_LOWER_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372970, 17, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus4, 45, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 60, 0)
@@ -1745,7 +1745,7 @@ static const s16 sZazabiMultiOam_EatingSamus5_3_Frame0[ZAZABI_PART_LOWER_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 14, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 10, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus5, 41, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 55, 0)
@@ -1756,7 +1756,7 @@ static const s16 sZazabiMultiOam_EatingSamus5_3_Frame1[ZAZABI_PART_LOWER_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 16, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus5, 44, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0)
@@ -1767,7 +1767,7 @@ static const s16 sZazabiMultiOam_EatingSamus5_3_Frame2[ZAZABI_PART_LOWER_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 17, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus5, 45, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 60, 0)
@@ -1778,7 +1778,7 @@ static const s16 sZazabi_36c828_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DAT
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 14, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 10, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 41, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus2, 55, 0)
@@ -1789,7 +1789,7 @@ static const s16 sZazabi_36c828_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DAT
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 16, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 44, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus2, 58, 0)
@@ -1800,7 +1800,7 @@ static const s16 sZazabi_36c828_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DAT
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 17, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 45, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellEatingSamus2, 60, 0)
@@ -1811,7 +1811,7 @@ static const s16 sZazabi_36c850_Frame0[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DAT
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 10, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 10, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 41, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 55, 0)
@@ -1822,7 +1822,7 @@ static const s16 sZazabi_36c850_Frame1[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DAT
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -8, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 16, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 12, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 12, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 12, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 58, 0)
@@ -1833,7 +1833,7 @@ static const s16 sZazabi_36c850_Frame2[ZAZABI_PART_LOWER_SHELL][MULTI_SPRITE_DAT
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, -7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 13, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 45, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellSwallowingSamus, 60, 0)
@@ -1844,7 +1844,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight3_Frame0[ZAZABI_PART_LOWER_SHELL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_1, -16, -8),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 8, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 4, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 8, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 35, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1855,7 +1855,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight3_Frame1[ZAZABI_PART_LOWER_SHELL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_2, -21, -10),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 3, -9),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 3, -9),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 32, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1866,7 +1866,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight3_Frame2[ZAZABI_PART_LOWER_SHELL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_3, -17, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 7, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 3, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 3, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 7, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 34, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1877,7 +1877,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame2[ZAZABI_PART_LOWE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -11, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 13, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 9, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 9, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 13, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 37, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
@@ -1888,7 +1888,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame3[ZAZABI_PART_LOWE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -9, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 15, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 11, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 11, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 15, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 34, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0)
@@ -1899,7 +1899,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame4[ZAZABI_PART_LOWE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -7, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 17, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 17, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 36, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 43, 0)
@@ -1910,7 +1910,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft3_Frame5[ZAZABI_PART_LOWE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 4, -3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 28, -2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, -2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 28, -2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 50, 0)
@@ -1921,7 +1921,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft3_Frame0[ZAZABI_PART_LOWER_SHELL]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_1, -16, 8),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 8, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 4, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 4, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 8, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 35, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1932,7 +1932,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft3_Frame1[ZAZABI_PART_LOWER_SHELL]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_2, -21, 10),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 3, 9),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 0, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 0, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 3, 9),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 32, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1943,7 +1943,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft3_Frame2[ZAZABI_PART_LOWER_SHELL]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_3, -17, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 7, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 3, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 3, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 7, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 34, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -1954,7 +1954,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame2[ZAZABI_PART_LOW
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -11, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 13, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 9, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 9, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 13, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 37, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
@@ -1965,7 +1965,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame3[ZAZABI_PART_LOW
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -9, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 15, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 11, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 11, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 15, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 34, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0)
@@ -1976,7 +1976,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame4[ZAZABI_PART_LOW
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -7, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 17, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 17, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 36, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 43, 0)
@@ -1987,7 +1987,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight3_Frame5[ZAZABI_PART_LOW
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_2, 4, 3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 28, 2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, 2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 28, 2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 50, 0)
@@ -1998,7 +1998,7 @@ static const s16 sZazabiMultiOam_FallingLeft3_Frame4[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -7, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 17, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 17, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 36, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 43, 0)
@@ -2009,7 +2009,7 @@ static const s16 sZazabiMultiOam_FallingRight3_Frame4[ZAZABI_PART_LOWER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -7, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 17, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 17, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 36, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 43, 0)
@@ -2020,7 +2020,7 @@ static const s16 sZazabiMultiOam_FallingSlow3_Frame0[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -12, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 12, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 8, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 8, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 8, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 37, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
@@ -2031,7 +2031,7 @@ static const s16 sZazabiMultiOam_FallingSlow3_Frame1[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, -10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 14, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 10, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 10, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 10, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 35, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 44, 0)
@@ -2042,7 +2042,7 @@ static const s16 sZazabiMultiOam_FallingSlow3_Frame3[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 3, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 27, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 23, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 23, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 23, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 49, 0)
@@ -2053,7 +2053,7 @@ static const s16 sZazabiMultiOam_FallingSlow3_Frame4[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 9, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 33, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 29, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 29, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 29, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 58, 0)
@@ -2064,7 +2064,7 @@ static const s16 sZazabiMultiOam_FallingLeft3_Frame2[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -11, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 13, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 9, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 9, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 13, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 37, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
@@ -2075,7 +2075,7 @@ static const s16 sZazabiMultiOam_FallingLeft3_Frame3[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, -9, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 15, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 11, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 11, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 15, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 34, -1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0)
@@ -2086,7 +2086,7 @@ static const s16 sZazabiMultiOam_FallingLeft3_Frame5[ZAZABI_PART_LOWER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 4, -3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 28, -2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, -2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 28, -2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 50, 0)
@@ -2097,7 +2097,7 @@ static const s16 sZazabiMultiOam_FallingRight3_Frame2[ZAZABI_PART_LOWER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -11, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 13, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 9, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 9, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 13, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 37, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 48, 0)
@@ -2108,7 +2108,7 @@ static const s16 sZazabiMultiOam_FallingRight3_Frame3[ZAZABI_PART_LOWER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, -9, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 15, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 11, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 11, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 15, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 34, 1),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 45, 0)
@@ -2119,7 +2119,7 @@ static const s16 sZazabiMultiOam_FallingRight3_Frame5[ZAZABI_PART_LOWER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_2, 4, 3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 28, 2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, 2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 28, 2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0),
     [ZAZABI_PART_MIDDLE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MiddleShellIdle, 50, 0)
@@ -2636,7 +2636,7 @@ static const s16 sZazabiMultiOam_Idle2_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 31, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 27, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 27, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 59, 0)
 };
@@ -2646,7 +2646,7 @@ static const s16 sZazabiMultiOam_Idle2_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 6, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 30, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 26, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 26, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 58, 0)
 };
@@ -2656,7 +2656,7 @@ static const s16 sZazabiMultiOam_Idle2_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 4, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 28, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 24, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 55, 0)
 };
@@ -2666,7 +2666,7 @@ static const s16 sZazabiMultiOam_Crawling2_Frame3[ZAZABI_PART_MIDDLE_SHELL][MULT
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 2, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 26, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 22, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 22, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0)
 };
@@ -2676,7 +2676,7 @@ static const s16 sZazabiMultiOam_Crawling2_Frame4[ZAZABI_PART_MIDDLE_SHELL][MULT
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 1, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 25, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 21, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 21, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 21, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 52, 0)
 };
@@ -2686,7 +2686,7 @@ static const s16 sZazabiMultiOam_JumpWarning2_Frame0[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 34, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 30, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 30, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 30, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 59, 0)
 };
@@ -2696,7 +2696,7 @@ static const s16 sZazabiMultiOam_JumpWarning2_Frame1[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 19, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 43, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 39, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 39, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 39, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 62, 0)
 };
@@ -2706,7 +2706,7 @@ static const s16 sZazabiMultiOam_JumpingSmall2_Frame0[ZAZABI_PART_MIDDLE_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, -3, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 21, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 17, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 17, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 49, 0)
 };
@@ -2716,7 +2716,7 @@ static const s16 sZazabiMultiOam_JumpingSmall2_Frame1[ZAZABI_PART_MIDDLE_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, -7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 17, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 13, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0)
 };
@@ -2726,7 +2726,7 @@ static const s16 sZazabiMultiOam_JumpingSmall2_Frame2[ZAZABI_PART_MIDDLE_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, -4, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 20, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 16, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 16, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 48, 0)
 };
@@ -2736,7 +2736,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame0[ZAZABI_PART_MIDD
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 2, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 26, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 22, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 22, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0)
 };
@@ -2746,7 +2746,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame1[ZAZABI_PART_MIDD
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 3, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 27, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 23, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 23, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 23, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0)
 };
@@ -2756,7 +2756,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame2[ZAZABI_PART_MIDD
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 31, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 27, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 27, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0)
 };
@@ -2766,7 +2766,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame3[ZAZABI_PART_MIDD
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 13, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 53, 0)
 };
@@ -2776,7 +2776,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened2_Frame4[ZAZABI_PART_MIDD
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 17, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 54, 0)
 };
@@ -2786,7 +2786,7 @@ static const s16 sZazabiMultiOam_FallingSlow2_Frame5[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 44, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 40, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 40, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 40, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 58, 0)
 };
@@ -2796,7 +2796,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame0[ZAZABI_PART_MIDDLE_SHE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 27, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 51, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 47, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 47, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 47, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 61, 0)
 };
@@ -2806,7 +2806,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame1[ZAZABI_PART_MIDDLE_SHE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 17, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 61, 0)
 };
@@ -2816,7 +2816,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame2[ZAZABI_PART_MIDDLE_SHE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 42, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 38, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 38, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 38, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 62, 0)
 };
@@ -2826,7 +2826,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame3[ZAZABI_PART_MIDDLE_SHE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 13, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 58, 0)
 };
@@ -2836,7 +2836,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen2_Frame4[ZAZABI_PART_MIDDLE_SHE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, 14, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 38, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 34, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 34, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 34, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 59, 0)
 };
@@ -2846,7 +2846,7 @@ static const s16 sZazabiMultiOam_FallingSlow2_Frame2[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 31, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 27, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 27, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0)
 };
@@ -2856,7 +2856,7 @@ static const s16 sZazabiMultiOam_EatingSamus5_2_Frame0[ZAZABI_PART_MIDDLE_SHELL]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 4, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 28, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 24, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus5, 55, 0)
 };
@@ -2866,7 +2866,7 @@ static const s16 sZazabiMultiOam_EatingSamus5_2_Frame1[ZAZABI_PART_MIDDLE_SHELL]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 6, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 30, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 26, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 26, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus5, 58, 0)
 };
@@ -2876,7 +2876,7 @@ static const s16 sZazabiMultiOam_EatingSamus5_2_Frame2[ZAZABI_PART_MIDDLE_SHELL]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellSwallowingSamusLow, 31, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 27, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 27, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellEatingSamus5, 59, 0)
 };
@@ -2886,7 +2886,7 @@ static const s16 sZazabi_36d4a4_Frame0[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DA
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 4, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 28, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 24, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 55, 0)
 };
@@ -2896,7 +2896,7 @@ static const s16 sZazabi_36d4a4_Frame1[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DA
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 6, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 30, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 26, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 26, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 58, 0)
 };
@@ -2906,7 +2906,7 @@ static const s16 sZazabi_36d4a4_Frame2[ZAZABI_PART_MIDDLE_SHELL][MULTI_SPRITE_DA
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairEatingSamus, 7, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(Zazabi_372950, 31, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 27, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 27, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeEatingSamus, 27, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellSwallowingSamus, 59, 0)
 };
@@ -2916,7 +2916,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight2_Frame0[ZAZABI_PART_MIDDLE_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_1, -3, -8),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 21, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 17, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 21, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 48, -1)
 };
@@ -2926,7 +2926,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight2_Frame1[ZAZABI_PART_MIDDLE_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_2, -8, -10),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 16, -9),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 16, -9),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 45, -1)
 };
@@ -2936,7 +2936,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight2_Frame2[ZAZABI_PART_MIDDLE_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_3, -4, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 20, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 16, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 20, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 47, -1)
 };
@@ -2946,7 +2946,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame2[ZAZABI_PART_MIDD
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 2, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 26, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 22, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 26, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 50, -1)
 };
@@ -2956,7 +2956,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame3[ZAZABI_PART_MIDD
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 4, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 28, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 28, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 47, -1)
 };
@@ -2966,7 +2966,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame4[ZAZABI_PART_MIDD
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 6, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 30, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 26, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 30, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 49, -1)
 };
@@ -2976,7 +2976,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft2_Frame5[ZAZABI_PART_MIDD
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 17, -3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 41, -2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, -2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 41, -2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0)
 };
@@ -2986,7 +2986,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft2_Frame0[ZAZABI_PART_MIDDLE_SHELL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_1, -3, 8),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 21, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 17, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 17, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 21, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 48, 1)
 };
@@ -2996,7 +2996,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft2_Frame1[ZAZABI_PART_MIDDLE_SHELL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_2, -8, 10),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 16, 9),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 13, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 13, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 16, 9),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 45, 1)
 };
@@ -3006,7 +3006,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft2_Frame2[ZAZABI_PART_MIDDLE_SHELL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_3, -4, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 20, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 16, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 16, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 20, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 47, 1)
 };
@@ -3016,7 +3016,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame2[ZAZABI_PART_MID
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, 2, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 26, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 22, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 26, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 50, 1)
 };
@@ -3026,7 +3026,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame3[ZAZABI_PART_MID
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, 4, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 28, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 28, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 47, 1)
 };
@@ -3036,7 +3036,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame4[ZAZABI_PART_MID
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, 6, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 30, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 26, 8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 30, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 49, 1)
 };
@@ -3046,7 +3046,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight2_Frame5[ZAZABI_PART_MID
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 54, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_2, 17, 3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 41, 2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, 2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 41, 2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0)
 };
@@ -3056,7 +3056,7 @@ static const s16 sZazabiMultiOam_FallingLeft2_Frame4[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 6, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 30, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 26, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 30, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 49, -1)
 };
@@ -3066,7 +3066,7 @@ static const s16 sZazabiMultiOam_FallingRight2_Frame4[ZAZABI_PART_MIDDLE_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, 6, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 30, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 26, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 26, 8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 30, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 49, 1)
 };
@@ -3076,7 +3076,7 @@ static const s16 sZazabiMultiOam_FallingSlow2_Frame0[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 2, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 26, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 22, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 22, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 47, 0)
 };
@@ -3086,7 +3086,7 @@ static const s16 sZazabiMultiOam_FallingSlow2_Frame1[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 3, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 27, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 23, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 23, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 23, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 44, 0)
 };
@@ -3096,7 +3096,7 @@ static const s16 sZazabiMultiOam_FallingSlow2_Frame3[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 13, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 53, 0)
 };
@@ -3106,7 +3106,7 @@ static const s16 sZazabiMultiOam_FallingSlow2_Frame4[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 17, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 54, 0)
 };
@@ -3116,7 +3116,7 @@ static const s16 sZazabiMultiOam_FallingLeft2_Frame2[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 2, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 26, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 22, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 26, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 50, -1)
 };
@@ -3126,7 +3126,7 @@ static const s16 sZazabiMultiOam_FallingLeft2_Frame3[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 4, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 28, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 28, -8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingRight, 47, -1)
 };
@@ -3136,7 +3136,7 @@ static const s16 sZazabiMultiOam_FallingLeft2_Frame5[ZAZABI_PART_MIDDLE_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 17, -3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 41, -2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, -2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 41, -2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0)
 };
@@ -3146,7 +3146,7 @@ static const s16 sZazabiMultiOam_FallingRight2_Frame2[ZAZABI_PART_MIDDLE_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, 2, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 26, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 22, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 22, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 26, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 50, 1)
 };
@@ -3156,7 +3156,7 @@ static const s16 sZazabiMultiOam_FallingRight2_Frame3[ZAZABI_PART_MIDDLE_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, 4, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 28, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 24, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 24, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 28, 8),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellJumpingLeft, 47, 1)
 };
@@ -3166,7 +3166,7 @@ static const s16 sZazabiMultiOam_FallingRight2_Frame5[ZAZABI_PART_MIDDLE_SHELL][
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_2, 17, 3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 41, 2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, 2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 41, 2),
     [ZAZABI_PART_UPPER_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_UpperShellIdle, 51, 0)
 };
@@ -3622,7 +3622,7 @@ static const s16 sZazabiMultiOam_Idle1_Frame2[ZAZABI_PART_UPPER_SHELL][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 23, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 47, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 43, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 43, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 43, 0)
 };
 
@@ -3631,7 +3631,7 @@ static const s16 sZazabiMultiOam_Idle1_Frame1[ZAZABI_PART_UPPER_SHELL][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 22, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 46, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 42, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 42, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 42, 0)
 };
 
@@ -3640,7 +3640,7 @@ static const s16 sZazabiMultiOam_Idle1_Frame0[ZAZABI_PART_UPPER_SHELL][MULTI_SPR
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 20, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 44, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 40, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 40, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 40, 0)
 };
 
@@ -3649,7 +3649,7 @@ static const s16 sZazabiMultiOam_Crawling1_Frame3[ZAZABI_PART_UPPER_SHELL][MULTI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 18, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 42, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 38, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 38, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 38, 0)
 };
 
@@ -3658,7 +3658,7 @@ static const s16 sZazabiMultiOam_Crawling1_Frame4[ZAZABI_PART_UPPER_SHELL][MULTI
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairMoving, 17, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 41, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 37, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 37, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 37, 0)
 };
 
@@ -3667,7 +3667,7 @@ static const s16 sZazabiMultiOam_JumpWarning1_Frame0[ZAZABI_PART_UPPER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 22, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 46, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 42, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 42, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 42, 0)
 };
 
@@ -3676,7 +3676,7 @@ static const s16 sZazabiMultiOam_JumpWarning1_Frame1[ZAZABI_PART_UPPER_SHELL][MU
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 26, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 50, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 46, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 46, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 46, 0)
 };
 
@@ -3685,7 +3685,7 @@ static const s16 sZazabiMultiOam_JumpingSmall1_Frame0[ZAZABI_PART_UPPER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 13, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0)
 };
 
@@ -3694,7 +3694,7 @@ static const s16 sZazabiMultiOam_JumpingSmall1_Frame1[ZAZABI_PART_UPPER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 12, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 36, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 32, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 32, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 32, 0)
 };
 
@@ -3703,7 +3703,7 @@ static const s16 sZazabiMultiOam_JumpingSmall1_Frame2[ZAZABI_PART_UPPER_SHELL][M
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, 14, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 38, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 34, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 34, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 34, 0)
 };
 
@@ -3712,7 +3712,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame0[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 13, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0)
 };
 
@@ -3721,7 +3721,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame1[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 58, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 10, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 34, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 30, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 30, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 30, 0)
 };
 
@@ -3730,7 +3730,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame2[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 61, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 13, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 37, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 33, 0)
 };
 
@@ -3739,7 +3739,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame3[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 64, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 21, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 45, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 41, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 41, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 41, 0)
 };
 
@@ -3748,7 +3748,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame4[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 69, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 24, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 48, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 44, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 44, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 44, 0)
 };
 
@@ -3757,7 +3757,7 @@ static const s16 sZazabiMultiOam_FallingSlowMouthOpened1_Frame5[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairStill, 26, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 50, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 46, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 46, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 46, 0)
 };
 
@@ -3766,7 +3766,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame0[ZAZABI_PART_UPPER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 36, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 60, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 56, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 56, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 56, 0)
 };
 
@@ -3775,7 +3775,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame1[ZAZABI_PART_UPPER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownLow, 31, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 55, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 51, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 51, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 51, 0)
 };
 
@@ -3784,7 +3784,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame2[ZAZABI_PART_UPPER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 30, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 54, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 50, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 50, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 50, 0)
 };
 
@@ -3793,7 +3793,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame3[ZAZABI_PART_UPPER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownMid, 22, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 46, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 42, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 42, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 42, 0)
 };
 
@@ -3802,7 +3802,7 @@ static const s16 sZazabiMultiOam_LandingMouthOpen1_Frame4[ZAZABI_PART_UPPER_SHEL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairDownHigh, 23, 0),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellIdle, 47, 0),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 43, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 43, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeIdle, 43, 0)
 };
 
@@ -3811,7 +3811,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight1_Frame0[ZAZABI_PART_UPPER_SHELL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_1, 13, -8),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 37, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 37, -8)
 };
 
@@ -3820,7 +3820,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight1_Frame1[ZAZABI_PART_UPPER_SHELL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_2, 12, -10),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 36, -9),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 36, -9)
 };
 
@@ -3829,7 +3829,7 @@ static const s16 sZazabiMultiOam_JumpingBigRight1_Frame2[ZAZABI_PART_UPPER_SHELL
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingRight_3, 14, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 38, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 34, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 34, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 38, -8)
 };
 
@@ -3838,7 +3838,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame2[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 13, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 37, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 37, -8)
 };
 
@@ -3847,7 +3847,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame3[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 58, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 10, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 34, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 30, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 30, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 34, -8)
 };
 
@@ -3856,7 +3856,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame5[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 64, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_2, 21, -3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallRight, 45, -2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 41, -2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 41, -2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingRight, 45, -2)
 };
 
@@ -3865,7 +3865,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft1_Frame0[ZAZABI_PART_UPPER_SHELL]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_1, 13, 8),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 37, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 37, 8)
 };
 
@@ -3874,7 +3874,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft1_Frame1[ZAZABI_PART_UPPER_SHELL]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_2, 12, 10),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 36, 9),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 36, 9)
 };
 
@@ -3883,7 +3883,7 @@ static const s16 sZazabiMultiOam_JumpingBigLeft1_Frame2[ZAZABI_PART_UPPER_SHELL]
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackHidden, 92, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairJumpingLeft_3, 14, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 38, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 34, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 34, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 38, 8)
 };
 
@@ -3892,7 +3892,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame2[ZAZABI_PART_UPP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_1, 62, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, 13, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 37, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 37, 8)
 };
 
@@ -3901,7 +3901,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame3[ZAZABI_PART_UPP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 58, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, 10, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 34, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 30, 0),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 30, 0),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 34, 8)
 };
 
@@ -3910,7 +3910,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame5[ZAZABI_PART_UPP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 64, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_2, 21, 3),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingSmallLeft, 45, 2),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 41, 2),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 41, 2),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeLandingLeft, 45, 2)
 };
 
@@ -3919,7 +3919,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedLeft1_Frame4[ZAZABI_PART_UPPE
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 61, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingLeft_1, 13, -9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingRight, 37, -8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, -8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, -8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingRight, 37, -8)
 };
 
@@ -3928,7 +3928,7 @@ static const s16 sZazabiMultiOam_FallingMouthOpenedRight1_Frame4[ZAZABI_PART_UPP
     [ZAZABI_PART_MOUTH_BACK] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_MouthBackOpening_2, 61, 0),
     [ZAZABI_PART_HAIR] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_HairLandingRight_1, 13, 9),
     [ZAZABI_PART_EYE_SHELL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeShellJumpingLeft, 37, 8),
-    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilClosed, 33, 8),
+    [ZAZABI_PART_PUPIL] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_PupilOpen, 33, 8),
     [ZAZABI_PART_EYE] = MULTI_SPRITE_DATA_INFO(ZazabiPartOam_EyeJumpingLeft, 37, 8)
 };
 
@@ -4557,7 +4557,7 @@ static const u16 sZazabiPartOam_EyeEatingSamus_Frame3[OAM_DATA_SIZE(2)] = {
     OBJ_SHAPE_HORIZONTAL | 0x4, 0x1f8, OBJ_SPRITE_OAM | 0x254
 };
 
-static const u16 sZazabiPartOam_PupilClosed_Frame0[OAM_DATA_SIZE(1)] = {
+static const u16 sZazabiPartOam_PupilOpen_Frame0[OAM_DATA_SIZE(1)] = {
     0x1,
     0xfc, 0x1fc, OBJ_SPRITE_OAM | 0x20b
 };
@@ -5547,9 +5547,9 @@ const struct FrameData sZazabiPartOam_HairLandingRight_2[2] = {
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sZazabiPartOam_PupilClosed[2] = {
+const struct FrameData sZazabiPartOam_PupilOpen[2] = {
     [0] = {
-        .pFrame = sZazabiPartOam_PupilClosed_Frame0,
+        .pFrame = sZazabiPartOam_PupilOpen_Frame0,
         .timer = UCHAR_MAX
     },
     [1] = FRAME_DATA_TERMINATOR

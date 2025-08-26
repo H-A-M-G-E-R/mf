@@ -1859,7 +1859,7 @@ void ZazabiPartPupil(void)
             {
                 if (SpriteUtilCheckEndCurrentSpriteAnim())
                 {
-                    gCurrentSprite.pOam = sZazabiPartOam_PupilClosed;
+                    gCurrentSprite.pOam = sZazabiPartOam_PupilOpen;
                     gCurrentSprite.animationDurationCounter = 0;
                     gCurrentSprite.currentAnimationFrame = 0;
 
@@ -1880,7 +1880,7 @@ void ZazabiPartPupil(void)
         default:
             if (gCurrentSprite.pOam == sZazabiPartOam_PupilBlinking)
             {
-                gCurrentSprite.pOam = sZazabiPartOam_PupilClosed;
+                gCurrentSprite.pOam = sZazabiPartOam_PupilOpen;
                 gCurrentSprite.animationDurationCounter = 0;
                 gCurrentSprite.currentAnimationFrame = 0;
 
