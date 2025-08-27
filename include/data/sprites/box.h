@@ -97,7 +97,7 @@ extern const s16 sBoxBombFallingSpeed[16];
 extern const struct MultiSpriteData sBoxMultiSpriteData_Jumping[2];
 extern const struct MultiSpriteData sBoxMultiSpriteData_Landing[4];
 extern const struct MultiSpriteData sBoxMultiSpriteData_JumpWarning[5];
-extern const struct MultiSpriteData sBoxMultiSpriteData_Defeated[5];
+extern const struct MultiSpriteData sBoxMultiSpriteData_Idle[5];
 extern const struct MultiSpriteData sBoxMultiSpriteData_Crawling_Left[6];
 extern const struct MultiSpriteData sBoxMultiSpriteData_SlowRun_Left[6];
 extern const struct MultiSpriteData sBoxMultiSpriteData_FastRun_Left[6];

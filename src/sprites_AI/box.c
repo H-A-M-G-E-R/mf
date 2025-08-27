@@ -145,7 +145,7 @@ void BoxInit(void) {
         gCurrentSprite.currentAnimationFrame = 0;
         gSubSpriteData1.yPosition = gCurrentSprite.yPosition;
         gSubSpriteData1.xPosition = gCurrentSprite.xPosition;
-        gSubSpriteData1.pMultiOam = sBoxMultiSpriteData_Defeated;
+        gSubSpriteData1.pMultiOam = sBoxMultiSpriteData_Idle;
         gSubSpriteData1.animationDurationCounter = 0;
         gSubSpriteData1.currentAnimationFrame = 0;
         gSubSpriteData1.work0 = 0;
@@ -652,7 +652,7 @@ void BoxDefeatedInit(void) {
     gCurrentSprite.work1 = 0;
     gCurrentSprite.work4 = 0;
     gCurrentSprite.pose = BOX_POSE_DEFEATED;
-    gSubSpriteData1.pMultiOam = sBoxMultiSpriteData_Defeated;
+    gSubSpriteData1.pMultiOam = sBoxMultiSpriteData_Idle;
     gSubSpriteData1.animationDurationCounter = 0;
     gSubSpriteData1.currentAnimationFrame = 0;
 }
@@ -719,7 +719,7 @@ void BoxMovingToFinalJump(void) {
 }
 
 void BoxWaitingForFinalJumpInit(void) {
-    gSubSpriteData1.pMultiOam = sBoxMultiSpriteData_Defeated;
+    gSubSpriteData1.pMultiOam = sBoxMultiSpriteData_Idle;
     gSubSpriteData1.animationDurationCounter = 0;
     gSubSpriteData1.currentAnimationFrame = 0;
     gCurrentSprite.pose = BOX_POSE_WAITING_FOR_FINAL_JUMP;

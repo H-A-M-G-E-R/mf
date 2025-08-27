@@ -736,7 +736,7 @@ const struct MultiSpriteData sBoxMultiSpriteData_JumpWarning[5] = {
     [4] = MULTI_SPRITE_DATA_TERMINATOR
 };
 
-const struct MultiSpriteData sBoxMultiSpriteData_Defeated[5] = {
+const struct MultiSpriteData sBoxMultiSpriteData_Idle[5] = {
     [0] = {
         .pData = sBoxMultiSpriteData_JumpWarning_Frame0,
         .timer = 12
