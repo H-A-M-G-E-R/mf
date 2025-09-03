@@ -288,7 +288,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_Standing[5][2] = {
     [ACD_UP] = {
         sSamusAnim_Right_Up_Standing,
         sSamusAnim_Left_Up_Standing
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_TurningAround[5][2] = {
@@ -311,7 +311,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_TurningAround[5][2] = 
     [ACD_UP] = {
         sSamusAnim_Right_Up_TurningAround,
         sSamusAnim_Left_Up_TurningAround
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_Shooting[5][2] = {
@@ -334,7 +334,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_Shooting[5][2] = {
     [ACD_UP] = {
         sSamusAnim_Right_Up_Shooting,
         sSamusAnim_Left_Up_Shooting
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_Running[4][2] = {
@@ -353,7 +353,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_Running[4][2] = {
     [ACD_DIAGONAL_DOWN] = {
         sSamusAnim_Right_DiagonalDown_Running,
         sSamusAnim_Left_DiagonalDown_Running
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_MidAir[6][2] = {
@@ -380,7 +380,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_MidAir[6][2] = {
     [ACD_DOWN] = {
         sSamusAnim_Right_Down_MidAir,
         sSamusAnim_Left_Down_MidAir
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_TurningAroundMidAir[6][2] = {
@@ -407,7 +407,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_TurningAroundMidAir[6]
     [ACD_DOWN] = {
         sSamusAnim_Right_DiagonalDown_TurningAroundMidAir,
         sSamusAnim_Left_DiagonalDown_TurningAroundMidAir
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_Landing[5][2] = {
@@ -430,7 +430,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_Landing[5][2] = {
     [ACD_UP] = {
         sSamusAnim_Right_Up_Landing,
         sSamusAnim_Left_Up_Landing
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_UnusedCrouching[5][2] = {
@@ -453,7 +453,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_UnusedCrouching[5][2] 
     [ACD_UP] = {
         sSamusAnim_Right_Up_UnusedCrouching,
         sSamusAnim_Left_Up_UnusedCrouching
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_TurningAroundAndCrouching[5][2] = {
@@ -476,7 +476,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_TurningAroundAndCrouch
     [ACD_UP] = {
         sSamusAnim_Right_Up_TurningAroundAndCrouching,
         sSamusAnim_Left_Up_TurningAroundAndCrouching
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_Crouching[5][2] = {
@@ -499,7 +499,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_Crouching[5][2] = {
     [ACD_UP] = {
         sSamusAnim_Right_Up_Crouching,
         sSamusAnim_Left_Up_Crouching
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_HangingOnLedge[2][2] = {
@@ -510,7 +510,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_HangingOnLedge[2][2] =
     [TRUE] = {
         sSamusAnim_Right_ReadyToJump_HangingOnLedge,
         sSamusAnim_Left_ReadyToJump_HangingOnLedge
-    },
+    }
 };
 
 // FIXME oam
@@ -527,7 +527,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_Skidding[2][2] = {
     [TRUE] = {
         sSamusAnim_Right_Armed_Skidding,
         sSamusAnim_Left_Armed_Skidding
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_Shinesparking[3][2] = {
@@ -542,7 +542,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_Shinesparking[3][2] = 
     [ACD_DIAGONAL_UP] = {
         sSamusAnim_Right_Sidewards_Shinesparking,
         sSamusAnim_Left_Sidewards_Shinesparking
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_DelayAfterShinesparking[3][2] = {
@@ -557,7 +557,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_DelayAfterShinesparkin
     [ACD_DIAGONAL_UP] = {
         sSamusAnim_Right_Sidewards_DelayAfterShinesparking,
         sSamusAnim_Left_Sidewards_DelayAfterShinesparking
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_HoldingYourArmCannonOutOnAVerticalLadder[6][2] = {
@@ -584,7 +584,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_HoldingYourArmCannonOu
     [ACD_DOWN] = {
         sSamusAnim_Right_Down_HoldingYourArmCannonOutOnAVerticalLadder,
         sSamusAnim_Left_Down_HoldingYourArmCannonOutOnAVerticalLadder
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_ShootingOnVerticalLadder[6][2] = {
@@ -611,7 +611,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_ShootingOnVerticalLadd
     [ACD_DOWN] = {
         sSamusAnim_Right_Down_ShootingOnVerticalLadder,
         sSamusAnim_Left_Down_ShootingOnVerticalLadder
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_HangingOnHorizontalLadder[6][2] = {
@@ -638,7 +638,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_HangingOnHorizontalLad
     [ACD_DOWN] = {
         sSamusAnim_Right_Down_DelayAfterShootingOnHorizontalLadder,
         sSamusAnim_Left_Down_DelayAfterShootingOnHorizontalLadder
-    },
+    }
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_ShootingOnHorizontalLadder[6][2] = {
@@ -665,7 +665,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_ShootingOnHorizontalLa
     [ACD_DOWN] = {
         sSamusAnim_Right_Down_ShootingOnHorizontalLadder,
         sSamusAnim_Left_Down_ShootingOnHorizontalLadder
-    },
+    }
 };
 
 const struct FrameData* const sSamusUnlockingSecurityEffectAnimPointers[2] = {
@@ -686,7 +686,7 @@ const struct SamusAnimationData* const sSamusAnimPointers_HitByOmegaMetroid[2][2
     [TRUE] = {
         sSamusAnim_Right_LookingUp_HitByOmegaMetroid,
         sSamusAnim_Left_LookingUp_HitByOmegaMetroid
-    },
+    }
 };
 
 static const u8 sBlob_28d794_28fd04[] = INCBIN_U8("data/Blob_28d794_28fd04.bin");
