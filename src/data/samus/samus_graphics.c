@@ -3340,14 +3340,14 @@ static const u8 sSamusGfx_Top_2c4308_Frame0[] = {
     _INCBIN_U8("data/samus/gfx/Top_2c4308_Frame0.gfx")
 };
 
-static const u8 sSamusGfx_Top_Left_GrabbedByYakuza_Frame0[] = {
+static const u8 sSamusGfx_Top_Left_Down_MidAir_Frame0[] = {
     4, 4,
-    _INCBIN_U8("data/samus/gfx/Top_Left_GrabbedByYakuza_Frame0.gfx")
+    _INCBIN_U8("data/samus/gfx/Top_Left_Down_MidAir_Frame0.gfx")
 };
 
-static const u8 sSamusGfx_Bottom_Left_GrabbedByYakuza_Frame0[] = {
+static const u8 sSamusGfx_Bottom_Left_Down_MidAir_Frame0[] = {
     4, 4,
-    _INCBIN_U8("data/samus/gfx/Bottom_Left_GrabbedByYakuza_Frame0.gfx")
+    _INCBIN_U8("data/samus/gfx/Bottom_Left_Down_MidAir_Frame0.gfx")
 };
 
 static const u8 sSamusGfx_Top_2c4328_Frame0[] = {
@@ -3500,9 +3500,9 @@ static const u8 sSamusGfx_Top_2c46c8_Frame0[] = {
     _INCBIN_U8("data/samus/gfx/Top_2c46c8_Frame0.gfx")
 };
 
-static const u8 sSamusGfx_Top_Right_GrabbedByYakuza_Frame0[] = {
+static const u8 sSamusGfx_Top_Right_Down_MidAir_Frame0[] = {
     4, 4,
-    _INCBIN_U8("data/samus/gfx/Top_Right_GrabbedByYakuza_Frame0.gfx")
+    _INCBIN_U8("data/samus/gfx/Top_Right_Down_MidAir_Frame0.gfx")
 };
 
 static const u8 sSamusGfx_Top_2c46e8_Frame0[] = {
@@ -4037,7 +4037,7 @@ static const u16 sSamusOam_2c4308_Frame0[] = {
     OBJ_SHAPE_HORIZONTAL | 0xf9, 0x1f8, 0x16
 };
 
-static const u16 sSamusOam_Left_GrabbedByYakuza_Frame0[] = {
+static const u16 sSamusOam_Left_Down_MidAir_Frame0[] = {
     4,
     0xe2, OBJ_SIZE_16x16 | 0x1f4, 0x0,
     0xf2, OBJ_SIZE_16x16 | 0x1f4, 0x2,
@@ -4431,7 +4431,7 @@ static const u16 sSamusOam_2c46a8_Frame0[] = {
     OBJ_SHAPE_HORIZONTAL | 0xf9, OBJ_X_FLIP | 0x1f8, 0x16
 };
 
-static const u16 sSamusOam_Right_GrabbedByYakuza_Frame0[] = {
+static const u16 sSamusOam_Right_Down_MidAir_Frame0[] = {
     4,
     0xe2, OBJ_SIZE_16x16 | 0x1fc, 0x0,
     0xf2, OBJ_SIZE_16x16 | 0x1fc, 0x2,
@@ -5224,11 +5224,11 @@ const struct SamusAnimationData sSamusAnim_2c46e8[2] = {
     [1] = SAMUS_ANIM_TERMINATOR
 };
 
-const struct SamusAnimationData sSamusAnim_Left_GrabbedByYakuza[7] = {
+const struct SamusAnimationData sSamusAnim_Left_Down_MidAir[7] = {
     [0] = {
-        .pTopGfx = sSamusGfx_Top_Left_GrabbedByYakuza_Frame0,
-        .pBottomGfx = sSamusGfx_Bottom_Left_GrabbedByYakuza_Frame0,
-        .pOam = sSamusOam_Left_GrabbedByYakuza_Frame0,
+        .pTopGfx = sSamusGfx_Top_Left_Down_MidAir_Frame0,
+        .pBottomGfx = sSamusGfx_Bottom_Left_Down_MidAir_Frame0,
+        .pOam = sSamusOam_Left_Down_MidAir_Frame0,
         .timer = 4
     },
     [1] = {
@@ -5264,11 +5264,11 @@ const struct SamusAnimationData sSamusAnim_Left_GrabbedByYakuza[7] = {
     [6] = SAMUS_ANIM_TERMINATOR
 };
 
-const struct SamusAnimationData sSamusAnim_Right_GrabbedByYakuza[7] = {
+const struct SamusAnimationData sSamusAnim_Right_Down_MidAir[7] = {
     [0] = {
-        .pTopGfx = sSamusGfx_Top_Right_GrabbedByYakuza_Frame0,
-        .pBottomGfx = sSamusGfx_Bottom_Left_GrabbedByYakuza_Frame0,
-        .pOam = sSamusOam_Right_GrabbedByYakuza_Frame0,
+        .pTopGfx = sSamusGfx_Top_Right_Down_MidAir_Frame0,
+        .pBottomGfx = sSamusGfx_Bottom_Left_Down_MidAir_Frame0,
+        .pOam = sSamusOam_Right_Down_MidAir_Frame0,
         .timer = 4
     },
     [1] = {
@@ -8974,14 +8974,14 @@ static const u8 sSamusGfx_Bottom_Left_ShootingOnHorizontalLadder_Frame0[] = {
     _INCBIN_U8("data/samus/gfx/Bottom_Left_ShootingOnHorizontalLadder_Frame0.gfx")
 };
 
-static const u8 sSamusGfx_Top_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0[] = {
+static const u8 sSamusGfx_Top_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0[] = {
     3, 3,
-    _INCBIN_U8("data/samus/gfx/Top_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0.gfx")
+    _INCBIN_U8("data/samus/gfx/Top_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0.gfx")
 };
 
-static const u8 sSamusGfx_Bottom_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0[] = {
+static const u8 sSamusGfx_Bottom_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0[] = {
     4, 2,
-    _INCBIN_U8("data/samus/gfx/Bottom_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0.gfx")
+    _INCBIN_U8("data/samus/gfx/Bottom_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0.gfx")
 };
 
 static const u8 sSamusGfx_Top_Left_DiagonalDown_ShootingOnHorizontalLadder_Frame0[] = {
@@ -9024,9 +9024,9 @@ static const u8 sSamusGfx_Top_Right_ShootingOnHorizontalLadder_Frame0[] = {
     _INCBIN_U8("data/samus/gfx/Top_Right_ShootingOnHorizontalLadder_Frame0.gfx")
 };
 
-static const u8 sSamusGfx_Top_Right_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0[] = {
+static const u8 sSamusGfx_Top_Right_DiagonalDown_HangingOnHorizontalLadder_Frame0[] = {
     5, 5,
-    _INCBIN_U8("data/samus/gfx/Top_Right_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0.gfx")
+    _INCBIN_U8("data/samus/gfx/Top_Right_DiagonalDown_HangingOnHorizontalLadder_Frame0.gfx")
 };
 
 static const u8 sSamusGfx_Top_Right_DiagonalDown_ShootingOnHorizontalLadder_Frame0[] = {
@@ -9868,7 +9868,7 @@ static const u16 sSamusOam_Left_ShootingOnHorizontalLadder_Frame0[] = {
     OBJ_SHAPE_HORIZONTAL | 0x2, 0x1f5, 0x16
 };
 
-static const u16 sSamusOam_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0[] = {
+static const u16 sSamusOam_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0[] = {
     4,
     OBJ_SHAPE_VERTICAL | 0xdb, 0x1fe, 0x2,
     0xe3, OBJ_SIZE_16x16 | 0x1f6, 0x0,
@@ -9918,7 +9918,7 @@ static const u16 sSamusOam_Right_ShootingOnHorizontalLadder_Frame0[] = {
     OBJ_SHAPE_HORIZONTAL | 0x2, OBJ_X_FLIP | 0x1fb, 0x16
 };
 
-static const u16 sSamusOam_Right_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0[] = {
+static const u16 sSamusOam_Right_DiagonalDown_HangingOnHorizontalLadder_Frame0[] = {
     5,
     0xe7, OBJ_SIZE_16x16 | 0x1fc, 0x0,
     0xe3, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x1fa, 0x2,
@@ -10946,11 +10946,11 @@ const struct SamusAnimationData sSamusAnim_Left_ShootingOnHorizontalLadder[3] = 
     [2] = SAMUS_ANIM_TERMINATOR
 };
 
-const struct SamusAnimationData sSamusAnim_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder[2] = {
+const struct SamusAnimationData sSamusAnim_Left_DiagonalDown_HangingOnHorizontalLadder[2] = {
     [0] = {
-        .pTopGfx = sSamusGfx_Top_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
-        .pBottomGfx = sSamusGfx_Bottom_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
-        .pOam = sSamusOam_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
+        .pTopGfx = sSamusGfx_Top_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0,
+        .pBottomGfx = sSamusGfx_Bottom_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0,
+        .pOam = sSamusOam_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0,
         .timer = 4
     },
     [1] = SAMUS_ANIM_TERMINATOR
@@ -10964,9 +10964,9 @@ const struct SamusAnimationData sSamusAnim_Left_DiagonalDown_ShootingOnHorizonta
         .timer = 4
     },
     [1] = {
-        .pTopGfx = sSamusGfx_Top_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
-        .pBottomGfx = sSamusGfx_Bottom_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
-        .pOam = sSamusOam_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
+        .pTopGfx = sSamusGfx_Top_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0,
+        .pBottomGfx = sSamusGfx_Bottom_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0,
+        .pOam = sSamusOam_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0,
         .timer = 4
     },
     [2] = SAMUS_ANIM_TERMINATOR
@@ -11024,11 +11024,11 @@ const struct SamusAnimationData sSamusAnim_Right_ShootingOnHorizontalLadder[3] =
     [2] = SAMUS_ANIM_TERMINATOR
 };
 
-const struct SamusAnimationData sSamusAnim_Right_DiagonalDown_DelayAfterShootingOnHorizontalLadder[2] = {
+const struct SamusAnimationData sSamusAnim_Right_DiagonalDown_HangingOnHorizontalLadder[2] = {
     [0] = {
-        .pTopGfx = sSamusGfx_Top_Right_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
-        .pBottomGfx = sSamusGfx_Bottom_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
-        .pOam = sSamusOam_Right_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
+        .pTopGfx = sSamusGfx_Top_Right_DiagonalDown_HangingOnHorizontalLadder_Frame0,
+        .pBottomGfx = sSamusGfx_Bottom_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0,
+        .pOam = sSamusOam_Right_DiagonalDown_HangingOnHorizontalLadder_Frame0,
         .timer = 4
     },
     [1] = SAMUS_ANIM_TERMINATOR
@@ -11042,9 +11042,9 @@ const struct SamusAnimationData sSamusAnim_Right_DiagonalDown_ShootingOnHorizont
         .timer = 4
     },
     [1] = {
-        .pTopGfx = sSamusGfx_Top_Right_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
-        .pBottomGfx = sSamusGfx_Bottom_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
-        .pOam = sSamusOam_Right_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0,
+        .pTopGfx = sSamusGfx_Top_Right_DiagonalDown_HangingOnHorizontalLadder_Frame0,
+        .pBottomGfx = sSamusGfx_Bottom_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0,
+        .pOam = sSamusOam_Right_DiagonalDown_HangingOnHorizontalLadder_Frame0,
         .timer = 4
     },
     [2] = SAMUS_ANIM_TERMINATOR

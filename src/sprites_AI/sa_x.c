@@ -8,6 +8,7 @@
 #include "data/sprites/sa_x.h"
 
 #include "constants/clipdata.h"
+#include "constants/particle.h"
 #include "constants/sa_x.h"
 #include "constants/samus.h"
 #include "constants/sprite.h"

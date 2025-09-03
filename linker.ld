@@ -383,6 +383,7 @@ SECTIONS {
         audio/tracks.o(.rodata);
         src/sram/sram.o(.rodata);
         src/data/samus_data.o(.rodata);
+        src/data/samus/samus_animation_pointers.o(.rodata);
         src/data/sa_x.o(.rodata);
         src/data/samus/samus_graphics.o(.rodata);
         src/data/sprite_data.o(.rodata);

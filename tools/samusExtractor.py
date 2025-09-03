@@ -312,7 +312,7 @@ animNamesBase = [
     "DelayAfterShootingOnHorizontalLadder",
     "Forward_DelayAfterShootingOnHorizontalLadder",
     "DiagonalUp_DelayAfterShootingOnHorizontalLadder",
-    "DiagonalDown_DelayAfterShootingOnHorizontalLadder",
+    "DiagonalDown_HangingOnHorizontalLadder",
     "Up_DelayAfterShootingOnHorizontalLadder",
     "Down_DelayAfterShootingOnHorizontalLadder",
 

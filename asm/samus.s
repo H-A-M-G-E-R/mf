@@ -13370,7 +13370,7 @@ _0800B550: @ jump table
 	.4byte _0800B85C @ case 62
 	.4byte _0800B824 @ case 63
 _0800B650:
-	ldr r1, _0800B660 @ =0x0828D4C4
+	ldr r1, _0800B660 @ =sSamusAnimPointers_Standing
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13379,10 +13379,10 @@ _0800B650:
 	ldr r1, _0800B664 @ =0x0828DAE4
 	b _0800B86C
 	.align 2, 0
-_0800B660: .4byte 0x0828D4C4
+_0800B660: .4byte sSamusAnimPointers_Standing
 _0800B664: .4byte 0x0828DAE4
 _0800B668:
-	ldr r1, _0800B678 @ =0x0828D4EC
+	ldr r1, _0800B678 @ =sSamusAnimPointers_TurningAround
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13391,10 +13391,10 @@ _0800B668:
 	ldr r1, _0800B67C @ =0x0828DB0C
 	b _0800B86C
 	.align 2, 0
-_0800B678: .4byte 0x0828D4EC
+_0800B678: .4byte sSamusAnimPointers_TurningAround
 _0800B67C: .4byte 0x0828DB0C
 _0800B680:
-	ldr r1, _0800B690 @ =0x0828D514
+	ldr r1, _0800B690 @ =sSamusAnimPointers_Shooting
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13403,10 +13403,10 @@ _0800B680:
 	ldr r1, _0800B694 @ =0x0828DB34
 	b _0800B86C
 	.align 2, 0
-_0800B690: .4byte 0x0828D514
+_0800B690: .4byte sSamusAnimPointers_Shooting
 _0800B694: .4byte 0x0828DB34
 _0800B698:
-	ldr r1, _0800B6A8 @ =0x0828D53C
+	ldr r1, _0800B6A8 @ =sSamusAnimPointers_Running
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13415,10 +13415,10 @@ _0800B698:
 	ldr r1, _0800B6AC @ =0x0828DB5C
 	b _0800B86C
 	.align 2, 0
-_0800B6A8: .4byte 0x0828D53C
+_0800B6A8: .4byte sSamusAnimPointers_Running
 _0800B6AC: .4byte 0x0828DB5C
 _0800B6B0:
-	ldr r1, _0800B6C0 @ =0x0828D55C
+	ldr r1, _0800B6C0 @ =sSamusAnimPointers_MidAir
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13427,10 +13427,10 @@ _0800B6B0:
 	ldr r1, _0800B6C4 @ =0x0828DB7C
 	b _0800B86C
 	.align 2, 0
-_0800B6C0: .4byte 0x0828D55C
+_0800B6C0: .4byte sSamusAnimPointers_MidAir
 _0800B6C4: .4byte 0x0828DB7C
 _0800B6C8:
-	ldr r1, _0800B6D8 @ =0x0828D58C
+	ldr r1, _0800B6D8 @ =sSamusAnimPointers_TurningAroundMidAir
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13439,10 +13439,10 @@ _0800B6C8:
 	ldr r1, _0800B6DC @ =0x0828DBAC
 	b _0800B86C
 	.align 2, 0
-_0800B6D8: .4byte 0x0828D58C
+_0800B6D8: .4byte sSamusAnimPointers_TurningAroundMidAir
 _0800B6DC: .4byte 0x0828DBAC
 _0800B6E0:
-	ldr r1, _0800B6F0 @ =0x0828D5BC
+	ldr r1, _0800B6F0 @ =sSamusAnimPointers_Landing
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13451,10 +13451,10 @@ _0800B6E0:
 	ldr r1, _0800B6F4 @ =0x0828DBDC
 	b _0800B86C
 	.align 2, 0
-_0800B6F0: .4byte 0x0828D5BC
+_0800B6F0: .4byte sSamusAnimPointers_Landing
 _0800B6F4: .4byte 0x0828DBDC
 _0800B6F8:
-	ldr r1, _0800B708 @ =0x0828D634
+	ldr r1, _0800B708 @ =sSamusAnimPointers_Crouching
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13463,10 +13463,10 @@ _0800B6F8:
 	ldr r1, _0800B70C @ =0x0828DC54
 	b _0800B86C
 	.align 2, 0
-_0800B708: .4byte 0x0828D634
+_0800B708: .4byte sSamusAnimPointers_Crouching
 _0800B70C: .4byte 0x0828DC54
 _0800B710:
-	ldr r1, _0800B720 @ =0x0828D60C
+	ldr r1, _0800B720 @ =sSamusAnimPointers_TurningAroundAndCrouching
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13475,10 +13475,10 @@ _0800B710:
 	ldr r1, _0800B724 @ =0x0828DC2C
 	b _0800B86C
 	.align 2, 0
-_0800B720: .4byte 0x0828D60C
+_0800B720: .4byte sSamusAnimPointers_TurningAroundAndCrouching
 _0800B724: .4byte 0x0828DC2C
 _0800B728:
-	ldr r1, _0800B738 @ =0x0828D634
+	ldr r1, _0800B738 @ =sSamusAnimPointers_Crouching
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13487,7 +13487,7 @@ _0800B728:
 	ldr r1, _0800B73C @ =0x0828DC54
 	b _0800B86C
 	.align 2, 0
-_0800B738: .4byte 0x0828D634
+_0800B738: .4byte sSamusAnimPointers_Crouching
 _0800B73C: .4byte 0x0828DC54
 _0800B740:
 	ldr r2, _0800B768 @ =gButtonInput
@@ -13503,7 +13503,7 @@ _0800B740:
 	lsls r0, r0, #0x18
 	lsrs r7, r0, #0x18
 _0800B758:
-	ldr r1, _0800B76C @ =0x0828D65C
+	ldr r1, _0800B76C @ =sSamusAnimPointers_HangingOnLedge
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13513,7 +13513,7 @@ _0800B758:
 	b _0800B86C
 	.align 2, 0
 _0800B768: .4byte gButtonInput
-_0800B76C: .4byte 0x0828D65C
+_0800B76C: .4byte sSamusAnimPointers_HangingOnLedge
 _0800B770: .4byte 0x0828DC7C
 _0800B774:
 	mov r1, ip
@@ -13524,14 +13524,14 @@ _0800B774:
 	lsls r0, r0, #0x18
 	lsrs r7, r0, #0x18
 _0800B782:
-	ldr r2, _0800B788 @ =0x0828D674
+	ldr r2, _0800B788 @ =sSamusAnimPointers_Skidding
 	b _0800B834
 	.align 2, 0
-_0800B788: .4byte 0x0828D674
+_0800B788: .4byte sSamusAnimPointers_Skidding
 _0800B78C:
 	mov r0, ip
 	ldrb r7, [r0, #3]
-	ldr r1, _0800B7A0 @ =0x0828D684
+	ldr r1, _0800B7A0 @ =sSamusAnimPointers_Shinesparking
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13540,12 +13540,12 @@ _0800B78C:
 	ldr r1, _0800B7A4 @ =0x0828DC8C
 	b _0800B86C
 	.align 2, 0
-_0800B7A0: .4byte 0x0828D684
+_0800B7A0: .4byte sSamusAnimPointers_Shinesparking
 _0800B7A4: .4byte 0x0828DC8C
 _0800B7A8:
 	mov r1, ip
 	ldrb r7, [r1, #3]
-	ldr r1, _0800B7BC @ =0x0828D69C
+	ldr r1, _0800B7BC @ =sSamusAnimPointers_DelayAfterShinesparking
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13554,10 +13554,10 @@ _0800B7A8:
 	ldr r1, _0800B7C0 @ =0x0828DCA4
 	b _0800B86C
 	.align 2, 0
-_0800B7BC: .4byte 0x0828D69C
+_0800B7BC: .4byte sSamusAnimPointers_DelayAfterShinesparking
 _0800B7C0: .4byte 0x0828DCA4
 _0800B7C4:
-	ldr r1, _0800B7D4 @ =0x0828D6B4
+	ldr r1, _0800B7D4 @ =sSamusAnimPointers_HoldingYourArmCannonOutOnAVerticalLadder
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13566,10 +13566,10 @@ _0800B7C4:
 	ldr r1, _0800B7D8 @ =0x0828DCBC
 	b _0800B86C
 	.align 2, 0
-_0800B7D4: .4byte 0x0828D6B4
+_0800B7D4: .4byte sSamusAnimPointers_HoldingYourArmCannonOutOnAVerticalLadder
 _0800B7D8: .4byte 0x0828DCBC
 _0800B7DC:
-	ldr r1, _0800B7EC @ =0x0828D6E4
+	ldr r1, _0800B7EC @ =sSamusAnimPointers_ShootingOnVerticalLadder
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13578,10 +13578,10 @@ _0800B7DC:
 	ldr r1, _0800B7F0 @ =0x0828DCEC
 	b _0800B86C
 	.align 2, 0
-_0800B7EC: .4byte 0x0828D6E4
+_0800B7EC: .4byte sSamusAnimPointers_ShootingOnVerticalLadder
 _0800B7F0: .4byte 0x0828DCEC
 _0800B7F4:
-	ldr r1, _0800B804 @ =0x0828D714
+	ldr r1, _0800B804 @ =sSamusAnimPointers_HangingOnHorizontalLadder
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13590,10 +13590,10 @@ _0800B7F4:
 	ldr r1, _0800B808 @ =0x0828DD1C
 	b _0800B86C
 	.align 2, 0
-_0800B804: .4byte 0x0828D714
+_0800B804: .4byte sSamusAnimPointers_HangingOnHorizontalLadder
 _0800B808: .4byte 0x0828DD1C
 _0800B80C:
-	ldr r1, _0800B81C @ =0x0828D744
+	ldr r1, _0800B81C @ =sSamusAnimPointers_ShootingOnHorizontalLadder
 	lsls r2, r4, #2
 	lsls r0, r7, #3
 	adds r0, r2, r0
@@ -13602,7 +13602,7 @@ _0800B80C:
 	ldr r1, _0800B820 @ =0x0828DD4C
 	b _0800B86C
 	.align 2, 0
-_0800B81C: .4byte 0x0828D744
+_0800B81C: .4byte sSamusAnimPointers_ShootingOnHorizontalLadder
 _0800B820: .4byte 0x0828DD4C
 _0800B824:
 	ldr r0, _0800B850 @ =gButtonInput
@@ -13612,7 +13612,7 @@ _0800B824:
 	rsbs r0, r1, #0
 	orrs r0, r1
 	lsrs r7, r0, #0x1f
-	ldr r2, _0800B854 @ =0x0828D784
+	ldr r2, _0800B854 @ =sSamusAnimPointers_HitByOmegaMetroid
 _0800B834:
 	lsls r1, r4, #2
 	lsls r0, r7, #3
@@ -13629,10 +13629,10 @@ _0800B834:
 	b _0800B872
 	.align 2, 0
 _0800B850: .4byte gButtonInput
-_0800B854: .4byte 0x0828D784
+_0800B854: .4byte sSamusAnimPointers_HitByOmegaMetroid
 _0800B858: .4byte 0x0828D8DC
 _0800B85C:
-	ldr r1, _0800B8D4 @ =0x0828D2BC
+	ldr r1, _0800B8D4 @ =sSamusAnimPointers
 	lsls r2, r4, #2
 	mov r3, r8
 	lsls r0, r3, #3
@@ -13696,7 +13696,7 @@ _0800B8CA:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_0800B8D4: .4byte 0x0828D2BC
+_0800B8D4: .4byte sSamusAnimPointers
 _0800B8D8: .4byte 0x0828D8DC
 _0800B8DC: .4byte gSamusGraphicsInfo
 _0800B8E0: .4byte _0800B8E4
@@ -13764,7 +13764,7 @@ _0800B9AC: .4byte 0x0828BF98
 _0800B9B0: .4byte 0x082DE9B0
 _0800B9B4: .4byte 0x082DEA70
 _0800B9B8:
-	ldr r1, _0800B9F0 @ =0x0828D66C
+	ldr r1, _0800B9F0 @ =sSamusScrewAttackElectricityAnimPointers
 	adds r1, r5, r1
 	ldr r2, _0800B9F4 @ =gSamusAnimationInfo
 	ldrb r0, [r2, #2]
@@ -13792,12 +13792,12 @@ _0800B9B8:
 	lsls r0, r0, #1
 	b _0800BCDC
 	.align 2, 0
-_0800B9F0: .4byte 0x0828D66C
+_0800B9F0: .4byte sSamusScrewAttackElectricityAnimPointers
 _0800B9F4: .4byte gSamusAnimationInfo
 _0800B9F8: .4byte 0x0828FABC
 _0800B9FC: .4byte 0x0828FACC
 _0800BA00:
-	ldr r1, _0800BA28 @ =0x0828D774
+	ldr r1, _0800BA28 @ =sSamusUnlockingSecurityEffectAnimPointers
 	adds r1, r5, r1
 	ldr r0, _0800BA2C @ =gSamusAnimationInfo
 	ldrb r0, [r0, #2]
@@ -13817,7 +13817,7 @@ _0800BA00:
 	lsls r0, r0, #2
 	b _0800BCDC
 	.align 2, 0
-_0800BA28: .4byte 0x0828D774
+_0800BA28: .4byte sSamusUnlockingSecurityEffectAnimPointers
 _0800BA2C: .4byte gSamusAnimationInfo
 _0800BA30: .4byte 0x082E4250
 _0800BA34: .4byte 0x082E4450
@@ -13892,7 +13892,7 @@ _0800BACC: .4byte 0x80000020
 _0800BAD0:
 	cmp r0, #2
 	bne _0800BB14
-	ldr r1, _0800BB08 @ =0x0828D77C
+	ldr r1, _0800BB08 @ =sSamusDyingEffectAnimPointers
 	adds r1, r5, r1
 	ldrb r0, [r2, #2]
 	lsls r0, r0, #3
@@ -13919,7 +13919,7 @@ _0800BAD0:
 	lsls r0, r0, #1
 	b _0800BCDC
 	.align 2, 0
-_0800BB08: .4byte 0x0828D77C
+_0800BB08: .4byte sSamusDyingEffectAnimPointers
 _0800BB0C: .4byte 0x0828FC5C
 _0800BB10: .4byte 0x0828FC74
 _0800BB14:

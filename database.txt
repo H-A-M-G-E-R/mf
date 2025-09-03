@@ -410,8 +410,8 @@ samus/gfx/Top_2c42a8_Frame0.gfx;5;2bf8e6;32
 samus/gfx/Top_2c42c8_Frame0.gfx;6;2bf988;32
 samus/gfx/Top_2c42e8_Frame0.gfx;6;2bfa4a;32
 samus/gfx/Top_2c4308_Frame0.gfx;6;2bfb0c;32
-samus/gfx/Top_Left_GrabbedByYakuza_Frame0.gfx;8;2bfbce;32
-samus/gfx/Bottom_Left_GrabbedByYakuza_Frame0.gfx;8;2bfcd0;32
+samus/gfx/Top_Left_Down_MidAir_Frame0.gfx;8;2bfbce;32
+samus/gfx/Bottom_Left_Down_MidAir_Frame0.gfx;8;2bfcd0;32
 samus/gfx/Top_2c4328_Frame0.gfx;8;2bfdd2;32
 samus/gfx/Bottom_2c4328_Frame0.gfx;8;2bfed4;32
 samus/gfx/Top_Right_DelayBeforeShinesparking_Frame0.gfx;6;2bffd6;32
@@ -442,7 +442,7 @@ samus/gfx/Top_2c4668_Frame0.gfx;4;2c12a6;32
 samus/gfx/Top_2c4688_Frame0.gfx;6;2c1328;32
 samus/gfx/Top_2c46a8_Frame0.gfx;6;2c13ea;32
 samus/gfx/Top_2c46c8_Frame0.gfx;5;2c14ac;32
-samus/gfx/Top_Right_GrabbedByYakuza_Frame0.gfx;8;2c154e;32
+samus/gfx/Top_Right_Down_MidAir_Frame0.gfx;8;2c154e;32
 samus/gfx/Top_2c46e8_Frame0.gfx;8;2c1650;32
 samus/gfx/Top_Left_Spinning_Frame0.gfx;16;2c1752;32
 samus/gfx/Top_Left_Spinning_Frame1.gfx;8;2c1954;32
@@ -689,8 +689,8 @@ samus/gfx/Top_Left_HangingOnHorizontalLadder_Frame0.gfx;5;2d328c;32
 samus/gfx/Bottom_Left_HangingOnHorizontalLadder_Frame0.gfx;5;2d332e;32
 samus/gfx/Top_Left_ShootingOnHorizontalLadder_Frame0.gfx;6;2d33d0;32
 samus/gfx/Bottom_Left_ShootingOnHorizontalLadder_Frame0.gfx;6;2d3492;32
-samus/gfx/Top_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0.gfx;6;2d3554;32
-samus/gfx/Bottom_Left_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0.gfx;6;2d3616;32
+samus/gfx/Top_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0.gfx;6;2d3554;32
+samus/gfx/Bottom_Left_DiagonalDown_HangingOnHorizontalLadder_Frame0.gfx;6;2d3616;32
 samus/gfx/Top_Left_DiagonalDown_ShootingOnHorizontalLadder_Frame0.gfx;6;2d36d8;32
 samus/gfx/Bottom_Left_DiagonalDown_ShootingOnHorizontalLadder_Frame0.gfx;6;2d379a;32
 samus/gfx/Top_Left_Down_DelayAfterShootingOnHorizontalLadder_Frame0.gfx;5;2d385c;32
@@ -699,7 +699,7 @@ samus/gfx/Top_Left_Down_ShootingOnHorizontalLadder_Frame0.gfx;6;2d39a0;32
 samus/gfx/Bottom_Left_Down_ShootingOnHorizontalLadder_Frame0.gfx;5;2d3a62;32
 samus/gfx/Top_Right_HangingOnHorizontalLadder_Frame0.gfx;8;2d3b04;32
 samus/gfx/Top_Right_ShootingOnHorizontalLadder_Frame0.gfx;8;2d3c06;32
-samus/gfx/Top_Right_DiagonalDown_DelayAfterShootingOnHorizontalLadder_Frame0.gfx;10;2d3d08;32
+samus/gfx/Top_Right_DiagonalDown_HangingOnHorizontalLadder_Frame0.gfx;10;2d3d08;32
 samus/gfx/Top_Right_DiagonalDown_ShootingOnHorizontalLadder_Frame0.gfx;10;2d3e4a;32
 samus/gfx/Top_Right_Down_DelayAfterShootingOnHorizontalLadder_Frame0.gfx;5;2d3f8c;32
 samus/gfx/Top_Right_Down_ShootingOnHorizontalLadder_Frame0.gfx;6;2d402e;32
@@ -2976,7 +2976,8 @@ menus/pause_screen/navigation/SamusFaceCloseUp_Frame3.tt.lz;0x580d68
 Blob_a5258_a5710.bin;a5258;a5710
 
 # Samus data
-Blob_289994_28fd04.bin;289994;28fd04
+Blob_289994_28d2bc.bin;289994;28d2bc
+Blob_28d794_28fd04.bin;28d794;28fd04
 Blob_28fd08_28ff60.bin;0x28fd08;0x28ff60
 
 # Arm cannon data and more?

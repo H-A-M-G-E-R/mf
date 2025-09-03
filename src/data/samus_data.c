@@ -14,10 +14,4 @@ const struct ArmCannonOffset sArmCannonOffset_Empty = {
     .y = 0
 };
 
-static const u8 sBlob_289994_28fd04[] = INCBIN_U8("data/Blob_289994_28fd04.bin");
-
-const SamusSetPose_T sSamusSetPoseFunctionPointer[1] = {
-    SamusSetPose
-};
-
-static const u8 sBlob_28fd08_28ff60[] = INCBIN_U8("data/Blob_28fd08_28ff60.bin");
+static const u8 sBlob_289994_28d2bc[] = INCBIN_U8("data/Blob_289994_28d2bc.bin");
