@@ -48,7 +48,7 @@ void FakeTankIdle(void) {
     if (gCurrentSprite.status & SS_HIDDEN)
         return;
 
-    if ((u8)SpriteUtilCheckSamusNearSpriteLeftRight(0xC0, 0xC0) != NSLR_OUT_OF_RANGE)
+    if ((u8)SpriteUtilCheckSamusNearSpriteLeftRight(BLOCK_SIZE * 3, BLOCK_SIZE * 3) != NSLR_OUT_OF_RANGE)
         gCurrentSprite.pose = 0x17;
 }
 
@@ -66,95 +66,74 @@ void FakeTankWakingUp(void) {
         gCurrentSprite.pose = 0x19;
 }
 
-/*
 void FakeTankFlyingInit(void) {
-    gCurrentSprite.pose = 0x1A;
+    gCurrentSprite.pose = 0x1a;
     gCurrentSprite.work4 = 0;
-    (&gCurrentSprite.pose)[0xA] = 0x3C;
-    (&gCurrentSprite.pose)[0xA].unk1 = 0x3C;
+    gCurrentSprite.work1 = 0x3c;
+    gCurrentSprite.work2 = 0x3c;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
 
 void FakeTankFlying(void) {
-    s32 temp_r0_3;
-    u16 *temp_r0_2;
-    u16 var_r4;
-    u8 temp_r0;
-    u8 var_r3;
+    u8 offset;
+    s16 movement;
 
-    temp_r0 = gCurrentSprite.work1;
-    if (temp_r0 != 0) {
-        gCurrentSprite.work1 = (u8) (temp_r0 - 1);
-        gCurrentSprite.yPosition = (u16) (gCurrentSprite.yPosition - 4);
+    if (gCurrentSprite.work1 > 0) {
+        gCurrentSprite.work1--;
+        gCurrentSprite.yPosition -= PIXEL_SIZE;
         return;
     }
-    var_r3 = gCurrentSprite.work4;
-    temp_r0_2 = &(&sFakeTankFlyingYMovement)[var_r3];
-    var_r4 = *temp_r0_2;
-    if ((s16) *temp_r0_2 == 0x7FFF) {
-        var_r4 = sFakeTankFlyingYMovement;
-        var_r3 = 0;
+
+    offset = gCurrentSprite.work4;
+    movement = sFakeTankFlyingYMovement[offset];
+    if (movement == SHORT_MAX) {
+        movement = sFakeTankFlyingYMovement[0];
+        offset = 0;
     }
-    gCurrentSprite.work4 = (u8) (var_r3 + 1);
-    gCurrentSprite.yPosition = (u16) (gCurrentSprite.yPosition + var_r4);
-    temp_r0_3 = gCurrentSprite.work2 - 1;
-    gCurrentSprite.work2 = (u8) temp_r0_3;
-    if ((temp_r0_3 << 0x18) == 0) {
-        *(&gCurrentSprite.work2 - 0xB) = 0x1B;
-    }
+    offset++;
+    gCurrentSprite.work4 = offset;
+    gCurrentSprite.yPosition += movement;
+
+    if (--gCurrentSprite.work2 == 0)
+        gCurrentSprite.pose = 0x1b;
 }
 
 void FakeTankFlyingAwayInit(void) {
-    s32 temp_r0;
-
-    gCurrentSprite.pose = 0x1C;
-    gCurrentSprite.xParasiteTimer = 0x12C;
+    gCurrentSprite.pose = 0x1c;
+    gCurrentSprite.xParasiteTimer = 300;
     gCurrentSprite.unk_8 = 0;
     gCurrentSprite.work2 = 0;
-    (&gCurrentSprite.work2)[1] = 1;
-    temp_r0 = (&gCurrentSprite.work2 + 1) - 2;
-    *temp_r0 = 0;
-    *(temp_r0 + 3) = 1;
+    gCurrentSprite.work3 = 1;
+    gCurrentSprite.work1 = 0;
+    gCurrentSprite.work4 = 1;
 }
 
 void FakeTankFlyingAway(void) {
-    s32 temp_r0;
-    s32 var_r0;
-    u16 var_r2;
-    u16 var_r3;
-
-    var_r3 = gXParasiteTargetYPosition;
-    var_r2 = gXParasiteTargetXPosition;
+    u16 targetY = gXParasiteTargetYPosition;
+    u16 targetX = gXParasiteTargetXPosition;
     switch (gCurrentSprite.unk_8) {
-    case 1:
-        var_r3 = (u16) (var_r3 - 0x48);
-        if (!(0x200 & gCurrentSprite.status)) {
-            var_r0 = var_r2 - 0x48;
-        } else {
-block_7:
-            var_r0 = var_r2 + 0x48;
-        }
-block_8:
-        var_r2 = (u16) var_r0;
-        break;
-    case 3:
-        var_r3 = (u16) (var_r3 + 0x48);
-        if (0x200 & gCurrentSprite.status) {
-            var_r0 = var_r2 - 0x48;
-        } else {
-            goto block_7;
-        }
-        goto block_8;
+        case 1:
+            targetY -= 0x48;
+            if (gCurrentSprite.status & SS_FACING_RIGHT)
+                targetX += 0x48;
+            else
+                targetX -= 0x48;
+            break;
+        case 3:
+            targetY += 0x48;
+            if (gCurrentSprite.status & SS_FACING_RIGHT)
+                targetX -= 0x48;
+            else
+                targetX += 0x48;
+            break;
     }
-    unk_136ac((s32) var_r3, (s32) var_r2, 0x10, 0x18, 2);
-    temp_r0 = gCurrentSprite.xParasiteTimer - 1;
-    gCurrentSprite.xParasiteTimer = (u16) temp_r0;
-    if ((temp_r0 << 0x10) == 0) {
-        gCurrentSprite.pose = 0x1E;
-    }
+    unk_136ac(targetY, targetX, 0x10, 0x18, 2);
+    if (--gCurrentSprite.xParasiteTimer == 0)
+        gCurrentSprite.pose = 0x1e;
 }
 
+/*
 void FakeTankLeaving(void) {
     s32 var_r0;
     s32 var_r0_2;

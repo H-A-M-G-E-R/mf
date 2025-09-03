@@ -5,6 +5,7 @@
 #include "data/hud_data.h"
 
 #include "constants/event.h"
+#include "constants/particle.h"
 
 #include "structs/escape.h"
 #include "structs/samus.h"
@@ -210,7 +211,7 @@ void EscapeStart(void)
     // Escape timer uses absolute position, which isn't converted to pixel coordinates when drawing,
     // hence pixel coordinates are used when creating it
     ParticleSet(SUB_PIXEL_TO_PIXEL(PIXEL_SIZE * 2),
-        SUB_PIXEL_TO_PIXEL(BLOCK_SIZE * 9 - QUARTER_BLOCK_SIZE), 0x46);
+        SUB_PIXEL_TO_PIXEL(BLOCK_SIZE * 9 - QUARTER_BLOCK_SIZE), PE_ESCAPE);
 }
 
 /**

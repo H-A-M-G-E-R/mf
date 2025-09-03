@@ -243,7 +243,7 @@ void WaverDebrisFalling(void) {
     if (gCurrentSprite.work1 == 0) {
         SpriteUtilCheckVerticalCollisionAtPositionSlopes(gCurrentSprite.yPosition, gCurrentSprite.xPosition);
         if (gPreviousVerticalCollisionCheck != 0) {
-            ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, 0x27);
+            ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_HEAVY_DUST_1);
             gCurrentSprite.status = 0;
             return;
         }

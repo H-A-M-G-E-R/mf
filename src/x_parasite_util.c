@@ -5,6 +5,7 @@
 #include "data/sprite_data.h"
 #include "data/sprites/x_parasite.h"
 
+#include "constants/particle.h"
 #include "constants/sprite.h"
 #include "constants/samus.h"
 
@@ -37,9 +38,8 @@ u8 CountPrimarySpritesThatCantAbsorbX(void) {
                 if (gSpriteData[i].pose <= SPRITE_POSE_SPAWNING_FROM_X && SPRITE_IS_INFECTED(gSpriteData[i])
                     && !(gSpriteData[i].properties & (SP_SECONDARY_SPRITE | SP_CAN_ABSORB_X)))
                     count++;
-            } else {
+            } else
                 count++;
-            }
         }
     }
     return count;
@@ -121,7 +121,8 @@ void XParasiteMove(u16 dstY, u16 dstX, u8 ySpeedCap, u8 xSpeedCap, u8 speedDivis
     {
         gCurrentSprite.status ^= SS_FACING_RIGHT;
         gCurrentSprite.work3 = 1;
-        if (++gCurrentSprite.unk_8 >= 4) gCurrentSprite.unk_8 = 0;
+        if (++gCurrentSprite.unk_8 >= 4)
+            gCurrentSprite.unk_8 = 0;
         SoundPlayNotAlreadyPlaying(0x141);
         if (gCurrentSprite.drawOrder == 1)
             gCurrentSprite.drawOrder = 16;
@@ -370,17 +371,17 @@ void SamusAbsorbX(void) {
                 energy = 500;
                 missiles = 100;
                 powerBombs = 10;
-                ParticleSet(gSamusData.yPosition + gSamusData.drawDistanceTop / 2, gSamusData.xPosition, 0x1c);
+                ParticleSet(gSamusData.yPosition + gSamusData.drawDistanceTop / 2, gSamusData.xPosition, PE_ABSORB_RED_X);
             } else if (gCurrentSprite.samusCollision == SSC_GREEN_X_PARASITE) {
                 energy = 0;
                 missiles = 2;
                 powerBombs = 0;
-                ParticleSet(gSamusData.yPosition + gSamusData.drawDistanceTop / 2, gSamusData.xPosition, 0x1b);
+                ParticleSet(gSamusData.yPosition + gSamusData.drawDistanceTop / 2, gSamusData.xPosition, PE_ABSORB_MISSILE_X);
             } else {
                 energy = 10;
                 missiles = 0;
                 powerBombs = 0;
-                ParticleSet(gSamusData.yPosition + gSamusData.drawDistanceTop / 2, gSamusData.xPosition, 0x1a);
+                ParticleSet(gSamusData.yPosition + gSamusData.drawDistanceTop / 2, gSamusData.xPosition, PE_ABSORB_HEALTH_X);
             }
             SpriteUtilRefillSamus(energy, missiles, powerBombs);
             gSamusEnvironmentalEffects[0].externalTimer = 48;
@@ -419,9 +420,9 @@ void SpriteDying(void) {
     if ((gCurrentSprite.work1 & 1) == 0)
         gCurrentSprite.status ^= SS_NOT_DRAWN;
     if (--gCurrentSprite.work1 == 0) {
-        if (gCurrentSprite.properties & SP_SECONDARY_SPRITE) {
+        if (gCurrentSprite.properties & SP_SECONDARY_SPRITE)
             gCurrentSprite.status = 0;
-        } else {
+        else {
             gCurrentSprite.pose = 0x5b;
             gCurrentSprite.spritesetGfxSlot = 0;
             gCurrentSprite.status |= SS_NOT_DRAWN;
@@ -461,13 +462,15 @@ void XParasiteDetermineColor(u8 type, u8 spriteId) {
                 }
             } else if (type == X_PARASITE_TYPE_FROM_SPRITE) {
                 // Calculate random number between 1 and 1024 inclusive
-                randomNumber = (gSpriteRandomNumber & 3);
+                randomNumber = gSpriteRandomNumber & 3;
                 randomNumber <<= 8;
                 randomNumber |= gFrameCounter8Bit;
                 randomNumber++;
+
                 yellowXThreshold = sPrimarySpriteStats[spriteId][4];
                 greenXThreshold = sPrimarySpriteStats[spriteId][5];
                 redXThreshold = sPrimarySpriteStats[spriteId][6];
+
                 if (redXThreshold > 0) {
                     redXThreshold = 1024 - redXThreshold;
                     if (randomNumber <= 1024 && randomNumber > redXThreshold) {
@@ -476,9 +479,9 @@ void XParasiteDetermineColor(u8 type, u8 spriteId) {
                         gCurrentSprite.samusCollision = SSC_RED_X_PARASITE;
                         break;
                     }
-                } else {
+                } else
                     redXThreshold = 1024;
-                }
+
                 if (greenXThreshold > 0) {
                     greenXThreshold = redXThreshold - greenXThreshold;
                     if (redXThreshold >= randomNumber && randomNumber > greenXThreshold) {
@@ -493,9 +496,9 @@ void XParasiteDetermineColor(u8 type, u8 spriteId) {
                             break;
                         }
                     }
-                } else {
+                } else
                     greenXThreshold = redXThreshold;
-                }
+
                 if (yellowXThreshold > 0 && greenXThreshold >= randomNumber && randomNumber > 0) {
                     // Eligible for yellow, spawn green if energy full and missiles not full, yellow otherwise
                     if (SpriteUtilCheckEnergyFullAndMissilesNotFull()) {
@@ -507,10 +510,9 @@ void XParasiteDetermineColor(u8 type, u8 spriteId) {
                         gCurrentSprite.samusCollision = SSC_YELLOW_X_PARASITE_SPAWN_ON_ROOM_LOAD;
                         break;
                     }
-                } else {
+                } else
                     // That shouldn't happen if drop chances sum to 1024
                     gCurrentSprite.status = 0;
-                }
             } else {
                 gCurrentSprite.pOam = sXParasiteOam_Yellow;
                 gCurrentSprite.samusCollision = SSC_YELLOW_X_PARASITE_SPAWN_ON_ROOM_LOAD;
@@ -544,7 +546,7 @@ void XParasiteInit(void) {
             gCurrentSprite.work3 = 1;
             gCurrentSprite.work4 = 1;
             XParasiteDetermineColor(X_PARASITE_TYPE_IN_ROOM, 0);
-            if ((gSpriteRandomNumber & 1) != 0)
+            if (gSpriteRandomNumber & 1)
                 gCurrentSprite.drawOrder = 1;
             else
                 gCurrentSprite.drawOrder = 16;
@@ -571,7 +573,7 @@ void XParasiteInit(void) {
             gCurrentSprite.work1 = 0;
             gCurrentSprite.work4 = 1;
             XParasiteDetermineColor(X_PARASITE_TYPE_FROM_CORE_X, 0);
-            if ((gSpriteRandomNumber & 1) != 0)
+            if (gSpriteRandomNumber & 1)
                 gCurrentSprite.drawOrder = 1;
             else
                 gCurrentSprite.drawOrder = 16;
@@ -668,9 +670,8 @@ void XParasiteIdleFloating(void) {
             if ((gCurrentSprite.spritesetSlotAndProperties & SSP_MASK) == SSP_X_UNABSORBABLE_BY_SAMUS) {
                 gCurrentSprite.ignoreSamusCollisionTimer = 1;
                 XParasiteFlyingInit();
-            } else {
+            } else
                 gCurrentSprite.xParasiteTimer = 60;
-            }
         }
     } else {
         if (--gCurrentSprite.xParasiteTimer == 0)
@@ -692,13 +693,12 @@ void XParasiteFlying(void) {
                     gCurrentSprite.paletteRow = 2;
                 else
                     gCurrentSprite.paletteRow = 1;
-            } else {
+            } else
                 gCurrentSprite.paletteRow = 0;
-            }
         }
         if (gCurrentSprite.xParasiteTimer == 0) {
             gCurrentSprite.paletteRow = 0;
-            gCurrentSprite.pose = 0x61;
+            gCurrentSprite.pose = X_PARASITE_POSE_FLYING_AWAY;
         } else {
             gCurrentSprite.xParasiteTimer--;
             if (XParasiteFlyingMovement() == X_PARASITE_FLYING_STAGE_FREE_FLOATING) {
@@ -707,14 +707,14 @@ void XParasiteFlying(void) {
             }
         }
     } else {
-        if (gCurrentSprite.status & SS_SAMUS_COLLIDING) {
+        if (gCurrentSprite.status & SS_SAMUS_COLLIDING)
             XParasiteGettingAbsorbedInit();
-        } else if ((gCurrentSprite.invincibilityStunFlashTimer & 0x80) != 0) {
+        else if ((gCurrentSprite.invincibilityStunFlashTimer & 0x80) != 0) {
             if (gCurrentPowerBomb.animationState == 0)
                 gCurrentSprite.invincibilityStunFlashTimer &= 0x7f;
-        } else if (gCurrentSprite.xParasiteTimer == 0) {
-            gCurrentSprite.pose = 0x61;
-        } else {
+        } else if (gCurrentSprite.xParasiteTimer == 0)
+            gCurrentSprite.pose = X_PARASITE_POSE_FLYING_AWAY;
+        else {
             gCurrentSprite.xParasiteTimer--;
             XParasiteFlyingMovement();
         }
@@ -750,9 +750,11 @@ u8 XParasiteFlyingMovement(void) {
             SET_ABS_SUB(distY, y, targetY);
             SET_ABS_SUB(distX, x, targetX);
             gUnk_030007c0[i] = distY + distX;
+
             stage = X_PARASITE_FLYING_STAGE_FLYING_TO_SPRITE;
             if (gCurrentSprite.pose == X_PARASITE_POSE_FLYING)
                 gCurrentSprite.xParasiteTimer = 300;
+
             if (y + EIGHTH_BLOCK_SIZE > targetY + gSpriteData[i].hitboxTop && y - EIGHTH_BLOCK_SIZE < targetY + gSpriteData[i].hitboxBottom
                 && x + EIGHTH_BLOCK_SIZE > targetX + gSpriteData[i].hitboxLeft && x - EIGHTH_BLOCK_SIZE < targetX + gSpriteData[i].hitboxRight) {
                 // Touched sprite
@@ -783,9 +785,9 @@ u8 XParasiteFlyingMovement(void) {
             gUnk_030007c0[i] = 0x8000;
         }
     }
-    if (stage == X_PARASITE_FLYING_STAGE_TOUCHED_SPRITE) {
+    if (stage == X_PARASITE_FLYING_STAGE_TOUCHED_SPRITE)
         return stage;
-    } else if (stage == X_PARASITE_FLYING_STAGE_FREE_FLOATING) {
+    else if (stage == X_PARASITE_FLYING_STAGE_FREE_FLOATING) {
         targetY = gXParasiteTargetYPosition;
         targetX = gXParasiteTargetXPosition;
         if (gCurrentSprite.pose == X_PARASITE_POSE_FLYING) {
@@ -808,7 +810,9 @@ u8 XParasiteFlyingMovement(void) {
                 }
             }
         }
-        ySpeedCap = PIXEL_TO_SUB_PIXEL(5), xSpeedCap = PIXEL_TO_SUB_PIXEL(7), i = 1;
+        ySpeedCap = PIXEL_TO_SUB_PIXEL(5);
+        xSpeedCap = PIXEL_TO_SUB_PIXEL(7);
+        i = 1;
     } else {
         u8 targetRamSlot = 1;
         // Get nearest sprite by taxicab distance
@@ -819,7 +823,9 @@ u8 XParasiteFlyingMovement(void) {
         targetY = gSpriteData[targetRamSlot].yPosition + gSpriteData[targetRamSlot].hitboxTop +
             (gSpriteData[targetRamSlot].hitboxBottom - gSpriteData[targetRamSlot].hitboxTop) / 2;
         targetX = gSpriteData[targetRamSlot].xPosition;
-        ySpeedCap = PIXEL_TO_SUB_PIXEL(5), xSpeedCap = PIXEL_TO_SUB_PIXEL(5), i = 1;
+        ySpeedCap = PIXEL_TO_SUB_PIXEL(5);
+        xSpeedCap = PIXEL_TO_SUB_PIXEL(5);
+        i = 1;
     }
     XParasiteMove(targetY, targetX, ySpeedCap, xSpeedCap, i);
     return stage;
@@ -841,6 +847,7 @@ void XParasiteFlyingAway(void) {
             gCurrentSprite.xPosition += movement;
         else
             gCurrentSprite.xPosition -= movement;
+
         if (gCurrentSprite.work4 < PIXEL_TO_SUB_PIXEL(6.25f) * 8)
             gCurrentSprite.work4 += 1;
         movement = DIV_SHIFT(gCurrentSprite.work4, 8);
@@ -927,9 +934,9 @@ void XParasiteForming(void) {
 
 void SpriteSpawningFromX(void) {
     gCurrentSprite.ignoreSamusCollisionTimer = 1;
-    if (--gCurrentSprite.xParasiteTimer > 0) {
+    if (--gCurrentSprite.xParasiteTimer > 0)
         gWrittenToMosaic_H = sXParasiteMosaicValues[gCurrentSprite.xParasiteTimer];
-    } else {
+    else {
         gCurrentSprite.status &= ~SS_IGNORE_PROJECTILES;
         gCurrentSprite.pose = 1;
         gCurrentSprite.status &= ~SS_ENABLE_MOSAIC;

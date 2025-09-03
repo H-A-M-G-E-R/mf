@@ -8,6 +8,7 @@
 
 #include "constants/audio.h"
 #include "constants/clipdata.h"
+#include "constants/particle.h"
 #include "constants/sprite.h"
 
 #include "structs/samus.h"
@@ -491,11 +492,11 @@ void HalzynWingIdle(void)
 
         if (gCurrentSprite.status & SS_X_FLIP)
         {
-            ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition + HALF_BLOCK_SIZE, 0x26);
+            ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition + HALF_BLOCK_SIZE, PE_0x26);
         }
         else
         {
-            ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition - HALF_BLOCK_SIZE, 0x26);
+            ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition - HALF_BLOCK_SIZE, PE_0x26);
         }
 
         return;
@@ -562,7 +563,7 @@ void HalzynWingFalling(void)
     {
         if (MOD_AND(gCurrentSprite.ignoreSamusCollisionTimer, 8) == 0)
         {
-            ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition + HALF_BLOCK_SIZE, 0x27);
+            ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition + HALF_BLOCK_SIZE, PE_HEAVY_DUST_1);
         }
 
         gCurrentSprite.xPosition += PIXEL_SIZE / 4;
@@ -573,7 +574,7 @@ void HalzynWingFalling(void)
     {
         if (MOD_AND(gCurrentSprite.ignoreSamusCollisionTimer, 8) == 0)
         {
-            ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition - HALF_BLOCK_SIZE, 0x27);
+            ParticleSet(gCurrentSprite.yPosition - HALF_BLOCK_SIZE, gCurrentSprite.xPosition - HALF_BLOCK_SIZE, PE_HEAVY_DUST_1);
         }
 
         gCurrentSprite.xPosition -= PIXEL_SIZE / 4;

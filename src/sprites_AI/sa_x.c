@@ -2106,7 +2106,7 @@ void SaXMissileInit(void)
 void SaXMissileExploding(void)
 {
     gCurrentSprite.status = 0;
-    ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, 0xD);
+    ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_0xD);
     SoundPlay(0x25E);
 
     ScreenShakeStartHorizontal(40, 0x80 | 1);
@@ -2393,14 +2393,14 @@ void LabExplosionExploding(void)
     {
         if (gSpriteData[ramSlot].pose == 0x2)
         {
-            ParticleSet(yPosition, xPosition, 0xD);
-            ParticleSet(yPosition, xPosition, 0x2E);
+            ParticleSet(yPosition, xPosition, PE_0xD);
+            ParticleSet(yPosition, xPosition, PE_TAIL_EXPLOSION_SMOKE);
             SoundPlay(0x25E);
         }
         else if (gSpriteData[ramSlot].pose == 0x18)
         {
-            ParticleSet(yPosition, xPosition, 0xD);
-            ParticleSet(yPosition, xPosition, 0x2E);
+            ParticleSet(yPosition, xPosition, PE_0xD);
+            ParticleSet(yPosition, xPosition, PE_TAIL_EXPLOSION_SMOKE);
             SoundPlay(0x25E);
         }
         else if (gSpriteData[ramSlot].pose == 0x1C)
@@ -2409,7 +2409,7 @@ void LabExplosionExploding(void)
             {
                 if (MOD_AND(gCurrentSprite.currentAnimationFrame, 2) != 0)
                 {
-                    ParticleSet(yPosition, xPosition, 0x2F);
+                    ParticleSet(yPosition, xPosition, PE_0x2F);
                     SoundPlay_3b1c(0x23F);
                 }
             }
@@ -2417,7 +2417,7 @@ void LabExplosionExploding(void)
             {
                 if (MOD_AND(gCurrentSprite.currentAnimationFrame, 2) == 0)
                 {
-                    ParticleSet(yPosition, xPosition, 0x2F);
+                    ParticleSet(yPosition, xPosition, PE_0x2F);
                     SoundPlay_3b1c(0x23F);
                 }
             }
@@ -2447,22 +2447,22 @@ void LabExplosionExploding(void)
                 {
                     if (MOD_AND(gSpriteRandomNumber, 2))
                     {
-                        ParticleSet(yPosition - (BLOCK_SIZE * 3 + HALF_BLOCK_SIZE - PIXEL_SIZE) + gSpriteRandomNumber * 8, xPosition + (gSpriteRandomNumber << rng), 0x30);
+                        ParticleSet(yPosition - (BLOCK_SIZE * 3 + HALF_BLOCK_SIZE - PIXEL_SIZE) + gSpriteRandomNumber * 8, xPosition + (gSpriteRandomNumber << rng), PE_0x30);
                     }
                     else
                     {
-                        ParticleSet(yPosition - (BLOCK_SIZE * 3 + HALF_BLOCK_SIZE + PIXEL_SIZE + PIXEL_SIZE / 2) + gSpriteRandomNumber * 8, xPosition + (gSpriteRandomNumber << rng), 0x35);
+                        ParticleSet(yPosition - (BLOCK_SIZE * 3 + HALF_BLOCK_SIZE + PIXEL_SIZE + PIXEL_SIZE / 2) + gSpriteRandomNumber * 8, xPosition + (gSpriteRandomNumber << rng), PE_0x35);
                     }
                 }
                 else
                 {
                     if (MOD_AND(gSpriteRandomNumber, 2))
                     {
-                        ParticleSet(yPosition - (BLOCK_SIZE * 3 + HALF_BLOCK_SIZE - PIXEL_SIZE) + gSpriteRandomNumber * 8, xPosition - (gSpriteRandomNumber << rng), 0x30);
+                        ParticleSet(yPosition - (BLOCK_SIZE * 3 + HALF_BLOCK_SIZE - PIXEL_SIZE) + gSpriteRandomNumber * 8, xPosition - (gSpriteRandomNumber << rng), PE_0x30);
                     }
                     else
                     {
-                        ParticleSet(yPosition - (BLOCK_SIZE * 3 + HALF_BLOCK_SIZE + PIXEL_SIZE + PIXEL_SIZE / 2) + gSpriteRandomNumber * 8, xPosition - (gSpriteRandomNumber << rng), 0x35);
+                        ParticleSet(yPosition - (BLOCK_SIZE * 3 + HALF_BLOCK_SIZE + PIXEL_SIZE + PIXEL_SIZE / 2) + gSpriteRandomNumber * 8, xPosition - (gSpriteRandomNumber << rng), PE_0x35);
                     }
                 }
             }
@@ -2472,22 +2472,22 @@ void LabExplosionExploding(void)
                 {
                     if (MOD_AND(gSpriteRandomNumber, 2))
                     {
-                        ParticleSet(yPosition - (BLOCK_SIZE * 5) + gSpriteRandomNumber * 32, xPosition + (gSpriteRandomNumber << rng), 0x30);
+                        ParticleSet(yPosition - (BLOCK_SIZE * 5) + gSpriteRandomNumber * 32, xPosition + (gSpriteRandomNumber << rng), PE_0x30);
                     }
                     else
                     {
-                        ParticleSet(yPosition - (BLOCK_SIZE * 5 + QUARTER_BLOCK_SIZE / 2 + PIXEL_SIZE / 2) + gSpriteRandomNumber * 32, xPosition + (gSpriteRandomNumber << rng), 0x35);
+                        ParticleSet(yPosition - (BLOCK_SIZE * 5 + QUARTER_BLOCK_SIZE / 2 + PIXEL_SIZE / 2) + gSpriteRandomNumber * 32, xPosition + (gSpriteRandomNumber << rng), PE_0x35);
                     }
                 }
                 else
                 {
                     if (MOD_AND(gSpriteRandomNumber, 2))
                     {
-                        ParticleSet(yPosition - (BLOCK_SIZE * 5) + gSpriteRandomNumber * 32, xPosition - (gSpriteRandomNumber << rng), 0x30);
+                        ParticleSet(yPosition - (BLOCK_SIZE * 5) + gSpriteRandomNumber * 32, xPosition - (gSpriteRandomNumber << rng), PE_0x30);
                     }
                     else
                     {
-                        ParticleSet(yPosition - (BLOCK_SIZE * 5 + QUARTER_BLOCK_SIZE / 2 + PIXEL_SIZE / 2) + gSpriteRandomNumber * 32, xPosition - (gSpriteRandomNumber << rng), 0x35);
+                        ParticleSet(yPosition - (BLOCK_SIZE * 5 + QUARTER_BLOCK_SIZE / 2 + PIXEL_SIZE / 2) + gSpriteRandomNumber * 32, xPosition - (gSpriteRandomNumber << rng), PE_0x35);
                     }
                 }
             }
