@@ -835,7 +835,7 @@ void CoreXChargeBeamInit(void) {
                 break;
         }
     } else {
-        SoundPlay(0xca);
+        SoundPlay(SOUND_CHARGE_BEAM_FIRE);
         gCurrentSprite.status &= ~SS_NOT_DRAWN;
         switch (gCurrentSprite.work0) {
             case ACD_DIAGONAL_DOWN:
@@ -895,7 +895,7 @@ void CoreXChargeBeam(void) {
 }
 
 void CoreXWideBeamInit(void) {
-    SoundPlay(0xc9);
+    SoundPlay(SOUND_WIDE_BEAM_FIRE);
     gCurrentSprite.samusCollision = SSC_HURTS_SAMUS_DIES_WHEN_HIT;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
@@ -957,7 +957,7 @@ void CoreXWideBeam(void) {
 
 void CoreXPlasmaBeaminit(void)
 {
-    SoundPlay(0xcb);
+    SoundPlay(SOUND_PLASMA_BEAM_FIRE);
     gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
@@ -1018,9 +1018,9 @@ void CoreXPlasmaBeam(void) {
 
 void CoreXWaveIceBeamInit(void) {
     if (gCurrentSprite.spriteId == SSPRITE_BEAM_CORE_X_ICE_BEAM)
-        SoundPlay(0xcd);
+        SoundPlay(SOUND_ICE_BEAM_FIRE);
     else
-        SoundPlay(0xcc);
+        SoundPlay(SOUND_WAVE_BEAM_FIRE);
     gCurrentSprite.properties |= SP_KILL_OFF_SCREEN;
     gCurrentSprite.bgPriority = gIoRegisters.bg1Cnt & 3;
     gCurrentSprite.drawOrder = 1;

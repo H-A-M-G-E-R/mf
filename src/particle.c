@@ -4,6 +4,7 @@
 #include "macros.h"
 #include "globals.h"
 
+#include "constants/audio.h"
 #include "constants/particle.h"
 #include "constants/projectile.h"
 #include "constants/samus.h"
@@ -313,7 +314,7 @@ void ParticleBomb(void) {
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
         gCurrentParticle.status |= PARTICLE_STATUS_HIGH_OAM_PRIORITY;
-        SoundPlay(0xde);
+        SoundPlay(SOUND_BOMB_EXPLODE);
     }
 }
 
@@ -324,7 +325,7 @@ void ParticleFlareHit(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlay(0xf6);
+        SoundPlay(SOUND_FLARE_FIRE);
     }
 }
 
@@ -335,7 +336,7 @@ void ParticleNormalBeamHit(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlay(0xf2);
+        SoundPlay(SOUND_NORMAL_BEAM_HIT);
     }
 }
 
@@ -346,7 +347,7 @@ void ParticleChargeBeamHit(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlay(0xf3);
+        SoundPlay(SOUND_CHARGE_BEAM_HIT);
     }
 }
 
@@ -357,7 +358,7 @@ void ParticleWideBeamHit(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlay(0xf4);
+        SoundPlay(SOUND_WIDE_BEAM_HIT);
     }
 }
 
@@ -368,7 +369,7 @@ void ParticlePlasmaBeamHit(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlay(0xf5);
+        SoundPlay(SOUND_PLASMA_BEAM_HIT);
     }
 }
 
@@ -379,7 +380,7 @@ void ParticleInvincibleHit(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlayNotAlreadyPlaying(0xf8);
+        SoundPlayNotAlreadyPlaying(SOUND_INVINCIBLE_HIT);
     }
 }
 
@@ -390,8 +391,8 @@ void ParticleNormalMissileExplosion(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundStop(0xcf);
-        SoundPlay(0xd0);
+        SoundStop(SOUND_NORMAL_MISSILE_THRUST);
+        SoundPlay(SOUND_NORMAL_MISSILE_EXPLODE);
     }
 }
 
@@ -402,8 +403,8 @@ void ParticleSuperMissileExplosion(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundStop(0xd2);
-        SoundPlay(0xd3);
+        SoundStop(SOUND_SUPER_MISSILE_THRUST);
+        SoundPlay(SOUND_SUPER_MISSILE_EXPLODE);
         ScreenShakeStartHorizontal(10, 0x81);
         ScreenShakeStartVertical(10, 0x81);
     }
@@ -416,8 +417,8 @@ void ParticleIceMissileExplosion(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundStop(0xd5);
-        SoundPlay(0xd6);
+        SoundStop(SOUND_ICE_MISSILE_THRUST);
+        SoundPlay(SOUND_ICE_MISSILE_EXPLODE);
         ScreenShakeStartHorizontal(20, 0x81);
         ScreenShakeStartVertical(20, 0x81);
     }
@@ -430,8 +431,8 @@ void ParticleDiffusionMissileExplosion(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundStop(0xd8);
-        SoundPlay(0xd9);
+        SoundStop(SOUND_DIFFUSION_MISSILE_THRUST);
+        SoundPlay(SOUND_DIFFUSION_MISSILE_EXPLODE);
         ScreenShakeStartHorizontal(30, 0x81);
         ScreenShakeStartVertical(30, 0x81);
     }
@@ -444,8 +445,8 @@ void ParticleChargedDiffusionMissileExplosion(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundStop(0xdb);
-        SoundPlay_3b1c(0xdc);
+        SoundStop(SOUND_CHARGED_DIFFUSION_MISSILE_THRUST);
+        SoundPlay_3b1c(SOUND_CHARGED_DIFFUSION_MISSILE_EXPLODE);
         ScreenShakeStartHorizontal(40, 0x81);
         ScreenShakeStartVertical(40, 0x81);
     }
@@ -969,7 +970,7 @@ void ParticleScrewAttackKilled(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlay(0x148);
+        SoundPlay(SOUND_SHINESPARK_SCREW_ATTACK_KILLED);
     }
 }
 
@@ -980,7 +981,7 @@ void ParticleSpeedboosterKilled(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlay(0x149);
+        SoundPlay(SOUND_SPEEDBOOSTER_KILLED);
     }
 }
 
@@ -991,7 +992,7 @@ void ParticleShinesparkKilled(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlay(0x148);
+        SoundPlay(SOUND_SHINESPARK_SCREW_ATTACK_KILLED);
     }
 }
 
@@ -1002,7 +1003,7 @@ void ParticleSudoScrewKilled(void) {
         gCurrentParticle.status = 0;
     if (gCurrentParticle.stage == 0) {
         gCurrentParticle.stage++;
-        SoundPlay(0x147);
+        SoundPlay(SOUND_SUDO_SCREW_KILLED);
     }
 }
 
@@ -1010,45 +1011,45 @@ void PlayBeamChargingSound(void) {
     u8 beams = gEquipment.beamStatus;
 
     if (beams & BF_ICE_BEAM)
-        SoundPlay(0xe9);
+        SoundPlay(SOUND_ICE_BEAM_CHARGING);
     else if (beams & BF_WAVE_BEAM)
-        SoundPlay(0xe7);
+        SoundPlay(SOUND_WAVE_BEAM_CHARGING);
     else if (beams & BF_PLASMA_BEAM)
-        SoundPlay(0xe5);
+        SoundPlay(SOUND_PLASMA_BEAM_CHARGING);
     else if (beams & BF_WIDE_BEAM)
-        SoundPlay(0xe3);
+        SoundPlay(SOUND_WIDE_BEAM_CHARGING);
     else
-        SoundPlay(0xe1);
+        SoundPlay(SOUND_CHARGE_BEAM_CHARGING);
 }
 
 void StopBeamChargingSound(void) {
     u8 beams = gEquipment.beamStatus;
 
     if (beams & BF_ICE_BEAM)
-        SoundStop(0xe9);
+        SoundStop(SOUND_ICE_BEAM_CHARGING);
     else if (beams & BF_WAVE_BEAM)
-        SoundStop(0xe7);
+        SoundStop(SOUND_WAVE_BEAM_CHARGING);
     else if (beams & BF_PLASMA_BEAM)
-        SoundStop(0xe5);
+        SoundStop(SOUND_PLASMA_BEAM_CHARGING);
     else if (beams & BF_WIDE_BEAM)
-        SoundStop(0xe3);
+        SoundStop(SOUND_WIDE_BEAM_CHARGING);
     else
-        SoundStop(0xe1);
+        SoundStop(SOUND_CHARGE_BEAM_CHARGING);
 }
 
 void PlayBeamChargedSound(void) {
     u8 beams = gEquipment.beamStatus;
 
     if (beams & BF_ICE_BEAM)
-        SoundPlay(0xea);
+        SoundPlay(SOUND_ICE_BEAM_CHARGED);
     else if (beams & BF_WAVE_BEAM)
-        SoundPlay(0xe8);
+        SoundPlay(SOUND_WAVE_BEAM_CHARGED);
     else if (beams & BF_PLASMA_BEAM)
-        SoundPlay(0xe6);
+        SoundPlay(SOUND_PLASMA_BEAM_CHARGED);
     else if (beams & BF_WIDE_BEAM)
-        SoundPlay(0xe4);
+        SoundPlay(SOUND_WIDE_BEAM_CHARGED);
     else
-        SoundPlay(0xe2);
+        SoundPlay(SOUND_CHARGE_BEAM_CHARGED);
 }
 
 void ParticleChargingBeam(void) {
@@ -1158,7 +1159,7 @@ void ParticleChargingMissile(void) {
     if (gSamusEnvironmentalEffects[1].externalTimer < CHARGE_BEAM_START_THRESHOLD) {
         gCurrentParticle.status = 0;
         if (gCurrentParticle.stage <= 1)
-            SoundStop(0xeb);
+            SoundStop(SOUND_DIFFUSION_MISSILE_CHARGING);
         return;
     }
 
@@ -1178,7 +1179,7 @@ void ParticleChargingMissile(void) {
             gCurrentParticle.status |= PARTICLE_STATUS_LIVE_OFF_SCREEN;
             gCurrentParticle.stage++;
             ParticleUpdateAnimation(sParticleOam_ChargingMissileBegin);
-            SoundPlay(0xeb);
+            SoundPlay(SOUND_DIFFUSION_MISSILE_CHARGING);
             break;
         case 1:
             if (gSamusEnvironmentalEffects[1].externalTimer >= CHARGE_MISSILE_THRESHOLD) {
@@ -1194,7 +1195,7 @@ void ParticleChargingMissile(void) {
         default:
             ParticleUpdateAnimation(sParticleOam_ChargingMissileCharged);
             if (MOD_AND(gCurrentParticle.frameCounter, 16) == 0)
-                SoundPlay(0xec);
+                SoundPlay(SOUND_DIFFUSION_MISSILE_CHARGED);
             gCurrentParticle.frameCounter++;
     }
 }

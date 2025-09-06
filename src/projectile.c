@@ -9,6 +9,7 @@
 #include "data/projectile_data.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/samus.h"
 #include "constants/sprite.h"
 #include "constants/particle.h"
@@ -1646,7 +1647,7 @@ void ProjectileRandomSpriteDebris(u8 cloudType, u8 flashTimer, u16 yPosition, u1
             break;
     }
 
-    SoundPlay(0x1BF);
+    SoundPlay(SOUND_RANDOM_SPRITE_DEBRIS);
 }
 
 /**
@@ -1698,7 +1699,7 @@ void ProjectileRandomSpriteDebrisPiercing(u8 cloudType, u8 flashTimer, u16 yPosi
             break;
     }
 
-    SoundPlay(0x1BF);
+    SoundPlay(SOUND_RANDOM_SPRITE_DEBRIS);
 }
 
 /**
@@ -2076,7 +2077,7 @@ u8 ProjectileIceMissileDealDamage(u8 spriteSlot, u8 projectileSlot, u16 damage)
         gSpriteData[spriteSlot].standingOnSprite = FALSE;
         gSpriteData[spriteSlot].freezeTimer = freezeTimer;
         SPRITE_SET_ABSOLUTE_PALETTE_ROW(gSpriteData[spriteSlot], SPRITE_FROZEN_PALETTE_ROW);
-        SoundPlayNotAlreadyPlaying(0x146);
+        SoundPlayNotAlreadyPlaying(SOUND_FREEZE_SPRITE);
     }
 
     return flashTimer;
@@ -2156,7 +2157,7 @@ u8 ProjectileDiffusionFlakeDealDamage(u8 spriteSlot, u8 projectileSlot)
         gSpriteData[spriteSlot].standingOnSprite = FALSE;
         gSpriteData[spriteSlot].freezeTimer = freezeTimer;
         SPRITE_SET_ABSOLUTE_PALETTE_ROW(gSpriteData[spriteSlot], SPRITE_FROZEN_PALETTE_ROW);
-        SoundPlayNotAlreadyPlaying(0x146);
+        SoundPlayNotAlreadyPlaying(SOUND_FREEZE_SPRITE);
     }
 
     return flashTimer;
@@ -2229,7 +2230,7 @@ u8 ProjectileIceBeamDealDamage(u8 spriteSlot, u8 projectileSlot, u16 damage)
         gSpriteData[spriteSlot].standingOnSprite = FALSE;
         gSpriteData[spriteSlot].freezeTimer = freezeTimer;
         SPRITE_SET_ABSOLUTE_PALETTE_ROW(gSpriteData[spriteSlot], SPRITE_FROZEN_PALETTE_ROW);
-        SoundPlayNotAlreadyPlaying(0x146);
+        SoundPlayNotAlreadyPlaying(SOUND_FREEZE_SPRITE);
     }
 
     return flashTimer;
@@ -2795,7 +2796,7 @@ void ProjectileFlareHitSprite(u8 spriteSlot, u16 yPosition, u16 xPosition, u16 s
         }
 
         ParticleSet(hitY, hitX, PE_FLARE_HIT);
-        SoundPlay(0xF7);
+        SoundPlay(SOUND_FLARE_HIT);
     }
     else
     {
@@ -3192,7 +3193,7 @@ void ProjectileDealDamageToZazabi(u16 damage)
 
 void ProjectileChargedNormalBeamInit(void)
 {
-    SoundPlay(0xc8);
+    SoundPlay(SOUND_NORMAL_BEAM_FIRE);
     gCurrentProjectile.status |= PROJ_STATUS_CAN_AFFECT_ENVIRONMENT;
     gCurrentProjectile.animationDurationCounter = 0;
     gCurrentProjectile.currentAnimationFrame = 0;
@@ -3248,7 +3249,7 @@ void ProjectileChargedNormalBeamSubroutine(void)
 
 void ProjectileNormalBeamInit(void)
 {
-    SoundPlay(0xc8);
+    SoundPlay(SOUND_NORMAL_BEAM_FIRE);
     gCurrentProjectile.status |= PROJ_STATUS_CAN_AFFECT_ENVIRONMENT;
     gCurrentProjectile.animationDurationCounter = 0;
     gCurrentProjectile.currentAnimationFrame = 0;
@@ -3384,8 +3385,8 @@ void ProjectileNormalMissileSubroutine(void)
             gCurrentProjectile.hitboxLeft = -8;
             gCurrentProjectile.hitboxRight = 8;
             ProjectileMissileInit(0);
-            SoundPlay(0xce);
-            SoundPlay(0xcf);
+            SoundPlay(SOUND_NORMAL_MISSILE_FIRE);
+            SoundPlay(SOUND_NORMAL_MISSILE_THRUST);
             break;
         case PROJECTILE_STAGE_SPAWNING:
             gCurrentProjectile.movementStage = PROJECTILE_STAGE_MOVING;
@@ -3417,8 +3418,8 @@ void ProjectileSuperMissileSubroutine(void)
             gCurrentProjectile.hitboxLeft = -0xc;
             gCurrentProjectile.hitboxRight = 0xc;
             ProjectileMissileInit(0);
-            SoundPlay(0xd1);
-            SoundPlay(0xd2);
+            SoundPlay(SOUND_SUPER_MISSILE_FIRE);
+            SoundPlay(SOUND_SUPER_MISSILE_THRUST);
             break;
         case PROJECTILE_STAGE_SPAWNING:
             gCurrentProjectile.movementStage = PROJECTILE_STAGE_MOVING;
@@ -3450,8 +3451,8 @@ void ProjectileIceMissileSubroutine(void)
             gCurrentProjectile.hitboxLeft = -0x10;
             gCurrentProjectile.hitboxRight = 0x10;
             ProjectileMissileInit(1);
-            SoundPlay(0xd4);
-            SoundPlay(0xd5);
+            SoundPlay(SOUND_ICE_MISSILE_FIRE);
+            SoundPlay(SOUND_ICE_MISSILE_THRUST);
             break;
         case PROJECTILE_STAGE_SPAWNING:
             gCurrentProjectile.movementStage = PROJECTILE_STAGE_MOVING;
@@ -3498,13 +3499,13 @@ void ProjectileDiffusionMissileSubroutine(void)
             if (gCurrentProjectile.type == PROJ_TYPE_CHARGED_DIFFUSION_MISSILE) {
                 ProjectileMissileInit(2);
                 ProjectileSetMissileTrail(PE_CHARGED_DIFFUSION_MISSILE_TRAIL, 4-1);
-                SoundPlay(0xda);
-                SoundPlay(0xdb);
+                SoundPlay(SOUND_CHARGED_DIFFUSION_MISSILE_FIRE);
+                SoundPlay(SOUND_CHARGED_DIFFUSION_MISSILE_THRUST);
             } else {
                 ProjectileMissileInit(2);
                 ProjectileSetMissileTrail(PE_DIFFUSION_MISSILE_TRAIL, 4-1);
-                SoundPlay(0xd7);
-                SoundPlay(0xd8);
+                SoundPlay(SOUND_DIFFUSION_MISSILE_FIRE);
+                SoundPlay(SOUND_DIFFUSION_MISSILE_THRUST);
             }
             break;
         case PROJECTILE_STAGE_SPAWNING:
@@ -3655,7 +3656,7 @@ void ProjectileCheckSamusBombBounce(void)
 
 void ProjectileBombInit(void)
 {
-    SoundPlay(0xdd);
+    SoundPlay(SOUND_BOMB_SET);
     gCurrentProjectile.pOam = sBombOam_Slow;
     gCurrentProjectile.animationDurationCounter = 0;
     gCurrentProjectile.currentAnimationFrame = 0;
@@ -3761,7 +3762,7 @@ void ProjectilePowerBombInit(void)
         }
     }
 
-    SoundPlay(0xdf);
+    SoundPlay(SOUND_POWER_BOMB_SET);
     gCurrentPowerBomb.powerBombPlaced = TRUE;
 }
 
@@ -3819,7 +3820,7 @@ void ProjectileChargedChargeBeamInit(void)
                 break;
         }
     } else {
-        SoundPlay(0xed);
+        SoundPlay(SOUND_CHARGED_CHARGE_BEAM_FIRE);
         gCurrentProjectile.status &= ~PROJ_STATUS_NOT_DRAWN;
         switch (gCurrentProjectile.direction) {
             case ACD_DIAGONAL_DOWN:
@@ -3910,7 +3911,7 @@ void ProjectileChargeBeamInit(void)
                 break;
         }
     } else {
-        SoundPlay(0xca);
+        SoundPlay(SOUND_CHARGE_BEAM_FIRE);
         gCurrentProjectile.status &= ~PROJ_STATUS_NOT_DRAWN;
         switch (gCurrentProjectile.direction) {
             case ACD_DIAGONAL_DOWN:
@@ -3972,7 +3973,7 @@ void ProjectileChargeBeamSubroutine(void)
 
 void ProjectileChargedWideBeamInit(void)
 {
-    SoundPlay(0xee);
+    SoundPlay(SOUND_CHARGED_WIDE_BEAM_FIRE);
     gCurrentProjectile.status |= PROJ_STATUS_CAN_AFFECT_ENVIRONMENT;
     gCurrentProjectile.animationDurationCounter = 0;
     gCurrentProjectile.currentAnimationFrame = 0;
@@ -4034,7 +4035,7 @@ void ProjectileChargedWideBeamSubroutine(void)
 
 void ProjectileWideBeamInit(void)
 {
-    SoundPlay(0xc9);
+    SoundPlay(SOUND_WIDE_BEAM_FIRE);
     gCurrentProjectile.status |= PROJ_STATUS_CAN_AFFECT_ENVIRONMENT;
     gCurrentProjectile.animationDurationCounter = 0;
     gCurrentProjectile.currentAnimationFrame = 0;
@@ -4095,7 +4096,7 @@ void ProjectileWideBeamSubroutine(void)
 
 void ProjectileChargedPlasmaBeamInit(void)
 {
-    SoundPlay(0xef);
+    SoundPlay(SOUND_CHARGED_PLASMA_BEAM_FIRE);
     gCurrentProjectile.status |= PROJ_STATUS_CAN_AFFECT_ENVIRONMENT;
     gCurrentProjectile.animationDurationCounter = 0;
     gCurrentProjectile.currentAnimationFrame = 0;
@@ -4158,7 +4159,7 @@ void ProjectileChargedPlasmaBeamSubroutine(void)
 
 void ProjectilePlasmaBeamInit(void)
 {
-    SoundPlay(0xcb);
+    SoundPlay(SOUND_PLASMA_BEAM_FIRE);
     gCurrentProjectile.status |= PROJ_STATUS_CAN_AFFECT_ENVIRONMENT;
     gCurrentProjectile.animationDurationCounter = 0;
     gCurrentProjectile.currentAnimationFrame = 0;
@@ -4221,13 +4222,13 @@ void ProjectileChargedWaveBeamInit(void)
 {
     u8 equippedBeams = gEquipment.beamStatus;
     if (equippedBeams & BF_ICE_BEAM) {
-        SoundPlay(0xf1);
+        SoundPlay(SOUND_CHARGED_ICE_BEAM_FIRE);
         gCurrentProjectile.hitboxTop = -0xc;
         gCurrentProjectile.hitboxBottom = 0xc;
         gCurrentProjectile.hitboxLeft = -0xc;
         gCurrentProjectile.hitboxRight = 0xc;
     } else {
-        SoundPlay(0xf0);
+        SoundPlay(SOUND_CHARGED_WAVE_BEAM_FIRE);
         gCurrentProjectile.hitboxTop = -0x14;
         gCurrentProjectile.hitboxBottom = 0x14;
         gCurrentProjectile.hitboxLeft = -0x14;
@@ -4301,13 +4302,13 @@ void ProjectileWaveBeamInit(void)
 {
     u8 equippedBeams = gEquipment.beamStatus;
     if (equippedBeams & BF_ICE_BEAM) {
-        SoundPlay(0xcd);
+        SoundPlay(SOUND_ICE_BEAM_FIRE);
         gCurrentProjectile.hitboxTop = -0xc;
         gCurrentProjectile.hitboxBottom = 0xc;
         gCurrentProjectile.hitboxLeft = -0xc;
         gCurrentProjectile.hitboxRight = 0xc;
     } else {
-        SoundPlay(0xcc);
+        SoundPlay(SOUND_WAVE_BEAM_FIRE);
         gCurrentProjectile.hitboxTop = -0x14;
         gCurrentProjectile.hitboxBottom = 0x14;
         gCurrentProjectile.hitboxLeft = -0x14;
@@ -4425,7 +4426,7 @@ void ProjectileFlareInit(void)
             break;
     }
     ProjectileFlareLoadGraphics(0);
-    SoundPlay(0xf6);
+    SoundPlay(SOUND_FLARE_FIRE);
 }
 
 void ProjectileFlareSubroutine(void)

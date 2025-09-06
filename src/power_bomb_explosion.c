@@ -3,6 +3,7 @@
 #include "macros.h"
 #include "gba.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 
 #include "structs/clipdata.h"
@@ -233,7 +234,7 @@ void PowerBombExplosionBegin(void)
 
     ScreenShakeStartHorizontal(120, 0x80);
 
-    SoundPlay(0xE0); // Power bomb explosion
+    SoundPlay(SOUND_POWER_BOMB_EXPLODE);
 }
 
 /**
