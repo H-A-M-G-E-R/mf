@@ -187,7 +187,7 @@ void VariaSuitAbilityMoving(void) {
         targetY = gSamusData.yPosition - 0x140;
     else
         targetY = gSamusData.yPosition - 0x48;
-    XParasiteMoveWithSound(targetY, gSamusData.xPosition, 0x38, 0x50, LOG2(4), 0xc0);
+    XParasiteMoveWithSound(targetY, gSamusData.xPosition, 0x38, 0x50, LOG2(4), SOUND_CORE_X_MOVING);
 }
 
 void VariaSuitAbilityShrinking(void) {
@@ -220,7 +220,7 @@ void VariaSuitAbilityCoreXMovingInit(void) {
 }
 
 void VariaSuitAbilityCoreXMoving(void) {
-    XParasiteMoveWithSound((u16)(gSamusData.yPosition - PIXEL_TO_SUB_PIXEL(0x12)), gSamusData.xPosition, PIXEL_TO_SUB_PIXEL(1.75f) * 4, PIXEL_TO_SUB_PIXEL(2.5f) * 4, LOG2(4), 0xc0);
+    XParasiteMoveWithSound((u16)(gSamusData.yPosition - PIXEL_TO_SUB_PIXEL(0x12)), gSamusData.xPosition, PIXEL_TO_SUB_PIXEL(1.75f) * 4, PIXEL_TO_SUB_PIXEL(2.5f) * 4, LOG2(4), SOUND_CORE_X_MOVING);
 }
 
 void VariaSuitAbilityCoreXMovingInit_Unused(void) {
@@ -232,7 +232,7 @@ void VariaSuitAbilityCoreXMovingInit_Unused(void) {
 }
 
 void VariaSuitAbilityCoreXMoving_Unused(void) {
-    XParasiteMoveWithSound((u16)(gSamusData.yPosition - PIXEL_TO_SUB_PIXEL(0x12)), gSamusData.xPosition, PIXEL_TO_SUB_PIXEL(1.75f) * 4, PIXEL_TO_SUB_PIXEL(2.5f) * 4, LOG2(4), 0xc0);
+    XParasiteMoveWithSound((u16)(gSamusData.yPosition - PIXEL_TO_SUB_PIXEL(0x12)), gSamusData.xPosition, PIXEL_TO_SUB_PIXEL(1.75f) * 4, PIXEL_TO_SUB_PIXEL(2.5f) * 4, LOG2(4), SOUND_CORE_X_MOVING);
 }
 
 void MegaXShieldInit(void) {
@@ -429,7 +429,7 @@ void MegaX(void) {
             gCurrentSprite.status &= ~SS_IGNORE_PROJECTILES;
         case 0x3a:
             if (SPRITE_HAS_ISFT(gCurrentSprite) == 16) {
-                SoundPlay(0x1be);
+                SoundPlay(SOUND_MEGA_X_HURT);
                 gCurrentSprite.properties |= SP_IMMUNE_TO_PROJECTILES;
                 gCurrentSprite.pOam = sVariaCoreXOam_3a5ed0;
                 gCurrentSprite.animationDurationCounter = 0;
@@ -543,7 +543,7 @@ void CoreXShellVaria(void) {
                 gCurrentSprite.currentAnimationFrame = 0;
                 gCurrentSprite.pose = 0x18;
                 gSpriteData[primaryRamSlot].pose = 0x5c;
-                SoundPlay(0xc1);
+                SoundPlay(SOUND_CORE_X_SHELL_BURST);
             } else {
                 if (gCurrentSprite.health <= maxHealth / 3) {
                     gCurrentSprite.pOam = sVariaCoreXOam_3a5e60;
@@ -559,7 +559,7 @@ void CoreXShellVaria(void) {
                             SSP_X_ABSORBABLE_BY_SAMUS, gCurrentSprite.yPosition, gCurrentSprite.xPosition, 0);
                     }
                 } else if (SPRITE_HAS_ISFT(gCurrentSprite) == 16) {
-                    SoundPlay(0xc2);
+                    SoundPlay(SOUND_CORE_X_HURT);
                     gCurrentSprite.properties |= SP_IMMUNE_TO_PROJECTILES;
                     gSpriteData[primaryRamSlot].work0 = 180;
                     if (gCurrentSprite.yPosition > gSamusData.yPosition - BLOCK_SIZE)

@@ -7,6 +7,7 @@
 #include "data/sprite_data.h"
 #include "data/sprites/sa_x.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/particle.h"
 #include "constants/sa_x.h"
@@ -1936,7 +1937,7 @@ void SaXBeamInit(void)
         return;
     }
 
-    SoundPlay(0x25C);
+    SoundPlay(SOUND_SA_X_ICE_BEAM_FIRE);
 }
 
 /**
@@ -2097,7 +2098,7 @@ void SaXMissileInit(void)
         return;
     }
 
-    SoundPlay(0x25D);
+    SoundPlay(SOUND_SA_X_SUPER_MISSILE_FIRE);
 }
 
 /**
@@ -2108,7 +2109,7 @@ void SaXMissileExploding(void)
 {
     gCurrentSprite.status = 0;
     ParticleSet(gCurrentSprite.yPosition, gCurrentSprite.xPosition, PE_0xD);
-    SoundPlay(0x25E);
+    SoundPlay(SOUND_SA_X_SUPER_MISSILE_EXPLODE);
 
     ScreenShakeStartHorizontal(40, 0x80 | 1);
     ScreenShakeStartVertical(40, 0x80 | 1);
@@ -2189,7 +2190,7 @@ void SaXPowerBombInit(void)
     gCurrentSprite.work1 = 60;
     gCurrentSprite.bgPriority = 1;
 
-    SoundPlay(0x260);
+    SoundPlay(SOUND_SA_X_POWER_BOMB_SET);
 }
 
 /**
@@ -2229,7 +2230,7 @@ void SaXPowerBombSpinningQuickly(void)
         gCurrentSprite.samusCollision = SSC_SA_X_POWER_BOMB;
         gCurrentSprite.pose = 0x1A;
 
-        SoundPlay(0x261);
+        SoundPlay(SOUND_SA_X_POWER_BOMB_EXPLODE);
     }
 }
 
@@ -2396,13 +2397,13 @@ void LabExplosionExploding(void)
         {
             ParticleSet(yPosition, xPosition, PE_0xD);
             ParticleSet(yPosition, xPosition, PE_TAIL_EXPLOSION_SMOKE);
-            SoundPlay(0x25E);
+            SoundPlay(SOUND_SA_X_SUPER_MISSILE_EXPLODE);
         }
         else if (gSpriteData[ramSlot].pose == 0x18)
         {
             ParticleSet(yPosition, xPosition, PE_0xD);
             ParticleSet(yPosition, xPosition, PE_TAIL_EXPLOSION_SMOKE);
-            SoundPlay(0x25E);
+            SoundPlay(SOUND_SA_X_SUPER_MISSILE_EXPLODE);
         }
         else if (gSpriteData[ramSlot].pose == 0x1C)
         {

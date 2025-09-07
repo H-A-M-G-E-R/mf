@@ -5,6 +5,7 @@
 #include "data/sprite_data.h"
 #include "data/sprites/x_parasite.h"
 
+#include "constants/audio.h"
 #include "constants/particle.h"
 #include "constants/sprite.h"
 #include "constants/samus.h"
@@ -123,7 +124,7 @@ void XParasiteMove(u16 dstY, u16 dstX, u8 ySpeedCap, u8 xSpeedCap, u8 speedDivis
         gCurrentSprite.work3 = 1;
         if (++gCurrentSprite.unk_8 >= 4)
             gCurrentSprite.unk_8 = 0;
-        SoundPlayNotAlreadyPlaying(0x141);
+        SoundPlayNotAlreadyPlaying(SOUND_X_PARASITE_MOVING);
         if (gCurrentSprite.drawOrder == 1)
             gCurrentSprite.drawOrder = 16;
         else
@@ -202,7 +203,7 @@ void XParasiteMove(u16 dstY, u16 dstX, u8 ySpeedCap, u8 xSpeedCap, u8 speedDivis
     {
         gCurrentSprite.status ^= SS_FACING_DOWN;
         gCurrentSprite.work4 = 1;
-        SoundPlayNotAlreadyPlaying(0x141);
+        SoundPlayNotAlreadyPlaying(SOUND_X_PARASITE_MOVING);
     }
 }
 
@@ -385,7 +386,7 @@ void SamusAbsorbX(void) {
             }
             SpriteUtilRefillSamus(energy, missiles, powerBombs);
             gSamusEnvironmentalEffects[0].externalTimer = 48;
-            SoundPlay(0x92);
+            SoundPlay(SOUND_X_PARASITE_GETTING_ABSORBED);
         case SSP_X_UNABSORBABLE_BY_SAMUS:
         case SSP_40:
         default:
@@ -410,7 +411,7 @@ void SpriteDyingInit(void) {
     gCurrentSprite.status |= SS_ENABLE_MOSAIC;
     gCurrentSprite.pose = SPRITE_POSE_DYING;
     gCurrentSprite.work1 = X_PARASITE_MOSAIC_MAX_INDEX;
-    SoundPlayNotAlreadyPlaying(0x142);
+    SoundPlayNotAlreadyPlaying(SOUND_SPRITE_TRANSFORMING_INTO_X);
 }
 
 void SpriteDying(void) {
@@ -867,7 +868,7 @@ void XParasiteWaitingForEnoughXToFormInit(void) {
     gCurrentSprite.pose = X_PARASITE_POSE_WAITING_FOR_ENOUGH_X_TO_FORM;
     gCurrentSprite.work1 = X_PARASITE_MOSAIC_MAX_INDEX;
     gCurrentSprite.scaling = 300;
-    SoundPlayNotAlreadyPlaying(0x143);
+    SoundPlayNotAlreadyPlaying(SOUND_X_PARASITE_FORMING);
 }
 
 void XParasiteWaitingForEnoughXToForm(void) {
@@ -920,7 +921,7 @@ void XParasiteFormingInit(void) {
     gCurrentSprite.status &= ~SS_NOT_DRAWN;
     gCurrentSprite.pose = 0x64;
     gCurrentSprite.xParasiteTimer = X_PARASITE_MOSAIC_MAX_INDEX;
-    SoundPlayNotAlreadyPlaying(0x143);
+    SoundPlayNotAlreadyPlaying(SOUND_X_PARASITE_FORMING);
 }
 
 void XParasiteForming(void) {

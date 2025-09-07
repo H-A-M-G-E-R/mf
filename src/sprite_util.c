@@ -215,7 +215,7 @@ void SpriteUtilTakeDamageFromOmegaMetroidSwiping(u8 spriteSlot)
         // Doesn't have ice beam, set to 1 health
         gEquipment.currentEnergy = 1;
         ScreenShakeStartVertical(40, 0x80 | 1);
-        SoundPlay(0x2AF);
+        SoundPlay(SOUND_OMEGA_METROID_SWIPED_SAMUS);
     }
 
     // Always hurt
@@ -274,11 +274,11 @@ void SpriteUtilTakeConstantDamageFromYakuza(void)
     {
         // Play hurt sounds
         if (MOD_AND(gEquipment.currentEnergy, 16) == 0)
-            SoundPlay_2894(0x88);
+            SoundPlay_2894(SOUND_SAMUS_HURT);
         else if (MOD_AND(gEquipment.currentEnergy, 16) == 7)
-            SoundPlay_2894(0x88);
+            SoundPlay_2894(SOUND_SAMUS_HURT);
 
-        SoundPlay_2894(0x89);
+        SoundPlay_2894(SOUND_SAMUS_CONSTANT_DAMAGE);
     }
 }
 
@@ -731,14 +731,14 @@ void SpriteUtilSamusAndSpriteCollision(void)
                             gSamusData.invincibilityTimer = 8;
 
                             if (MOD_AND(gEquipment.currentEnergy, 16) == 0)
-                                SoundPlay_2894(0x88);
+                                SoundPlay_2894(SOUND_SAMUS_HURT);
                             else if (MOD_AND(gEquipment.currentEnergy, 16) == 7)
-                                SoundPlay_2894(0x88);
+                                SoundPlay_2894(SOUND_SAMUS_HURT);
 
                             if (gSpriteData[i].spriteId == PSPRITE_ELECTRIC_WATER_DAMAGE || gSpriteData[i].spriteId == PSPRITE_ELECTRIC_WATER_DAMAGE_BOX_2)
-                                SoundPlay_2894(0x8A);
+                                SoundPlay_2894(SOUND_SAMUS_ELECTRIC_WATER_DAMAGE);
                             else
-                                SoundPlay_2894(0x89);
+                                SoundPlay_2894(SOUND_SAMUS_CONSTANT_DAMAGE);
                         }
                     }
 
@@ -953,11 +953,11 @@ void SpriteUtilSamusAndSpriteCollision(void)
                             gSamusData.invincibilityTimer = 30;
 
                             if (MOD_AND(gEquipment.currentEnergy, 16) == 0)
-                                SoundPlay_2894(0x88);
+                                SoundPlay_2894(SOUND_SAMUS_HURT);
                             else if (MOD_AND(gEquipment.currentEnergy, 16) == 7)
-                                SoundPlay_2894(0x88);
+                                SoundPlay_2894(SOUND_SAMUS_HURT);
 
-                            SoundPlay_2894(0x89);
+                            SoundPlay_2894(SOUND_SAMUS_CONSTANT_DAMAGE);
                         }
                     }
 
@@ -2365,7 +2365,7 @@ void unk_12008(u16 yPosition, u16 xPosition)
     {
         case 38:
             ParticleSet(yPosition - QUARTER_BLOCK_SIZE, xPosition, PE_0x26);
-            SoundPlay(0x145);
+            SoundPlay(SOUND_SPRITE_EXPLODE_145);
             break;
 
         case 32:
@@ -2411,7 +2411,7 @@ void unk_120ac(u16 yPosition, u16 xPosition)
     {
         case 38:
             ParticleSet(yPosition - (HALF_BLOCK_SIZE + QUARTER_BLOCK_SIZE / 2), xPosition -(HALF_BLOCK_SIZE - PIXEL_SIZE / 2), PE_0x25);
-            SoundPlay(0x145);
+            SoundPlay(SOUND_SPRITE_EXPLODE_145);
             break;
 
         case 32:
@@ -2466,7 +2466,7 @@ void unk_12160(u16 yPosition, u16 xPosition)
     {
         case 6:
             ParticleSet(yPosition - QUARTER_BLOCK_SIZE, xPosition, PE_0x26);
-            SoundPlay(0x144);
+            SoundPlay(SOUND_SPRITE_EXPLODE_144);
             break;
 
         case 4:

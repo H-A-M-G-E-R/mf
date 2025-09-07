@@ -318,7 +318,7 @@ void CoreXAbilityMovingToSpawnPoint(void) {
         gCurrentSprite.rotation--;
     }
     if (gCurrentSprite.work1 == 80) {
-        SoundPlay(0xc4);
+        SoundPlay(SOUND_CORE_X_MOVING_TO_SPAWN_POINT);
     }
     if (--gCurrentSprite.work1 == 0) {
         gCurrentSprite.work1 = 80;
@@ -376,7 +376,7 @@ void CoreXAbilityMovingInit(void) {
  * 
  */
 void CoreXAbilityMoving(void) {
-    XParasiteMoveWithSound((u16)(gSamusData.yPosition - PIXEL_TO_SUB_PIXEL(0x12)), gSamusData.xPosition, PIXEL_TO_SUB_PIXEL(1.75f) * 4, PIXEL_TO_SUB_PIXEL(2.5f) * 4, LOG2(4), 0xc0);
+    XParasiteMoveWithSound((u16)(gSamusData.yPosition - PIXEL_TO_SUB_PIXEL(0x12)), gSamusData.xPosition, PIXEL_TO_SUB_PIXEL(1.75f) * 4, PIXEL_TO_SUB_PIXEL(2.5f) * 4, LOG2(4), SOUND_CORE_X_MOVING);
 }
 
 /**
@@ -405,7 +405,7 @@ void CoreXAbilityMovingToTarget(void) {
         gCurrentSprite.status ^= SS_NOT_DRAWN;
     }
     gCurrentSprite.ignoreSamusCollisionTimer = 1;
-    XParasiteMoveWithSound(gAbilityRestingYPosition, gAbilityRestingXPosition, PIXEL_SIZE * 4, PIXEL_TO_SUB_PIXEL(1.5f) * 4, LOG2(4), 0x141);
+    XParasiteMoveWithSound(gAbilityRestingYPosition, gAbilityRestingXPosition, PIXEL_SIZE * 4, PIXEL_TO_SUB_PIXEL(1.5f) * 4, LOG2(4), SOUND_X_PARASITE_MOVING);
     if (gCurrentSprite.yPosition < gAbilityRestingYPosition + 6 && gCurrentSprite.yPosition > gAbilityRestingYPosition - 6) {
         if (gCurrentSprite.xPosition < gAbilityRestingXPosition + 6 && gCurrentSprite.xPosition > gAbilityRestingXPosition - 6) {
             gCurrentSprite.pose = 0x5e;
@@ -487,7 +487,7 @@ void CoreXAbilityWaitingAtTarget(void) {
         gSamusEnvironmentalEffects[0].externalTimer = 48;
         SoundPlay(0x92);
     } else if (MOD_AND(gFrameCounter8Bit, 64) == 0) {
-        SoundPlay(0xc3);
+        SoundPlay(SOUND_CORE_X_AURA);
     }
 }
 
@@ -625,7 +625,7 @@ void CoreXShell(void) {
                 gCurrentSprite.currentAnimationFrame = 0;
                 gCurrentSprite.pose = 0x18;
                 gSpriteData[primaryRamSlot].pose = CORE_X_POSE_MOVING_TO_TARGET_INIT;
-                SoundPlay(0xc1);
+                SoundPlay(SOUND_CORE_X_SHELL_BURST);
             } else {
                 if (gCurrentSprite.health <= maxHealth / 3) {
                     gCurrentSprite.pOam = sCoreXShellOam_Red;
@@ -641,7 +641,7 @@ void CoreXShell(void) {
                             SSP_X_ABSORBABLE_BY_SAMUS, gCurrentSprite.yPosition, gCurrentSprite.xPosition, 0);
                     }
                 } else if (SPRITE_HAS_ISFT(gCurrentSprite) == 16) {
-                    SoundPlay(0xc2);
+                    SoundPlay(SOUND_CORE_X_HURT);
                     gCurrentSprite.properties |= SP_IMMUNE_TO_PROJECTILES;
                     gSpriteData[primaryRamSlot].work0 = 180;
                     if (gCurrentSprite.yPosition > gSamusData.yPosition - BLOCK_SIZE) {

@@ -6,6 +6,7 @@
 #include "data/samus_data.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/particle.h"
 #include "constants/samus.h"
@@ -74,12 +75,12 @@ void BlueXGetAbsorbed(void)
                 gCurrentSprite.primarySpriteRamSlot, gSamusData.yPosition + gSamusData.drawDistanceTop / 2,
                 gSamusData.xPosition, 0);
 
-        SoundPlay(0x1BB);
+        SoundPlay(SOUND_BLUE_X_ABSORBED_VARIA);
     }
     else
     {
         ParticleSet(gSamusData.yPosition + gSamusData.drawDistanceTop / 2, gSamusData.xPosition, PE_ABSORB_ICE_X_PRE_VARIA);
-        SoundPlayNotAlreadyPlaying(0x1BA);
+        SoundPlayNotAlreadyPlaying(SOUND_BLUE_X_ABSORBED_NO_VARIA);
     }
 }
 
@@ -354,7 +355,7 @@ void BlueXMoving(void)
 
         if (gCurrentSprite.status & SS_ON_SCREEN)
         {
-            SoundPlayNotAlreadyPlaying(0x1B9);
+            SoundPlayNotAlreadyPlaying(SOUND_BLUE_X_MOVING);
         }
     }
 
@@ -416,7 +417,7 @@ void BlueXMoving(void)
 
         if (gCurrentSprite.status & SS_ON_SCREEN)
         {
-            SoundPlayNotAlreadyPlaying(0x1B9);
+            SoundPlayNotAlreadyPlaying(SOUND_BLUE_X_MOVING);
         }
     }
 }

@@ -5,6 +5,7 @@
 #include "data/particle_data.h"
 #include "data/sprites/sa_x.h"
 
+#include "constants/audio.h"
 #include "constants/samus.h"
 
 #include "structs/samus.h"
@@ -24,7 +25,7 @@ u8 SaXRunningGfx(void)
     gSaXData.currentAnimationFrame++;
 
     if (gSaXData.screenFlag != SA_X_SCREEN_FLAG_NOT_PRESENT && (gSaXData.currentAnimationFrame == 4 || gSaXData.currentAnimationFrame == 9))
-        SoundPlay(0x259);
+        SoundPlay(SOUND_SA_X_RUN_FOOTSTEP);
 
     if (sSaXAnim_Running_Left[gSaXData.currentAnimationFrame].timer == 0)
         gSaXData.currentAnimationFrame = 0;
@@ -46,7 +47,7 @@ u8 SaXWalkingGfx(void)
     gSaXData.currentAnimationFrame++;
 
     if (gSaXData.screenFlag != SA_X_SCREEN_FLAG_NOT_PRESENT && (gSaXData.currentAnimationFrame == 1 || gSaXData.currentAnimationFrame == 6))
-        SoundPlay(0x258);
+        SoundPlay(SOUND_SA_X_WALK_FOOTSTEP);
 
     if (sSaXAnim_Walking_Left[gSaXData.currentAnimationFrame].timer == 0)
         gSaXData.currentAnimationFrame = 0;
@@ -127,7 +128,7 @@ u8 SaXMidAirGfx(void)
     if (sSaXAnim_MidAir_Left[gSaXData.currentAnimationFrame].timer == 0)
     {
         gSaXData.currentAnimationFrame = 0;
-        SoundPlay(0x25B);
+        SoundPlay(SOUND_SA_X_SCREW_ATTACK);
     }
 
     return SA_X_POSE_NONE;
@@ -247,7 +248,7 @@ u8 SaXMorphingGfx(void)
     if (sSaXAnim_Morphing_Left[gSaXData.currentAnimationFrame].timer != 0)
         return SA_X_POSE_NONE;
 
-    SoundPlay(0x25F);
+    SoundPlay(SOUND_SA_X_MORPH);
     return SA_X_POSE_MORPH_BALL;
 }
 
@@ -373,12 +374,12 @@ void SaXSetPose(u8 pose)
             break;
 
         case SA_X_POSE_MID_AIR:
-            SoundPlay(0x25B);
+            SoundPlay(SOUND_SA_X_SCREW_ATTACK);
             gSaXData.diagonalAim = DIAG_AIM_NONE;
             break;
 
         case SA_X_POSE_LANDING:
-            SoundPlay(0x25A);
+            SoundPlay(SOUND_SA_X_LAND);
             gSaXData.diagonalAim = DIAG_AIM_NONE;
             break;
 

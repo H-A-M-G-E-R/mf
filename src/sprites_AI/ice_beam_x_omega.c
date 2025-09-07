@@ -153,7 +153,7 @@ void IceBeamAbilityGoingToTarget(void) {
     if (MOD_AND(gFrameCounter8Bit, 4) == 0)
         gCurrentSprite.status ^= SS_NOT_DRAWN;
     gCurrentSprite.ignoreSamusCollisionTimer = 1;
-    XParasiteMoveWithSound(gAbilityRestingYPosition, gAbilityRestingXPosition, 0x10, 0x18, 2, SOUND_141);
+    XParasiteMoveWithSound(gAbilityRestingYPosition, gAbilityRestingXPosition, 0x10, 0x18, 2, SOUND_X_PARASITE_MOVING);
     if (gCurrentSprite.yPosition < gAbilityRestingYPosition + 6 && gCurrentSprite.yPosition > gAbilityRestingYPosition - 6
         && gCurrentSprite.xPosition < gAbilityRestingXPosition + 6 && gCurrentSprite.xPosition > gAbilityRestingXPosition - 6) {
             gCurrentSprite.pose = 0x5e;
@@ -208,10 +208,10 @@ void IceBeamAbilityWaiting(void) {
         EventCheckAdvance(EVENT_ICE_BEAM_ABILITY_RECOVERED);
         SAMUS_SET_POSE(SPOSE_MID_AIR);
         gSamusEnvironmentalEffects[0].externalTimer = 48;
-        SoundPlay(SOUND_92);
+        SoundPlay(SOUND_X_PARASITE_GETTING_ABSORBED);
         MusicFade(0); // Stop music
     } else if (MOD_AND(gFrameCounter8Bit, 64) == 0)
-        SoundPlay(SOUND_C3);
+        SoundPlay(SOUND_CORE_X_AURA);
 }
 
 void IceBeamAbilityGettingAbsorbed(void) {

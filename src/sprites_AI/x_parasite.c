@@ -4,6 +4,7 @@
 
 #include "data/sprites/x_parasite.h"
 
+#include "constants/audio.h"
 #include "constants/sprite.h"
 
 #include "structs/power_bomb.h"
@@ -97,7 +98,7 @@ void XParasiteBossFormationFloating(void)
     gCurrentSprite.status ^= SS_NOT_DRAWN;
 
     XParasiteMoveWithSound(gXParasiteTargetYPosition, gXParasiteTargetXPosition, HALF_BLOCK_SIZE + QUARTER_BLOCK_SIZE / 2,
-        BLOCK_SIZE - PIXEL_SIZE, 0, 0x141);
+        BLOCK_SIZE - PIXEL_SIZE, 0, SOUND_X_PARASITE_MOVING);
 
     gCurrentSprite.xParasiteTimer--;
     if (gCurrentSprite.xParasiteTimer == 0)
