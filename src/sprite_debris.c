@@ -380,22 +380,22 @@ void SpriteDebrisInit(u8 cloudType, u8 debrisType, u16 yPosition, u16 xPosition)
     }
 
     // Set oam
-    if (cloudType == 1)
+    if (cloudType == DEBRIS_CLOUD_TYPE_NORMAL)
     {
         if (debrisType < 3)
-            gSpriteDebris[i].pOam = sSpriteDebrisOam_Cloud1;
+            gSpriteDebris[i].pOam = sSpriteDebrisOam_NormalCloud;
         else
-            gSpriteDebris[i].pOam = sSpriteDebrisOam_Cloud3;
+            gSpriteDebris[i].pOam = sSpriteDebrisOam_NoCloud;
     }
-    else if (cloudType == 2)
+    else if (cloudType == DEBRIS_CLOUD_TYPE_ICE)
     {
         if (debrisType < 3)
-            gSpriteDebris[i].pOam = sSpriteDebrisOam_Cloud2;
+            gSpriteDebris[i].pOam = sSpriteDebrisOam_IceCloud;
         else
-            gSpriteDebris[i].pOam = sSpriteDebrisOam_Cloud3;
+            gSpriteDebris[i].pOam = sSpriteDebrisOam_NoCloud;
     }
     else
-        gSpriteDebris[i].pOam = sSpriteDebrisOam_Cloud3;
+        gSpriteDebris[i].pOam = sSpriteDebrisOam_NoCloud;
 
     // Setup data
     gSpriteDebris[i].exists = TRUE;

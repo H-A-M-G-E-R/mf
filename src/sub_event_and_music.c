@@ -913,7 +913,7 @@ void SubEventUpdateMusic(u8 triggerType)
 
             if (updateSubEvent)
             {
-                unk_3cd4(0x2CF);
+                unk_3cd4(VOICE_EMERGENCY_IN_SECTOR_3);
             }
             break;
 
@@ -1475,7 +1475,7 @@ void SubEventUpdateMusic(u8 triggerType)
             break;
 
         case SUB_EVENT_133:
-            unk_3cd4(0x2C8);
+            unk_3cd4(VOICE_WARNING_NO_ENTRY_WITHOUT_AUTHORIZATION);
             updateSubEvent = TRUE;
             break;
 
@@ -1511,7 +1511,7 @@ void SubEventUpdateMusic(u8 triggerType)
 
             if (gCurrentRoom != 16)
             {
-                unk_3cd4(0x2C8);
+                unk_3cd4(VOICE_WARNING_NO_ENTRY_WITHOUT_AUTHORIZATION);
                 updateSubEvent = TRUE;
             }
             break;
@@ -1554,7 +1554,7 @@ void SubEventUpdateMusic(u8 triggerType)
             }
 
             if (updateSubEvent)
-                unk_3dc4(0x2C9);
+                unk_3dc4(VOICE_FIRE_ALERT_THIS_SECTOR_WILL_SOON_BE_LOCKED_DOWN);
             break;
 
         case SUB_EVENT_141:

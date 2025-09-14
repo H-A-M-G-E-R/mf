@@ -34,6 +34,12 @@ enum SpriteDebrisType {
     DEBRIS_TYPE_BOUNCING = (1 << 7), // 0x80
 };
 
+enum SpriteDebrisCloudType {
+    DEBRIS_CLOUD_TYPE_NONE, // 0
+    DEBRIS_CLOUD_TYPE_NORMAL, // 1
+    DEBRIS_CLOUD_TYPE_ICE // 2
+};
+
 extern struct SpriteDebris gSpriteDebris[MAX_AMOUNT_OF_SPRITE_DEBRIS];
 extern struct SpriteDebris gCurrentSpriteDebris;
 

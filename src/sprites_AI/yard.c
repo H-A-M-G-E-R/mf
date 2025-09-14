@@ -232,33 +232,33 @@ void YardShooting(void) {
         if (gCurrentSprite.work0) {
             if (gCurrentSprite.status & SS_X_FLIP) {
                 if (gCurrentSprite.status & SS_Y_FLIP)
-                    SpriteSpawnSecondary(0x3a, YARD_PROJECTILE_DIRECTION_UP_LEFT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
+                    SpriteSpawnSecondary(SSPRITE_YARD_PROJECTILE, YARD_PROJECTILE_DIRECTION_UP_LEFT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
                         gCurrentSprite.yPosition - 0x40, gCurrentSprite.xPosition - 0x54, 0);
                 else
-                    SpriteSpawnSecondary(0x3a, YARD_PROJECTILE_DIRECTION_DOWN_LEFT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
+                    SpriteSpawnSecondary(SSPRITE_YARD_PROJECTILE, YARD_PROJECTILE_DIRECTION_DOWN_LEFT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
                         gCurrentSprite.yPosition + 0x40, gCurrentSprite.xPosition - 0x54, 0);
             } else {
                 if (gCurrentSprite.status & SS_Y_FLIP)
-                    SpriteSpawnSecondary(0x3a, YARD_PROJECTILE_DIRECTION_UP_RIGHT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
+                    SpriteSpawnSecondary(SSPRITE_YARD_PROJECTILE, YARD_PROJECTILE_DIRECTION_UP_RIGHT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
                         gCurrentSprite.yPosition - 0x40, gCurrentSprite.xPosition + 0x54, 0);
                 else
-                    SpriteSpawnSecondary(0x3a, YARD_PROJECTILE_DIRECTION_DOWN_RIGHT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
+                    SpriteSpawnSecondary(SSPRITE_YARD_PROJECTILE, YARD_PROJECTILE_DIRECTION_DOWN_RIGHT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
                         gCurrentSprite.yPosition + 0x40, gCurrentSprite.xPosition + 0x54, 0);
             }
         } else {
             if (gCurrentSprite.status & SS_Y_FLIP) {
                 if (gCurrentSprite.status & SS_X_FLIP)
-                    SpriteSpawnSecondary(0x3a, YARD_PROJECTILE_DIRECTION_DOWN_LEFT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
+                    SpriteSpawnSecondary(SSPRITE_YARD_PROJECTILE, YARD_PROJECTILE_DIRECTION_DOWN_LEFT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
                         gCurrentSprite.yPosition + 0x54, gCurrentSprite.xPosition - 0x40, 0);
                 else
-                    SpriteSpawnSecondary(0x3a, YARD_PROJECTILE_DIRECTION_DOWN_RIGHT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
+                    SpriteSpawnSecondary(SSPRITE_YARD_PROJECTILE, YARD_PROJECTILE_DIRECTION_DOWN_RIGHT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
                         gCurrentSprite.yPosition + 0x54, gCurrentSprite.xPosition + 0x40, 0);
             } else {
                 if (gCurrentSprite.status & SS_X_FLIP)
-                    SpriteSpawnSecondary(0x3a, YARD_PROJECTILE_DIRECTION_UP_LEFT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
+                    SpriteSpawnSecondary(SSPRITE_YARD_PROJECTILE, YARD_PROJECTILE_DIRECTION_UP_LEFT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
                         gCurrentSprite.yPosition - 0x54, gCurrentSprite.xPosition - 0x40, 0);
                 else
-                    SpriteSpawnSecondary(0x3a, YARD_PROJECTILE_DIRECTION_UP_RIGHT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
+                    SpriteSpawnSecondary(SSPRITE_YARD_PROJECTILE, YARD_PROJECTILE_DIRECTION_UP_RIGHT, gCurrentSprite.spritesetGfxSlot, gCurrentSprite.primarySpriteRamSlot,
                         gCurrentSprite.yPosition - 0x54, gCurrentSprite.xPosition + 0x40, 0);
             }
         }

@@ -7,6 +7,7 @@
 #include "data/sprites/x_parasite.h"
 #include "data/sprite_data.h"
 
+#include "constants/audio.h"
 #include "constants/clipdata.h"
 #include "constants/particle.h"
 #include "constants/sprite.h"
@@ -48,7 +49,7 @@ void ArachnusScreamingInit(void) {
     gCurrentSprite.hitboxLeft = PIXEL_TO_SUB_PIXEL(-18);
     gCurrentSprite.hitboxRight = PIXEL_TO_SUB_PIXEL(18);
     SpriteUtilSetSecondarySpriteOamPointer(sArachnusShellOam_Screaming);
-    SoundPlay(0xbb);
+    SoundPlay(SOUND_ARACHNUS_SCREAM);
 }
 
 void ArachnusDyingInit(void) {
@@ -71,7 +72,7 @@ void ArachnusDyingInit(void) {
     gCurrentSprite.paletteRow = 0;
     gCurrentSprite.xParasiteTimer = X_PARASITE_MOSAIC_MAX_INDEX;
     gCurrentSprite.unk_8 = 1;
-    SoundPlay(0xbe);
+    SoundPlay(SOUND_ARACHNUS_DYING);
 }
 
 void ArachnusRollingInit(void) {
@@ -92,7 +93,7 @@ void ArachnusRollingInit(void) {
     gSpriteData[shellSpriteSlot].hitboxBottom = 0;
     gSpriteData[shellSpriteSlot].hitboxLeft = PIXEL_TO_SUB_PIXEL(-16);
     gSpriteData[shellSpriteSlot].hitboxRight = PIXEL_TO_SUB_PIXEL(16);
-    SoundPlay(0xb4);
+    SoundPlay(SOUND_ARACHNUS_CURL);
 }
 
 void ArachnusSlashingInit(void) {
@@ -102,7 +103,7 @@ void ArachnusSlashingInit(void) {
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.status &= ~SS_ARACHNUS_HIT_BY_NORMAL_BEAM;
     SpriteUtilSetSecondarySpriteOamPointer(sArachnusShellOam_Slashing);
-    SoundPlay(0xba);
+    SoundPlay(SOUND_ARACHNUS_SLASH_WARNING);
 }
 
 void ArachnusSlashing(void) {
@@ -116,7 +117,7 @@ void ArachnusSlashing(void) {
             if (gCurrentSprite.currentAnimationFrame == 18 && gCurrentSprite.animationDurationCounter == 3) {
                 SpriteSpawnSecondary(SSPRITE_ARACHNUS_BEAM, 0, gCurrentSprite.spritesetGfxSlot,
                     gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.yPosition + PIXEL_TO_SUB_PIXEL(4), gCurrentSprite.xPosition + PIXEL_TO_SUB_PIXEL(35), SS_X_FLIP);
-                SoundPlay(0xb9);
+                SoundPlay(SOUND_ARACHNUS_SLASH);
             }
         } else {
             gCurrentSprite.hitboxRight = PIXEL_TO_SUB_PIXEL(32);
@@ -131,7 +132,7 @@ void ArachnusSlashing(void) {
             if (gCurrentSprite.currentAnimationFrame == 18 && gCurrentSprite.animationDurationCounter == 3) {
                 SpriteSpawnSecondary(SSPRITE_ARACHNUS_BEAM, 0, gCurrentSprite.spritesetGfxSlot,
                     gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.yPosition + PIXEL_TO_SUB_PIXEL(4), gCurrentSprite.xPosition - PIXEL_TO_SUB_PIXEL(35), 0);
-                SoundPlay(0xb9);
+                SoundPlay(SOUND_ARACHNUS_SLASH);
             }
         } else {
             gCurrentSprite.hitboxLeft = PIXEL_TO_SUB_PIXEL(-32);
@@ -216,9 +217,9 @@ void ArachnusRolling(void) {
             gCurrentSprite.pose = ARACHNUS_POSE_BONKING;
             ARACHNUS_FALLING_SPEED_INDEX = 0;
             ScreenShakeStartHorizontal(40, 0x81);
-            SoundPlay(0xb7);
+            SoundPlay(SOUND_ARACHNUS_BONK);
         } else if (MOD_AND(gFrameCounter8Bit, 16) == 0) {
-            SoundPlay(0xb6);
+            SoundPlay(SOUND_ARACHNUS_ROLLING);
         }
     }
 }
@@ -265,7 +266,7 @@ void ArachnusBonking(void) {
         if (ARACHNUS_FALLING_SPEED_INDEX == 0x22) {
             SpriteUtilSetSecondarySpriteOamPointer(sArachnusOam_Uncurling);
             gSpriteData[shellSpriteSlot].status &= ~SS_ROTATE_SCALE_INDIVIDUAL;
-            SoundPlay(0xb5);
+            SoundPlay(SOUND_ARACHNUS_UNCURL);
         }
     }
 }
@@ -360,7 +361,7 @@ void ArachnusShootingFire(void) {
                 gCurrentSprite.primarySpriteRamSlot, gCurrentSprite.yPosition - PIXEL_TO_SUB_PIXEL(32),
                 gCurrentSprite.xPosition - PIXEL_TO_SUB_PIXEL(16), 0);
         }
-        SoundPlay(0xbc);
+        SoundPlay(SOUND_ARACHNUS_SHOOT_FIRE);
     }
     if (SpriteUtilCheckNearEndCurrentSpriteAnim()) {
         gCurrentSprite.pose = ARACHNUS_POSE_WALKING_INIT;
@@ -499,7 +500,7 @@ void ArachnusWalking(void) {
             case 0:
                 movement = PIXEL_TO_SUB_PIXEL(0.25f);
                 if (gCurrentSprite.animationDurationCounter == 9) {
-                    SoundPlay(0xb8);
+                    SoundPlay(SOUND_ARACHNUS_WALK);
                 }
                 break;
             case 1:
@@ -839,7 +840,7 @@ void ArachnusFire(void) {
                 gCurrentSprite.samusCollision = SSC_HURTS_SAMUS;
                 gCurrentSprite.pose = ARACHNUS_FIRE_POSE_FIRE_TRAIL_1;
                 gCurrentSprite.hitboxTop = PIXEL_TO_SUB_PIXEL(-16);
-                SoundPlay(0xbd);
+                SoundPlay(SOUND_ARACHNUS_FIRE_BURNING);
             }
             break;
         }
@@ -852,7 +853,7 @@ void ArachnusFire(void) {
                 gCurrentSprite.animationDurationCounter = 0;
                 gCurrentSprite.currentAnimationFrame = 0;
                 gCurrentSprite.hitboxTop = PIXEL_TO_SUB_PIXEL(-16);
-                SoundPlay(0xbd);
+                SoundPlay(SOUND_ARACHNUS_FIRE_BURNING);
             } else {
                 gCurrentSprite.yPosition += PIXEL_TO_SUB_PIXEL(1.25f);
                 if (gCurrentSprite.status & SS_X_FLIP) {
@@ -984,7 +985,7 @@ void ArachnusSlash(void) {
                 ParticleSet(gCurrentSprite.yPosition - PIXEL_TO_SUB_PIXEL(24), gCurrentSprite.xPosition, PE_0x25);
                 ParticleSet(gCurrentSprite.yPosition - PIXEL_TO_SUB_PIXEL(8), gCurrentSprite.xPosition, PE_0x25);
                 ParticleSet(gCurrentSprite.yPosition - PIXEL_TO_SUB_PIXEL(40), gCurrentSprite.xPosition, PE_0x25);
-                SoundPlayNotAlreadyPlaying(0xbf);
+                SoundPlayNotAlreadyPlaying(SOUND_ARACHNUS_SLASH_HIT_WALL);
             } else {
                 if (gCurrentSprite.status & SS_X_FLIP) {
                     gCurrentSprite.xPosition += PIXEL_TO_SUB_PIXEL(3);

@@ -29,7 +29,7 @@ const s16 sReoSlidingYSpeed[16] = {
     2, 2, 1, SHORT_MAX
 };
 
-const s16 sReoGoingUpAccceleratingYSpeed[12] = {
+const s16 sReoGoingUpAcceleratingYSpeed[12] = {
     -1, -1, -2, -2,
     -3, -3, -4, -4,
     -5, -5, -6, SHORT_MAX

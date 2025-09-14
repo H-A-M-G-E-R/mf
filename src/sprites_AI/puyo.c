@@ -95,7 +95,7 @@ void PuyoIdle(void) {
         }
     }
 
-    if (gCurrentSprite.currentAnimationFrame >= 4 && gCurrentSprite.currentAnimationFrame <= 5)
+    if (gCurrentSprite.currentAnimationFrame == 4 || gCurrentSprite.currentAnimationFrame == 5)
         speed = 4;
     else if (gCurrentSprite.currentAnimationFrame == 3)
         speed = 8;
@@ -171,7 +171,7 @@ void PuyoJumpingUp(void) {
         gCurrentSprite.pose = 0x2e;
         gCurrentSprite.work4 = 0;
     } else {
-        if (gCurrentSprite.work4 >= ARRAY_SIZE(sPuyoJumpingUpSpeed)-1) {
+        if (gCurrentSprite.work4 >= ARRAY_SIZE(sPuyoJumpingUpSpeed) - 1) {
             gCurrentSprite.pose = 0x2e;
             gCurrentSprite.work4 = 0;
         } else {

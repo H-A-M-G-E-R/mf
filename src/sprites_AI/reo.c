@@ -284,9 +284,9 @@ void ReoGoingUp(void) {
             ReoXMovement(6);
             if (gCurrentSprite.unk_8 + 0x60 < gCurrentSprite.yPosition) {
                 u8 offset = gCurrentSprite.work4;
-                s16 yMovement = sReoGoingUpAccceleratingYSpeed[offset];
+                s16 yMovement = sReoGoingUpAcceleratingYSpeed[offset];
                 if (yMovement == SHORT_MAX) {
-                    yMovement = sReoGoingUpAccceleratingYSpeed[offset - 1];
+                    yMovement = sReoGoingUpAcceleratingYSpeed[offset - 1];
                     gCurrentSprite.yPosition += yMovement;
                 } else {
                     offset++;

@@ -13,8 +13,8 @@ extern const struct FrameData sParticleOam_FireBeam[4];
 extern const struct FrameData sParticleOam_3ea63c[5];
 extern const struct FrameData sParticleOam_AbsorbHealthXAbsorbing[33];
 extern const struct FrameData sParticleOam_AbsorbHealthXEnding[16];
-extern const struct FrameData sParticleOam_3ea7ec[33];
-extern const struct FrameData sParticleOam_3ea8f4[16];
+extern const struct FrameData sParticleOam_AbsorbMissileXAbsorbing[33];
+extern const struct FrameData sParticleOam_AbsorbMissileXEnding[16];
 extern const struct FrameData sParticleOam_3ea974[5];
 extern const struct FrameData sParticleOam_Explosion4[7];
 extern const struct FrameData sParticleOam_Explosion3[7];
@@ -22,25 +22,25 @@ extern const struct FrameData sParticleOam_SuperMissileExplosion[6];
 extern const struct FrameData sParticleOam_NormalMissileExplosion[7];
 extern const struct FrameData sParticleOam_Explosion6[5];
 extern const struct FrameData sParticleOam_Explosion5[5];
-extern const struct FrameData sParticleOam_3eaac4[33];
-extern const struct FrameData sParticleOam_3eabcc[16];
+extern const struct FrameData sParticleOam_AbsorbRedXAbsorbing[33];
+extern const struct FrameData sParticleOam_AbsorbRedXEnding[16];
 extern const struct FrameData sParticleOam_IceMissileExplosion[6];
 extern const struct FrameData sParticleOam_DiffusionMissileExplosion[6];
 extern const struct FrameData sParticleOam_ChargedDiffusionMissileExplosion[7];
 extern const struct FrameData sDiffusionFlakeOam[6];
 extern const struct FrameData sParticleOam_AbsorbIceXPreVaria[24];
-extern const struct FrameData sParticleOam_3eadd4[33];
-extern const struct FrameData sParticleOam_3eaedc[16];
+extern const struct FrameData sParticleOam_AbsorbCoreXAbsorbing[33];
+extern const struct FrameData sParticleOam_AbsorbCoreXEnding[16];
 extern const struct FrameData sParticleOam_IceXTrail[7];
 extern const struct FrameData sParticleOam_DiffusionFlakeTrail[8];
 
-extern const struct FrameData sSpriteDebrisOam_Cloud2[12];
-extern const struct FrameData sSpriteDebrisOam_Cloud3[5];
+extern const struct FrameData sSpriteDebrisOam_IceCloud[12];
+extern const struct FrameData sSpriteDebrisOam_NoCloud[5];
 
 extern const struct FrameData sParticleOam_ScrewAttackKilled[9];
 extern const struct FrameData sParticleOam_ShinesparkKilled[8];
 
-extern const struct FrameData sSpriteDebrisOam_Cloud1[12];
+extern const struct FrameData sSpriteDebrisOam_NormalCloud[12];
 extern const struct FrameData sParticleOam_HeavyDust[5];
 extern const struct FrameData sParticleOam_ExplosionSmoke[5];
 extern const struct FrameData sParticleOam_EnterOrExitWater[9];
@@ -72,7 +72,7 @@ extern const struct FrameData sSamusEnvironmentalEffectOam_3ece84[6];
 extern const struct FrameData sSamusEnvironmentalEffectOam_3eceb4[8];
 
 extern const struct FrameData sParticleOam_GettingSuitBeams[11];
-extern const struct FrameData sParticleOam_3ed1e4[17];
+extern const struct FrameData sParticleOam_GettingSuit[17];
 extern const struct FrameData sParticleOam_AbsorbingSuit[31];
 
 extern const struct FrameData sParticleOam_Smoke[7];

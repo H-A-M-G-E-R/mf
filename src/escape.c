@@ -4,6 +4,7 @@
 
 #include "data/hud_data.h"
 
+#include "constants/audio.h"
 #include "constants/event.h"
 #include "constants/particle.h"
 
@@ -26,50 +27,50 @@ void EscapePlaySound(void)
             if ((gEscapeTimerDigits.minutesTens | gEscapeTimerDigits.minutesOnes) == 0)
             {
                 if (gEscapeTimerDigits.secondsTens == 0)
-                    SoundPlay(0x2C6);
+                    SoundPlay(VOICE_ZERO);
                 else if (gEscapeTimerDigits.secondsTens == 1)
-                    SoundPlay(0x2BC);
+                    SoundPlay(VOICE_TEN);
             }
             break;
 
         case 1:
             if ((gEscapeTimerDigits.minutesTens | gEscapeTimerDigits.minutesOnes | gEscapeTimerDigits.secondsTens) == 0)
-                SoundPlay(0x2C5);
+                SoundPlay(VOICE_ONE);
             break;
 
         case 2:
             if ((gEscapeTimerDigits.minutesTens | gEscapeTimerDigits.minutesOnes | gEscapeTimerDigits.secondsTens) == 0)
-                SoundPlay(0x2C4);
+                SoundPlay(VOICE_TWO);
             break;
 
         case 3:
             if ((gEscapeTimerDigits.minutesTens | gEscapeTimerDigits.minutesOnes | gEscapeTimerDigits.secondsTens) == 0)
-                SoundPlay(0x2C3);
+                SoundPlay(VOICE_THREE);
             break;
 
         case 4:
             if ((gEscapeTimerDigits.minutesTens | gEscapeTimerDigits.minutesOnes | gEscapeTimerDigits.secondsTens) == 0)
-                SoundPlay(0x2C2);
+                SoundPlay(VOICE_FOUR);
             break;
 
         case 5:
             if ((gEscapeTimerDigits.minutesTens | gEscapeTimerDigits.minutesOnes | gEscapeTimerDigits.secondsTens) == 0)
-                SoundPlay(0x2C1);
+                SoundPlay(VOICE_FIVE);
             break;
 
         case 6:
             if ((gEscapeTimerDigits.minutesTens | gEscapeTimerDigits.minutesOnes | gEscapeTimerDigits.secondsTens) == 0)
-                SoundPlay(0x2C0);
+                SoundPlay(VOICE_SIX);
             break;
 
         case 7:
             if ((gEscapeTimerDigits.minutesTens | gEscapeTimerDigits.minutesOnes | gEscapeTimerDigits.secondsTens) == 0)
-                SoundPlay(0x2BF);
+                SoundPlay(VOICE_SEVEN);
             break;
 
         case 8:
             if ((gEscapeTimerDigits.minutesTens | gEscapeTimerDigits.minutesOnes | gEscapeTimerDigits.secondsTens) == 0)
-                SoundPlay(0x2BE);
+                SoundPlay(VOICE_EIGHT);
             break;
 
         case 9:
@@ -81,36 +82,36 @@ void EscapePlaySound(void)
                 if (gEscapeTimerDigits.minutesOnes == 5)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D0);
+                        SoundPlay(VOICE_SIX_MINUTES_TO_MAIN_BOILER_EXPLOSION);
                 }
                 else if (gEscapeTimerDigits.minutesOnes == 4)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D1);
+                        SoundPlay(VOICE_FIVE_MINUTES_TO_MAIN_BOILER_EXPLOSION);
                 }
                 else if (gEscapeTimerDigits.minutesOnes == 3)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D2);
+                        SoundPlay(VOICE_FOUR_MINUTES_TO_MAIN_BOILER_EXPLOSION);
                 }
                 else if (gEscapeTimerDigits.minutesOnes == 2)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D3);
+                        SoundPlay(VOICE_THREE_MINUTES_TO_MAIN_BOILER_EXPLOSION);
                 }
                 else if (gEscapeTimerDigits.minutesOnes == 1)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D4);
+                        SoundPlay(VOICE_TWO_MINUTES_TO_MAIN_BOILER_EXPLOSION);
                     else if (escape == ESCAPE_ORBIT_CHANGE)
-                        SoundPlay(0x2E3);
+                        SoundPlay(VOICE_TWO_MINUTES_TO_DESTINATION);
                 }
                 else if (gEscapeTimerDigits.minutesOnes == 0)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D5);
+                        SoundPlay(VOICE_SIXTY_SECONDS_TO_EXPLOSION);
                     else if (escape == ESCAPE_ORBIT_CHANGE)
-                        SoundPlay(0x2E4);
+                        SoundPlay(VOICE_SIXTY_SECONDS_TO_IMPACT);
                 }
             }
             else if (gEscapeTimerDigits.minutesOnes == 0)
@@ -118,42 +119,42 @@ void EscapePlaySound(void)
                 if (gEscapeTimerDigits.secondsTens == 4)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D6);
+                        SoundPlay(VOICE_FIFTY_SECONDS_TO_EXPLOSION);
                     else if (escape == ESCAPE_RESTRICTED_LAB)
-                        SoundPlay(0x2CB);
+                        SoundPlay(VOICE_FIFTY_SECONDS_TO_ISOLATION_LOCKDOWN);
                     else if (escape == ESCAPE_ORBIT_CHANGE)
-                        SoundPlay(0x2E5);
+                        SoundPlay(VOICE_FIFTY_SECONDS_TO_IMPACT);
                 }
                 else if (gEscapeTimerDigits.secondsTens == 3)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D7);
+                        SoundPlay(VOICE_FOURTY_SECONDS_TO_EXPLOSION);
                     else if (escape == ESCAPE_RESTRICTED_LAB)
-                        SoundPlay(0x2CC);
+                        SoundPlay(VOICE_FOURTY_SECONDS_TO_ISOLATION_LOCKDOWN);
                     else if (escape == ESCAPE_ORBIT_CHANGE)
-                        SoundPlay(0x2E6);
+                        SoundPlay(VOICE_FOURTY_SECONDS_TO_IMPACT);
                 }
                 else if (gEscapeTimerDigits.secondsTens == 2)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D8);
+                        SoundPlay(VOICE_THIRTY_SECONDS_TO_EXPLOSION);
                     else if (escape == ESCAPE_RESTRICTED_LAB)
-                        SoundPlay(0x2CD);
+                        SoundPlay(VOICE_THIRTY_SECONDS_TO_ISOLATION_LOCKDOWN);
                     else if (escape == ESCAPE_ORBIT_CHANGE)
-                        SoundPlay(0x2E7);
+                        SoundPlay(VOICE_THIRTY_SECONDS_TO_IMPACT);
                 }
                 else if (gEscapeTimerDigits.secondsTens == 1)
                 {
                     if (escape == ESCAPE_MELTDOWN)
-                        SoundPlay(0x2D9);
+                        SoundPlay(VOICE_TWENTY_SECONDS_TO_EXPLOSION);
                     else if (escape == ESCAPE_RESTRICTED_LAB)
-                        SoundPlay(0x2CE);
+                        SoundPlay(VOICE_TWENTY_SECONDS_TO_ISOLATION_LOCKDOWN);
                     else if (escape == ESCAPE_ORBIT_CHANGE)
-                        SoundPlay(0x2E8);
+                        SoundPlay(VOICE_TWENTY_SECONDS_TO_IMPACT);
                 }
                 else if (gEscapeTimerDigits.secondsTens == 0)
                 {
-                    SoundPlay(0x2BD);
+                    SoundPlay(VOICE_NINE);
                 }
             }
             break;
@@ -233,12 +234,12 @@ void EscapeSetDigits(void)
     else if (escape == ESCAPE_RESTRICTED_LAB)
     {
         CREATE_ESCAPE_TIMER(1, 0, 0);
-        SoundPlay(0x2CA);
+        SoundPlay(VOICE_SIXTY_SECONDS_TO_ISOLATION_LOCKDOWN);
     }
     else if (escape == ESCAPE_ORBIT_CHANGE)
     {
         CREATE_ESCAPE_TIMER(3, 0, 0);
-        SoundPlay(0x2DA);
+        SoundPlay(VOICE_PROPULSION_SEQUENCE_ACTIVATED_DESTINATION_PLANET_SR388);
     }
     else
     {

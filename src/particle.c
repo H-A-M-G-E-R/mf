@@ -615,20 +615,20 @@ void ParticleAbsorbMissileX(void) {
     switch (gCurrentParticle.stage) {
         case 0:
             gCurrentParticle.stage = 1;
-            ParticleUpdateAnimation(sParticleOam_3ea7ec);
+            ParticleUpdateAnimation(sParticleOam_AbsorbMissileXAbsorbing);
             break;
         case 1:
             if (gCurrentParticle.frameCounter > 27) {
                 gCurrentParticle.stage = 2;
                 gCurrentParticle.currentAnimationFrame = 0;
                 gCurrentParticle.animationDurationCounter = 0;
-                ParticleUpdateAnimation(sParticleOam_3ea8f4);
+                ParticleUpdateAnimation(sParticleOam_AbsorbMissileXEnding);
             } else {
-                ParticleUpdateAnimation(sParticleOam_3ea7ec);
+                ParticleUpdateAnimation(sParticleOam_AbsorbMissileXAbsorbing);
             }
             break;
         case 2:
-            ParticleUpdateAnimation(sParticleOam_3ea8f4);
+            ParticleUpdateAnimation(sParticleOam_AbsorbMissileXEnding);
             if (gCurrentParticle.currentAnimationFrame == 0 && gCurrentParticle.animationDurationCounter == 0)
                 gCurrentParticle.status = 0;
             break;
@@ -644,20 +644,20 @@ void ParticleAbsorbRedX(void) {
     switch (gCurrentParticle.stage) {
         case 0:
             gCurrentParticle.stage = 1;
-            ParticleUpdateAnimation(sParticleOam_3eaac4);
+            ParticleUpdateAnimation(sParticleOam_AbsorbRedXAbsorbing);
             break;
         case 1:
             if (gCurrentParticle.frameCounter > 27) {
                 gCurrentParticle.stage = 2;
                 gCurrentParticle.currentAnimationFrame = 0;
                 gCurrentParticle.animationDurationCounter = 0;
-                ParticleUpdateAnimation(sParticleOam_3eabcc);
+                ParticleUpdateAnimation(sParticleOam_AbsorbRedXEnding);
             } else {
-                ParticleUpdateAnimation(sParticleOam_3eaac4);
+                ParticleUpdateAnimation(sParticleOam_AbsorbRedXAbsorbing);
             }
             break;
         case 2:
-            ParticleUpdateAnimation(sParticleOam_3eabcc);
+            ParticleUpdateAnimation(sParticleOam_AbsorbRedXEnding);
             if (gCurrentParticle.currentAnimationFrame == 0 && gCurrentParticle.animationDurationCounter == 0)
                 gCurrentParticle.status = 0;
             break;
@@ -673,20 +673,20 @@ void ParticleAbsorbCoreX(void) {
     switch (gCurrentParticle.stage) {
         case 0:
             gCurrentParticle.stage = 1;
-            ParticleUpdateAnimation(sParticleOam_3eadd4);
+            ParticleUpdateAnimation(sParticleOam_AbsorbCoreXAbsorbing);
             break;
         case 1:
             if (gCurrentParticle.frameCounter > 27) {
                 gCurrentParticle.stage = 2;
                 gCurrentParticle.currentAnimationFrame = 0;
                 gCurrentParticle.animationDurationCounter = 0;
-                ParticleUpdateAnimation(sParticleOam_3eaedc);
+                ParticleUpdateAnimation(sParticleOam_AbsorbCoreXEnding);
             } else {
-                ParticleUpdateAnimation(sParticleOam_3eadd4);
+                ParticleUpdateAnimation(sParticleOam_AbsorbCoreXAbsorbing);
             }
             break;
         case 2:
-            ParticleUpdateAnimation(sParticleOam_3eaedc);
+            ParticleUpdateAnimation(sParticleOam_AbsorbCoreXEnding);
             if (gCurrentParticle.currentAnimationFrame == 0 && gCurrentParticle.animationDurationCounter == 0)
                 gCurrentParticle.status = 0;
             break;
@@ -1254,7 +1254,7 @@ void ParticleGettingSuit(void) {
     switch (gCurrentParticle.stage) {
         case 0:
             gCurrentParticle.stage = 1;
-            ParticleUpdateAnimation(sParticleOam_3ed1e4);
+            ParticleUpdateAnimation(sParticleOam_GettingSuit);
             break;
         case 1:
             if (!gPoseLock) {
@@ -1263,7 +1263,7 @@ void ParticleGettingSuit(void) {
                 gCurrentParticle.animationDurationCounter = 0;
                 ParticleUpdateAnimation(sParticleOam_AbsorbingSuit);
             } else {
-                ParticleUpdateAnimation(sParticleOam_3ed1e4);
+                ParticleUpdateAnimation(sParticleOam_GettingSuit);
             }
             break;
         case 2:

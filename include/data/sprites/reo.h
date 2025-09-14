@@ -7,7 +7,7 @@
 extern const s16 sReoIdleYMovement[49];
 extern const s16 sReoGoingDownYSpeed[12];
 extern const s16 sReoSlidingYSpeed[16];
-extern const s16 sReoGoingUpAccceleratingYSpeed[12];
+extern const s16 sReoGoingUpAcceleratingYSpeed[12];
 extern const s16 sReoGoingUpDeceleratingYSpeed[16];
 
 extern const u32 sReoGfx[1 * 512];
