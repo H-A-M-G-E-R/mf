@@ -343,19 +343,6 @@ codeCommands = [
     "EOT", # 0xce
 ]
 
-repeatableCommands = [
-    "VOICE", # 0xbd
-    "VOL", # 0xbe
-    "PAN", # 0xbf
-    "BEND", # 0xc0
-    "BENDR", # 0xc1
-    "LFOS", # 0xc2
-    "MOD", # 0xc4
-    "TUNE", # 0xc8
-    "XCMD", # 0xcd
-    "EOT", # 0xce
-]
-
 PARAM_TYPE_NONE = 0
 PARAM_TYPE_BYTE = 1
 PARAM_TYPE_C_V = 2
@@ -690,7 +677,7 @@ def ExtractTrackCommands(f: BufferedReader, addr: int, trackNbr: int):
             result += "\t.byte " + waitCommand[value]
         elif value >= 0xb1 and value <= 0xce and value != 0xb6:
             # Code command
-            if codeCommands[value - 0xb1] in repeatableCommands:
+            if value >= 0xbd:
                 lastRepeatableCommand = value
             value -= 0xb1
             result += "\t.byte " + codeCommands[value]
