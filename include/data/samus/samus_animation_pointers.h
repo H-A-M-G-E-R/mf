@@ -32,3 +32,22 @@ extern const struct FrameData* const sSamusEffectAnimPointers_UnlockingSecurity[
 extern const struct FrameData* const sSamusEffectAnimPointers_Dying[2];
 
 extern const struct SamusAnimationData* const sSamusAnimPointers_HitByOmegaMetroid[2][2];
+
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_All[SPOSE_END][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Standing[5][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_TurningAround[5][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Shooting[5][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Running[4][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_MidAir[6][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_TurningAroundMidAir[6][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Landing[5][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_UnusedCrouching[5][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_TurningAroundAndCrouching[5][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Crouching[5][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_HangingOnLedge[2][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Shinesparking[3][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_DelayAfterShinesparking[3][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_HoldingYourArmCannonOutOnAVerticalLadder[6][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_ShootingOnVerticalLadder[6][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_HangingOnHorizontalLadder[6][2];
+extern const struct ArmCannonAnimationData* const sArmCannonAnimPointers_ShootingOnHorizontalLadder[6][2];

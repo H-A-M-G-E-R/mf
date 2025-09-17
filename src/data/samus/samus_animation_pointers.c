@@ -690,7 +690,655 @@ const struct SamusAnimationData* const sSamusAnimPointers_HitByOmegaMetroid[2][2
     }
 };
 
-static const u8 sBlob_28d794_28fd04[] = INCBIN_U8("data/Blob_28d794_28fd04.bin");
+static const u8 sBlob_28d794_28d8dc[] = INCBIN_U8("data/Blob_28d794_28d8dc.bin");
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_All[SPOSE_END][2] = {
+    [SPOSE_STANDING] = {
+        sArmCannonAnim_Right_Standing,
+        sArmCannonAnim_Left_Standing
+    },
+    [SPOSE_TURNING_AROUND] = {
+        sArmCannonAnim_Right_TurningAround,
+        sArmCannonAnim_Left_TurningAround
+    },
+    [SPOSE_SHOOTING] = {
+        sArmCannonAnim_Right_Shooting,
+        sArmCannonAnim_Left_Shooting
+    },
+    [SPOSE_RUNNING] = {
+        sArmCannonAnim_Right_Running,
+        sArmCannonAnim_Left_Running
+    },
+    [SPOSE_MID_AIR] = {
+        sArmCannonAnim_Right_MidAir,
+        sArmCannonAnim_Left_MidAir
+    },
+    [SPOSE_TURNING_AROUND_MID_AIR] = {
+        sArmCannonAnim_Right_TurningAroundMidAir,
+        sArmCannonAnim_Left_TurningAroundMidAir
+    },
+    [SPOSE_LANDING] = {
+        sArmCannonAnim_Right_Landing,
+        sArmCannonAnim_Left_Landing
+    },
+    [SPOSE_CROUCHING] = {
+        sArmCannonAnim_Right_UnusedCrouching,
+        sArmCannonAnim_Left_UnusedCrouching
+    },
+    [SPOSE_TURNING_AROUND_AND_CROUCHING] = {
+        sArmCannonAnim_Right_TurningAroundAndCrouching,
+        sArmCannonAnim_Left_TurningAroundAndCrouching
+    },
+    [SPOSE_SHOOTING_AND_CROUCHING] = {
+        sArmCannonAnim_Right_Crouching,
+        sArmCannonAnim_Left_Crouching
+    },
+    [SPOSE_STARTING_SPIN_JUMP] = {
+        sArmCannonAnim_Right_StartingSpinJump,
+        sArmCannonAnim_Left_StartingSpinJump
+    },
+    [SPOSE_SPINNING] = {
+        sArmCannonAnim_Right_Spinning,
+        sArmCannonAnim_Left_Spinning
+    },
+    [SPOSE_MORPHING] = {
+        sArmCannonAnim_Right_Morphing,
+        sArmCannonAnim_Left_Morphing
+    },
+    [SPOSE_MORPH_BALL] = {
+        sArmCannonAnim_Right_MorphBall,
+        sArmCannonAnim_Left_MorphBall
+    },
+    [SPOSE_ROLLING] = {
+        sArmCannonAnim_Right_MorphBall,
+        sArmCannonAnim_Left_MorphBall
+    },
+    [SPOSE_UNMORPHING] = {
+        sArmCannonAnim_Right_Unmorphing,
+        sArmCannonAnim_Left_Unmorphing
+    },
+    [SPOSE_MORPH_BALL_MID_AIR] = {
+        sArmCannonAnim_Right_MorphBall,
+        sArmCannonAnim_Left_MorphBall
+    },
+    [SPOSE_GETTING_HURT] = {
+        sArmCannonAnim_Right_MidAir,
+        sArmCannonAnim_Left_MidAir
+    },
+    [SPOSE_GETTING_HURT_IN_MORPH_BALL] = {
+        sArmCannonAnim_Right_MorphBall,
+        sArmCannonAnim_Left_MorphBall
+    },
+    [SPOSE_GETTING_KNOCKED_BACK] = {
+        sArmCannonAnim_Right_MidAir,
+        sArmCannonAnim_Left_MidAir
+    },
+    [SPOSE_GETTING_KNOCKED_BACK_IN_MORPH_BALL] = {
+        sArmCannonAnim_Right_MorphBall,
+        sArmCannonAnim_Left_MorphBall
+    },
+    [SPOSE_STARTING_WALL_JUMP] = {
+        sArmCannonAnim_Right_StartingWallJump,
+        sArmCannonAnim_Left_StartingWallJump
+    },
+    [SPOSE_WALL_JUMPING] = {
+        sArmCannonAnim_Right_Spinning,
+        sArmCannonAnim_Left_Spinning
+    },
+    [SPOSE_USING_AN_ELEVATOR] = {
+        sArmCannonAnim_Right_UsingAnElevator,
+        sArmCannonAnim_Left_UsingAnElevator
+    },
+    [SPOSE_HANGING_ON_LEDGE] = {
+        sArmCannonAnim_Right_HangingOnLedge,
+        sArmCannonAnim_Left_HangingOnLedge
+    },
+    [SPOSE_PULLING_YOURSELF_UP_FROM_HANGING] = {
+        sArmCannonAnim_Right_PullingYourselfUpFromHanging,
+        sArmCannonAnim_Left_PullingYourselfUpFromHanging
+    },
+    [SPOSE_PULLING_YOURSELF_FORWARD_FROM_HANGING] = {
+        sArmCannonAnim_Right_PullingYourselfForwardFromHanging,
+        sArmCannonAnim_Left_PullingYourselfForwardFromHanging
+    },
+    [SPOSE_PULLING_YOURSELF_INTO_MORPH_BALL_TUNNEL] = {
+        sArmCannonAnim_Right_PullingYourselfIntoMorphBallTunnel,
+        sArmCannonAnim_Left_PullingYourselfIntoMorphBallTunnel
+    },
+    [SPOSE_PULLING_YOURSELF_DOWN_TO_START_HANGING] = {
+        sArmCannonAnim_Right_PullingYourselfDownToStartHanging,
+        sArmCannonAnim_Left_PullingYourselfDownToStartHanging
+    },
+    [SPOSE_SPACE_JUMPING] = {
+        sArmCannonAnim_Right_SpaceJumping,
+        sArmCannonAnim_Left_SpaceJumping
+    },
+    [SPOSE_SCREW_ATTACKING] = {
+        sArmCannonAnim_Right_ScrewAttacking,
+        sArmCannonAnim_Left_ScrewAttacking
+    },
+    [SPOSE_SKIDDING] = {
+        sArmCannonAnim_Right_Skidding,
+        sArmCannonAnim_Left_Skidding
+    },
+    [SPOSE_ON_SAVE_PAD] = {
+        sArmCannonAnim_Right_OnSavePad,
+        sArmCannonAnim_Left_OnSavePad
+    },
+    [SPOSE_ON_RECHARGE_OR_SECURITY_PAD] = {
+        sArmCannonAnim_Right_Standing,
+        sArmCannonAnim_Left_Standing
+    },
+    [SPOSE_TURNING_AROUND_TO_RECHARGE_OR_UNLOCK_DOORS] = {
+        sArmCannonAnim_Right_TurningAround,
+        sArmCannonAnim_Left_TurningAround
+    },
+    [SPOSE_DELAY_BEFORE_SHINESPARKING] = {
+        sArmCannonAnim_Right_DelayBeforeShinesparking,
+        sArmCannonAnim_Left_DelayBeforeShinesparking
+    },
+    [SPOSE_SHINESPARKING] = {
+        sArmCannonAnim_Right_Shinesparking,
+        sArmCannonAnim_Left_Shinesparking
+    },
+    [SPOSE_DELAY_AFTER_SHINESPARKING] = {
+        sArmCannonAnim_Right_DelayAfterShinesparking,
+        sArmCannonAnim_Left_DelayAfterShinesparking
+    },
+    [SPOSE_HANGING_FROM_VERTICAL_LADDER] = {
+        sArmCannonAnim_Right_HangingFromVerticalLadder,
+        sArmCannonAnim_Left_HangingFromVerticalLadder
+    },
+    [SPOSE_STARTING_TO_HOLD_YOUR_ARM_CANNON_OUT_ON_A_VERTICAL_LADDER] = {
+        sArmCannonAnim_Right_StartingToHoldYourArmCannonOutOnAVerticalLadder,
+        sArmCannonAnim_Left_StartingToHoldYourArmCannonOutOnAVerticalLadder
+    },
+    [SPOSE_HOLDING_YOUR_ARM_CANNON_OUT_ON_A_VERTICAL_LADDER] = {
+        sArmCannonAnim_Right_HoldingYourArmCannonOutOnAVerticalLadder,
+        sArmCannonAnim_Left_HoldingYourArmCannonOutOnAVerticalLadder
+    },
+    [SPOSE_SHOOTING_ON_VERTICAL_LADDER] = {
+        sArmCannonAnim_Right_ShootingOnVerticalLadder,
+        sArmCannonAnim_Left_ShootingOnVerticalLadder
+    },
+    [SPOSE_STARTING_TO_PUT_AWAY_YOUR_ARM_CANNON_OUT_ON_A_VERTICAL_LADDER] = {
+        sArmCannonAnim_Right_StartingToPutAwayYourArmCannonOutOnAVerticalLadder,
+        sArmCannonAnim_Left_StartingToPutAwayYourArmCannonOutOnAVerticalLadder
+    },
+    [SPOSE_HANGING_ON_HORIZONTAL_LADDER] = {
+        sArmCannonAnim_Right_HangingOnHorizontalLadder,
+        sArmCannonAnim_Left_HangingOnHorizontalLadder
+    },
+    [SPOSE_MOVING_ON_HORIZONTAL_LADDER] = {
+        sArmCannonAnim_Right_MovingOnHorizontalLadder,
+        sArmCannonAnim_Left_MovingOnHorizontalLadder
+    },
+    [SPOSE_TURNING_AROUND_ON_HORIZONTAL_LADDER] = {
+        sArmCannonAnim_Right_TurningAroundOnHorizontalLadder,
+        sArmCannonAnim_Left_TurningAroundOnHorizontalLadder
+    },
+    [SPOSE_DELAY_AFTER_SHOOTING_ON_HORIZONTAL_LADDER] = {
+        sArmCannonAnim_Right_HangingOnHorizontalLadder,
+        sArmCannonAnim_Left_HangingOnHorizontalLadder
+    },
+    [SPOSE_SHOOTING_ON_HORIZONTAL_LADDER] = {
+        sArmCannonAnim_Right_ShootingOnHorizontalLadder,
+        sArmCannonAnim_Left_ShootingOnHorizontalLadder
+    },
+    [SPOSE_FROZEN] = {
+        sArmCannonAnim_Right_Standing,
+        sArmCannonAnim_Left_Standing
+    },
+    [SPOSE_FROZEN_AND_FALLING] = {
+        sArmCannonAnim_Right_MidAir,
+        sArmCannonAnim_Left_MidAir
+    },
+    [SPOSE_FROZEN_IN_MORPH_BALL] = {
+        sArmCannonAnim_Right_MorphBall,
+        sArmCannonAnim_Left_MorphBall
+    },
+    [SPOSE_FROZEN_IN_MORPH_BALL_AND_FALLING] = {
+        sArmCannonAnim_Right_MorphBall,
+        sArmCannonAnim_Left_MorphBall
+    },
+    [SPOSE_UNLOCKING_SECURITY] = {
+        sArmCannonAnim_Right_UnlockingSecurity,
+        sArmCannonAnim_Left_UnlockingSecurity
+    },
+    [SPOSE_SAVING] = {
+        sArmCannonAnim_Right_OnSavePad,
+        sArmCannonAnim_Left_OnSavePad
+    },
+    [SPOSE_ON_NAVIGATION_PAD] = {
+        sArmCannonAnim_Right_OnNavigationPad,
+        sArmCannonAnim_Left_OnNavigationPad
+    },
+    [SPOSE_DOWNLOADING_ABILITY] = {
+        sArmCannonAnim_Right_DownloadingAbility,
+        sArmCannonAnim_Left_DownloadingAbility
+    },
+    [SPOSE_BEING_RECHARGED] = {
+        sArmCannonAnim_Right_BeingRecharged,
+        sArmCannonAnim_Left_BeingRecharged
+    },
+    [SPOSE_FACING_FOREGROUND] = {
+        sArmCannonAnim_Right_FacingForeground,
+        sArmCannonAnim_Left_FacingForeground
+    },
+    [SPOSE_FACING_BACKGROUND] = {
+        sArmCannonAnim_Right_FacingBackground,
+        sArmCannonAnim_Left_FacingBackground
+    },
+    [SPOSE_UNLOCKING_HABITATIONS_DECK] = {
+        sArmCannonAnim_UnlockingHabitationsDeck,
+        sArmCannonAnim_UnlockingHabitationsDeck
+    },
+    [SPOSE_GRABBED_BY_ZAZABI] = {
+        sArmCannonAnim_Right_MorphBall,
+        sArmCannonAnim_Left_MorphBall
+    },
+    [SPOSE_LOADING_SAVE] = {
+        sArmCannonAnim_LoadingSave,
+        sArmCannonAnim_LoadingSave
+    },
+    [SPOSE_DYING] = {
+        sArmCannonAnim_Right_Dying,
+        sArmCannonAnim_Left_Dying
+    },
+    [SPOSE_HIT_BY_OMEGA_METROID] = {
+        sArmCannonAnim_Right_HitByOmegaMetroid,
+        sArmCannonAnim_Left_HitByOmegaMetroid
+    },
+    [SPOSE_GRABBED_BY_YAKUZA] = {
+        sArmCannonAnim_Right_Down_MidAir,
+        sArmCannonAnim_Left_Down_MidAir
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Standing[5][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_Standing,
+        sArmCannonAnim_Left_Standing
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_Standing,
+        sArmCannonAnim_Left_Standing
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_Standing,
+        sArmCannonAnim_Left_DiagonalUp_Standing
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_Standing,
+        sArmCannonAnim_Left_DiagonalDown_Standing
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_Standing,
+        sArmCannonAnim_Left_Up_Standing
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_TurningAround[5][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_TurningAround,
+        sArmCannonAnim_Left_TurningAround
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_TurningAround,
+        sArmCannonAnim_Left_TurningAround
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_TurningAround,
+        sArmCannonAnim_Left_DiagonalUp_TurningAround
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_TurningAround,
+        sArmCannonAnim_Left_DiagonalDown_TurningAround
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_TurningAround,
+        sArmCannonAnim_Left_Up_TurningAround
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Shooting[5][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_Shooting,
+        sArmCannonAnim_Left_Shooting
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_Shooting,
+        sArmCannonAnim_Left_Shooting
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_Shooting,
+        sArmCannonAnim_Left_DiagonalUp_Shooting
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_Shooting,
+        sArmCannonAnim_Left_DiagonalDown_Shooting
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_Shooting,
+        sArmCannonAnim_Left_Up_Shooting
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Running[4][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_Running,
+        sArmCannonAnim_Left_Running
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_Forward_Running,
+        sArmCannonAnim_Left_Forward_Running
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_Running,
+        sArmCannonAnim_Left_DiagonalUp_Running
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_Running,
+        sArmCannonAnim_Left_DiagonalDown_Running
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_MidAir[6][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_MidAir,
+        sArmCannonAnim_Left_MidAir
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_Forward_MidAir,
+        sArmCannonAnim_Left_Forward_MidAir
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_MidAir,
+        sArmCannonAnim_Left_DiagonalUp_MidAir
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_MidAir,
+        sArmCannonAnim_Left_DiagonalDown_MidAir
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_MidAir,
+        sArmCannonAnim_Left_Up_MidAir
+    },
+    [ACD_DOWN] = {
+        sArmCannonAnim_Right_Down_MidAir,
+        sArmCannonAnim_Left_Down_MidAir
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_TurningAroundMidAir[6][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_TurningAroundMidAir,
+        sArmCannonAnim_Left_TurningAroundMidAir
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_TurningAroundMidAir,
+        sArmCannonAnim_Left_TurningAroundMidAir
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_TurningAroundMidAir,
+        sArmCannonAnim_Left_DiagonalUp_TurningAroundMidAir
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_TurningAroundMidAir,
+        sArmCannonAnim_Left_DiagonalDown_TurningAroundMidAir
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_TurningAroundMidAir,
+        sArmCannonAnim_Left_Up_TurningAroundMidAir
+    },
+    [ACD_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_TurningAroundMidAir,
+        sArmCannonAnim_Left_DiagonalDown_TurningAroundMidAir
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Landing[5][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_Landing,
+        sArmCannonAnim_Left_Landing
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_Forward_Landing,
+        sArmCannonAnim_Left_Forward_Landing
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_Landing,
+        sArmCannonAnim_Left_DiagonalUp_Landing
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_Landing,
+        sArmCannonAnim_Left_DiagonalDown_Landing
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_Landing,
+        sArmCannonAnim_Left_Up_Landing
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_UnusedCrouching[5][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_UnusedCrouching,
+        sArmCannonAnim_Left_UnusedCrouching
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_UnusedCrouching,
+        sArmCannonAnim_Left_UnusedCrouching
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_UnusedCrouching,
+        sArmCannonAnim_Left_DiagonalUp_UnusedCrouching
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_UnusedCrouching,
+        sArmCannonAnim_Left_DiagonalDown_UnusedCrouching
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_UnusedCrouching,
+        sArmCannonAnim_Left_Up_UnusedCrouching
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_TurningAroundAndCrouching[5][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_TurningAroundAndCrouching,
+        sArmCannonAnim_Left_TurningAroundAndCrouching
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_TurningAroundAndCrouching,
+        sArmCannonAnim_Left_TurningAroundAndCrouching
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_TurningAroundAndCrouching,
+        sArmCannonAnim_Left_DiagonalUp_TurningAroundAndCrouching
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_TurningAroundAndCrouching,
+        sArmCannonAnim_Left_DiagonalDown_TurningAroundAndCrouching
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_TurningAroundAndCrouching,
+        sArmCannonAnim_Left_Up_TurningAroundAndCrouching
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Crouching[5][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_Crouching,
+        sArmCannonAnim_Left_Crouching
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_Crouching,
+        sArmCannonAnim_Left_Crouching
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_Crouching,
+        sArmCannonAnim_Left_DiagonalUp_Crouching
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_Crouching,
+        sArmCannonAnim_Left_DiagonalDown_Crouching
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_Crouching,
+        sArmCannonAnim_Left_Up_Crouching
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_HangingOnLedge[2][2] = {
+    [FALSE] = {
+        sArmCannonAnim_Right_HangingOnLedge,
+        sArmCannonAnim_Left_HangingOnLedge
+    },
+    [TRUE] = {
+        sArmCannonAnim_Right_ReadyToJump_HangingOnLedge,
+        sArmCannonAnim_Left_ReadyToJump_HangingOnLedge
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_Shinesparking[3][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_Shinesparking,
+        sArmCannonAnim_Left_Shinesparking
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_Sidewards_Shinesparking,
+        sArmCannonAnim_Left_Sidewards_Shinesparking
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_Sidewards_Shinesparking,
+        sArmCannonAnim_Left_Sidewards_Shinesparking
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_DelayAfterShinesparking[3][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_DelayAfterShinesparking,
+        sArmCannonAnim_Left_DelayAfterShinesparking
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_Sidewards_DelayAfterShinesparking,
+        sArmCannonAnim_Left_Sidewards_DelayAfterShinesparking
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_Sidewards_DelayAfterShinesparking,
+        sArmCannonAnim_Left_Sidewards_DelayAfterShinesparking
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_HoldingYourArmCannonOutOnAVerticalLadder[6][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_HoldingYourArmCannonOutOnAVerticalLadder,
+        sArmCannonAnim_Left_HoldingYourArmCannonOutOnAVerticalLadder
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_HoldingYourArmCannonOutOnAVerticalLadder,
+        sArmCannonAnim_Left_HoldingYourArmCannonOutOnAVerticalLadder
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_HoldingYourArmCannonOutOnAVerticalLadder,
+        sArmCannonAnim_Left_DiagonalUp_HoldingYourArmCannonOutOnAVerticalLadder
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_HoldingYourArmCannonOutOnAVerticalLadder,
+        sArmCannonAnim_Left_DiagonalDown_HoldingYourArmCannonOutOnAVerticalLadder
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_HoldingYourArmCannonOutOnAVerticalLadder,
+        sArmCannonAnim_Left_Up_HoldingYourArmCannonOutOnAVerticalLadder
+    },
+    [ACD_DOWN] = {
+        sArmCannonAnim_Right_Down_HoldingYourArmCannonOutOnAVerticalLadder,
+        sArmCannonAnim_Left_Down_HoldingYourArmCannonOutOnAVerticalLadder
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_ShootingOnVerticalLadder[6][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_ShootingOnVerticalLadder,
+        sArmCannonAnim_Left_ShootingOnVerticalLadder
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_ShootingOnVerticalLadder,
+        sArmCannonAnim_Left_ShootingOnVerticalLadder
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_DiagonalUp_ShootingOnVerticalLadder,
+        sArmCannonAnim_Left_DiagonalUp_ShootingOnVerticalLadder
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_ShootingOnVerticalLadder,
+        sArmCannonAnim_Left_DiagonalDown_ShootingOnVerticalLadder
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_Up_ShootingOnVerticalLadder,
+        sArmCannonAnim_Left_Up_ShootingOnVerticalLadder
+    },
+    [ACD_DOWN] = {
+        sArmCannonAnim_Right_Down_ShootingOnVerticalLadder,
+        sArmCannonAnim_Left_Down_ShootingOnVerticalLadder
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_HangingOnHorizontalLadder[6][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_HangingOnHorizontalLadder,
+        sArmCannonAnim_Left_HangingOnHorizontalLadder
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_HangingOnHorizontalLadder,
+        sArmCannonAnim_Left_HangingOnHorizontalLadder
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_HangingOnHorizontalLadder,
+        sArmCannonAnim_Left_HangingOnHorizontalLadder
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_HangingOnHorizontalLadder,
+        sArmCannonAnim_Left_DiagonalDown_HangingOnHorizontalLadder
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_HangingOnHorizontalLadder,
+        sArmCannonAnim_Left_HangingOnHorizontalLadder
+    },
+    [ACD_DOWN] = {
+        sArmCannonAnim_Right_Down_DelayAfterShootingOnHorizontalLadder,
+        sArmCannonAnim_Left_Down_DelayAfterShootingOnHorizontalLadder
+    },
+};
+
+const struct ArmCannonAnimationData* const sArmCannonAnimPointers_ShootingOnHorizontalLadder[6][2] = {
+    [ACD_NONE] = {
+        sArmCannonAnim_Right_ShootingOnHorizontalLadder,
+        sArmCannonAnim_Left_ShootingOnHorizontalLadder
+    },
+    [ACD_FORWARD] = {
+        sArmCannonAnim_Right_ShootingOnHorizontalLadder,
+        sArmCannonAnim_Left_ShootingOnHorizontalLadder
+    },
+    [ACD_DIAGONAL_UP] = {
+        sArmCannonAnim_Right_ShootingOnHorizontalLadder,
+        sArmCannonAnim_Left_ShootingOnHorizontalLadder
+    },
+    [ACD_DIAGONAL_DOWN] = {
+        sArmCannonAnim_Right_DiagonalDown_ShootingOnHorizontalLadder,
+        sArmCannonAnim_Left_DiagonalDown_ShootingOnHorizontalLadder
+    },
+    [ACD_UP] = {
+        sArmCannonAnim_Right_ShootingOnHorizontalLadder,
+        sArmCannonAnim_Left_ShootingOnHorizontalLadder
+    },
+    [ACD_DOWN] = {
+        sArmCannonAnim_Right_Down_ShootingOnHorizontalLadder,
+        sArmCannonAnim_Left_Down_ShootingOnHorizontalLadder
+    },
+};
+
+static const u8 sBlob_28dd7c_28fd04[] = INCBIN_U8("data/Blob_28dd7c_28fd04.bin");
 
 const SamusSetPose_T sSamusSetPoseFunctionPointer[1] = {
     SamusSetPose

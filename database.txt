@@ -2977,7 +2977,8 @@ Blob_a5258_a5710.bin;a5258;a5710
 
 # Samus data
 Blob_28d014_28d2bc.bin;28d014;28d2bc
-Blob_28d794_28fd04.bin;28d794;28fd04
+Blob_28d794_28d8dc.bin;28d794;28d8dc
+Blob_28dd7c_28fd04.bin;28dd7c;28fd04
 Blob_28fd08_28ff60.bin;0x28fd08;0x28ff60
 
 # Arm cannon data and more?

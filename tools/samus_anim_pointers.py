@@ -93,6 +93,26 @@ group_sizes = [
     2
 ]
 
+ac_group_sizes = [
+    5,
+    5,
+    5,
+    4,
+    6,
+    6,
+    5,
+    5,
+    5,
+    5,
+    2,
+    3,
+    3,
+    6,
+    6,
+    6,
+    6
+]
+
 acds = [
     "ACD_NONE",
     "ACD_FORWARD",
@@ -132,3 +152,24 @@ if __name__ == "__main__":
                 print("    },")
 
             print("};\n")
+
+    rom.seek(0x28d8dc)
+    print("const struct ArmCannonAnimationData* const sArmCannonAnimPointers_All[SPOSE_END][2] = {")
+
+    for pose_name in pose_names:
+        print(f"    [{pose_name}] = {{")
+        print(f"        {all_labels[int.from_bytes(rom.read(4), "little")]},")
+        print(f"        {all_labels[int.from_bytes(rom.read(4), "little")]}")
+        print("    },")
+
+    print("};\n")
+
+    for group_size in ac_group_sizes:
+        print(f"const struct ArmCannonAnimationData* const sArmCannonAnimPointers_{rom.tell():x}[{group_size}][2] = {{")
+        for i in range(group_size):
+            print(f"    [{str(bool(i)).upper() if group_size == 2 else acds[i]}] = {{")
+            print(f"        {all_labels[int.from_bytes(rom.read(4), "little")]},")
+            print(f"        {all_labels[int.from_bytes(rom.read(4), "little")]}")
+            print("    },")
+
+        print("};\n")
