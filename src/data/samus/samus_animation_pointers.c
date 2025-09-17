@@ -4,6 +4,7 @@
 #include "data/samus/samus_animation_pointers.h"
 
 #include "data/samus/samus_graphics.h"
+#include "data/samus/arm_cannon_data.h"
 
 const struct SamusAnimationData* const sSamusAnimPointers[SPOSE_END][2] = {
     [SPOSE_STANDING] = {
@@ -513,10 +514,9 @@ const struct SamusAnimationData* const sSamusAnimPointers_HangingOnLedge[2][2] =
     }
 };
 
-// FIXME oam
-const struct FrameData* const sSamusScrewAttackElectricityAnimPointers[2] = {
-    (struct FrameData*)0x828cb14,
-    (struct FrameData*)0x828caec
+const struct FrameData* const sSamusEffectAnimPointers_ScrewAttacking[2] = {
+    sSamusEffectAnim_Right_ScrewAttacking,
+    sSamusEffectAnim_Left_ScrewAttacking
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_Skidding[2][2] = {
@@ -668,14 +668,15 @@ const struct SamusAnimationData* const sSamusAnimPointers_ShootingOnHorizontalLa
     }
 };
 
-const struct FrameData* const sSamusUnlockingSecurityEffectAnimPointers[2] = {
+// FIXME oam
+const struct FrameData* const sSamusEffectAnimPointers_UnlockingSecurity[2] = {
     (struct FrameData*)0x82e481c,
     (struct FrameData*)0x82e4754
 };
 
-const struct FrameData* const sSamusDyingEffectAnimPointers[2] = {
-    (struct FrameData*)0x828cdb8,
-    (struct FrameData*)0x828cd80
+const struct FrameData* const sSamusEffectAnimPointers_Dying[2] = {
+    sSamusEffectAnim_Right_Dying,
+    sSamusEffectAnim_Left_Dying
 };
 
 const struct SamusAnimationData* const sSamusAnimPointers_HitByOmegaMetroid[2][2] = {

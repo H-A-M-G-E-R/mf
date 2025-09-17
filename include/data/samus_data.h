@@ -11,9 +11,9 @@ extern const u8 sSamusGfx_Empty[2];
 
 extern const u16 sSamusOam_Empty[1];
 
-extern const struct ArmCannonOffset sArmCannonOffset_Empty;
+extern const s16 sArmCannonOffset_Empty[];
 
-extern const u8 sSamusCollisionData[SPOSE_END][6];
+extern const u8 sSamusCollisionData[SPOSE_END][5];
 
 typedef void (*SamusSetPose_T)(u8);
 

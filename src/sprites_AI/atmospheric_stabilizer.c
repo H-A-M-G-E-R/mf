@@ -307,7 +307,7 @@ void AtmosphericStabilizerCoverExploding(void) {
 
     gCurrentSprite.status ^= SS_NOT_DRAWN;
     if (MOD_AND(gCurrentSprite.work1, 4) == 0)
-        SoundPlay(SOUND_1BF);
+        SoundPlay(SOUND_RANDOM_SPRITE_DEBRIS);
     if (gCurrentSprite.roomSlot == 0) {
         switch (gCurrentSprite.work1) {
             case 0:

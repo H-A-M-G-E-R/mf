@@ -13764,7 +13764,7 @@ _0800B9AC: .4byte 0x0828BF98
 _0800B9B0: .4byte 0x082DE9B0
 _0800B9B4: .4byte 0x082DEA70
 _0800B9B8:
-	ldr r1, _0800B9F0 @ =sSamusScrewAttackElectricityAnimPointers
+	ldr r1, _0800B9F0 @ =sSamusEffectAnimPointers_ScrewAttacking
 	adds r1, r5, r1
 	ldr r2, _0800B9F4 @ =gSamusAnimationInfo
 	ldrb r0, [r2, #2]
@@ -13792,12 +13792,12 @@ _0800B9B8:
 	lsls r0, r0, #1
 	b _0800BCDC
 	.align 2, 0
-_0800B9F0: .4byte sSamusScrewAttackElectricityAnimPointers
+_0800B9F0: .4byte sSamusEffectAnimPointers_ScrewAttacking
 _0800B9F4: .4byte gSamusAnimationInfo
 _0800B9F8: .4byte 0x0828FABC
 _0800B9FC: .4byte 0x0828FACC
 _0800BA00:
-	ldr r1, _0800BA28 @ =sSamusUnlockingSecurityEffectAnimPointers
+	ldr r1, _0800BA28 @ =sSamusEffectAnimPointers_UnlockingSecurity
 	adds r1, r5, r1
 	ldr r0, _0800BA2C @ =gSamusAnimationInfo
 	ldrb r0, [r0, #2]
@@ -13817,7 +13817,7 @@ _0800BA00:
 	lsls r0, r0, #2
 	b _0800BCDC
 	.align 2, 0
-_0800BA28: .4byte sSamusUnlockingSecurityEffectAnimPointers
+_0800BA28: .4byte sSamusEffectAnimPointers_UnlockingSecurity
 _0800BA2C: .4byte gSamusAnimationInfo
 _0800BA30: .4byte 0x082E4250
 _0800BA34: .4byte 0x082E4450
@@ -13892,7 +13892,7 @@ _0800BACC: .4byte 0x80000020
 _0800BAD0:
 	cmp r0, #2
 	bne _0800BB14
-	ldr r1, _0800BB08 @ =sSamusDyingEffectAnimPointers
+	ldr r1, _0800BB08 @ =sSamusEffectAnimPointers_Dying
 	adds r1, r5, r1
 	ldrb r0, [r2, #2]
 	lsls r0, r0, #3
@@ -13919,7 +13919,7 @@ _0800BAD0:
 	lsls r0, r0, #1
 	b _0800BCDC
 	.align 2, 0
-_0800BB08: .4byte sSamusDyingEffectAnimPointers
+_0800BB08: .4byte sSamusEffectAnimPointers_Dying
 _0800BB0C: .4byte 0x0828FC5C
 _0800BB10: .4byte 0x0828FC74
 _0800BB14:

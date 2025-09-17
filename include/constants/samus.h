@@ -175,4 +175,10 @@ enum DiagonalAim {
 // 1000 frames, 16.6 seconds
 #define SAMUS_ITEM_PMT (60 * 16 + 60 / 3 * 2)
 
+// --- Arm cannon drawing ---
+
+#define ARM_CANNON_OAM_ORDER_NONE 0
+#define ARM_CANNON_OAM_ORDER_BEHIND (1 << 12)
+#define ARM_CANNON_OAM_ORDER_IN_FRONT (1 << 13)
+
 #endif /* SAMUS_CONSTANTS_H */

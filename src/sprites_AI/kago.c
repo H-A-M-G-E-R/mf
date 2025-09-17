@@ -139,7 +139,7 @@ void KagoDyingInit(void) {
     gCurrentSprite.status |= SS_ENABLE_MOSAIC;
     gCurrentSprite.pose = SPRITE_POSE_DYING;
     gCurrentSprite.work1 = X_PARASITE_MOSAIC_MAX_INDEX;
-    SoundPlayNotAlreadyPlaying(SOUND_142);
+    SoundPlayNotAlreadyPlaying(SOUND_SPRITE_TRANSFORMING_INTO_X);
     SpriteDying();
 }
 

@@ -9,9 +9,6 @@ const u16 sSamusOam_Empty[1] = {
     0
 };
 
-const struct ArmCannonOffset sArmCannonOffset_Empty = {
-    .x = 0,
-    .y = 0
+const s16 sArmCannonOffset_Empty[] = {
+    0, 0
 };
-
-static const u8 sBlob_289994_28d2bc[] = INCBIN_U8("data/Blob_289994_28d2bc.bin");
