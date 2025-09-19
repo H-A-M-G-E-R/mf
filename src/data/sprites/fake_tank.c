@@ -23,19 +23,19 @@ const s16 sFakeTankFlyingYMovement[65] = {
 const u32 sFakeEnergyTankGfx[1 * 512] = INCBIN_U32("data/sprites/fake_energy_tank.gfx");
 const u16 sFakeEnergyTankPal[1 * 16] = INCBIN_U16("data/sprites/fake_energy_tank.pal");
 
-static const u16 sFakeEnergyTankOam_37d85c_Frame0[] = {
+static const u16 sFakeEnergyTankOam_Idle_Frame0[] = {
     1,
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x200
 };
 
-static const u16 sFakeEnergyTankOam_37d884_Frame0[] = {
+static const u16 sFakeEnergyTankOam_WakingUp_Frame0[] = {
     3,
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x206,
     0xf2, 0x1f1, OBJ_PALETTE_8 | 0x219,
     0xf2, OBJ_X_FLIP | 0x7, OBJ_PALETTE_8 | 0x219
 };
 
-static const u16 sFakeEnergyTankOam_37d884_Frame1[] = {
+static const u16 sFakeEnergyTankOam_WakingUp_Frame1[] = {
     5,
     0xfa, 0x1f8, OBJ_PALETTE_8 | 0x238,
     0xfa, OBJ_X_FLIP | 0x0, OBJ_PALETTE_8 | 0x238,
@@ -44,7 +44,7 @@ static const u16 sFakeEnergyTankOam_37d884_Frame1[] = {
     OBJ_SHAPE_VERTICAL | 0xf1, OBJ_X_FLIP | 0x7, OBJ_PALETTE_8 | 0x21a
 };
 
-static const u16 sFakeEnergyTankOam_37d884_Frame2[] = {
+static const u16 sFakeEnergyTankOam_WakingUp_Frame2[] = {
     5,
     0xfa, 0x1f8, OBJ_PALETTE_8 | 0x239,
     0xfa, OBJ_X_FLIP | 0x0, OBJ_PALETTE_8 | 0x239,
@@ -53,7 +53,7 @@ static const u16 sFakeEnergyTankOam_37d884_Frame2[] = {
     OBJ_SHAPE_VERTICAL | 0xef, OBJ_X_FLIP | 0x5, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sFakeEnergyTankOam_37d884_Frame3[] = {
+static const u16 sFakeEnergyTankOam_WakingUp_Frame3[] = {
     5,
     0xfa, 0x1f8, OBJ_PALETTE_8 | 0x239,
     0xfa, OBJ_X_FLIP | 0x0, OBJ_PALETTE_8 | 0x239,
@@ -62,7 +62,7 @@ static const u16 sFakeEnergyTankOam_37d884_Frame3[] = {
     OBJ_SHAPE_VERTICAL | 0xf0, OBJ_X_FLIP | 0x6, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sFakeEnergyTankOam_37d884_Frame4[] = {
+static const u16 sFakeEnergyTankOam_WakingUp_Frame4[] = {
     5,
     0xfa, 0x1f8, OBJ_PALETTE_8 | 0x239,
     0xfa, OBJ_X_FLIP | 0x0, OBJ_PALETTE_8 | 0x239,
@@ -71,7 +71,7 @@ static const u16 sFakeEnergyTankOam_37d884_Frame4[] = {
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x5, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sFakeEnergyTankOam_37d884_Frame5[] = {
+static const u16 sFakeEnergyTankOam_WakingUp_Frame5[] = {
     5,
     0xfa, 0x1f8, OBJ_PALETTE_8 | 0x239,
     0xfa, OBJ_X_FLIP | 0x0, OBJ_PALETTE_8 | 0x239,
@@ -80,79 +80,79 @@ static const u16 sFakeEnergyTankOam_37d884_Frame5[] = {
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x6, OBJ_PALETTE_8 | 0x21e
 };
 
-static const u16 sFakeEnergyTankOam_37d85c_Frame1[] = {
+static const u16 sFakeEnergyTankOam_Idle_Frame1[] = {
     1,
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x202
 };
 
-static const u16 sFakeEnergyTankOam_37d85c_Frame2[] = {
+static const u16 sFakeEnergyTankOam_Idle_Frame2[] = {
     1,
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x204
 };
 
-const struct FrameData sFakeEnergyTankOam_37d85c[5] = {
+const struct FrameData sFakeEnergyTankOam_Idle[5] = {
     [0] = {
-        .pFrame = sFakeEnergyTankOam_37d85c_Frame0,
+        .pFrame = sFakeEnergyTankOam_Idle_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sFakeEnergyTankOam_37d85c_Frame1,
+        .pFrame = sFakeEnergyTankOam_Idle_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sFakeEnergyTankOam_37d85c_Frame2,
+        .pFrame = sFakeEnergyTankOam_Idle_Frame2,
         .timer = 8
     },
     [3] = {
-        .pFrame = sFakeEnergyTankOam_37d85c_Frame0,
+        .pFrame = sFakeEnergyTankOam_Idle_Frame0,
         .timer = 8
     },
     [4] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sFakeEnergyTankOam_37d884[7] = {
+const struct FrameData sFakeEnergyTankOam_WakingUp[7] = {
     [0] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame0,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame0,
         .timer = 5
     },
     [1] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame1,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame1,
         .timer = 5
     },
     [2] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame2,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame2,
         .timer = 5
     },
     [3] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame3,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame3,
         .timer = 11
     },
     [4] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame4,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame4,
         .timer = 8
     },
     [5] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame5,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame5,
         .timer = 15
     },
     [6] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sFakeEnergyTankOam_37d8bc[5] = {
+const struct FrameData sFakeEnergyTankOam_Flying[5] = {
     [0] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame3,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame3,
         .timer = 4
     },
     [1] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame4,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame4,
         .timer = 4
     },
     [2] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame5,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame5,
         .timer = 4
     },
     [3] = {
-        .pFrame = sFakeEnergyTankOam_37d884_Frame4,
+        .pFrame = sFakeEnergyTankOam_WakingUp_Frame4,
         .timer = 4
     },
     [4] = FRAME_DATA_TERMINATOR
@@ -161,12 +161,12 @@ const struct FrameData sFakeEnergyTankOam_37d8bc[5] = {
 const u32 sFakeMissileTankGfx[1 * 512] = INCBIN_U32("data/sprites/fake_missile_tank.gfx");
 const u16 sFakeMissileTankPal[1 * 16] = INCBIN_U16("data/sprites/fake_missile_tank.pal");
 
-static const u16 sFakeMissileTankOam_37e214_Frame0[] = {
+static const u16 sFakeMissileTankOam_Idle_Frame0[] = {
     1,
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x200
 };
 
-static const u16 sFakeMissileTankOam_37e23c_Frame0[] = {
+static const u16 sFakeMissileTankOam_WakingUp_Frame0[] = {
     5,
     0xfb, 0x1f6, OBJ_PALETTE_8 | 0x238,
     0xfb, OBJ_X_FLIP | 0x2, OBJ_PALETTE_8 | 0x238,
@@ -175,7 +175,7 @@ static const u16 sFakeMissileTankOam_37e23c_Frame0[] = {
     0xef, OBJ_X_FLIP | 0x8, OBJ_PALETTE_8 | 0x219
 };
 
-static const u16 sFakeMissileTankOam_37e23c_Frame1[] = {
+static const u16 sFakeMissileTankOam_WakingUp_Frame1[] = {
     5,
     OBJ_SHAPE_VERTICAL | 0xec, 0x1f1, OBJ_PALETTE_8 | 0x21a,
     OBJ_SHAPE_VERTICAL | 0xec, OBJ_X_FLIP | 0x7, OBJ_PALETTE_8 | 0x21a,
@@ -184,7 +184,7 @@ static const u16 sFakeMissileTankOam_37e23c_Frame1[] = {
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x208
 };
 
-static const u16 sFakeMissileTankOam_37e23c_Frame2[] = {
+static const u16 sFakeMissileTankOam_WakingUp_Frame2[] = {
     5,
     0xfc, OBJ_X_FLIP | 0x2, OBJ_PALETTE_8 | 0x239,
     0xfc, 0x1f6, OBJ_PALETTE_8 | 0x239,
@@ -193,7 +193,7 @@ static const u16 sFakeMissileTankOam_37e23c_Frame2[] = {
     OBJ_SHAPE_VERTICAL | 0xed, OBJ_X_FLIP | 0x8, OBJ_PALETTE_8 | 0x21a
 };
 
-static const u16 sFakeMissileTankOam_37e23c_Frame3[] = {
+static const u16 sFakeMissileTankOam_WakingUp_Frame3[] = {
     6,
     0xfc, OBJ_X_FLIP | 0x2, OBJ_PALETTE_8 | 0x239,
     0xfc, 0x1f6, OBJ_PALETTE_8 | 0x239,
@@ -203,7 +203,7 @@ static const u16 sFakeMissileTankOam_37e23c_Frame3[] = {
     OBJ_SHAPE_VERTICAL | 0xf0, OBJ_X_FLIP | 0x9, OBJ_PALETTE_8 | 0x21a
 };
 
-static const u16 sFakeMissileTankOam_37e23c_Frame4[] = {
+static const u16 sFakeMissileTankOam_WakingUp_Frame4[] = {
     6,
     0xfc, OBJ_X_FLIP | 0x2, OBJ_PALETTE_8 | 0x239,
     0xfc, 0x1f6, OBJ_PALETTE_8 | 0x239,
@@ -213,7 +213,7 @@ static const u16 sFakeMissileTankOam_37e23c_Frame4[] = {
     OBJ_SHAPE_VERTICAL | 0xf0, OBJ_X_FLIP | 0x6, OBJ_PALETTE_8 | 0x21b
 };
 
-static const u16 sFakeMissileTankOam_37e23c_Frame5[] = {
+static const u16 sFakeMissileTankOam_WakingUp_Frame5[] = {
     6,
     0xfc, OBJ_X_FLIP | 0x2, OBJ_PALETTE_8 | 0x239,
     0xfc, 0x1f6, OBJ_PALETTE_8 | 0x239,
@@ -223,7 +223,7 @@ static const u16 sFakeMissileTankOam_37e23c_Frame5[] = {
     0xf0, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x5, OBJ_PALETTE_8 | 0x21c
 };
 
-static const u16 sFakeMissileTankOam_37e23c_Frame6[] = {
+static const u16 sFakeMissileTankOam_WakingUp_Frame6[] = {
     6,
     0xfc, OBJ_X_FLIP | 0x2, OBJ_PALETTE_8 | 0x239,
     0xfc, 0x1f6, OBJ_PALETTE_8 | 0x239,
@@ -233,83 +233,83 @@ static const u16 sFakeMissileTankOam_37e23c_Frame6[] = {
     0xef, OBJ_X_FLIP | OBJ_SIZE_16x16 | 0x6, OBJ_PALETTE_8 | 0x21e
 };
 
-static const u16 sFakeMissileTankOam_37e214_Frame1[] = {
+static const u16 sFakeMissileTankOam_Idle_Frame1[] = {
     1,
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x202
 };
 
-static const u16 sFakeMissileTankOam_37e214_Frame2[] = {
+static const u16 sFakeMissileTankOam_Idle_Frame2[] = {
     1,
     0xf0, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x204
 };
 
-const struct FrameData sFakeMissileTankOam_37e214[5] = {
+const struct FrameData sFakeMissileTankOam_Idle[5] = {
     [0] = {
-        .pFrame = sFakeMissileTankOam_37e214_Frame0,
+        .pFrame = sFakeMissileTankOam_Idle_Frame0,
         .timer = 8
     },
     [1] = {
-        .pFrame = sFakeMissileTankOam_37e214_Frame1,
+        .pFrame = sFakeMissileTankOam_Idle_Frame1,
         .timer = 8
     },
     [2] = {
-        .pFrame = sFakeMissileTankOam_37e214_Frame2,
+        .pFrame = sFakeMissileTankOam_Idle_Frame2,
         .timer = 8
     },
     [3] = {
-        .pFrame = sFakeMissileTankOam_37e214_Frame0,
+        .pFrame = sFakeMissileTankOam_Idle_Frame0,
         .timer = 8
     },
     [4] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sFakeMissileTankOam_37e23c[8] = {
+const struct FrameData sFakeMissileTankOam_WakingUp[8] = {
     [0] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame0,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame0,
         .timer = 4
     },
     [1] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame1,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame1,
         .timer = 4
     },
     [2] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame2,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame2,
         .timer = 4
     },
     [3] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame3,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame3,
         .timer = 15
     },
     [4] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame4,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame4,
         .timer = 9
     },
     [5] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame5,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame5,
         .timer = 9
     },
     [6] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame6,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame6,
         .timer = 10
     },
     [7] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sFakeMissileTankOam_37e27c[5] = {
+const struct FrameData sFakeMissileTankOam_Flying[5] = {
     [0] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame4,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame4,
         .timer = 4
     },
     [1] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame5,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame5,
         .timer = 4
     },
     [2] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame6,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame6,
         .timer = 4
     },
     [3] = {
-        .pFrame = sFakeMissileTankOam_37e23c_Frame5,
+        .pFrame = sFakeMissileTankOam_WakingUp_Frame5,
         .timer = 4
     },
     [4] = FRAME_DATA_TERMINATOR

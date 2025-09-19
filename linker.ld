@@ -307,8 +307,8 @@ SECTIONS {
         src/sprites_AI/pillar.o(.text);
         src/sprites_AI/genesis.o(.text);
         src/sprites_AI/puyo.o(.text);
+        src/sprites_AI/fake_tank.o(.text);
 
-        asm/sprites_AI/fake_tank.o(.text);
         asm/sprites_AI/flashing_number.o(.text);
         asm/sprites_AI/zebesian_aqua.o(.text);
         asm/sprites_AI/animals.o(.text);

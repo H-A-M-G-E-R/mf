@@ -22,10 +22,10 @@ void FakeTankInit(void) {
     gCurrentSprite.drawDistanceTop = 0x10;
     gCurrentSprite.drawDistanceBottom = 8;
     gCurrentSprite.drawDistanceHorizontal = 0x10;
-    gCurrentSprite.hitboxTop = -0x40;
+    gCurrentSprite.hitboxTop = -BLOCK_SIZE;
     gCurrentSprite.hitboxBottom = 0;
-    gCurrentSprite.hitboxLeft = -0x20;
-    gCurrentSprite.hitboxRight = 0x20;
+    gCurrentSprite.hitboxLeft = -HALF_BLOCK_SIZE;
+    gCurrentSprite.hitboxRight = HALF_BLOCK_SIZE;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
     gCurrentSprite.health = GET_PSPRITE_HEALTH(gCurrentSprite.spriteId);
@@ -69,8 +69,8 @@ void FakeTankWakingUp(void) {
 void FakeTankFlyingInit(void) {
     gCurrentSprite.pose = 0x1a;
     gCurrentSprite.work4 = 0;
-    gCurrentSprite.work1 = 0x3c;
-    gCurrentSprite.work2 = 0x3c;
+    gCurrentSprite.work1 = 60;
+    gCurrentSprite.work2 = 60;
     gCurrentSprite.animationDurationCounter = 0;
     gCurrentSprite.currentAnimationFrame = 0;
 }
@@ -114,61 +114,45 @@ void FakeTankFlyingAway(void) {
     u16 targetX = gXParasiteTargetXPosition;
     switch (gCurrentSprite.unk_8) {
         case 1:
-            targetY -= 0x48;
+            targetY -= PIXEL_TO_SUB_PIXEL(0x12);
             if (gCurrentSprite.status & SS_FACING_RIGHT)
-                targetX += 0x48;
+                targetX += PIXEL_TO_SUB_PIXEL(0x12);
             else
-                targetX -= 0x48;
+                targetX -= PIXEL_TO_SUB_PIXEL(0x12);
             break;
         case 3:
-            targetY += 0x48;
+            targetY += PIXEL_TO_SUB_PIXEL(0x12);
             if (gCurrentSprite.status & SS_FACING_RIGHT)
-                targetX -= 0x48;
+                targetX -= PIXEL_TO_SUB_PIXEL(0x12);
             else
-                targetX += 0x48;
+                targetX += PIXEL_TO_SUB_PIXEL(0x12);
             break;
     }
-    unk_136ac(targetY, targetX, 0x10, 0x18, 2);
+    unk_136ac(targetY, targetX, PIXEL_SIZE * 4, PIXEL_TO_SUB_PIXEL(1.5) * 4, LOG2(4));
     if (--gCurrentSprite.xParasiteTimer == 0)
         gCurrentSprite.pose = 0x1e;
 }
 
-/*
 void FakeTankLeaving(void) {
-    s32 var_r0;
-    s32 var_r0_2;
-    u16 temp_r0_2;
-    u32 temp_r2_2;
-    u32 temp_r2_3;
-    u8 temp_r0;
-    u8 temp_r2;
+    u32 movement;
 
-    temp_r2 = gCurrentSprite.work3;
-    if ((u32) temp_r2 <= 0xC7U) {
-        gCurrentSprite.work3 = (u8) (temp_r2 + 1);
-    }
-    temp_r2_2 = (u8) gCurrentSprite.work3 >> 3;
-    if (0x200 & gCurrentSprite.status) {
-        var_r0 = gCurrentSprite.xPosition + temp_r2_2;
-    } else {
-        var_r0 = gCurrentSprite.xPosition - temp_r2_2;
-    }
-    gCurrentSprite.xPosition = (u16) var_r0;
-    temp_r0 = gCurrentSprite.work4;
-    if ((u32) temp_r0 <= 0xC7U) {
-        gCurrentSprite.work4 = (u8) (temp_r0 + 1);
-    }
-    temp_r2_3 = (u8) gCurrentSprite.work4 >> 3;
-    if (0x400 & gCurrentSprite.status) {
-        var_r0_2 = gCurrentSprite.yPosition + temp_r2_3;
-    } else {
-        var_r0_2 = gCurrentSprite.yPosition - temp_r2_3;
-    }
-    gCurrentSprite.yPosition = (u16) var_r0_2;
-    temp_r0_2 = 2 & gCurrentSprite.status;
-    if (temp_r0_2 == 0) {
-        gCurrentSprite.status = temp_r0_2;
-    }
+    if (gCurrentSprite.work3 < PIXEL_TO_SUB_PIXEL(6.25) * 8)
+        gCurrentSprite.work3 += 1;
+    movement = DIV_SHIFT(gCurrentSprite.work3, 8);
+    if (gCurrentSprite.status & SS_FACING_RIGHT)
+        gCurrentSprite.xPosition += movement;
+    else
+        gCurrentSprite.xPosition -= movement;
+
+    if (gCurrentSprite.work4 < PIXEL_TO_SUB_PIXEL(6.25) * 8)
+        gCurrentSprite.work4 += 1;
+    movement = DIV_SHIFT(gCurrentSprite.work4, 8);
+    if (gCurrentSprite.status & SS_FACING_DOWN)
+        gCurrentSprite.yPosition += movement;
+    else
+        gCurrentSprite.yPosition -= movement;
+    if (!(gCurrentSprite.status & SS_ON_SCREEN))
+        gCurrentSprite.status = 0;
 }
 
 void FakeEnergyTank(void) {
@@ -177,78 +161,76 @@ void FakeEnergyTank(void) {
         return;
     }
     switch (gCurrentSprite.pose) {
-    case 0x0:
-        FakeTankInit();
-        gCurrentSprite.pOam = sFakeEnergyTankOam_37d85c;
-        return;
-    case 0x1:
-        gCurrentSprite.pOam = sFakeEnergyTankOam_37d85c;
-        FakeTankIdleInit();
-    case 0x2:
-        FakeTankIdle();
-        return;
-    case 0x17:
-        gCurrentSprite.pOam = sFakeEnergyTankOam_37d884;
-        FakeTankWakingUpInit();
-    case 0x18:
-        FakeTankWakingUp();
-        return;
-    case 0x19:
-        gCurrentSprite.pOam = sFakeEnergyTankOam_37d8bc;
-        FakeTankFlyingInit();
-    case 0x1A:
-        FakeTankFlying();
-        return;
-    case 0x1B:
-        FakeTankFlyingAwayInit();
-    case 0x1C:
-        FakeTankFlyingAway();
-        return;
-    case 0x1E:
-        FakeTankLeaving();
-        return;
-    case 0x57:
-        SpriteDyingInit();
-    case 0x58:
-        SpriteDying();
-        return;
-    case 0x59:
-        FakeTankInit();
-    case 0x5A:
-        SpriteSpawningFromX();
-        return;
-    case 0x5B:
-        XParasiteInit();
-        gCurrentSprite.yPosition -= 0x20;
+        case SPRITE_POSE_UNINITIALIZED:
+            FakeTankInit();
+            gCurrentSprite.pOam = sFakeEnergyTankOam_Idle;
+            return;
+        case SPRITE_POSE_IDLE_INIT:
+            gCurrentSprite.pOam = sFakeEnergyTankOam_Idle;
+            FakeTankIdleInit();
+        case SPRITE_POSE_IDLE:
+            FakeTankIdle();
+            return;
+        case 0x17:
+            gCurrentSprite.pOam = sFakeEnergyTankOam_WakingUp;
+            FakeTankWakingUpInit();
+        case 0x18:
+            FakeTankWakingUp();
+            return;
+        case 0x19:
+            gCurrentSprite.pOam = sFakeEnergyTankOam_Flying;
+            FakeTankFlyingInit();
+        case 0x1A:
+            FakeTankFlying();
+            return;
+        case 0x1B:
+            FakeTankFlyingAwayInit();
+        case 0x1C:
+            FakeTankFlyingAway();
+            return;
+        case 0x1E:
+            FakeTankLeaving();
+            return;
+        case SPRITE_POSE_DYING_INIT:
+            SpriteDyingInit();
+        case SPRITE_POSE_DYING:
+            SpriteDying();
+            return;
+        case SPRITE_POSE_SPAWNING_FROM_X_INIT:
+            FakeTankInit();
+        case SPRITE_POSE_SPAWNING_FROM_X:
+            SpriteSpawningFromX();
+            return;
+        case SPRITE_POSE_TURNING_INTO_X:
+            XParasiteInit();
+            gCurrentSprite.yPosition -= 0x20;
     }
 }
 
 void FakeMissileTank(void) {
-    u8 temp_r0;
-
     if (gCurrentSprite.freezeTimer != 0) {
         SpriteUtilUpdateFreezeTimer();
         return;
     }
     switch (gCurrentSprite.pose) {
-        case 0x0:
+        case SPRITE_POSE_UNINITIALIZED:
             FakeTankInit();
-            gCurrentSprite.pOam = sFakeMissileTankOam_37e214;
+            gCurrentSprite.pOam = sFakeMissileTankOam_Idle;
             break;
-        case 0x1:
-            gCurrentSprite.pOam = sFakeMissileTankOam_37e214;
+        case SPRITE_POSE_IDLE_INIT:
+            gCurrentSprite.pOam = sFakeMissileTankOam_Idle;
             FakeTankIdleInit();
-        case 0x2:
+        case SPRITE_POSE_IDLE:
             FakeTankIdle();
             break;
         case 0x17:
-            gCurrentSprite.pOam = sFakeMissileTankOam_37e23c;
+            gCurrentSprite.pOam = sFakeMissileTankOam_WakingUp;
             FakeTankWakingUpInit();
         case 0x18:
             FakeTankWakingUp();
             break;
         case 0x19:
-            gCurrentSprite.pOam = sFakeMissileTankOam_37e27c;
+            gCurrentSprite.pOam = sFakeMissileTankOam_Flying;
             FakeTankFlyingInit();
         case 0x1A:
             FakeTankFlying();
@@ -261,18 +243,18 @@ void FakeMissileTank(void) {
         case 0x1E:
             FakeTankLeaving();
             break;
-        case 0x57:
+        case SPRITE_POSE_DYING_INIT:
             SpriteDyingInit();
-        case 0x58:
+        case SPRITE_POSE_DYING:
             SpriteDying();
             break;
-        case 0x59:
+        case SPRITE_POSE_SPAWNING_FROM_X_INIT:
             FakeTankInit();
-        case 0x5A:
+        case SPRITE_POSE_SPAWNING_FROM_X:
             SpriteSpawningFromX();
             break;
-        case 0x5B:
+        case SPRITE_POSE_TURNING_INTO_X:
             XParasiteInit();
-            gCurrentSprite.yPosition = -= 0x20;
+            gCurrentSprite.yPosition -= HALF_BLOCK_SIZE;
     }
-}*/
+}

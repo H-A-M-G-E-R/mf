@@ -561,39 +561,39 @@ _0804C150: @ jump table
 _0804C2C0:
 	bl FakeTankInit
 	ldr r1, _0804C2CC @ =gCurrentSprite
-	ldr r0, _0804C2D0 @ =sFakeEnergyTankOam_37d85c
+	ldr r0, _0804C2D0 @ =sFakeEnergyTankOam_Idle
 	str r0, [r1, #0x18]
 	b _0804C340
 	.align 2, 0
 _0804C2CC: .4byte gCurrentSprite
-_0804C2D0: .4byte sFakeEnergyTankOam_37d85c
+_0804C2D0: .4byte sFakeEnergyTankOam_Idle
 _0804C2D4:
-	ldr r0, _0804C2E4 @ =sFakeEnergyTankOam_37d85c
+	ldr r0, _0804C2E4 @ =sFakeEnergyTankOam_Idle
 	str r0, [r2, #0x18]
 	bl FakeTankIdleInit
 _0804C2DC:
 	bl FakeTankIdle
 	b _0804C340
 	.align 2, 0
-_0804C2E4: .4byte sFakeEnergyTankOam_37d85c
+_0804C2E4: .4byte sFakeEnergyTankOam_Idle
 _0804C2E8:
-	ldr r0, _0804C2F8 @ =sFakeEnergyTankOam_37d884
+	ldr r0, _0804C2F8 @ =sFakeEnergyTankOam_WakingUp
 	str r0, [r2, #0x18]
 	bl FakeTankWakingUpInit
 _0804C2F0:
 	bl FakeTankWakingUp
 	b _0804C340
 	.align 2, 0
-_0804C2F8: .4byte sFakeEnergyTankOam_37d884
+_0804C2F8: .4byte sFakeEnergyTankOam_WakingUp
 _0804C2FC:
-	ldr r0, _0804C30C @ =sFakeEnergyTankOam_37d8bc
+	ldr r0, _0804C30C @ =sFakeEnergyTankOam_Flying
 	str r0, [r2, #0x18]
 	bl FakeTankFlyingInit
 _0804C304:
 	bl FakeTankFlying
 	b _0804C340
 	.align 2, 0
-_0804C30C: .4byte sFakeEnergyTankOam_37d8bc
+_0804C30C: .4byte sFakeEnergyTankOam_Flying
 _0804C310:
 	bl FakeTankFlyingAwayInit
 _0804C314:
@@ -749,39 +749,39 @@ _0804C380: @ jump table
 _0804C4F0:
 	bl FakeTankInit
 	ldr r1, _0804C4FC @ =gCurrentSprite
-	ldr r0, _0804C500 @ =sFakeMissileTankOam_37e214
+	ldr r0, _0804C500 @ =sFakeMissileTankOam_Idle
 	str r0, [r1, #0x18]
 	b _0804C570
 	.align 2, 0
 _0804C4FC: .4byte gCurrentSprite
-_0804C500: .4byte sFakeMissileTankOam_37e214
+_0804C500: .4byte sFakeMissileTankOam_Idle
 _0804C504:
-	ldr r0, _0804C514 @ =sFakeMissileTankOam_37e214
+	ldr r0, _0804C514 @ =sFakeMissileTankOam_Idle
 	str r0, [r2, #0x18]
 	bl FakeTankIdleInit
 _0804C50C:
 	bl FakeTankIdle
 	b _0804C570
 	.align 2, 0
-_0804C514: .4byte sFakeMissileTankOam_37e214
+_0804C514: .4byte sFakeMissileTankOam_Idle
 _0804C518:
-	ldr r0, _0804C528 @ =sFakeMissileTankOam_37e23c
+	ldr r0, _0804C528 @ =sFakeMissileTankOam_WakingUp
 	str r0, [r2, #0x18]
 	bl FakeTankWakingUpInit
 _0804C520:
 	bl FakeTankWakingUp
 	b _0804C570
 	.align 2, 0
-_0804C528: .4byte sFakeMissileTankOam_37e23c
+_0804C528: .4byte sFakeMissileTankOam_WakingUp
 _0804C52C:
-	ldr r0, _0804C53C @ =sFakeMissileTankOam_37e27c
+	ldr r0, _0804C53C @ =sFakeMissileTankOam_Flying
 	str r0, [r2, #0x18]
 	bl FakeTankFlyingInit
 _0804C534:
 	bl FakeTankFlying
 	b _0804C570
 	.align 2, 0
-_0804C53C: .4byte sFakeMissileTankOam_37e27c
+_0804C53C: .4byte sFakeMissileTankOam_Flying
 _0804C540:
 	bl FakeTankFlyingAwayInit
 _0804C544:
