@@ -590,8 +590,8 @@ const struct FrameData* const sNightmareFrameDataPointers[NIGHTMARE_OAM_END] = {
     [NIGHTMARE_OAM_PART_LEFT_TURRET_1_FIRING] = sNightmarePartOam_LeftTurret1Firing,
     [NIGHTMARE_OAM_PART_LEFT_TURRET_2_FIRING] = sNightmarePartOam_LeftTurret2Firing,
     [NIGHTMARE_OAM_PART_LEFT_TURRET_3_FIRING] = sNightmarePartOam_LeftTurret3Firing,
-    [NIGHTMARE_OAM_SLUDGE_FALLING] = sNightmareOam_SludgeFalling,
-    [NIGHTMARE_OAM_SLUDGE_EXPLODING] = sNightmareOam_SludgeExploding
+    [NIGHTMARE_OAM_SLUDGE_FALLING] = sNightmareSludgeOam_Falling,
+    [NIGHTMARE_OAM_SLUDGE_EXPLODING] = sNightmareSludgeOam_Exploding
 };
 
 static const u8 sBlob_79b894_79bcc0[] = INCBIN_U8("data/Blob_79b894_79bcc0.bin");

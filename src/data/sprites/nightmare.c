@@ -2192,17 +2192,17 @@ static const u16 sNightmarePartOam_LeftTurret3Firing_Frame13[] = {
     OBJ_SHAPE_VERTICAL | 0xeb, OBJ_SIZE_8x32 | 0xc, OBJ_PALETTE_8 | 0x21d
 };
 
-static const u16 sNightmareOam_SludgeFalling_Frame0[] = {
+static const u16 sNightmareSludgeOam_Falling_Frame0[] = {
     1,
     OBJ_SHAPE_VERTICAL | 0xf8, 0x1fc, OBJ_PALETTE_8 | 0x3d7
 };
 
-static const u16 sNightmareOam_SludgeExploding_Frame0[] = {
+static const u16 sNightmareSludgeOam_Exploding_Frame0[] = {
     1,
     0xf8, OBJ_SIZE_16x16 | 0x1f8, OBJ_PALETTE_8 | 0x355
 };
 
-static const u16 sNightmareOam_SludgeExploding_Frame1[] = {
+static const u16 sNightmareSludgeOam_Exploding_Frame1[] = {
     4,
     0xf6, 0x1f6, OBJ_PALETTE_8 | 0x317,
     0xf6, 0x2, OBJ_PALETTE_8 | 0x357,
@@ -2210,7 +2210,7 @@ static const u16 sNightmareOam_SludgeExploding_Frame1[] = {
     0x2, 0x2, OBJ_PALETTE_8 | 0x377
 };
 
-static const u16 sNightmareOam_SludgeExploding_Frame2[] = {
+static const u16 sNightmareSludgeOam_Exploding_Frame2[] = {
     4,
     0xf4, 0x1f4, OBJ_PALETTE_8 | 0x395,
     0xf4, 0x4, OBJ_PALETTE_8 | 0x396,
@@ -2218,7 +2218,7 @@ static const u16 sNightmareOam_SludgeExploding_Frame2[] = {
     0x4, 0x4, OBJ_PALETTE_8 | 0x3b7
 };
 
-static const u16 sNightmareOam_SludgeExploding_Frame3[] = {
+static const u16 sNightmareSludgeOam_Exploding_Frame3[] = {
     4,
     0xf2, 0x1f2, OBJ_PALETTE_8 | 0x2df,
     0xf2, 0x6, OBJ_PALETTE_8 | 0x2df,
@@ -3102,29 +3102,29 @@ const struct FrameData sNightmarePartOam_LeftTurret3Firing[15] = {
     [14] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sNightmareOam_SludgeFalling[2] = {
+const struct FrameData sNightmareSludgeOam_Falling[2] = {
     [0] = {
-        .pFrame = sNightmareOam_SludgeFalling_Frame0,
+        .pFrame = sNightmareSludgeOam_Falling_Frame0,
         .timer = 255
     },
     [1] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sNightmareOam_SludgeExploding[5] = {
+const struct FrameData sNightmareSludgeOam_Exploding[5] = {
     [0] = {
-        .pFrame = sNightmareOam_SludgeExploding_Frame0,
+        .pFrame = sNightmareSludgeOam_Exploding_Frame0,
         .timer = 3
     },
     [1] = {
-        .pFrame = sNightmareOam_SludgeExploding_Frame1,
+        .pFrame = sNightmareSludgeOam_Exploding_Frame1,
         .timer = 3
     },
     [2] = {
-        .pFrame = sNightmareOam_SludgeExploding_Frame2,
+        .pFrame = sNightmareSludgeOam_Exploding_Frame2,
         .timer = 3
     },
     [3] = {
-        .pFrame = sNightmareOam_SludgeExploding_Frame3,
+        .pFrame = sNightmareSludgeOam_Exploding_Frame3,
         .timer = 3
     },
     [4] = FRAME_DATA_TERMINATOR
