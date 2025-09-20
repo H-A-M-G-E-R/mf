@@ -7,44 +7,44 @@
 #include "structs/sprite.h"
 
 enum NightmareOam {
-    FRAMEDATA_3BD4DC,
-    FRAMEDATA_3BD4EC,
-    FRAMEDATA_3BD51C,
-    FRAMEDATA_3BD574,
-    FRAMEDATA_3BD59C,
-    FRAMEDATA_3BD5AC,
-    FRAMEDATA_3BD5D4,
-    FRAMEDATA_3BD5FC,
-    FRAMEDATA_3BD654,
-    FRAMEDATA_3BD67C,
-    FRAMEDATA_3BD6D4,
-    FRAMEDATA_3BD6FC,
-    FRAMEDATA_3BD754,
-    FRAMEDATA_3BD76C,
-    FRAMEDATA_3BD784,
-    FRAMEDATA_3BD794,
-    FRAMEDATA_3BD7A4,
-    FRAMEDATA_3BD7C4,
-    FRAMEDATA_3BD7E4,
-    FRAMEDATA_3BD804,
-    FRAMEDATA_3BD824,
-    FRAMEDATA_3BD844,
-    FRAMEDATA_3BD864,
-    FRAMEDATA_3BD874,
-    FRAMEDATA_3BD884,
-    FRAMEDATA_3BD894,
-    FRAMEDATA_3BD8A4,
-    FRAMEDATA_3BD8B4,
-    FRAMEDATA_3BD8C4,
-    FRAMEDATA_3BD8D4,
-    FRAMEDATA_3BD8E4,
-    FRAMEDATA_3BD95C,
-    FRAMEDATA_3BD9D4,
-    FRAMEDATA_3BDA4C,
-    FRAMEDATA_3BDAC4,
-    FRAMEDATA_3BDB3C,
-    FRAMEDATA_3BDBB4,
-    FRAMEDATA_3BDBC4,
+    NIGHTMARE_OAM_PART_BODY,
+    NIGHTMARE_OAM_PART_EYE_SLUDGE,
+    NIGHTMARE_OAM_PART_EYE_SLUDGE_DROPPING_TO_CHIN,
+    NIGHTMARE_OAM_PART_CHIN_SLUDGE,
+    NIGHTMARE_OAM_BEAM,
+    NIGHTMARE_OAM_EXPLOSION_UNUSED,
+    NIGHTMARE_OAM_PART_EYE_NOT_DROOPING,
+    NIGHTMARE_OAM_PART_MOUTH_NOT_DROOPING,
+    NIGHTMARE_OAM_PART_EYE_DROOPING_A_LITTLE,
+    NIGHTMARE_OAM_PART_MOUTH_DROOPING_A_LITTLE,
+    NIGHTMARE_OAM_PART_EYE_DROOPING_MORE,
+    NIGHTMARE_OAM_PART_MOUTH_DROOPING_MORE,
+    NIGHTMARE_OAM_PART_EYE_AND_MOUTH_DROOP_A_LITTLE,
+    NIGHTMARE_OAM_PART_EYE_AND_MOUTH_DROOP_MORE,
+    NIGHTMARE_OAM_PART_X,
+    NIGHTMARE_OAM_PART_GENERATOR_STATIONARY,
+    NIGHTMARE_OAM_PART_GENERATOR_SPINNING_REALLY_FAST,
+    NIGHTMARE_OAM_PART_GENERATOR_SPINNING_FAST,
+    NIGHTMARE_OAM_PART_GENERATOR_SPINNING_A_LITTLE_FASTER,
+    NIGHTMARE_OAM_PART_GENERATOR_SPINNING_A_LITTLE_SLOWER,
+    NIGHTMARE_OAM_PART_GENERATOR_SPINNING_SLOW,
+    NIGHTMARE_OAM_PART_GENERATOR_SPINNING_REALLY_SLOW,
+    NIGHTMARE_OAM_PART_RIGHT_ARM_TOP,
+    NIGHTMARE_OAM_PART_RIGHT_TURRET_1_IDLE,
+    NIGHTMARE_OAM_PART_RIGHT_TURRET_2_IDLE,
+    NIGHTMARE_OAM_PART_RIGHT_TURRET_3_IDLE,
+    NIGHTMARE_OAM_PART_RIGHT_ARM_BOTTOM,
+    NIGHTMARE_OAM_PART_LEFT_TURRET_1_IDLE,
+    NIGHTMARE_OAM_PART_LEFT_TURRET_2_IDLE,
+    NIGHTMARE_OAM_PART_LEFT_TURRET_3_IDLE,
+    NIGHTMARE_OAM_PART_RIGHT_TURRET_1_FIRING,
+    NIGHTMARE_OAM_PART_RIGHT_TURRET_2_FIRING,
+    NIGHTMARE_OAM_PART_RIGHT_TURRET_3_FIRING,
+    NIGHTMARE_OAM_PART_LEFT_TURRET_1_FIRING,
+    NIGHTMARE_OAM_PART_LEFT_TURRET_2_FIRING,
+    NIGHTMARE_OAM_PART_LEFT_TURRET_3_FIRING,
+    NIGHTMARE_OAM_SLUDGE_FALLING,
+    NIGHTMARE_OAM_SLUDGE_EXPLODING,
 
     NIGHTMARE_OAM_END
 };
@@ -117,7 +117,7 @@ extern const struct FrameData sNightmarePartEyeOam_DroopingMore[5];
 extern const struct FrameData sNightmarePartMouthOam_DroopingMore[11];
 extern const struct FrameData sNightmarePartEyeAndMouthOam_DroopALittle[3];
 extern const struct FrameData sNightmarePartEyeAndMouthOam_DroopMore[3];
-extern const struct FrameData sNightmarePartOam_3bd784[2];
+extern const struct FrameData sNightmarePartOam_X[2];
 extern const struct FrameData sNightmarePartGeneratorOam_Stationary[2];
 extern const struct FrameData sNightmarePartGeneratorOam_SpinningReallyFast[4];
 extern const struct FrameData sNightmarePartGeneratorOam_SpinningFast[4];
@@ -125,27 +125,27 @@ extern const struct FrameData sNightmarePartGeneratorOam_SpinningALittleFaster[4
 extern const struct FrameData sNightmarePartGeneratorOam_SpinningALittleSlower[4];
 extern const struct FrameData sNightmarePartGeneratorOam_SpinningSlow[4];
 extern const struct FrameData sNightmarePartGeneratorOam_SpinningReallySlow[4];
-extern const struct FrameData sNightmarePartOam_3bd864[2];
-extern const struct FrameData sNightmarePartOam_3bd874[2];
-extern const struct FrameData sNightmarePartOam_3bd884[2];
-extern const struct FrameData sNightmarePartOam_3bd894[2];
-extern const struct FrameData sNightmarePartOam_3bd8a4[2];
-extern const struct FrameData sNightmarePartOam_3bd8b4[2];
-extern const struct FrameData sNightmarePartOam_3bd8c4[2];
-extern const struct FrameData sNightmarePartOam_3bd8d4[2];
-extern const struct FrameData sNightmarePartOam_3bd8e4[15];
-extern const struct FrameData sNightmarePartOam_3bd95c[15];
-extern const struct FrameData sNightmarePartOam_3bd9d4[15];
-extern const struct FrameData sNightmarePartOam_3bda4c[15];
-extern const struct FrameData sNightmarePartOam_3bdac4[15];
-extern const struct FrameData sNightmarePartOam_3bdb3c[15];
-extern const struct FrameData sNightmarePartOam_3bdbb4[2];
-extern const struct FrameData sNightmarePartOam_3bdbc4[5];
-extern const struct FrameData sNightmarePartOam_3bdbec[15];
-extern const struct FrameData sNightmarePartOam_3bdc64[15];
-extern const struct FrameData sNightmarePartOam_3bdcdc[15];
-extern const struct FrameData sNightmarePartOam_3bdd54[15];
-extern const struct FrameData sNightmarePartOam_3bddcc[15];
-extern const struct FrameData sNightmarePartOam_3bde44[15];
+extern const struct FrameData sNightmarePartOam_RightArmTop[2];
+extern const struct FrameData sNightmarePartOam_RightTurret1Idle[2];
+extern const struct FrameData sNightmarePartOam_RightTurret2Idle[2];
+extern const struct FrameData sNightmarePartOam_RightTurret3Idle[2];
+extern const struct FrameData sNightmarePartOam_RightArmBottom[2];
+extern const struct FrameData sNightmarePartOam_LeftTurret1Idle[2];
+extern const struct FrameData sNightmarePartOam_LeftTurret2Idle[2];
+extern const struct FrameData sNightmarePartOam_LeftTurret3Idle[2];
+extern const struct FrameData sNightmarePartOam_RightTurret1Firing[15];
+extern const struct FrameData sNightmarePartOam_RightTurret2Firing[15];
+extern const struct FrameData sNightmarePartOam_RightTurret3Firing[15];
+extern const struct FrameData sNightmarePartOam_LeftTurret1Firing[15];
+extern const struct FrameData sNightmarePartOam_LeftTurret2Firing[15];
+extern const struct FrameData sNightmarePartOam_LeftTurret3Firing[15];
+extern const struct FrameData sNightmareOam_SludgeFalling[2];
+extern const struct FrameData sNightmareOam_SludgeExploding[5];
+extern const struct FrameData sNightmarePartOam_RightTurret1NotFiring[15];
+extern const struct FrameData sNightmarePartOam_RightTurret2NotFiring[15];
+extern const struct FrameData sNightmarePartOam_RightTurret3NotFiring[15];
+extern const struct FrameData sNightmarePartOam_LeftTurret1NotFiring[15];
+extern const struct FrameData sNightmarePartOam_LeftTurret2NotFiring[15];
+extern const struct FrameData sNightmarePartOam_LeftTurret3NotFiring[15];
 
 #endif /* NIGHTMARE_DATA_H */
