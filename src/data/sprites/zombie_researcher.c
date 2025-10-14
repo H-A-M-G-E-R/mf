@@ -1,7 +1,7 @@
 #include "data/sprites/zombie_researcher.h"
 #include "macros.h"
 
-const s16 sZombieLungingSpeed[4] = {
+const s16 sZombieLungingVelocity[4] = {
     2,  4,  2,  1
 };
 
@@ -753,7 +753,7 @@ const struct FrameData sZombieOam_EndLunging[7] = {
     [6] = FRAME_DATA_TERMINATOR
 };
 
-const struct FrameData sZombieOam_2fb4c0[2] = {
+const struct FrameData sZombieOam_StartLunging[2] = {
     [0] = {
         .pFrame = sZombieOam_EndLunging_Frame4,
         .timer = 10
