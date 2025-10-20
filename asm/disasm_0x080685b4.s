@@ -807,7 +807,7 @@ _08068C08:
 	bne _08068C18
 	mov r0, r8
 	mov r1, sb
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 _08068C18:
 	mov r1, sp
 	lsrs r0, r4, #0x16
@@ -1118,8 +1118,8 @@ _08068E66:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start ClipdataUpdateCurrentAffecting
-ClipdataUpdateCurrentAffecting: @ 0x08068E70
+	thumb_func_start ClipdataCheckCurrentAffectingAtPosition
+ClipdataCheckCurrentAffectingAtPosition: @ 0x08068E70
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}

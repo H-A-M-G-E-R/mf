@@ -1,15 +1,21 @@
+#include "clipdata.h"
 #include "samus.h"
 #include "macros.h"
 #include "globals.h"
 #include "gba.h"
 
 #include "data/samus_data.h"
+#include "data/samus/arm_cannon_data.h"
+#include "data/samus/samus_animation_pointers.h"
+#include "data/samus/samus_graphics.h"
 
+#include "constants/audio.h"
 #include "constants/projectile.h"
 #include "constants/samus.h"
 
 #include "structs/samus.h"
 #include "structs/scroll.h"
+#include "structs/screen_shake.h"
 
 /*void SamusCopyData(void)
 {
@@ -293,10 +299,92 @@ void SamusAimCannonHorizontalLadder(void)
     gSamusData.diagonalAim = DIAG_AIM_NONE;
 }
 
-/*u8 SamusCheckShooting(void)
+/**
+ * @brief 5c84 | c0 | Checks if samus is shooting, also sets the new projectile
+ * 
+ * @return u8 1 if shooting, 0 otherwise
+ */
+u8 SamusCheckShooting(void)
 {
+    u8 shoot = FALSE;
 
-}*/
+    if (gSamusData.newProjectile == PROJECTILE_CATEGORY_NONE && gSamusData.cooldownTimer == 0 && gChangedInput & KEY_B)
+    {
+        if (!(gSamusData.weaponHighlighted & 1))
+        {
+            // Shoot uncharged beam and start charging
+            gSamusData.newProjectile = PROJECTILE_CATEGORY_UNCHARGED_BEAM;
+            gSamusData.chargeBeamCounter = 1;
+        }
+        else
+        {
+            // Shoot missile
+            gSamusData.newProjectile = PROJECTILE_CATEGORY_MISSILE;
+        }
+
+        shoot++;
+    }
+
+    if (!shoot)
+    {
+        if (!(gSamusData.weaponHighlighted & 1))
+        {
+            if (gButtonInput & KEY_B)
+            {
+                // Holding B
+                if (gEquipment.beamStatus & BF_CHARGE_BEAM)
+                {
+                    // Charging beam
+                    if (gSamusData.chargeBeamCounter < 79)
+                        gSamusData.chargeBeamCounter += 1;
+                    else
+                        gSamusData.chargeBeamCounter = 64;
+                }
+                else
+                {
+                    // Charge beam not equipped, cancel charge
+                    gSamusData.chargeBeamCounter = 0;
+                }
+            }
+            else
+            {
+                // Release charged beam
+                if (gSamusData.chargeBeamCounter >= 64)
+                {
+                    // Fully charged beam
+                    gSamusData.newProjectile = PROJECTILE_CATEGORY_CHARGED_BEAM;
+                    shoot++;
+                }
+                else if (gSamusData.chargeBeamCounter >= 26)
+                {
+                    // Partially charged beam
+                    gSamusData.newProjectile = PROJECTILE_CATEGORY_UNCHARGED_BEAM;
+                    shoot++;
+                }
+
+                // Cancel charge
+                gSamusData.chargeBeamCounter = 0;
+            }
+        }
+        else
+        {
+            // Missiles selected, cancel charge
+            gSamusData.chargeBeamCounter = 0;
+        }
+    }
+
+    if (shoot)
+    {
+        if (gSamusData.armCannonDirection == ACD_NONE)
+        {
+            // Aim forward when shooting and not aiming
+            gSamusData.armCannonDirection = ACD_FORWARD;
+            gSamusData.armRunningFlag = FALSE;
+        }
+    }
+
+    return shoot;
+}
 
 /**
  * @brief 5d44 | 1a8 | Checks if samus should have a new projectile
@@ -871,16 +959,137 @@ u8 SamusUsingAnElevatorGfx(void)
 {
 
 }
+*/
 
+/**
+ * @brief 7ab8 | 15c | Samus hanging on ledge pose subroutine
+ * 
+ * @return u8 New pose
+ */
 u8 SamusHangingOnLedge(void)
 {
+    u16 xPosition;
+    u32 blockTwoAbove;
+    u32 blockAbove;
+    u32 sideBlock;
 
+    if (gScreenShakeX.timer >= 30)
+    {
+        // Drop if horizontal screen shake active
+        return SPOSE_MID_AIR_REQUEST;
+    }
+
+    // Get position offset into the block samus is hanging
+    if (gSamusData.direction & KEY_RIGHT)
+        xPosition = gSamusData.xPosition + HALF_BLOCK_SIZE;
+    else
+        xPosition = gSamusData.xPosition - HALF_BLOCK_SIZE;
+
+    // Check if there's blocks above samus
+    // sideBlock is either the block on the top left or top right, depending on which samus samus is hanging
+    // blockAbove is the block directly above the block samus is currently grabbing
+    // blockTwoAbove is the block two blocks above the block samus is currently grabbing
+    //
+    // S is samus, B is the block she's hanging, a is blockAbove, s is sideBlock, S is blockTwoAbove
+    // 
+    //   S
+    // a s
+    // S B
+
+    // Offset by 2.25 blocks because samus position is at her feets
+    blockTwoAbove = ClipdataProcessForSamus(gSamusData.yPosition - (BLOCK_SIZE * 3 + QUARTER_BLOCK_SIZE), xPosition) & CLIPDATA_TYPE_SOLID_FLAG;
+    blockAbove = ClipdataProcessForSamus(gSamusData.yPosition - (BLOCK_SIZE * 2 + QUARTER_BLOCK_SIZE), gSamusData.xPosition) & CLIPDATA_TYPE_SOLID_FLAG;
+    sideBlock = ClipdataProcessForSamus(gSamusData.yPosition - (BLOCK_SIZE * 2 + QUARTER_BLOCK_SIZE), xPosition) & CLIPDATA_TYPE_SOLID_FLAG;
+
+    // Check pressed up
+    if (gChangedInput & KEY_UP)
+    {
+        if (!blockAbove && !sideBlock)
+        {
+            if (!(gEquipment.suitMiscStatus & SMF_MORPH_BALL) && blockTwoAbove)
+            {
+                return SPOSE_PULLING_YOURSELF_DOWN_TO_START_HANGING;
+            }
+
+            return SPOSE_PULLING_YOURSELF_UP_FROM_HANGING;
+        }
+
+        return SPOSE_MID_AIR_REQUEST;
+    }
+
+    // Check jump
+    if (gChangedInput & KEY_A)
+    {
+        if (gButtonInput & KEY_DOWN)
+            return SPOSE_MID_AIR_REQUEST;
+
+        if (gButtonInput & OPPOSITE_DIRECTION(gSamusData.direction))
+        {
+            // Change direction and wall jump
+            gSamusData.direction ^= KEY_RIGHT | KEY_LEFT;
+            return SPOSE_STARTING_WALL_JUMP;
+        }
+
+        if (gButtonInput & gSamusData.direction)
+        {
+            if (blockAbove || sideBlock)
+            {
+                return SPOSE_MID_AIR_REQUEST;
+            }
+            else
+            {
+                if (gEquipment.suitMiscStatus & SMF_MORPH_BALL || !blockTwoAbove)
+                {
+                    return SPOSE_PULLING_YOURSELF_UP_FROM_HANGING;
+                }
+            }
+        }
+
+        // Drop block and do small vertical jump
+        gSamusData.forcedMovement = FORCED_MOVEMENT_MID_AIR_CARRY;
+        gSamusData.yVelocity = SUB_PIXEL_TO_VELOCITY(QUARTER_BLOCK_SIZE);
+
+        return SPOSE_MID_AIR_REQUEST;
+    }
+
+    if (gChangedInput & KEY_DOWN)
+    {
+        // Pressed down, drop
+        return SPOSE_MID_AIR_REQUEST;
+    }
+
+    if ((s32)ClipdataCheckCurrentAffectingAtPosition(gSamusData.yPosition - (BLOCK_SIZE * 2 - PIXEL_SIZE), xPosition) >> 0x10 == CLIPDATA_MOVEMENT_WALL_LADDER)
+    {
+        // Vertical ladder is below samus, hang on it
+        return SPOSE_HANGING_FROM_VERTICAL_LADDER;
+    }
+
+    return SPOSE_NONE;
 }
 
+/**
+ * @brief 7c14 | 54 | Samus hanging on ledge pose GFX subroutine
+ * 
+ * @return u8 New pose
+ */
 u8 SamusHangingOnLedgeGfx(void)
 {
+    u8 duration = sSamusAnim_Right_HangingOnLedge[gSamusData.currentAnimationFrame].timer;
+    if (gSamusPhysics.slowed)
+        duration *= 2;
 
-}*/
+    if (gSamusData.animationDurationCounter >= duration)
+    {
+        gSamusData.animationDurationCounter = 0;
+        gSamusData.currentAnimationFrame += 1;
+
+        // Loop animation at frame 3
+        if (sSamusAnim_Right_HangingOnLedge[gSamusData.currentAnimationFrame].timer == 0)
+            gSamusData.currentAnimationFrame = 3;
+    }
+
+    return SPOSE_NONE;
+}
 
 /**
  * @brief 7c68 | 10 | Samus pulling yourself up from hanging pose subroutine
@@ -894,10 +1103,45 @@ u8 SamusPullingYourselfUpFromHanging(void)
     return SPOSE_NONE;
 }
 
-/*u8 SamusPullingYourselfUpFromHangingGfx(void)
+/**
+ * @brief 7c78 | 90 | Samus pulling yourself up from hanging pose GFX subroutine
+ * 
+ * @return u8 New pose
+ */
+u8 SamusPullingYourselfUpFromHangingGfx(void)
 {
+    s16 xOffset;
+    s32 clipdata;
 
-}*/
+    if (gSamusData.animationDurationCounter >= sSamusAnim_Right_PullingYourselfUpFromHanging[gSamusData.currentAnimationFrame].timer)
+    {
+        gSamusData.animationDurationCounter = 0;
+        gSamusData.currentAnimationFrame += 1;
+
+        if (sSamusAnim_Right_PullingYourselfUpFromHanging[gSamusData.currentAnimationFrame].timer == 0)
+        {
+            if (gSamusData.direction & KEY_RIGHT)
+            {
+                gSamusData.xPosition += PIXEL_SIZE * 2;
+                xOffset = HALF_BLOCK_SIZE;
+            }
+            else
+            {
+                gSamusData.xPosition -= PIXEL_SIZE * 2;
+                xOffset = -HALF_BLOCK_SIZE;
+            }
+
+            clipdata = ClipdataProcessForSamus(gSamusData.yPosition - BLOCK_SIZE * 2, gSamusData.xPosition + xOffset);
+
+            if (clipdata & CLIPDATA_TYPE_SOLID_FLAG)
+                return SPOSE_PULLING_YOURSELF_INTO_MORPH_BALL_TUNNEL;
+            else
+                return SPOSE_PULLING_YOURSELF_FORWARD_FROM_HANGING;
+        }
+    }
+
+    return SPOSE_NONE;
+}
 
 /**
  * @brief 7d08 | 30 | Samus pulling yourself forward from hanging pose subroutine
@@ -921,10 +1165,26 @@ u8 SamusPullingYourselfForwardFromHanging(void)
     return SPOSE_NONE;
 }
 
-/*u8 SamusPullingYourselfForwardFromHangingGfx(void)
+/**
+ * @brief 7d38 | 5c | Samus pulling yourself forward from hanging pose GFX subroutine
+ * 
+ * @return u8 New pose
+ */
+u8 SamusPullingYourselfForwardFromHangingGfx(void)
 {
+    if (gSamusData.animationDurationCounter >= sSamusAnim_Right_PullingYourselfForwardFromHanging[gSamusData.currentAnimationFrame].timer) {
+        if (gSamusData.currentAnimationFrame == 0)
+            gSamusData.yPosition = (gSamusData.yPosition & BLOCK_POSITION_FLAG) - ONE_SUB_PIXEL;
 
-}*/
+        gSamusData.animationDurationCounter = 0;
+        gSamusData.currentAnimationFrame += 1;
+
+        if (sSamusAnim_Right_PullingYourselfForwardFromHanging[gSamusData.currentAnimationFrame].timer == 0)
+            return SPOSE_STANDING;
+    }
+
+    return SPOSE_NONE;
+}
 
 /**
  * @brief 7d94 | 24 | Samus pulling yourself into morph ball tunnel pose subroutine
@@ -941,10 +1201,22 @@ u8 SamusPullingYourselfIntoMorphballTunnel(void)
     return SPOSE_NONE;
 }
 
-/*u8 SamusPullingYourselfIntoMorphballTunnelGfx(void)
+/**
+ * @brief 7db8 | 44 | Samus pulling yourself into morph ball tunnel pose GFX subroutine
+ * 
+ * @return u8 New pose
+ */
+u8 SamusPullingYourselfIntoMorphballTunnelGfx(void)
 {
+    if (gSamusData.animationDurationCounter >= sSamusAnim_Right_PullingYourselfIntoMorphBallTunnel[gSamusData.currentAnimationFrame].timer) {
+        gSamusData.yPosition = (gSamusData.yPosition & BLOCK_POSITION_FLAG) - ONE_SUB_PIXEL;
+        SoundPlay(SOUND_MORPHING);
 
-}*/
+        return SPOSE_MORPH_BALL;
+    }
+
+    return SPOSE_NONE;
+}
 
 /**
  * @brief 7dfc | 30 | Samus pulling yourself down to start hanging pose subroutine
@@ -963,12 +1235,25 @@ u8 SamusPullingYourselfDownToStartHanging_Unused(void)
     return SPOSE_NONE;
 }
 
-/*u8 SamusPullingYourselfDownToStartHanging_UnusedGfx(void)
+/**
+ * @brief 7e2c | 48 | Samus pulling yourself down to start hanging pose GFX subroutine
+ * 
+ * @return u8 New pose
+ */
+u8 SamusPullingYourselfDownToStartHanging_UnusedGfx(void)
 {
+    if (gSamusData.animationDurationCounter >= sSamusAnim_Right_PullingYourselfDownToStartHanging[gSamusData.currentAnimationFrame].timer) {
+        gSamusData.animationDurationCounter = 0;
+        gSamusData.currentAnimationFrame += 1;
 
+        if (sSamusAnim_Right_PullingYourselfDownToStartHanging[gSamusData.currentAnimationFrame].timer == 0)
+            return SPOSE_HANGING_ON_LEDGE;
+    }
+
+    return SPOSE_NONE;
 }
 
-u8 SamusSpaceJumpingGfx(void)
+/*u8 SamusSpaceJumpingGfx(void)
 {
 
 }
@@ -1455,7 +1740,7 @@ u8 SamusDyingGfx(void)
  * 
  * @return u8 New pose
  */
-u8 SamusHitByOmagaMetroid(void)
+u8 SamusHitByOmegaMetroid(void)
 {
     if (gEquipment.suitMiscStatus & SMF_SA_X_SUIT || gEquipment.currentEnergy >= 99)
     {
@@ -1787,7 +2072,7 @@ void SamusCheckPlayLowHealthSound(void)
 
     // Play every 16 frames
     if (MOD_AND(gFrameCounter8Bit, 16) == 0)
-        SoundPlay(0x8D);
+        SoundPlay(SOUND_LOW_HEALTH_BEEP);
 }
 
 /*void SamusUpdateDrawDistanceAndStandingStatus(void)
