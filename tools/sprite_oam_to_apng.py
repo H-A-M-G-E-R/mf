@@ -82,7 +82,7 @@ def max_width(canvas):
 
         return max(abs(x_min), abs(x_max))
     else:
-        return 0
+        return 1
 
 def max_height(canvas):
     if canvas.keys():
@@ -91,7 +91,7 @@ def max_height(canvas):
 
         return max(abs(y_min), abs(y_max))
     else:
-        return 0
+        return 1
 
 def to_image(canvas, left, top, right, bottom):
     # Returns an image cropped by a bounding box
@@ -116,7 +116,7 @@ def convert_4bpp_tile_gba(raw_tile, palette):
     returnvalue = returnvalue.swapaxes(0, 1)
     return returnvalue
 
-def exportAnimation(gfx, pal, pAnim, fileName):
+def exportAnimation(gfx, pal, pAnim, fileName, animated=True):
     canvases = []
     durations = []
     width = 0
@@ -142,6 +142,12 @@ def exportAnimation(gfx, pal, pAnim, fileName):
         romSeek(currentAddr)
 
         canvas = canvas_from_raw_data(spritemap, gfx)
+
+        if not animated:
+            frame_image = to_image(canvas, -max_width(canvas), -max_height(canvas), max_width(canvas), max_height(canvas))
+            frame_image.putpalette(pal, 'RGBA')
+            frame_image.save(f"{fileName[:-4]}_Frame{len(canvases)}{fileName[-4:]}")
+
         canvases.append(canvas)
 
         if max_width(canvas) > width:
@@ -149,7 +155,7 @@ def exportAnimation(gfx, pal, pAnim, fileName):
         if max_height(canvas) > height:
             height = max_height(canvas)
 
-    if len(canvases) == 0:
+    if not animated or len(canvases) == 0:
         return
 
     images = []
@@ -230,6 +236,7 @@ for ((pGfx, pPal), pAnims) in allAnimations.items():
             gfx.append([romRead() for j in range(0x20)])
 
         exportAnimation(gfx, paletteRgba, pAnim, f'tools/animations/{name}.png')
+        #exportAnimation(gfx, paletteRgba, pAnim, f'tools/animation_frames/{name}.png', animated=False)
 
 romSeek(0x083e40dc) # sCommonOamPal
 palette555 = [romRead(2) for i in range(8*16)]
@@ -333,3 +340,4 @@ for (pAnim, name) in particleAnimations:
             gfx[0xBC+i] = [romRead() for j in range(0x20)]
 
     exportAnimation(gfx, paletteRgba, pAnim, f'tools/animations/{name}.png')
+    #exportAnimation(gfx, paletteRgba, pAnim, f'tools/animation_frames/{name}.png', False)

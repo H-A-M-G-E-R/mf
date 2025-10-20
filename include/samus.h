@@ -110,7 +110,7 @@ u8 SamusLoadingSave(void);
 u8 SamusLoadingSaveGfx(void);
 u8 SamusDying(void);
 u8 SamusDyingGfx(void);
-u8 SamusHitByOmagaMetroid(void);
+u8 SamusHitByOmegaMetroid(void);
 u8 SamusHitByOmegaMetroidGfx(void);
 u8 SamusGrabbedByYakuza(void);
 void SamusSetPose(u8 pose);

@@ -158,7 +158,7 @@ SamusUpdatePhysics: @ 0x08004E68
 	ldr r1, _08004E9C @ =gSamusData
 	ldrh r0, [r1, #0x18]
 	ldrh r1, [r1, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	adds r1, r0, #0
 	movs r0, #0xff
 	ands r1, r0
@@ -883,14 +883,14 @@ _08005420:
 	ldr r4, _08005458 @ =gSamusData
 	ldrh r0, [r4, #0x18]
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	adds r7, r0, #0
 	movs r5, #0xff
 	ands r7, r5
 	ldr r6, _0800545C @ =gPreviousYPosition
 	ldrh r0, [r6]
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	adds r1, r0, #0
 	ands r1, r5
 	ldrh r0, [r4, #0x18]
@@ -955,14 +955,14 @@ _080054B4:
 	ldr r4, _080054EC @ =gSamusData
 	ldrh r0, [r4, #0x18]
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	adds r7, r0, #0
 	movs r5, #0xff
 	ands r7, r5
 	ldr r6, _080054F0 @ =gPreviousYPosition
 	ldrh r0, [r6]
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	adds r1, r0, #0
 	ands r1, r5
 	ldrh r0, [r4, #0x18]
@@ -1213,7 +1213,7 @@ _08005710:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldrh r1, [r1, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	movs r1, #0xff
 	ands r1, r0
 	cmp r1, #1
@@ -1265,7 +1265,7 @@ _0800577C:
 	bne _080057FA
 	ldrh r0, [r6, #0x18]
 	ldrh r1, [r6, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	adds r5, r0, #0
 	movs r4, #0xff
 	ands r5, r4
@@ -1276,7 +1276,7 @@ _0800577C:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldrh r1, [r6, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	ands r0, r4
 	cmp r5, #2
 	bne _080057D4
@@ -2647,7 +2647,7 @@ _080062A0:
 	movs r7, #0
 	ldrh r0, [r1, #0x18]
 	ldrh r1, [r1, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	adds r4, r0, #0
 	movs r0, #0xff
 	ands r4, r0
@@ -3108,7 +3108,7 @@ _08006618:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r0, r0, #0x10
 	cmp r0, #1
 	beq _0800669A
@@ -3156,7 +3156,7 @@ _0800667C:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r0, r0, #0x10
 	cmp r0, #2
 	bne _080066B0
@@ -5680,14 +5680,14 @@ SamusUsingAnElevator: @ 0x08007974
 	ble _080079DC
 	ldrh r0, [r4, #0x18]
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r5, r0, #0x10
 	ldrh r0, [r4, #0x18]
 	subs r0, #0xa
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r0, r0, #0x10
 	cmp r5, #1
 	bne _08007A24
@@ -5729,7 +5729,7 @@ _080079DC:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r5, r0, #0x10
 	cmp r5, #2
 	bne _08007A24
@@ -5990,7 +5990,7 @@ _08007BE0:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	adds r1, r7, #0
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r0, r0, #0x10
 	cmp r0, #3
 	beq _08007C02
@@ -6064,8 +6064,8 @@ SamusPullingYourselfUpFromHanging: @ 0x08007C68
 	.align 2, 0
 _08007C74: .4byte gSamusData
 
-	thumb_func_start SamusPullingYourselfUpFromHangingGFX
-SamusPullingYourselfUpFromHangingGFX: @ 0x08007C78
+	thumb_func_start SamusPullingYourselfUpFromHangingGfx
+SamusPullingYourselfUpFromHangingGfx: @ 0x08007C78
 	push {r4, r5, lr}
 	ldr r0, _08007CC4 @ =gSamusData
 	adds r4, r0, #0
@@ -6170,8 +6170,8 @@ _08007D30:
 	pop {r1}
 	bx r1
 
-	thumb_func_start SamusPullingYourselfForwardFromHangingGFX
-SamusPullingYourselfForwardFromHangingGFX: @ 0x08007D38
+	thumb_func_start SamusPullingYourselfForwardFromHangingGfx
+SamusPullingYourselfForwardFromHangingGfx: @ 0x08007D38
 	push {r4, r5, lr}
 	ldr r2, _08007D80 @ =gSamusData
 	adds r4, r2, #0
@@ -6243,8 +6243,8 @@ _08007DB0:
 	pop {r1}
 	bx r1
 
-	thumb_func_start SamusPullingYourselfIntoMorphballTunnelGFX
-SamusPullingYourselfIntoMorphballTunnelGFX: @ 0x08007DB8
+	thumb_func_start SamusPullingYourselfIntoMorphballTunnelGfx
+SamusPullingYourselfIntoMorphballTunnelGfx: @ 0x08007DB8
 	push {lr}
 	ldr r2, _08007DD8 @ =gSamusData
 	adds r3, r2, #0
@@ -6306,8 +6306,8 @@ _08007E24:
 	pop {r1}
 	bx r1
 
-	thumb_func_start SamusPullingYourselfDownToStartHanging_UnusedGFX
-SamusPullingYourselfDownToStartHanging_UnusedGFX: @ 0x08007E2C
+	thumb_func_start SamusPullingYourselfDownToStartHanging_UnusedGfx
+SamusPullingYourselfDownToStartHanging_UnusedGfx: @ 0x08007E2C
 	push {r4, lr}
 	ldr r0, _08007E64 @ =gSamusData
 	adds r3, r0, #0
@@ -6956,7 +6956,7 @@ _080082EA:
 	adds r1, r1, r6
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r2, r0, #0x10
 	ldrh r1, [r7]
 	movs r3, #0x40
@@ -7495,7 +7495,7 @@ _080086DC:
 	adds r1, r1, r3
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r0, r0, #0x10
 	cmp r0, #5
 	bne _08008710
@@ -7871,8 +7871,8 @@ _0800899A:
 	pop {r1}
 	bx r1
 
-	thumb_func_start SamusFrozenGFX
-SamusFrozenGFX: @ 0x080089A0
+	thumb_func_start SamusFrozenGfx
+SamusFrozenGfx: @ 0x080089A0
 	push {lr}
 	ldr r1, _080089B4 @ =gSamusData
 	ldrb r0, [r1, #0xf]
@@ -7891,8 +7891,8 @@ _080089BA:
 	bx r1
 	.align 2, 0
 
-	thumb_func_start SamusFrozenInMorphBallGFX
-SamusFrozenInMorphBallGFX: @ 0x080089C0
+	thumb_func_start SamusFrozenInMorphBallGfx
+SamusFrozenInMorphBallGfx: @ 0x080089C0
 	push {lr}
 	ldr r1, _080089D4 @ =gSamusData
 	ldrb r0, [r1, #0xf]
@@ -8569,8 +8569,8 @@ _08008EA8:
 	pop {r1}
 	bx r1
 
-	thumb_func_start SamusHitByOmagaMetroid
-SamusHitByOmagaMetroid: @ 0x08008EB0
+	thumb_func_start SamusHitByOmegaMetroid
+SamusHitByOmegaMetroid: @ 0x08008EB0
 	push {lr}
 	ldr r2, _08008EE4 @ =gEquipment
 	ldrb r1, [r2, #0xc]
@@ -10902,7 +10902,7 @@ _0800A25A:
 	add r1, r8
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r1, r0, #0x10
 	cmp r1, #3
 	bne _0800A29A
@@ -10983,7 +10983,7 @@ _0800A328:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldrh r1, [r4, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r1, r0, #0x10
 	cmp r1, #5
 	bne _0800A386
@@ -11033,7 +11033,7 @@ _0800A3A2:
 	add r1, r8
 	lsls r1, r1, #0x10
 	lsrs r1, r1, #0x10
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r1, r0, #0x10
 	ldr r4, _0800A404 @ =0x03001320
 	ldrh r2, [r4, #2]
@@ -11099,7 +11099,7 @@ _0800A42E:
 	lsls r0, r0, #0x10
 	lsrs r0, r0, #0x10
 	ldrh r1, [r5, #0x16]
-	bl ClipdataUpdateCurrentAffecting
+	bl ClipdataCheckCurrentAffectingAtPosition
 	asrs r1, r0, #0x10
 	cmp r1, #5
 	beq _0800A464

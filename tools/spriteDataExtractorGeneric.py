@@ -1,3 +1,27 @@
+def parse_entry(part0, part1, part2):
+    shape = part0 >> 14
+    y = part0 & 0xFF
+    if y > 0x80:
+        y = y - 0x100
+
+    size = part1 >> 14
+    flip = part1 >> 12 & 3
+    x = part1 & 0x1FF
+    if x > 0x100:
+        x = x - 0x200
+
+    palette = part2 >> 12
+    priority = part2 >> 10 & 3
+    tile = part2 & 0x3FF
+
+    dim_labels = ["OAM_DIMS_8x8", "OAM_DIMS_16x16", "OAM_DIMS_32x32", "OAM_DIMS_64x64",
+                  "OAM_DIMS_16x8", "OAM_DIMS_32x8", "OAM_DIMS_32x16", "OAM_DIMS_64x32",
+                  "OAM_DIMS_8x16", "OAM_DIMS_8x32", "OAM_DIMS_16x32", "OAM_DIMS_32x64"]
+
+    flip_labels = ["OAM_NO_FLIP", "OAM_X_FLIP", "OAM_Y_FLIP", "OAM_XY_FLIP"]
+
+    return f"OAM_ENTRY({x}, {y}, {dim_labels[shape * 4 + size]}, {flip_labels[flip]}, 0x{tile:x}, {palette}, {priority})"
+
 def ParsePart0(value):
     result = ""
 
@@ -102,10 +126,11 @@ def ParseOam(spriteName):
         result += f"    {part_count},\n    "
 
         for x in range(0, part_count):
-            part0 = ParsePart0(int.from_bytes(file.read(2), "little"))
+            result += parse_entry(int.from_bytes(file.read(2), "little"), int.from_bytes(file.read(2), "little"), int.from_bytes(file.read(2), "little"))
+            '''part0 = ParsePart0(int.from_bytes(file.read(2), "little"))
             result += part0 + ", "
             result += ParsePart1(part0, int.from_bytes(file.read(2), "little")) + ", "
-            result += ParsePart2(int.from_bytes(file.read(2), "little"))
+            result += ParsePart2(int.from_bytes(file.read(2), "little"))'''
             if x < part_count - 1:
                 result += ",\n    "
 

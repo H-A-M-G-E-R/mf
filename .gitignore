@@ -28,8 +28,11 @@ objdiff.json
 include/**/*.s
 tools/**/*.txt
 tools/**/*.png
+tools/**/*.gif
 tools/agbcc
 tools/agbcc.exe
 .vscode
 
 *.pyc
+
+m2c_context/
