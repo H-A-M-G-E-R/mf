@@ -24,7 +24,7 @@
 /**
  * @brief Checks if samus is near the sidehopper on the sides in a 5 block range
  * 
- * @return u8 1 if near, 0 otherwise
+ * @return u8 bool, near
  */
 u8 SidehopperCheckSamusInRange(void)
 {

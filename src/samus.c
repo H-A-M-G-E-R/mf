@@ -302,7 +302,7 @@ void SamusAimCannonHorizontalLadder(void)
 /**
  * @brief 5c84 | c0 | Checks if samus is shooting, also sets the new projectile
  * 
- * @return u8 1 if shooting, 0 otherwise
+ * @return u8 bool, shooting
  */
 u8 SamusCheckShooting(void)
 {

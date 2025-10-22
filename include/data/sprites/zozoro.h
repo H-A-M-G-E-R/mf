@@ -7,23 +7,23 @@
 extern const u32 sZozoroGfx[2 * 512];
 extern const u16 sZozoroPal[1 * 16];
 
-extern const struct FrameData sZozoroOam_387ed4[6];
-extern const struct FrameData sZozoroOam_387f04[7];
-extern const struct FrameData sZozoroOam_387f3c[5];
-extern const struct FrameData sZozoroOam_387f64[6];
-extern const struct FrameData sZozoroOam_387f94[7];
-extern const struct FrameData sZozoroOam_387fcc[5];
-extern const struct FrameData sZozoroOam_387ff4[6];
-extern const struct FrameData sZozoroOam_388024[6];
-extern const struct FrameData sZozoroOam_388054[6];
-extern const struct FrameData sZozoroOam_388084[6];
-extern const struct FrameData sZozoroOam_3880b4[6];
-extern const struct FrameData sZozoroOam_3880e4[6];
-extern const struct FrameData sZozoroOam_388114[6];
-extern const struct FrameData sZozoroOam_388144[6];
-extern const struct FrameData sZozoroOam_388174[6];
-extern const struct FrameData sZozoroOam_3881a4[6];
-extern const struct FrameData sZozoroOam_3881d4[5];
-extern const struct FrameData sZozoroOam_3881fc[5];
+extern const struct FrameData sZozoroOam_CrawlingGround[6];
+extern const struct FrameData sZozoroOam_CrawlingGroundFast[7];
+extern const struct FrameData sZozoroOam_TurningAroundGround[5];
+extern const struct FrameData sZozoroOam_CrawlingWall[6];
+extern const struct FrameData sZozoroOam_CrawlingWallFast[7];
+extern const struct FrameData sZozoroOam_TurningAroundWall[5];
+extern const struct FrameData sZozoroOam_CrawlingSlightUpwardsSlope[6];
+extern const struct FrameData sZozoroOam_CrawlingSlightUpwardsSlopeFast[6];
+extern const struct FrameData sZozoroOam_CrawlingSlightDownwardsSlope[6];
+extern const struct FrameData sZozoroOam_CrawlingSlightDownwardsSlopeFast[6];
+extern const struct FrameData sZozoroOam_CrawlingSteepUpwardsSlope[6];
+extern const struct FrameData sZozoroOam_CrawlingSteepUpwardsSlopeFast[6];
+extern const struct FrameData sZozoroOam_CrawlingSteepDownwardsSlope[6];
+extern const struct FrameData sZozoroOam_CrawlingSteepDownwardsSlopeFast[6];
+extern const struct FrameData sZozoroOam_IdleGround[6];
+extern const struct FrameData sZozoroOam_IdleWall[6];
+extern const struct FrameData sZozoroOam_StartFalling[5];
+extern const struct FrameData sZozoroOam_Landing[5];
 
 #endif /* ZOZORO_DATA_H */

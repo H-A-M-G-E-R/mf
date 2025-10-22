@@ -315,7 +315,9 @@ SECTIONS {
         asm/sprites_AI/infant_metroid.o(.text);
         asm/sprites_AI/lab_debris.o(.text);
         asm/sprites_AI/powamp.o(.text);
-        asm/sprites_AI/zozoro.o(.text);
+
+        src/sprites_AI/zozoro.o(.text);
+
         asm/sprites_AI/sa_x_monster.o(.text);
         asm/sprites_AI/continual_x_spawner.o(.text);
         asm/sprites_AI/box_2.o(.text);

@@ -59,12 +59,22 @@ def reformat_oam(start):
 
     file.seek(start & 0x1ffffff)
 
+    frames = set()
     while True:
         current_addr = file.tell()
-        if current_addr | 0x8000000 not in all_labels or "Frame" not in all_labels[current_addr | 0x8000000]:
-        #if current_addr | 0x8000000 not in all_labels or "Oam" not in all_labels[current_addr | 0x8000000]:
+
+        if current_addr % 4 != 0:
+            file.read(4 - (current_addr % 4)) # align
+        pointer = int.from_bytes(file.read(4), 'little')
+        if pointer in frames:
+            file.seek(file.tell()-4)
             break
+
+        if current_addr | 0x8000000 not in all_labels:
+            break
+
         file.seek(current_addr)
+        frames |= {current_addr | 0x8000000}
 
         result += parse_oam(all_labels[current_addr | 0x8000000], is_28a1a4=current_addr == 0x28a1a4) + "\n"
 
